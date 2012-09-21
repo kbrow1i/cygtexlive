@@ -1,3 +1,7 @@
+NAME="asymptote"
+VERSION=2.16
+RELEASE=1
+
 inherit emacs vim
 
 HOMEPAGE="http://asymptote.sourceforge.net/"
@@ -42,3 +46,11 @@ src_install() {
 	viminto syntax
 	dovim ${S}/base/asy.vim
 }
+CATEGORY="Publishing"
+
+SUMMARY="Vector graphics language for TeX"
+
+DESCRIPTION="Asymptote is a powerful descriptive vector graphics language for
+technical drawing, inspired by MetaPost but with an improved C++-like
+syntax. Asymptote provides for figures the same high-quality typesetting
+that LaTeX does for scientific text."
