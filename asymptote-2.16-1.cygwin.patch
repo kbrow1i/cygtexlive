@@ -1,0 +1,10 @@
+--- origsrc/asymptote-2.15/CYGWIN-PATCHES/setup.hint	1969-12-31 19:00:00.000000000 -0500
++++ src/asymptote-2.15/CYGWIN-PATCHES/setup.hint	2012-03-02 21:47:19.712362900 -0500
+@@ -0,0 +1,7 @@
++category: Publishing
++requires: ImageMagick gsl libfftw3_3 libgcc1 libGL1 libGLU1 libglut3 libncurses10 libreadline7 libstdc++6 python python-imaging python-tkinter texlive-collection-latexextra zlib0
++sdesc: "Vector graphics language for TeX"
++ldesc: "Asymptote is a powerful descriptive vector graphics language for 
++technical drawing, inspired by MetaPost but with an improved C++-like 
++syntax. Asymptote provides for figures the same high-quality typesetting 
++that LaTeX does for scientific text."
