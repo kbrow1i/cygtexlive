@@ -1,6 +1,6 @@
 NAME="asymptote"
 VERSION=2.16
-RELEASE=1
+RELEASE=2
 
 inherit emacs vim
 
