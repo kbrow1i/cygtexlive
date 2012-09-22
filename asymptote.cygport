@@ -20,6 +20,8 @@ DEPEND="gsl-devel
 	texlive-collection-texinfo
 	vim"
 
+MAKEOPTS+=" -j1"
+
 DIFF_EXCLUDES="asy.list *.log run*.cc *.dvi"
 
 src_compile() {
@@ -54,3 +56,5 @@ DESCRIPTION="Asymptote is a powerful descriptive vector graphics language for
 technical drawing, inspired by MetaPost but with an improved C++-like
 syntax. Asymptote provides for figures the same high-quality typesetting
 that LaTeX does for scientific text."
+
+REQUIRES="ImageMagick texlive-collection-latexextra"
