@@ -1,12 +1,11 @@
-DESCRIPTION="TeX publishing system"
+NAME="texlive"
+VERSION=20120628
+RELEASE=1
+
 HOMEPAGE="http://www.tug.org/texlive/"
 # SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
 SRC_URI="mirror://ctan/systems/texlive/Source/${P}-source.tar.xz"
 SRC_DIR="${P}-source"
-
-_CYGPORT_RESTRICT_debuginfo_=1
-# Wrong way to do it; should have been RESTRICT=debuginfo.  But maybe
-# shouldn't have disabled debuginfo.
 
 PATCH_URI="
 	20120611-1-texmf_cnf.patch
@@ -41,7 +40,20 @@ libkpathsea_devel_CONTENTS="usr/include/kpathsea/ usr/lib/libkpathsea.*"
 libptexenc1_CONTENTS="usr/bin/cygptexenc-1.dll"
 libptexenc_devel_CONTENTS="usr/include/ptexenc/ usr/lib/libptexenc.*"
 
-PKG_IGNORE="usr/share/ etc/postinstall/"
+CATEGORY="Publishing"
+
+# libptexenc_devel_REQUIRES="libkpathsea-devel"
+
+texlive_SUMMARY="TeX Live binaries"
+libkpathsea6_SUMMARY="TeX file and path search library (runtime)"
+libkpathsea_devel_SUMMARY="TeX file and path search library (development)"
+libptexenc1_SUMMARY="TeX Unicode encoding library (runtime)"
+libptexenc_devel_SUMMARY="TeX Unicode encoding library (development)"
+
+DESCRIPTION="TeX Live provides a comprehensive, cross-platform TeX system. It 
+includes all the major TeX-related programs, macro packages, and fonts 
+that are free software, including support for many languages around the 
+world."
 
 DIFF_EXCLUDES="*.in configure build-aux m4 aclocal.m4"
 
