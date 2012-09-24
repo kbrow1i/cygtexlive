@@ -1,0 +1,14 @@
+--- origsrc/texlive-20120611-source/texk/dvi2tty/dvi2tty-5.3.4/disdvi.c	2010-11-08 03:22:03.000000000 -0500
++++ src/texlive-20120611-source/texk/dvi2tty/dvi2tty-5.3.4/disdvi.c	2012-06-22 09:49:48.586252300 -0400
+@@ -193,7 +193,10 @@ int main(int argc, char **argv)
+         if ((i >= 5) && (!strcmp(*argv+i-4, dvi_ext)))
+             dvi_name = *argv;
+         else {
+-            dvi_name = malloc((i+5) * sizeof(char));
++            if ((dvi_name = malloc((i+5) * sizeof(char))) == NULL) {
++                perror("dvi_name");
++                exit(1);
++            }
+             strcpy(dvi_name, *argv);
+             strcat(dvi_name, dvi_ext);
+         }
