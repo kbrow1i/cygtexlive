@@ -1,0 +1,8 @@
+TEXLIVE_TEXMF_PKGS="cc-pl gustlib mwcls pl polski przechlewski-book
+	qpxqtx tap utf8mex"
+TEXLIVE_ARCH_PKGS="mex"
+
+TEXLIVE_DOC_PKGS="${TEXLIVE_ARCH_PKGS} cc-pl gustlib gustprog mwcls pl
+	polski przechlewski-book qpxqtx tap utf8mex"
+
+inherit texlive
