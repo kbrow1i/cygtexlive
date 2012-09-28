@@ -1,3 +1,7 @@
+NAME="texlive-collection-fontsextra"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="Asana-Math adforn adfsymbols allrunes antiqua antt
 	archaic arev ascii aspectratio astro augie auncial-new aurical
 	b1encoding barcodes baskervald bbding bbm bbm-macros bbold
