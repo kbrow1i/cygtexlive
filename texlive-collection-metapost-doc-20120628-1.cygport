@@ -1,0 +1,8 @@
+TEXLIVE_DOC_PKGS="automata bbcard blockdraw_mp bpolynomial cmarrows
+	drv dviincl emp epsincl expressg exteps featpost feynmf
+	garrigues gmp hatching latexmp metago metaobj metaplot
+	metapost metauml mfpic mfpic4ode mp3d mpattern mpcolornames
+	mpgraphics piechartmp slideshow splines suanpan textpath
+	threeddice"
+
+inherit texlive
