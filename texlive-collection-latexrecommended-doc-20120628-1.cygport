@@ -1,0 +1,9 @@
+TEXLIVE_DOC_PKGS="anysize beamer booktabs caption cite cmap crop
+	ctable ec eso-pic euler extsizes fancybox fancyref fancyvrb
+	float fontspec fp index jknapltx l3experimental l3kernel
+	l3packages listings mdwtools memoir metalogo mh microtype ms
+	ntgclass parskip pdfpages powerdot psfrag rcs rotating
+	sansmath section seminar sepnum setspace subfig textcase
+	thumbpdf typehtml underscore url xcolor xkeyval"
+
+inherit texlive
