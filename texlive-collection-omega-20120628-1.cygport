@@ -1,0 +1,7 @@
+TEXLIVE_TEXMF_PKGS="antomega lambda mxedruli omega"
+
+TEXLIVE_ARCH_PKGS="aleph omegaware"
+
+TEXLIVE_DOC_PKGS="${TEXLIVE_ARCH_PKGS} antomega mxedruli omega"
+
+inherit texlive
