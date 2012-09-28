@@ -1,0 +1,10 @@
+TEXLIVE_DOC_PKGS="a2ping bibtex8 bibtexu bundledoc chktex ctanify
+	ctanupload ctie cweb de-macro detex dvi2tty dvicopy dviljk
+	dvipng dvipos dvisvgm findhyph fragmaster installfont
+	latex2man latexdiff latexfileversion latexmk listings-ext
+	match_parens mkjobtexmf patgen pdfcrop pdfjam pdftools pkfix
+	pkfix-helper purifyeps sty2dtx synctex texcount texdef texdiff
+	texdirflatten texdoc texliveonfly texloganalyser texware tie
+	tpic2pdftex tpic2pdftex typeoutfileinfo web xindy"
+
+inherit texlive
