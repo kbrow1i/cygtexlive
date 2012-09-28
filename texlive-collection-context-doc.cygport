@@ -1,3 +1,7 @@
+NAME="texlive-collection-context-doc"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_DOC_PKGS="context context-account context-bnf context-chromato
 	context-construction-plan context-degrade context-filter
 	context-fixme context-french context-fullpage context-games
