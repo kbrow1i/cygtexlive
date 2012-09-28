@@ -1,3 +1,7 @@
+NAME="texlive-collection-langitalian"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="codicefiscaleitaliano fixltxhyph hyphen-italian
 	frontespizio itnumpar layaureo"
 
