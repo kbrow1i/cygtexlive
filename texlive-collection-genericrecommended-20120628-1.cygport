@@ -1,0 +1,3 @@
+TEXLIVE_TEXMF_PKGS="epsf fontname genmisc kastrup multido path tex-ps ulem"
+
+inherit texlive
