@@ -1,0 +1,7 @@
+TEXLIVE_TEXMF_PKGS="codicefiscaleitaliano fixltxhyph hyphen-italian
+	frontespizio itnumpar layaureo"
+
+TEXLIVE_DOC_PKGS="codicefiscaleitaliano fixltxhyph frontespizio
+	itnumpar layaureo"
+
+inherit texlive
