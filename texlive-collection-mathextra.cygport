@@ -1,3 +1,7 @@
+NAME="texlive-collection-mathextra"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="12many binomexp boldtensors bosisio ccfonts
 	commath concmath concrete eqnarray extarrows extpfeil faktor
 	ionumbers isomath mathcomp mattens mhequ multiobjective nath
@@ -6,5 +10,7 @@ TEXLIVE_TEXMF_PKGS="12many binomexp boldtensors bosisio ccfonts
 	tex-ewd thmbox turnstile unicode-math venn yhmath ytableau"
 
 TEXLIVE_ARCH_PKGS="amstex"
+
+REQUIRES="texlive-collection-latex texlive-collection-fontsrecommended"
 
 inherit texlive
