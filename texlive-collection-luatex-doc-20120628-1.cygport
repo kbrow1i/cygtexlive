@@ -1,0 +1,6 @@
+TEXLIVE_DOC_PKGS="checkcites chickenize interpreter lua-visual-debug
+	luabibentry luacode luaindex luainputenc lualatex-doc
+	lualatex-math lualibs luamplib luaotfload luapersian luasseq
+	luatexbase luatextra showhyphens"
+
+inherit texlive
