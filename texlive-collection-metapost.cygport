@@ -1,3 +1,7 @@
+NAME="texlive-collection-metapost"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="automata bbcard blockdraw_mp bpolynomial cmarrows drv
 	dviincl emp epsincl expressg exteps featpost feynmf garrigues gmp
 	hatching latexmp metago metaobj metaplot metauml mfpic mfpic4ode mp3d
