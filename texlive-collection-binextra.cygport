@@ -1,3 +1,7 @@
+NAME="texlive-collection-binextra"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="bibtex8 bibtexu cweb dtl dvi2tty dvidvi hyphenex lacheck seetexk"
 
 TEXLIVE_ARCH_PKGS="a2ping bundledoc chktex ctanify ctanupload de-macro
