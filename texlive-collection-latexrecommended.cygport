@@ -1,8 +1,16 @@
+NAME="texlive-collection-latexrecommended"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="anysize beamer booktabs caption cite cmap crop ctable ec
 	eso-pic euler extsizes fancybox fancyref fancyvrb float fontspec fp
 	index jknapltx koma-script l3kernel l3packages l3experimental listings
 	mdwtools memoir metalogo mh microtype ms ntgclass parskip pdfpages
 	powerdot psfrag rcs rotating sansmath section seminar sepnum setspace
 	subfig textcase typehtml underscore url xcolor xkeyval"
+
 TEXLIVE_ARCH_PKGS="thumbpdf"
+
+REQUIRES="texlive-collection-latex"
+
 inherit texlive
