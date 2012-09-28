@@ -1,3 +1,7 @@
+NAME="texlive-collection-genericextra-doc"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_DOC_PKGS="abbr abstyles barr bitelist borceux c-pascal
 	chronosys dinat dirtree dowith encxvlna fenixpar fltpoint
 	fntproof gates ifetex iftex insbox lecturer librarian mathdots
