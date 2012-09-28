@@ -1,3 +1,7 @@
+NAME="texlive-collection-pstricks-doc"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_DOC_PKGS="auto-pst-pdf bclogo makeplot pdftricks
 	pedigree-perl psbao pst-2dplot pst-3d pst-3dplot pst-abspos
 	pst-am pst-asr pst-bar pst-barcode pst-bezier pst-blur
