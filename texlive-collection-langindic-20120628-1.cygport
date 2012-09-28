@@ -1,0 +1,8 @@
+TEXLIVE_TEXMF_PKGS="bangtex bengali burmese devnag malayalam sanskrit
+	velthuis wnri wnri-latex xetex-devanagari"
+TEXLIVE_ARCH_PKGS="ebong"
+
+TEXLIVE_DOC_PKGS="${TEXLIVE_ARCH_PKGS} bangtex bengali burmese
+	malayalam sanskrit velthuis wnri wnri-latex xetex-devanagari"
+
+inherit texlive

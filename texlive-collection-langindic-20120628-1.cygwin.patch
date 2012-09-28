@@ -1,0 +1,10 @@
+--- origsrc/CYGWIN-PATCHES/setup.hint	1969-12-31 19:00:00.000000000 -0500
++++ src/CYGWIN-PATCHES/setup.hint	2012-03-13 06:22:01.791178100 -0400
+@@ -0,0 +1,7 @@
++category: Publishing
++requires: python texlive-collection-basic
++sdesc: "TeX Live Indic language support"
++ldesc: "TeX Live is an easy way to get up and running with the TeX
++document production system.  It includes all the major TeX-related
++programs, macro packages, and fonts that are free software, including
++support for many languages around the world."
