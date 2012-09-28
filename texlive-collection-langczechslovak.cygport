@@ -1,4 +1,11 @@
+NAME="texlive-collection-langczechslovak"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="cs csbulletin vlna"
 TEXLIVE_ARCH_PKGS="cslatex csplain"
 TEXLIVE_DOC_PKGS="csbulletin cslatex vlna"
+
+REQUIRES="texlive-collection-latex"
+
 inherit texlive
