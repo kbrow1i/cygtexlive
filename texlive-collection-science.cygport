@@ -1,3 +1,7 @@
+NAME="texlive-collection-science"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="SIstyle SIunits alg algorithm2e algorithmicx
 	algorithms biocon bpchem bytefield chemarrow chemcompounds chemcono
 	chemexec chemmacros chemnum chemstyle clrscode complexity
@@ -8,5 +12,7 @@ TEXLIVE_TEXMF_PKGS="SIstyle SIunits alg algorithm2e algorithmicx
 	t-angles textopo unitsdef youngtab"
 
 TEXLIVE_ARCH_PKGS="ulqda"
+
+REQUIRES="texlive-collection-latex"
 
 inherit texlive
