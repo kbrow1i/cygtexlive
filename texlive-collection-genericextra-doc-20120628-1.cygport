@@ -1,0 +1,7 @@
+TEXLIVE_DOC_PKGS="abbr abstyles barr bitelist borceux c-pascal
+	chronosys dinat dirtree dowith encxvlna fenixpar fltpoint
+	fntproof gates ifetex iftex insbox lecturer librarian mathdots
+	metatex midnight navigator ofs pdf-trans shade systeme texapi
+	upca xlop yax"
+
+inherit texlive
