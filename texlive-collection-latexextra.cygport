@@ -1,3 +1,7 @@
+NAME="texlive-collection-latexextra"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="2up ESIEEcv HA-prosper Tabbing a0poster a4wide
 	a5comb abstract achemso acronym acroterm addlines adjmulticol
 	adrconv advdate akktex akletter alterqcm altfont amsaddr
@@ -126,5 +130,7 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv HA-prosper Tabbing a0poster a4wide
 
 TEXLIVE_ARCH_PKGS="authorindex exceltex glossaries pax perltex
 	splitindex svn-multi vpe"
+
+REQUIRES="texlive-collection-latexrecommended texlive-collection-pictures"
 
 inherit texlive
