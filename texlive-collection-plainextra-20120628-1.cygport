@@ -1,0 +1,9 @@
+TEXLIVE_TEXMF_PKGS="figflow fixpdfmag font-change fontch getoptk
+	graphics-pln hyplain js-misc mkpattern newsletr pitex placeins-plain
+	plnfss present resumemac timetable treetex varisize"
+
+TEXLIVE_DOC_PKGS="figflow font-change fontch getoptk graphics-pln
+	hyplain js-misc mkpattern newsletr pitex plnfss present
+	resumemac treetex varisize"
+
+inherit texlive
