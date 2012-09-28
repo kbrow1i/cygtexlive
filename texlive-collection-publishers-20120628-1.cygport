@@ -1,0 +1,19 @@
+TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex acmconf active-conf
+	adfathesis afthesis aguplus aiaa ametsoc anufinalexam aomart
+	apa apa6 apa6e arsclassica articleingud asaetr ascelike
+	beamer-FUBerlin bgteubner cascadilla chem-journal
+	classicthesis cmpj confproc ebsthesis economic ejpecp elbioimp
+	elsarticle elteikthesis erdc estcpmm fbithesis fcltxdoc gaceta
+	gatech-thesis har2nat hobete icsv ieeepes ijmart imac imsproc
+	imtekda jmlr jpsj kdgdocs kluwer lps macqassign mentis
+	msu-thesis musuos muthesis nature nddiss nih nostarch nrc
+	onrannual philosophersimprint powerdot-FUBerlin pracjourn
+	procIAGssymp ptptex psu-thesis revtex revtex4 ryethesis sageep
+	sapthesis seuthesis soton spie stellenbosch suftesi sugconf
+	texilikechaps texilikecover thesis-titlepage-fhac thuthesis
+	toptesi tugboat tugboat-plain tui uaclasses uafthesis
+	ucdavisthesis ucthesis uiucthesis umthesis umich-thesis
+	unamthesis ut-thesis uothesis uowthesis uwthesis vancouver
+	york-thesis"
+
+inherit texlive
