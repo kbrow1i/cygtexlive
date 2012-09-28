@@ -1,3 +1,7 @@
+NAME="texlive-collection-plainextra"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="figflow fixpdfmag font-change fontch getoptk
 	graphics-pln hyplain js-misc mkpattern newsletr pitex placeins-plain
 	plnfss present resumemac timetable treetex varisize"
