@@ -1,3 +1,7 @@
+NAME="texlive-collection-pictures-doc"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_DOC_PKGS=" fig4latex mathspic adjustbox asyfig autoarea
 	bardiag bloques bodegraph bondgraph braids cachepic chemfig circuitikz
 	combinedgraphics curve curve2e curves dcpic diagmac2
