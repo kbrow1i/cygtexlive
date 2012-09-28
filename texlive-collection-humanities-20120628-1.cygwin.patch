@@ -1,0 +1,10 @@
+--- origsrc/CYGWIN-PATCHES/setup.hint	1969-12-31 18:00:00.000000000 -0600
++++ src/CYGWIN-PATCHES/setup.hint	2012-02-03 04:25:00.472302500 -0600
+@@ -0,0 +1,7 @@
++category: Publishing
++requires: texlive-collection-latex
++sdesc: "TeX Live packages for law, linguistics, and humanities"
++ldesc: "TeX Live is an easy way to get up and running with the TeX
++document production system.  It includes all the major TeX-related
++programs, macro packages, and fonts that are free software, including
++support for many languages around the world."
