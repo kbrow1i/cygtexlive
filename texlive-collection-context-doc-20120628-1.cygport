@@ -1,0 +1,10 @@
+TEXLIVE_DOC_PKGS="context context-account context-bnf context-chromato
+	context-construction-plan context-degrade context-filter
+	context-fixme context-french context-fullpage context-games
+	context-gantt context-gnuplot context-letter context-lettrine
+	context-lilypond context-mathsets context-notes-zh-cn
+	context-rst context-ruby context-simplefonts
+	context-simpleslides context-typearea context-typescripts
+	context-vim"
+
+inherit texlive
