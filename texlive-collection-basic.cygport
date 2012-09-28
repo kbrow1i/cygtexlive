@@ -1,3 +1,7 @@
+NAME="texlive-collection-basic"
+VERSION=20120628
+RELEASE=2
+
 # texlive.infra: Perl modules required by updmap (tetex)
 # texlive-msg-translations: used only by tlmgrgui (texlive.infra)
 # texlive-scripts: used only by texlive.infra scripts
@@ -21,6 +25,8 @@ texlive_collection_basic_CONTENTS="
 	etc/
 	usr/
 "
+
+REQUIRES="coreutils cygutils dialog ed ghostscript grep sed texlive texlive-collection-documentation-base"
 
 src_install() {
 	cd ${S}
