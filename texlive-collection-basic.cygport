@@ -18,8 +18,6 @@ TEXLIVE_DOC_PKGS="tex texconfig"
 
 SRC_URI="texlive_fix_updmap.sh texlive_generate_fmtutil.sh"
 
-texlive_collection_basic_IGNORE="updmap.cfg"
-
 inherit texlive
 
 PATCH_URI="20120611-1-texmf_cnf.patch"
@@ -29,6 +27,8 @@ texlive_collection_basic_CONTENTS="
 	etc/
 	usr/
 "
+
+texlive_collection_basic_IGNORE="usr/share/texmf-dist/web2c/updmap.cfg"
 
 REQUIRES="coreutils cygutils dialog ed ghostscript grep sed texlive texlive-collection-documentation-base"
 
