@@ -1,3 +1,7 @@
+NAME="texlive-collection-pstricks"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="auto-pst-pdf bclogo makeplot pdftricks psbao
 	pst-2dplot pst-3d pst-3dplot pst-abspos pst-am pst-asr pst-bar
 	pst-barcode pst-bezier pst-blur pst-bspline pst-calendar
@@ -15,5 +19,7 @@ TEXLIVE_TEXMF_PKGS="auto-pst-pdf bclogo makeplot pdftricks psbao
 	pstricks_calcnotes uml vaucanson-g vocaltract"
 
 TEXLIVE_ARCH_PKGS="pst2pdf pedigree-perl"
+
+REQUIRES="texlive-collection-genericrecommended"
 
 inherit texlive
