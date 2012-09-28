@@ -1,0 +1,30 @@
+# texlive.infra: Perl modules required by updmap (tetex)
+# texlive-msg-translations: used only by tlmgrgui (texlive.infra)
+# texlive-scripts: used only by texlive.infra scripts
+# texlive-infra doc: mostly man pages for tlmgr
+TEXLIVE_TEXMF_PKGS="amsfonts bibtex cm dvipdfmx-def dvips enctex etex etex-pkg
+	glyphlist gsftopk ifluatex ifxetex lua-alt-getopt mflogo mfware misc
+	plain texlive.infra hyphen-base hyph-utf8 dehyph-exptl hyphen-german
+	hyphen-greek hyphen-ancientgreek ruhyphen ukrhyph"
+
+TEXLIVE_ARCH_PKGS="dvipdfm dvipdfmx kpathsea luatex makeindex metafont pdftex
+	tetex tex texconfig xdvi"
+
+TEXLIVE_DOC_PKGS="tex texconfig"
+
+inherit texlive
+
+PATCH_URI="20120611-1-texmf_cnf.patch"
+
+texlive_collection_basic_CONTENTS="
+	--exclude=usr/share/texmf-dist/web2c/updmap.cfg
+	etc/
+	usr/
+"
+
+src_install() {
+	cd ${S}
+	texlive_install
+	keepdir /usr/share/texmf-site
+	dobin ${C}/texlive_fix_updmap.sh
+}
