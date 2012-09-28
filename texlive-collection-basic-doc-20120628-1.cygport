@@ -1,0 +1,6 @@
+TEXLIVE_DOC_PKGS="amsfonts bibtex cm dvipdfm dvipdfmx dvips enctex
+	etex etex-pkg gsftopk hyph-utf8 ifluatex ifxetex kpathsea
+	lua-alt-getopt luatex makeindex metafont mflogo mfware pdftex
+	tetex xdvi"
+
+inherit texlive
