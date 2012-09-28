@@ -1,0 +1,8 @@
+TEXLIVE_DOC_PKGS="alnumsec arydshln bibleref bibleref-lds
+	bibleref-mouth bibleref-parse covington dramatist ecltree
+	edfnotes ednotes gb4e gmverse jura juraabbrev juramisc jurarsp
+	ledmac lexikon lineno linguex liturg parallel parrun plari
+	play poemscol qobitree qtree rtklage screenplay sides stage
+	tree-dvips verse xyling"
+
+inherit texlive
