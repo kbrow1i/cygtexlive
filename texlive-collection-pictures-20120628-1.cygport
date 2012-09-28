@@ -1,0 +1,19 @@
+TEXLIVE_TEXMF_PKGS="adjustbox asyfig autoarea bardiag bloques
+	bodegraph bondgraph braids cachepic chemfig combinedgraphics
+	circuitikz curve curve2e curves dcpic diagmac2 doc-pictex
+	dottex dot2texi dratex drs duotenzor eepic epspdf
+	epspdfconversion esk fig4latex gincltex gnuplottex
+	gradientframe grafcet here hvfloat knitting knittingpattern
+	lapdf lpic mathspic miniplot modiagram numericplots pb-diagram
+	petri-nets pgf pgf-blur pgf-soroban pgf-umlsd pgfgantt pgfkeyx
+	pgfmolbio pgfopts pgfplots piano picinpar pict2e pictex
+	pictex2 pinlabel pmgraph prerex productbox randbild randomwalk
+	reotex roundbox rviewport schemabloc swimgraf texdraw tikz-cd
+	tikz-3dplot tikz-dependency tikz-inet tikz-qtree tikz-timing
+	tikzpagenodes tikzpfeile tqft tkz-base tkz-berge tkz-doc
+	tkz-euclide tkz-fct tkz-graph tkz-kiviat tkz-linknodes tkz-orm
+	tkz-tab tsemlines tufte-latex xypic"
+
+TEXLIVE_ARCH_PKGS="cachepic epspdf fig4latex mathspic"
+
+inherit texlive
