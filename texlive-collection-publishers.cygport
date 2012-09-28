@@ -1,3 +1,7 @@
+NAME="texlive-collection-publishers"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex acmconf active-conf
 	adfathesis afthesis aguplus aiaa ametsoc anufinalexam aomart
 	apa apa6 apa6e arsclassica articleingud asaetr ascelike
@@ -15,5 +19,7 @@ TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex acmconf active-conf
 	ucdavisthesis ucthesis uiucthesis umthesis umich-thesis
 	unamthesis ut-thesis uothesis uowthesis uwthesis vancouver
 	york-thesis"
+
+REQUIRES="texlive-collection-latex"
 
 inherit texlive
