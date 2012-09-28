@@ -1,0 +1,3 @@
+TEXLIVE_TEXMF_PKGS="ordinalpt"
+TEXLIVE_DOC_PKGS="ordinalpt"
+inherit texlive
