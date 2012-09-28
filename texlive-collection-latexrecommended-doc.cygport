@@ -1,3 +1,7 @@
+NAME="texlive-collection-latexrecommended-doc"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_DOC_PKGS="anysize beamer booktabs caption cite cmap crop
 	ctable ec eso-pic euler extsizes fancybox fancyref fancyvrb
 	float fontspec fp index jknapltx l3experimental l3kernel
