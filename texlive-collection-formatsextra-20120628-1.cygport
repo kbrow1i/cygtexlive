@@ -1,0 +1,5 @@
+TEXLIVE_TEXMF_PKGS="edmac psizzl startex"
+TEXLIVE_ARCH_PKGS="eplain mltex texsis"
+TEXLIVE_DOC_PKGS="${TEXLIVE_ARCH_PKGS} edmac psizzl startex"
+
+inherit texlive
