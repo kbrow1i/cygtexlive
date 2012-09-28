@@ -1,0 +1,3 @@
+TEXLIVE_TEXMF_PKGS="spanish spanish-mx"
+TEXLIVE_DOC_PKGS="spanish spanish-mx"
+inherit texlive
