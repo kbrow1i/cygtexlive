@@ -1,0 +1,12 @@
+TEXLIVE_TEXMF_PKGS="betababel bgreek cbfonts gfsbaskerville gfsporson
+	greek-inputenc greekdates greektex grverb ibycus-babel ibygrk kerkis
+	levy lgreek lgrx teubner xgreek yannisgr"
+
+TEXLIVE_ARCH_PKGS="mkgrkindex"
+
+TEXLIVE_DOC_PKGS="betababel bgreek cbfonts gfsbaskerville gfsporson
+	greek-inputenc greekdates greektex grverb hyphen-greek
+	ibycus-babel ibygrk kerkis levy lgreek lgrx mkgrkindex teubner
+	xgreek yannisgr"
+
+inherit texlive
