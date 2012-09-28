@@ -1,0 +1,4 @@
+TEXLIVE_TEXMF_PKGS="passivetex xmlplay"
+TEXLIVE_ARCH_PKGS="jadetex tex4ht xmltex"
+TEXLIVE_DOC_PKGS="${TEXLIVE_ARCH_PKGS} xmlplay"
+inherit texlive
