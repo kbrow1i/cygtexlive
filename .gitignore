@@ -1,0 +1,10 @@
+*~
+*-*-*/
+old/
+save/
+*.tar.gz
+*.tar.bz2
+*.tgz
+*.tar.xz
+
+
