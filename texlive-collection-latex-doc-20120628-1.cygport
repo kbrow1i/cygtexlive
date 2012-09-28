@@ -1,0 +1,5 @@
+TEXLIVE_DOC_PKGS="ae amscls amsmath babel babelbib carlisle colortbl
+	fancyhdr fix2col geometry graphics hyperref latex mfnfss
+	natbib oberdiek psnfss pspicture tools"
+
+inherit texlive
