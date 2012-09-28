@@ -1,6 +1,6 @@
 NAME="texlive-collection-basic"
 VERSION=20120628
-RELEASE=2
+RELEASE=3
 
 # texlive.infra: Perl modules required by updmap (tetex)
 # texlive-msg-translations: used only by tlmgrgui (texlive.infra)
@@ -16,7 +16,7 @@ TEXLIVE_ARCH_PKGS="dvipdfm dvipdfmx kpathsea luatex makeindex metafont pdftex
 
 TEXLIVE_DOC_PKGS="tex texconfig"
 
-SRC_URI="texlive_fix_updmap.sh"
+SRC_URI="texlive_fix_updmap.sh texlive_generate_fmtutil.sh"
 
 texlive_collection_basic_IGNORE="updmap.cfg"
 
@@ -37,4 +37,5 @@ src_install() {
 	texlive_install
 	keepdir /usr/share/texmf-site
 	dobin ${S}/texlive_fix_updmap.sh
+	dobin ${S}/texlive_generate_fmtutil.sh
 }
