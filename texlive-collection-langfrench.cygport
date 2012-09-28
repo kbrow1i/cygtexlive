@@ -1,3 +1,7 @@
+NAME="texlive-collection-langfrench"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="aeguill basque-date bib-fr bibleref-french
 	droit-fr facture frenchle frletter impnattypo mafr tabvar
 	tdsfrmath variations"
