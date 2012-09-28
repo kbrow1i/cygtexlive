@@ -1,3 +1,7 @@
+NAME="texlive-collection-langgerman"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="bibleref-german dhua german germbib germkorr hausarbeit-jura r_und_s umlaute"
 
 TEXLIVE_DOC_PKGS="bibleref-german booktabs-de csquotes-de dehyph-exptl
