@@ -1,3 +1,7 @@
+NAME="texlive-collection-langgreek"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="betababel bgreek cbfonts gfsbaskerville gfsporson
 	greek-inputenc greekdates greektex grverb ibycus-babel ibygrk kerkis
 	levy lgreek lgrx teubner xgreek yannisgr"
