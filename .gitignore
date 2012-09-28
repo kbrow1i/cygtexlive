@@ -6,6 +6,4 @@ save/
 *.tar.bz2
 *.tgz
 *.tar.xz
-
-
-build.sh
+/build.sh
