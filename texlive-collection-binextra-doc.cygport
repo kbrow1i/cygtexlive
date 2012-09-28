@@ -1,3 +1,7 @@
+NAME="texlive-collection-binextra-doc"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_DOC_PKGS="a2ping bibtex8 bibtexu bundledoc chktex ctanify
 	ctanupload ctie cweb de-macro detex dvi2tty dvicopy dviljk
 	dvipng dvipos dvisvgm findhyph fragmaster installfont
