@@ -1,0 +1,5 @@
+TEXLIVE_DOC_PKGS="charter cm-super euro euro-ce eurosym fpl lm
+	marvosym mathpazo pxfonts rsfs tex-gyre tex-gyre-math tipa
+	txfonts utopia wasy wasysym"
+
+inherit texlive
