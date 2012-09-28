@@ -1,0 +1,6 @@
+TEXLIVE_TEXMF_PKGS="avantgar bookman charter cm-super cmextra courier
+	euro euro-ce eurosym fpl helvetic lm marvosym mathpazo
+	ncntrsbk palatino pxfonts rsfs symbol tex-gyre tex-gyre-math
+	times tipa txfonts utopia wasy wasysym zapfchan zapfding"
+
+inherit texlive
