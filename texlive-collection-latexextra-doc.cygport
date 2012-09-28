@@ -1,3 +1,7 @@
+NAME="texlive-collection-latexextra-doc"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_DOC_PKGS="2up ESIEEcv HA-prosper Tabbing a0poster a4wide
 	a5comb abstract achemso acronym acroterm addlines adjmulticol
 	adrconv advdate akktex akletter alterqcm altfont amsaddr
