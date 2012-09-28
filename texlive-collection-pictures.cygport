@@ -1,3 +1,7 @@
+NAME="texlive-collection-pictures"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="adjustbox asyfig autoarea bardiag bloques
 	bodegraph bondgraph braids cachepic chemfig combinedgraphics
 	circuitikz curve curve2e curves dcpic diagmac2 doc-pictex
