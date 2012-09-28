@@ -1,0 +1,10 @@
+TEXLIVE_TEXMF_PKGS="ae amscls amsmath babel babelbib carlisle colortbl
+	fancyhdr fix2col geometry graphics hyperref latex latex-fonts
+	latexconfig ltxmisc mfnfss natbib oberdiek pdftex-def pslatex
+	psnfss pspicture tools"
+
+TEXLIVE_ARCH_PKGS="latex-bin mptopdf"
+
+TEXLIVE_DOC_PKGS=${TEXLIVE_ARCH_PKGS}
+
+inherit texlive
