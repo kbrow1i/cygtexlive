@@ -1,7 +1,13 @@
+NAME="texlive-collection-omega"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="antomega lambda mxedruli omega"
 
 TEXLIVE_ARCH_PKGS="aleph omegaware"
 
 TEXLIVE_DOC_PKGS="${TEXLIVE_ARCH_PKGS} antomega mxedruli omega"
+
+REQUIRES="texlive-collection-latex"
 
 inherit texlive
