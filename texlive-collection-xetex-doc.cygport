@@ -1,3 +1,7 @@
+NAME="texlive-collection-xetex-doc"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_DOC_PKGS="arabxetex euenc fixlatvian fontbook fontwrap
 	mathspec philokalia polyglossia realscripts unisugar xecjk
 	xecolor xecyr xeindex xepersian xesearch xetex xetex-itrans
