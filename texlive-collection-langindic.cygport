@@ -1,3 +1,7 @@
+NAME="texlive-collection-langindic"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="bangtex bengali burmese devnag malayalam sanskrit
 	velthuis wnri wnri-latex xetex-devanagari"
 TEXLIVE_ARCH_PKGS="ebong"
