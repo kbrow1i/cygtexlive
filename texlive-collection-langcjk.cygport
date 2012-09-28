@@ -1,6 +1,6 @@
 NAME="texlive-collection-langcjk"
 VERSION=20120628
-RELEASE=1
+RELEASE=3
 
 TEXLIVE_TEXMF_PKGS="adobemapping arphic c90 cjk cjkpunct cns ctex dnp
 	 fonts-tlwg garuda-c90 ipaex japanese japanese-otf
