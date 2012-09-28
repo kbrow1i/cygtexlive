@@ -8,3 +8,4 @@ save/
 *.tar.xz
 /README
 /build.sh
+/TODO

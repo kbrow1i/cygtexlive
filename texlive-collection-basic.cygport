@@ -33,9 +33,24 @@ texlive_collection_basic_IGNORE="usr/share/texmf-dist/web2c/updmap.cfg"
 REQUIRES="coreutils cygutils dialog ed ghostscript grep sed texlive texlive-collection-documentation-base"
 
 src_install() {
+	local texmflocal=/usr/share/texmf-site
 	cd ${S}
 	texlive_install
-	keepdir /usr/share/texmf-site
+	# Imitate make_local_skeleton in TLUtils.pm
+	keepdir \
+	    ${texmflocal}/bibtex/bib/local \
+	    ${texmflocal}/bibtex/bst/local \
+	    ${texmflocal}/doc/local \
+	    ${texmflocal}/dvips/local \
+	    ${texmflocal}/fonts/source/local \
+	    ${texmflocal}/fonts/tfm/local \
+	    ${texmflocal}/fonts/type1/local \
+	    ${texmflocal}/fonts/vf/local \
+	    ${texmflocal}/metapost/local \
+	    ${texmflocal}/tex/latex/local \
+	    ${texmflocal}/tex/plain/local \
+	    ${texmflocal}/tlpkg \
+	    ${texmflocal}/web2c
 	dobin ${S}/texlive_fix_updmap.sh
 	dobin ${S}/texlive_generate_fmtutil.sh
 }
