@@ -1,3 +1,7 @@
+NAME="texlive-collection-langcjk"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="adobemapping arphic c90 cjk cjkpunct cns ctex dnp
 	 fonts-tlwg garuda-c90 ipaex japanese japanese-otf
 	 japanese-otf-uptex japanese-otf-uptex jsclasses luatexja
@@ -10,5 +14,7 @@ TEXLIVE_DOC_PKGS="arphic c90 cjk cjkpunct cjkutils cns ctex fonts-tlwg
 	ipaex japanese japanese-otf japanese-otf-uptex jfontmaps
 	luatexja ptex thailatex uhc uptex wadalab zhmetrics zhnumber
 	zhspacing"
+
+REQUIRES="texlive-collection-documentation-chinese"
 
 inherit texlive
