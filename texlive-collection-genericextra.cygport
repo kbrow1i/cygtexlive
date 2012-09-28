@@ -1,3 +1,7 @@
+NAME="texlive-collection-genericextra"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="abbr abstyles barr bitelist borceux c-pascal
 	chronosys colorsep dinat dirtree dowith eijkhout encxvlna
 	epigram fenixpar fltpoint fntproof gates ifetex iftex insbox
