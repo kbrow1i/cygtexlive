@@ -1,7 +1,13 @@
+NAME="texlive-collection-music"
+VERSION=20120628
+RELEASE=1
+
 TEXLIVE_TEXMF_PKGS="abc figbas gchords gtrcrd guitar harmony musixguit
 	musixtex-fonts songbook"
 
 TEXLIVE_ARCH_PKGS="musixtex pmx m-tx"
+
+REQUIRES="texlive-collection-latex"
 
 inherit texlive
 
