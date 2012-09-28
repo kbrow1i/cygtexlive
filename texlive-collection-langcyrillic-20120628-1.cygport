@@ -1,0 +1,9 @@
+TEXLIVE_TEXMF_PKGS="cmcyr cyrillic cyrplain disser eskd eskdx gost
+	lcyw lh lhcyr russ t2 ukrhyph"
+
+TEXLIVE_ARCH_PKGS="cyrillic-bin"
+
+TEXLIVE_DOC_PKGS="${TEXLIVE_ARCH_PKGS} cmcyr cyrillic disser eskd
+	eskdx gost lcyw lh russ t2 ukrhyph"
+
+inherit texlive
