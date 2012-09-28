@@ -1,0 +1,9 @@
+TEXLIVE_TEXMF_PKGS="arabxetex euenc fixlatvian fontbook fontwrap
+	mathspec philokalia polyglossia realscripts unisugar xecjk
+	xecolor xecyr xeindex xepersian xesearch xetex-def
+	xetex-itrans xetex-pstricks xetexconfig xetexfontinfo xltxtra
+	xunicode"
+
+TEXLIVE_ARCH_PKGS="xetex"
+
+inherit texlive
