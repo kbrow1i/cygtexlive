@@ -1,3 +1,7 @@
+NAME="texlive-collection-bibtexextra-doc"
+VERSION=20120821
+RELEASE=1
+
 TEXLIVE_DOC_PKGS="amsrefs apacite bibarts biber bibexport bibhtml
 	biblatex biblatex-apa biblatex-bwl biblatex-chem
 	biblatex-chicago biblatex-dw biblatex-fiwi biblatex-historian
