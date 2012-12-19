@@ -1,0 +1,15 @@
+TEXLIVE_DOC_PKGS="amsrefs apacite bibarts biber bibexport bibhtml
+	biblatex biblatex-apa biblatex-bwl biblatex-chem
+	biblatex-chicago biblatex-dw biblatex-fiwi biblatex-historian
+	biblatex-ieee biblatex-juradiss biblatex-luh-ipw biblatex-mla
+	biblatex-musuos biblatex-nature biblatex-nejm
+	biblatex-philosophy biblatex-science biblatex-swiss-legal
+	biblist bibtopic bibtopicprefix bibunits breakcites cell
+	chbibref chembst chicago-annote chscite collref custom-bib
+	din1505 dk-bib doipubmed figbib footbib geschichtsfrkl harvard
+	harvmac historische-zeitschrift ijqc inlinebib iopart-num
+	jneurosci jurabib listbib logreq margbib multibib munich
+	notes2bib perception rsc showtags sort-by-letters splitbib
+	uni-wtal-ger urlbst usebib vak xcite"
+
+inherit texlive
