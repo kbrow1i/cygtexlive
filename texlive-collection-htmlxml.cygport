@@ -1,10 +1,10 @@
 NAME="texlive-collection-htmlxml"
-VERSION=20120628
+VERSION=20121130
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="passivetex xmlplay"
+TEXLIVE_TEXMF_PKGS="passivetex"
 TEXLIVE_ARCH_PKGS="jadetex tex4ht xmltex"
-TEXLIVE_DOC_PKGS="${TEXLIVE_ARCH_PKGS} xmlplay"
+TEXLIVE_DOC_PKGS="jadetex tex4ht xmltex"
 
 REQUIRES="texlive-collection-latex texlive-collection-fontsrecommended"
 
