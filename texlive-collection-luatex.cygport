@@ -1,12 +1,12 @@
 NAME="texlive-collection-luatex"
-VERSION=20120628
+VERSION=20121130
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="checkcites chickenize interpreter lua-visual-debug
-	luabibentry luacode luaindex luainputenc lualatex-doc
-	lualatex-math lualibs luamplib luapersian luasseq luatexbase
-	luatextra showhyphens"
+TEXLIVE_TEXMF_PKGS="checkcites chickenize interpreter lua-check-hyphen
+	lua-visual-debug luabibentry luacode luaindex luainputenc
+	lualatex-doc lualatex-math lualibs luamplib luasseq luatexbase
+	luatextra luaxml odsfile showhyphens"
 
-TEXLIVE_ARCH_PKGS="luaotfload"
+TEXLIVE_ARCH_PKGS="luaotfload lua2dox"
 
 inherit texlive
