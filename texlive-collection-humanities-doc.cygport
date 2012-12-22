@@ -1,12 +1,12 @@
 NAME="texlive-collection-humanities-doc"
-VERSION=20120628
+VERSION=20121130
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="alnumsec arydshln bibleref bibleref-lds
 	bibleref-mouth bibleref-parse covington dramatist ecltree
-	edfnotes ednotes gb4e gmverse jura juraabbrev juramisc jurarsp
-	ledmac lexikon lineno linguex liturg parallel parrun plari
-	play poemscol qobitree qtree rtklage screenplay sides stage
-	tree-dvips verse xyling"
+	edfnotes ednotes eledform gb4e gmverse jura juraabbrev
+	juramisc jurarsp ledmac lexikon lineno linguex liturg parallel
+	parrun plari play poemscol poetrytex qobitree qtree rrgtrees
+	rtklage screenplay sides stage tree-dvips verse xyling"
 
 inherit texlive
