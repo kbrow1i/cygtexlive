@@ -1,12 +1,11 @@
 NAME="texlive-collection-langindic"
-VERSION=20120628
+VERSION=20121130
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="bangtex bengali burmese devnag malayalam sanskrit
-	velthuis wnri wnri-latex xetex-devanagari"
-TEXLIVE_ARCH_PKGS="ebong"
+TEXLIVE_TEXMF_PKGS="bangtex bengali burmese devnag sanskrit velthuis
+	wnri wnri-latex xetex-devanagari" TEXLIVE_ARCH_PKGS="ebong"
 
 TEXLIVE_DOC_PKGS="${TEXLIVE_ARCH_PKGS} bangtex bengali burmese
-	malayalam sanskrit velthuis wnri wnri-latex xetex-devanagari"
+sanskrit velthuis wnri wnri-latex xetex-devanagari"
 
 inherit texlive
