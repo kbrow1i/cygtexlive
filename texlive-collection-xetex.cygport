@@ -1,12 +1,12 @@
 NAME="texlive-collection-xetex"
-VERSION=20120628
+VERSION=20121130
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="arabxetex euenc fixlatvian fontbook fontwrap
-	mathspec philokalia polyglossia realscripts unisugar xecjk
-	xecolor xecyr xeindex xepersian xesearch xetex-def
-	xetex-itrans xetex-pstricks xetexconfig xetexfontinfo xltxtra
-	xunicode"
+	mathspec philokalia polyglossia ptext realscripts ucharclasses
+	unisugar xecjk xecolor xecyr xeindex xepersian xesearch
+	xetex-def xetex-itrans xetex-pstricks xetexconfig
+	xetexfontinfo xltxtra xunicode"
 
 TEXLIVE_ARCH_PKGS="xetex"
 
