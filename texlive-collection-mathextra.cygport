@@ -1,8 +1,8 @@
 NAME="texlive-collection-mathextra"
-VERSION=20120628
+VERSION=20121130
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="12many binomexp boldtensors bosisio ccfonts
+TEXLIVE_TEXMF_PKGS="12many binomexp boldtensors bosisio bropd ccfonts
 	commath concmath concrete eqnarray extarrows extpfeil faktor
 	ionumbers isomath mathcomp mattens mhequ multiobjective nath
 	ot-tableau oubraces proba rec-thy shuffle statex statex2
