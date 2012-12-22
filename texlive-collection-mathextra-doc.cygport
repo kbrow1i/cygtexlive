@@ -1,11 +1,11 @@
 NAME="texlive-collection-mathextra-doc"
-VERSION=20120628
+VERSION=20121130
 RELEASE=1
 
-TEXLIVE_DOC_PKGS="12many amstex binomexp boldtensors bosisio ccfonts
-	commath concmath concrete eqnarray extarrows extpfeil faktor
-	ionumbers isomath mathcomp mattens mhequ multiobjective nath
-	ot-tableau oubraces proba rec-thy shuffle statex statex2
+TEXLIVE_DOC_PKGS="12many amstex binomexp boldtensors bosisio bropd
+	ccfonts commath concmath concrete eqnarray extarrows extpfeil
+	faktor ionumbers isomath mathcomp mattens mhequ multiobjective
+	nath ot-tableau oubraces proba rec-thy shuffle statex statex2
 	stmaryrd subsupscripts susy syllogism synproof tablor tensor
 	tex-ewd thmbox turnstile unicode-math venn yhmath ytableau"
 
