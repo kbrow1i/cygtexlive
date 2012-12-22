@@ -1,5 +1,5 @@
 NAME="texlive-collection-music"
-VERSION=20120628
+VERSION=20121130
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="abc figbas gchords gtrcrd guitar harmony musixguit
