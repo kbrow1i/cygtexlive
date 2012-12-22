@@ -1,13 +1,13 @@
 NAME="texlive-collection-langfrench"
-VERSION=20120628
+VERSION=20121130
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="aeguill basque-date bib-fr bibleref-french
-	droit-fr facture frenchle frletter impnattypo mafr tabvar
-	tdsfrmath variations"
+TEXLIVE_TEXMF_PKGS="aeguill basque-book basque-date bib-fr
+	bibleref-french droit-fr facture frenchle frletter impnattypo
+	mafr tabvar tdsfrmath variations"
 
-TEXLIVE_DOC_PKGS="aeguill basque-date bib-fr bibleref-french
-	booktabs-fr droit-fr facture frenchle frletter impnattypo mafr
-	tabvar tdsfrmath variations"
+TEXLIVE_DOC_PKGS="aeguill basque-book basque-date bib-fr
+	bibleref-french booktabs-fr droit-fr facture frenchle frletter
+	impnattypo mafr tabvar tdsfrmath variations"
 
 inherit texlive
