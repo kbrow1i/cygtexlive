@@ -1,5 +1,5 @@
 NAME="texlive-collection-context-doc"
-VERSION=20120628
+VERSION=20121130
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="context context-account context-bnf context-chromato
