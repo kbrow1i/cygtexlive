@@ -1,21 +1,22 @@
 NAME="texlive-collection-pictures-doc"
-VERSION=20120628
+VERSION=20121130
 RELEASE=1
 
-TEXLIVE_DOC_PKGS=" fig4latex mathspic adjustbox asyfig autoarea
-	bardiag bloques bodegraph bondgraph braids cachepic chemfig circuitikz
+TEXLIVE_DOC_PKGS=" fig4latex mathspic asyfig autoarea bardiag bloques
+	bodegraph bondgraph braids cachepic chemfig circuitikz
 	combinedgraphics curve curve2e curves dcpic diagmac2
-	doc-pictex dot2texi dottex dratex drs duotenzor eepic  epspdf
-	epspdfconversion esk gincltex gnuplottex gradientframe grafcet
-	here hvfloat knitting knittingpattern lapdf lpic miniplot
-	modiagram numericplots pb-diagram petri-nets pgf pgf-blur
-	pgf-soroban pgf-umlsd pgfgantt pgfkeyx pgfmolbio pgfopts
-	pgfplots piano picinpar pict2e pictex pinlabel pmgraph prerex
-	productbox randbild randomwalk reotex roundbox rviewport
-	schemabloc swimgraf texdraw tikz-3dplot tikz-cd
-	tikz-dependency tikz-inet tikz-qtree tikz-timing tikzpagenodes
-	tikzpfeile tkz-base tkz-berge tkz-doc tkz-euclide tkz-fct
+	doc-pictex dot2texi dottex dratex drs duotenzor eepic epspdf
+	epspdfconversion esk forest gincltex gnuplottex gradientframe
+	grafcet here hf-tikz hobby hvfloat knitting knittingpattern
+	lapdf lpic miniplot modiagram numericplots pb-diagram
+	petri-nets pgf pgf-blur pgf-soroban pgf-umlsd pgfgantt pgfkeyx
+	pgfmolbio pgfopts pgfplots piano picinpar pict2e pictex
+	pinlabel pmgraph prerex productbox randbild randomwalk reotex
+	roundbox rviewport schemabloc setdeck smartdiagram swimgraf
+	texdraw tikz-3dplot tikz-cd tikz-dependency tikz-inet
+	tikz-qtree tikz-timing tikzpagenodes tikzpfeile tikzposter
+	tikzscale tkz-base tkz-berge tkz-doc tkz-euclide tkz-fct
 	tkz-graph tkz-kiviat tkz-linknodes tkz-orm tkz-tab tqft
-	tufte-latex xypic"
+	tufte-latex venndiagram xypic"
 
 inherit texlive
