@@ -1,14 +1,14 @@
 NAME="texlive-collection-fontsextra-doc"
-VERSION=20120628
+VERSION=20121130
 RELEASE=1
 
 TEXLIVE_DOC_PKGS=" Asana-Math adforn adfsymbols allrunes antiqua antt
 	archaic arev ascii aspectratio astro augie auncial-new aurical
 	b1encoding barcodes baskervald bbding bbm bbm-macros bbold
-	bbold-type1 belleek bera berenisadf blacklettert1 boisik
-	bookhands boondox braille brushscr calligra calligra-type1
-	cantarell carolmin-ps ccicons cfr-lm cherokee cm-lgc
-	cm-unicode cmbright cmll cmpica cmtiup comfortaa
+	bbold-type1 belleek bera berenisadf bguq blacklettert1 boisik
+	bookhands boondox braille brushscr cabin calligra
+	calligra-type1 cantarell carolmin-ps ccicons cfr-lm cherokee
+	cm-lgc cm-unicode cmbright cmll cmpica cmtiup comfortaa
 	concmath-fonts cookingsymbols countriesofeurope courier-scaled
 	cryst cyklop dejavu dice dictsym dingbat doublestroke dozenal
 	droid duerer duerer-latex dutchcal ean ecc eco eiad eiad-ltx
@@ -16,16 +16,17 @@ TEXLIVE_DOC_PKGS=" Asana-Math adforn adfsymbols allrunes antiqua antt
 	fdsymbol feyn fge foekfont fonetika fourier fouriernc
 	frcursive genealogy gentium gfsartemisia gfsbodoni
 	gfscomplutum gfsdidot gfsneohellenic gfssolomos gillcm
-	gnu-freefont gothic greenpoint grotesq hfbright hfoldsty ifsym
-	inconsolata initials iwona jablantile jamtimes junicode
-	kixfont kpfonts kurier lato lfb libertine-legacy libertineotf
-	libris linearA lxfonts ly1 mathabx mathabx-type1 mathdesign
-	mdputu mdsymbol mnsymbol newtx nkarta ocherokee ocr-b
-	ocr-b-outline ogham oinuit oldlatin oldstandard opensans
-	orkhun pacioli paratype phaistos phonetic pigpen poltawski
-	prodint punknova pxtxalfa recycle romande rsfso sansmathaccent
-	sauterfonts semaphor starfont staves stix tapir tengwarscript
-	tfrupee tpslifonts trajan txfontsb universa urwchancal
-	venturisadf wsuipa xits yfonts"
+	gnu-freefont gothic greenpoint grotesq hacm hfbright hfoldsty
+	ifsym inconsolata initials iwona jablantile jamtimes junicode
+	kixfont kpfonts kurier lato lfb libris linearA lxfonts ly1
+	mathabx mathabx-type1 mathdesign mdputu mdsymbol mnsymbol
+	newtx nkarta ocherokee ocr-b ocr-b-outline ogham oinuit
+	oldlatin oldstandard opensans orkhun pacioli paratype phaistos
+	phonetic pigpen poltawski prodint punknova punk punk-latex
+	pxtxalfa quattrocento recycle romande rsfso sansmathaccent
+	sauterfonts schulschriften semaphor sourcecodepro
+	sourcesanspro starfont staves stix superiors tapir
+	tengwarscript tfrupee tpslifonts trajan txfontsb universa
+	urwchancal venturisadf wsuipa xits yfonts"
 
 inherit texlive
