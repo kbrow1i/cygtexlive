@@ -1,15 +1,16 @@
 NAME="texlive-collection-science-doc"
-VERSION=20120628
+VERSION=20121130
 RELEASE=1
 
-TEXLIVE_DOC_PKGS="SIstyle SIunits alg algorithm2e
-	algorithmicx algorithms biocon bpchem bytefield chemarrow
+TEXLIVE_DOC_PKGS="SIstyle SIunits alg algorithm2e algorithmicx
+	algorithms biocon bohr bpchem bytefield chemarrow
 	chemcompounds chemcono chemexec chemmacros chemnum chemstyle
 	clrscode complexity computational-complexity digiconfigs
-	drawstack dyntree eltex engtlc fouridx functan galois gastex
-	gene-logic gu hep hepnames hepparticles hepthesis hepunits
-	karnaugh mhchem miller mychemistry nuc objectz physymb
-	pseudocode sasnrdisplay sciposter sfg siunitx steinmetz
-	struktex t-angles textopo ulqda unitsdef youngtab"
+	drawstack dyntree eltex endiagram engtlc fouridx functan
+	galois gastex gene-logic gu hep hepnames hepparticles
+	hepthesis hepunits karnaugh mhchem miller mychemistry nuc
+	objectz physics physymb pseudocode sasnrdisplay sciposter sfg
+	siunitx steinmetz struktex substances t-angles textopo ulqda
+	unitsdef youngtab"
 
 inherit texlive
