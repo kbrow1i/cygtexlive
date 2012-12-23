@@ -1,6 +1,6 @@
 NAME="texlive-collection-context"
 VERSION=20121130
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="jmn lmextra context-account context-algorithmic
 	context-bnf context-chromato context-construction-plan
