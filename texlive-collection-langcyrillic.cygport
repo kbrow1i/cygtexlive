@@ -1,6 +1,6 @@
 NAME="texlive-collection-langcyrillic"
 VERSION=20121130
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="cmcyr cyrillic cyrplain disser eskd eskdx gost
 	lcyw lh lhcyr russ t2 ukrhyph"
