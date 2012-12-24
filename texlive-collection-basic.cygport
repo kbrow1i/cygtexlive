@@ -1,6 +1,6 @@
 NAME="texlive-collection-basic"
 VERSION=20121130
-RELEASE=1
+RELEASE=2
 
 # texlive.infra: Perl modules required by updmap (tetex)
 # texlive-msg-translations: used only by tlmgrgui (texlive.infra)
@@ -20,7 +20,7 @@ SRC_URI="texlive_fix_updmap.sh texlive_generate_fmtutil.sh"
 
 inherit texlive
 
-PATCH_URI="20120611-1-texmf_cnf.patch"
+PATCH_URI="20120611-1-texmf_cnf.patch 20121130-2-fmtutil_cnf.patch"
 
 texlive_collection_basic_CONTENTS="
 	--exclude=usr/share/texmf-dist/web2c/updmap.cfg
