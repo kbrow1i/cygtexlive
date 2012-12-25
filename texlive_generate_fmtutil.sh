@@ -1,26 +1,36 @@
 #! /bin/bash
 
-# /usr/share/texmf/web2c/fmtutil.cnf may have changed.  We need to
-# incorporate those changes into /etc/texmf/web2c/fmtutil.cnf.  This
-# script attempts to do this; it is called by a suitable
-# texlive-collection-* postinstall script.
+# This script recreates /etc/texmf/web2c/fmtutil.cnf by moving the
+# original one and re-running all "fmtutil-sys --enablefmt" commands
+# from postinstall scripts of installed packges.  It might be needed
+# whenever there is a change in /usr/share/texmf/web2c/fmtutil.cnf,
+# either because of upstream changes or because I've changed it.
 
-# The changes from 2011 to 2012 all involved formats that are built by
-# texlive-collection-langcjk.  So I'll let the current script be run
-# by the postinstall script for the latter.
+# As of this writing (12/25/2012), there have been two such changes.
+# The first was an upstream change from 2011 to 2012 involving formats
+# that are built by texlive-collection-langcjk.  The second was a
+# change made by me in 12/2012 when I realized that all formats ought
+# to be disabled initially.
 
-if [ ! -f /etc/texmf/web2c/fmtutil.cnf ]
+confdir=/etc/texmf/web2c
+if [ -f ${confdir}/fmtutil.cnf ]
 then
-    exit
+    mv -fv ${confdir}/fmtutil.cnf ${confdir}/fmtutil.cnf.bak
 fi
-enabled_fmts=$(/usr/bin/fmtutil-sys --listcfg | grep -v '^#!' | cut -d ' ' -f1)
-disabled_fmts=$(/usr/bin/fmtutil-sys --listcfg | grep '^#!' | cut -d ' ' -f2)
-mv /etc/texmf/web2c/fmtutil.cnf /etc/texmf/web2c/fmtutil.cnf.bak
-for f in ${enabled_fmts}
+for p in $(/usr/bin/cygcheck -cd | grep texlive-collection | cut -d ' ' -f1)
 do
-    /usr/bin/fmtutil-sys --enablefmt $f
-done
-for f in ${disabled_fmts}
-do
-    /usr/bin/fmtutil-sys --disablefmt $f
+    if [ -f /etc/postinstall/${p}.sh ]
+    then
+	script=/etc/postinstall/${p}.sh
+    elif [ -f /etc/postinstall/${p}.sh.done ]
+    then
+	script=/etc/postinstall/${p}.sh.done
+    else
+	script=none
+    fi
+    if [ ${script} != none ]
+    then
+	grep 'fmtutil-sys --enablefmt' ${script} \
+	    | while read line; do ${line}; done
+    fi
 done
