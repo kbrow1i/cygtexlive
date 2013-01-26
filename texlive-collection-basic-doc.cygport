@@ -7,4 +7,6 @@ TEXLIVE_DOC_PKGS="amsfonts bibtex cm dvipdfm dvipdfmx dvips enctex
 	lua-alt-getopt luatex makeindex metafont mflogo mfware pdftex
 	tetex xdvi"
 
+# texlive-scripts: Documentation for install-tl
+
 inherit texlive
