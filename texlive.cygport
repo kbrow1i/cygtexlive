@@ -1,6 +1,6 @@
 NAME="texlive"
 VERSION=20120628
-RELEASE=4
+RELEASE=2
 
 HOMEPAGE="http://www.tug.org/texlive/"
 # SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
@@ -12,6 +12,7 @@ PATCH_URI="
 	20120611-1-dvi2tty_buffer_overrun.patch
 	20120611-1-lacheck_buffer_overrun.patch
 	20120611-1-disdvi_malloc.patch
+	20120628-2-remove_zlib_version_check.patch
 "
 
 DEPEND="clisp
@@ -22,7 +23,7 @@ DEPEND="clisp
 	libiconv
 	libicu-devel
 	libncurses-devel
-	libpng14-devel
+	libpng-devel
 	libpoppler-devel
 	libX11-devel
 	libXaw-devel
