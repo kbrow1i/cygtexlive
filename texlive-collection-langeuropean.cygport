@@ -1,0 +1,24 @@
+NAME="texlive-collection-langeuropean"
+VERSION=2013052620121130
+RELEASE=1
+
+TEXLIVE_TEXMF_PKGS="babel-albanian babel-breton babel-croatian
+	babel-danish babel-dutch babel-estonian babel-finnish
+	babel-friulan babel-hungarian babel-icelandic babel-irish
+	babel-kurmanji babel-latin babel-norsk babel-piedmontese
+	babel-romanian babel-romansh babel-samin babel-scottish
+	babel-slovenian babel-swedish babel-turkish babel-welsh finbib
+	hrlatex lithuanian swebib turkmen"
+
+TEXLIVE_DOC_PKGS="babel-albanian babel-breton babel-croatian
+	babel-danish babel-dutch babel-estonian babel-finnish
+	babel-friulan babel-hungarian babel-icelandic babel-irish
+	babel-kurmanji babel-latin babel-norsk babel-piedmontese
+	babel-romanian babel-romansh babel-samin babel-scottish
+	babel-slovenian babel-swedish babel-turkish babel-welsh
+	hrlatex hyphen-hungarian lithuanian lshort-dutch
+	lshort-finnish lshort-slovenian lshort-turkish swebib turkmen"
+
+inherit texlive
+
+SUMMARY="TeX Live support for several European languages"
