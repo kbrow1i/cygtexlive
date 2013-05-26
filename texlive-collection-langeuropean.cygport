@@ -12,12 +12,12 @@ TEXLIVE_TEXMF_PKGS="babel-albanian babel-breton babel-croatian
 
 TEXLIVE_DOC_PKGS="babel-albanian babel-breton babel-croatian
 	babel-danish babel-dutch babel-estonian babel-finnish
-	babel-friulan babel-hungarian babel-icelandic babel-irish
-	babel-kurmanji babel-latin babel-norsk babel-piedmontese
-	babel-romanian babel-romansh babel-samin babel-scottish
-	babel-slovenian babel-swedish babel-turkish babel-welsh
-	hrlatex hyphen-hungarian lithuanian lshort-dutch
-	lshort-finnish lshort-slovenian lshort-turkish swebib turkmen"
+	babel-friulan babel-icelandic babel-irish babel-kurmanji
+	babel-latin babel-norsk babel-piedmontese babel-romanian
+	babel-romansh babel-samin babel-scottish babel-slovenian
+	babel-swedish babel-turkish babel-welsh hrlatex
+	hyphen-hungarian lithuanian lshort-dutch lshort-finnish
+	lshort-slovenian lshort-turkish swebib turkmen"
 
 inherit texlive
 
