@@ -2,35 +2,14 @@ NAME="texlive-collection-langother"
 VERSION=20130526
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="aramaic-serto
-babel-bahasa
-babel-esperanto
-babel-hebrew
-babel-interlingua
-babel-sorbian
-babel-thai
-babel-vietnamese
-cjhebrew
-ctib
-fonts-tlwg
-vntex"
+TEXLIVE_TEXMF_PKGS="aramaic-serto babel-bahasa babel-esperanto
+	babel-hebrew babel-interlingua babel-sorbian babel-thai
+	babel-vietnamese cjhebrew ctib fonts-tlwg vntex"
 
-TEXLIVE_DOC_PKGS="amsldoc-vn
-aramaic-serto
-babel-bahasa
-babel-esperanto
-babel-hebrew
-babel-interlingua
-babel-sorbian
-babel-thai
-babel-vietnamese
-cjhebrew
-ctib
-fonts-tlwg
-lshort-thai
-lshort-vietnamese
-ntheorem-vn
-vntex"
+TEXLIVE_DOC_PKGS="amsldoc-vn aramaic-serto babel-bahasa
+	babel-esperanto babel-hebrew babel-interlingua babel-sorbian
+	babel-thai cjhebrew ctib fonts-tlwg lshort-thai
+	lshort-vietnamese ntheorem-vn vntex"
 
 inherit texlive
 
