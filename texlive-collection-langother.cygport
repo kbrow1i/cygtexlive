@@ -1,5 +1,5 @@
 NAME="texlive-collection-langother"
-VERSION=20130526
+VERSION=20130529
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="aramaic-serto babel-bahasa babel-esperanto
@@ -14,3 +14,5 @@ TEXLIVE_DOC_PKGS="amsldoc-vn aramaic-serto babel-bahasa
 inherit texlive
 
 SUMMARY="TeX Live support for several languages"
+
+# doc only:  amsldoc-vn lshort-thai lshort-vietnamese ntheorem-vn
