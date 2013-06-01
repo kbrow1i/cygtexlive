@@ -1,24 +1,26 @@
 NAME="texlive-collection-publishers"
-VERSION=20121214
+VERSION=20130529
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex acmconf active-conf
-	adfathesis afthesis aguplus aiaa ametsoc anufinalexam aomart
-	apa apa6 apa6e arsclassica articleingud asaetr ascelike
-	beamer-FUBerlin bgteubner cascadilla chem-journal
-	classicthesis cmpj confproc ebsthesis economic ejpecp elbioimp
-	elsarticle elteikthesis erdc estcpmm fbithesis fcltxdoc gaceta
-	gatech-thesis har2nat hobete icsv ieeepes ijmart imac imsproc
-	imtekda jmlr jpsj kdgdocs kluwer lps macqassign mentis
-	msu-thesis musuos muthesis nature nddiss nih nostarch nrc
-	onrannual opteng philosophersimprint pkuthss powerdot-FUBerlin
-	pracjourn procIAGssymp psu-thesis ptptex resphilosophica
-	revtex revtex4 ryethesis sageep sapthesis scrjrnl seuthesis
-	soton spie stellenbosch suftesi sugconf texilikechaps
-	texilikecover thesis-titlepage-fhac thuthesis toptesi tugboat
-	tugboat-plain tui uaclasses uafthesis ucdavisthesis ucthesis
-	uiucthesis ulthese umich-thesis umthesis unamthesis uothesis
-	uowthesis ut-thesis uspatent uwthesis vancouver york-thesis"
+TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex abntex2 acmconf
+	active-conf adfathesis afthesis aguplus aiaa ametsoc
+	anufinalexam aomart apa apa6 apa6e arsclassica articleingud
+	asaetr ascelike beamer-FUBerlin bgteubner cascadilla
+	chem-journal classicthesis cmpj confproc ebook ebsthesis
+	ejpecp elbioimp elsarticle elteikthesis erdc estcpmm fbithesis
+	fcltxdoc gaceta gatech-thesis har2nat hobete icsv ieeepes
+	ijmart imac imtekda jmlr jpsj kdgdocs kluwer lps matc3
+	matc3mem mentis msu-thesis musuos muthesis nature nddiss nih
+	nostarch nrc onrannual opteng philosophersimprint pkuthss
+	powerdot-FUBerlin pracjourn procIAGssymp proposal psu-thesis
+	ptptex resphilosophica resumecls revtex revtex4 ryethesis
+	sageep sapthesis scrjrnl seuthesis soton spie stellenbosch
+	suftesi sugconf tabriz-thesis texilikechaps texilikecover
+	thesis-titlepage-fhac thuthesis toptesi tugboat tugboat-plain
+	tui uaclasses uadocs uafthesis ucdavisthesis ucthesis
+	uestcthesis uiucredborder uiucthesis ulthese umich-thesis
+	umthesis unamthesis unswcover uothesis uowthesis ut-thesis
+	uspatent uwthesis vancouver xcookybooky york-thesis"
 
 REQUIRES="texlive-collection-latex"
 
