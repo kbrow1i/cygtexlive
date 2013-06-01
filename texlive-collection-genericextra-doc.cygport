@@ -1,11 +1,11 @@
 NAME="texlive-collection-genericextra-doc"
-VERSION=20121130
+VERSION=20130529
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="abbr abstyles barr bitelist borceux c-pascal
 	catcodes chronosys dinat dirtree dowith encxvlna fenixpar
 	fltpoint fntproof gates ifetex iftex insbox langcode lecturer
 	librarian mathdots metatex midnight navigator ofs pdf-trans
-	plainpkg shade systeme texapi upca xlop yax"
+	plainpkg schemata shade systeme texapi upca xlop yax"
 
 inherit texlive
