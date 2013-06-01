@@ -1,5 +1,5 @@
 NAME="texlive-collection-fontsrecommended"
-VERSION=20121130
+VERSION=20130529
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="avantgar bookman charter cm-super cmextra courier
