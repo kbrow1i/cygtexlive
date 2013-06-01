@@ -1,12 +1,12 @@
 NAME="texlive-collection-genericextra"
-VERSION=20121130
+VERSION=20130529
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="abbr abstyles barr bitelist borceux c-pascal
 	catcodes chronosys colorsep dinat dirtree dowith eijkhout
 	encxvlna epigram fenixpar fltpoint fntproof gates ifetex iftex
 	insbox langcode lecturer librarian mathdots metatex midnight
-	multi navigator ofs pdf-trans plainpkg shade systeme
+	navigator ofs pdf-trans plainpkg schemata shade systeme
 	tabto-generic texapi upca xlop yax"
 
 inherit texlive
