@@ -1,33 +1,35 @@
 NAME="texlive-collection-fontsextra"
-VERSION=20121130
+VERSION=20130529
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="Asana-Math adforn adfsymbols allrunes antiqua antt
-	archaic arev ascii aspectratio astro augie auncial-new aurical
-	b1encoding barcodes baskervald bbding bbm bbm-macros bbold
-	bbold-type1 belleek bera berenisadf bguq blacklettert1 boisik
-	bookhands boondox braille brushscr cabin calligra
-	calligra-type1 cantarell carolmin-ps ccicons cfr-lm cherokee
-	cm-lgc cm-unicode cmbright cmll cmpica cmtiup comfortaa
-	concmath-fonts cookingsymbols countriesofeurope courier-scaled
-	cryst cyklop dancers dejavu dice dictsym dingbat doublestroke
-	dozenal droid duerer duerer-latex dutchcal ean ecc eco eiad
-	eiad-ltx electrum elvish epigrafica epsdice esstix esvect
-	eulervm euxm fdsymbol feyn fge foekfont fonetika fourier
-	fouriernc frcursive genealogy gentium gfsartemisia gfsbodoni
-	gfscomplutum gfsdidot gfsneohellenic gfssolomos gillcm
-	gnu-freefont gothic greenpoint grotesq hacm hands hfbright
-	hfoldsty ifsym inconsolata initials iwona jablantile jamtimes
+TEXLIVE_TEXMF_PKGS="Asana-Math adforn adfsymbols aecc allrunes antiqua
+	antt archaic arev ascii-font aspectratio astro augie
+	auncial-new aurical b1encoding barcodes baskervald bbding bbm
+	bbm-macros bbold bbold-type1 belleek bera berenisadf bguq
+	blacklettert1 boisik bookhands boondox braille brushscr cabin
+	calligra calligra-type1 cantarell carolmin-ps ccicons cfr-lm
+	cherokee cm-lgc cm-unicode cmbright cmll cmpica cmtiup
+	comfortaa concmath-fonts cookingsymbols countriesofeurope
+	courier-scaled cryst cyklop dancers dejavu dice dictsym
+	dingbat doublestroke dozenal droid duerer duerer-latex
+	dutchcal ean ebgaramond ecc eco eiad eiad-ltx electrum elvish
+	epigrafica epsdice esstix esvect eulervm euxm fdsymbol feyn
+	fge foekfont fonetika fontawesome fourier fouriernc frcursive
+	genealogy gentium gfsartemisia gfsbodoni gfscomplutum gfsdidot
+	gfsneohellenic gfssolomos gillcm gnu-freefont gothic
+	greenpoint grotesq hacm hands hfbright hfoldsty ifsym
+	inconsolata initials ipaex-type1 iwona jablantile jamtimes
 	junicode kixfont knuthotherfonts kpfonts kurier lato lfb
-	libertine libris linearA lxfonts ly1 mathabx mathabx-type1
-	mathdesign mdputu mdsymbol mnsymbol newtx nkarta ocherokee
-	ocr-b ocr-b-outline ogham oinuit oldlatin oldstandard opensans
-	orkhun pacioli paratype phaistos phonetic pigpen poltawski
-	prodint psafm punk punk-latex punknova pxtxalfa quattrocento
-	recycle romande rsfso sansmathaccent sauter sauterfonts
-	schulschriften semaphor skull sourcecodepro sourcesanspro
-	starfont staves stix superiors tapir tengwarscript tfrupee
-	tpslifonts trajan txfontsb umtypewriter universa urwchancal
-	venturisadf wsuipa xits yfonts"
+	libertine librebaskerville libris linearA lxfonts ly1 mathabx
+	mathabx-type1 mathdesign mdputu mdsymbol mnsymbol newpx newtx
+	nkarta ocherokee ocr-b ocr-b-outline ogham oinuit oldlatin
+	oldstandard opensans orkhun pacioli paratype phaistos phonetic
+	pigpen poltawski prodint punk punk-latex punknova pxtxalfa
+	quattrocento raleway recycle romande rsfso sansmathaccent
+	sansmathfonts sauter sauterfonts schulschriften semaphor skull
+	sourcecodepro sourcesanspro starfont staves stix superiors
+	tapir tengwarscript tfrupee tpslifonts trajan txfontsb
+	umtypewriter universa urwchancal venturisadf wsuipa xits
+	yfonts"
 
 inherit texlive
