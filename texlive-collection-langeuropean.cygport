@@ -1,5 +1,5 @@
 NAME="texlive-collection-langeuropean"
-VERSION=2013052620121130
+VERSION=20130529
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="babel-albanian babel-breton babel-croatian
@@ -22,3 +22,5 @@ TEXLIVE_DOC_PKGS="babel-albanian babel-breton babel-croatian
 inherit texlive
 
 SUMMARY="TeX Live support for several European languages"
+
+# doc only: hyphen-hungarian lshort-dutch lshort-finnish lshort-slovenian lshort-turkish
