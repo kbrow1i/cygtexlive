@@ -1,11 +1,11 @@
 NAME="texlive-collection-basic-doc"
-VERSION=20130126
+VERSION=20130529
 RELEASE=1
 
-TEXLIVE_DOC_PKGS="amsfonts bibtex cm dvipdfm dvipdfmx dvips enctex
-	etex etex-pkg gsftopk hyph-utf8 ifluatex ifxetex kpathsea
+TEXLIVE_DOC_PKGS="amsfonts bibtex cm dvipdfmx dvips enctex etex
+	etex-pkg gsftopk hyph-utf8 ifluatex ifxetex kpathsea
 	lua-alt-getopt luatex makeindex metafont mflogo mfware pdftex
-	tetex xdvi"
+	tetex texlive-common texlive-docindex texlive-en xdvi"
 
 # texlive-scripts: Documentation for install-tl
 
