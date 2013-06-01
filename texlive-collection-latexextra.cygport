@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra"
-VERSION=20121130
+VERSION=20130529
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
@@ -9,130 +9,135 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	answers anyfontsize appendix appendixnumberbeamer apptools
 	arcs arrayjobx assignment attachfile autopdf authoraftertitle
 	autonum background bashful bchart beamer2thesis beameraudience
-	beamerposter beamersubframe beamerthemejltree beamerthemenirma
-	begriff beton bez123 bezos bhcexam bigfoot bigints bizcard
-	blindtext blkarray block blowup boites bold-extra bookest
-	booklet boolexpr bophook boxedminipage boxhandler bracketkey
-	braket breakurl bullcntr bussproofs calcage calctab calculator
-	calrsfs cals calxxxx-yyyy cancel canoniclayout capt-of
-	captcont captdef cases casyl catchfilebetweentags catechis
-	catoptions cbcoptic ccaption cclicenses cd cd-cover cdpbundl
-	cellspace censor changebar changelayout changepage changes
-	chappg chapterfolder chet chextras chkfloat chletter chngcntr
-	chronology circ clefval cleveref clock cmdstring cmsd codedoc
-	codepage collcell collectbox colordoc colorinfo colortab
-	colorwav colourchange combelow combine comma commado comment
-	concprog constants contour cooking cool coollist coolstr
-	coolthms cooltooltips coordsys copyrightbox coseoul
-	counttexruns courseoutline coursepaper coverpage cprotect
-	crbox crossreference csquotes csvsimple csvtools cuisine
-	currfile currvita cutwin cv cweb-latex dashbox dashrule
-	dashundergaps datatool dateiliste datenumber datetime
-	dblfloatfix decimal decorule delim delimtxt diagbox diagnose
-	dichokey dinbrief directory dirtytalk dlfltxb dnaseq docmfp
-	docmute documentation doi dotarrow dotseqn dox dpfloat
+	beamerposter beamersubframe beamertheme-upenn-bc
+	beamerthemejltree beamerthemenirma begriff beton bez123 bezos
+	bhcexam bigfoot bigints bizcard blindtext blkarray block
+	blowup boites bold-extra bookest booklet boolexpr bophook
+	boxedminipage boxhandler bracketkey braket breakurl bullcntr
+	bussproofs bxdpx-beamer calcage calctab calculator calrsfs
+	cals calxxxx-yyyy cancel canoniclayout capt-of captcont
+	captdef cases casyl catchfilebetweentags catechis catoptions
+	cbcoptic ccaption cclicenses cd cd-cover cdpbundl cellspace
+	censor changebar changelayout changepage changes chappg
+	chapterfolder chet chextras chkfloat chletter chngcntr
+	chronology circ classics clefval cleveref clipboard clock
+	cmdstring cmdtrack cmsd codedoc codepage collcell collectbox
+	colordoc colorinfo colortab colorwav colourchange combelow
+	combine comma commado comment concepts concprog constants
+	contour contracard cooking cool coollist coolstr coolthms
+	cooltooltips coordsys copyrightbox coseoul counttexruns
+	courseoutline coursepaper coverpage cprotect crbox
+	crossreference csquotes csvsimple csvtools cuisine currfile
+	currvita cutwin cv cweb-latex dashbox dashrule dashundergaps
+	datatool dateiliste datenumber datetime dblfloatfix decimal
+	decorule delim delimtxt diagbox diagnose dialogl dichokey
+	dinbrief directory dirtytalk dlfltxb dnaseq docmfp docmute
+	documentation doi dotarrow dotseqn download dox dpfloat
 	dprogress drac draftcopy draftwatermark dtk dtxgallery dvdcoll
 	dynblocks ean13isbn easy easy-todo easyfig easylist ebezier
 	ecclesiastic ecv ed edmargin eemeir egplot ellipsis elmath
 	elpres emarks embrac emptypage emulateapj endfloat endheads
 	endnotes engpron engrec enotez enumitem enumitem-zref envbig
 	environ envlab epigraph epiolmec eqell eqlist eqname eqparbox
-	errata esdiff esint esint-type1 etaremune etextools etoc
+	errata esami esdiff esint esint-type1 etaremune etextools etoc
 	etoolbox eukdate europecv everyhook everypage exam examdesign
 	examplep excludeonly exercise exp-testopt expdlist export
-	exsheets extract facsimile fancynum fancypar fancytabs
-	fancytooltips figsize filecontents filedate filehook fileinfo
-	filemod fink finstrut fixfoot fixme fixmetodonotes fjodor
-	flabels flacards flagderiv flashcards flashmovie flipbook
-	flippdf floatflt floatrow flowfram fmp fmtcount fn2end fnbreak
-	fncychap fncylab fnpara fnpct fnumprint foilhtml fontaxes
-	fonttable footmisc footnotebackref footnoterange footnpag
-	forarray foreign forloop formlett formular fragments frame
-	framed frankenstein frege friulan ftcap ftnxtra fullblck
-	fullwidth fundus-calligra fundus-cyr fundus-sueterlin fwlw
-	g-brief gauss gcard gcite genmpage getfiledate ghab ginpenc
-	gitinfo gloss gmdoc gmdoc-enhance gmeometric gmiflink gmutils
-	gmverb graphicx-psmin grfpaste grid gridset guitlogo hanging
-	hardwrap harnon-cv harpoon hc he-she hhtensor histogr hitec
-	hletter hpsdiss hrefhide hvindex hypdvips hyper hypernat
-	hyperref-docsrc hyperxmp hyphenat idxlayout ifmslide ifmtarg
-	ifnextok ifoddpage ifplatform ifthenx image-gallery imakeidx
-	import incgraph inlinedef inputtrc interactiveworkbook
-	interfaces inversepath invoice iso iso10303 isodate isodoc
-	isonums isorot isotope issuulinks iwhdp jlabels jvlisting
-	kantlipsum kerntest keycommand keyreader keystroke keyval2e
-	kix koma-moderncvclassic koma-script-sfs ktv-texdata labbook
-	labelcas labels lastpage latex-tds layouts lazylist lcd lcg
-	leading leaflet leftidx lettre lettrine lewis lhelp libgreek
-	limap linegoal lipsum listing listliketab listofsymbols
-	lkproof lmake locality localloc logbox logical-markup-utils
-	logpap longnamefilelist loops lsc lstaddons ltabptch ltxdockit
-	ltxindex ltxkeys ltxnew ltxtools magaz mailing mailmerge
-	makebarcode makebox makecell makecirc makecmds makedtx
-	makeglos manfnt manuscript marginfix marginnote mathalfa
-	mathastext mathexam maybemath mbenotes mcaption mceinleger
-	mcite mciteplus mdframed media9 meetingmins memexsupp menu
-	menukeys method metre mftinc midpage minibox
-	minipage-marginpar minitoc minted minutes misc209 mla-paper
-	mlist mmap moderncv moderntimeline modref modroman monofill
-	moreenum morefloats morehype moresize moreverb morewrites
-	movie15 mparhack msc msg mslapa mtgreek multenum multibbl
-	multicap multienv multirow mversion mwe mycv mylatexformat nag
-	nameauth namespc ncclatex ncctools needspace nestquot
-	newcommand newfile newlfm newspaper newunicodechar newvbtm
-	newverbs nextpage nfssext-cfr nicefilelist niceframe nicetext
-	nlctdoc noitcrul nolbreaks nomencl nomentbl nonfloat
-	nonumonpart nopageno notes notoccite nowidow ntheorem numname
-	numprint ocgx ocr-latex octavo oldstyle onlyamsmath opcit
-	optional outline outliner outlines overpic pagecolor pagecont
-	pagenote pagerange pageslts paper papercdcase papermas
-	papertex paracol paralist paresse parnotes parselines patch
-	patchcmd pauldoc pawpict pbox pbsheet pdf14 pdfcomment
-	pdfcprot pdfmarginpar pdfscreen pdfslide pdfsync pdfwin pdfx
-	pecha permute petiteannonce philex photo piff pittetd placeins
-	plantslabels plates plweb polyglot polynom polynomial
-	polytable postcards poster-mac ppr-prv preprint prettyref
-	preview printlen probsoln program progress progressbar
-	properties prosper protex protocol psfragx pst-pdf pstool
-	pxgreeks python qcm qstest qsymbols quotchap quoting quotmark
-	ran_toks randtext rccol rcs-multi rcsinfo realboxes recipe
-	recipecard rectopma refcheck refman refstyle regcount
-	regexpatch register regstats relenc relsize repeatindex
-	rjlparshap rlepsf rmpage robustcommand robustindex romanbar
-	romanneg romannum romansh rotfloat rotpages rtkinenc rvwrite
-	sauerj savefnmark savesym savetrees scale scalebar sdrt secdot
-	sectionbox sectsty selectp semantic semioneside sepfootnotes
-	seqsplit serbian-apostrophe serbian-date-lat serbian-def-cyr
-	serbian-lig serbianc sf298 sffms sfmath shadethm shadow
-	shadowtext shapepar shipunov shorttoc show2e showcharinbox
-	showexpl showlabels sidecap sidenotes silence simplecd
-	simplecv simplewick sitem skb skeycommand skeyval slantsc
-	smalltableof smartref snapshot soul spanglish sparklines
-	sphack spot spotcolor spreadtab spverbatim srbook-mem srcltx
-	sseq stack standalone statistik stdclsdv stdpage stex storebox
-	storecmd stringstrings sttools stubs subdepth subeqn
-	subeqnarray subfigmat subfigure subfiles subfloat
-	substitutefont substr supertabular svg svgcolor svn svn-prov
-	svninfo syntax syntrace synttree tabfigures tableaux
-	tablefootnote tablists tabls tabto-ltx tabu tabularborder
-	tabularcalc tabularew tabulary tagging talk tamefloats tcldoc
-	tcolorbox tdclock technics ted termcal termlist tex-label
-	texlogos texmate texments texpower texshade textfit textgreek
-	textmerg textpos theoremref thinsp thmtools threeparttable
-	threeparttablex thumb thumbs thumby ticket timesht titlefoot
+	exsheets exsol extract facsimile factura fancynum fancypar
+	fancytabs fancytooltips figsize filecontents filedate filehook
+	fileinfo filemod fink finstrut fixfoot fixme fixmetodonotes
+	fjodor flabels flacards flagderiv flashcards flashmovie
+	flipbook flippdf floatflt floatrow flowfram fmp fmtcount
+	fn2end fnbreak fncychap fncylab fnpara fnpct fnumprint
+	foilhtml fontaxes fonttable footmisc footnotebackref
+	footnoterange footnpag forarray foreign forloop formlett
+	formular fragments frame framed frankenstein frege ftcap
+	ftnxtra fullblck fullwidth fundus-calligra fundus-cyr
+	fundus-sueterlin fwlw g-brief gauss gcard gcite genmpage
+	getfiledate ginpenc gitinfo gloss gmdoc gmdoc-enhance
+	gmeometric gmiflink gmutils gmverb graphicx-psmin grfpaste
+	grid gridset guitlogo hanging hardwrap harnon-cv harpoon hc
+	he-she hhtensor histogr hitec hletter hpsdiss hrefhide hvindex
+	hypdvips hyper hypernat hyperref-docsrc hyperxmp hyphenat
+	idxlayout ifmslide ifmtarg ifnextok ifoddpage ifplatform
+	ifthenx iitem image-gallery imakeidx import incgraph inlinedef
+	inputtrc interactiveworkbook interfaces inversepath invoice
+	iso iso10303 isodate isodoc isonums isorot isotope issuulinks
+	iwhdp jlabels jvlisting kantlipsum kerntest keycommand
+	keyreader keystroke keyval2e kix koma-moderncvclassic
+	koma-script-sfs ktv-texdata labbook labelcas labels lastpage
+	latex-tds layouts lazylist lcd lcg leading leaflet leftidx
+	lettre lettrine lewis lhelp libgreek limap linegoal lipsum
+	lisp-on-tex listing listliketab listofsymbols lkproof lmake
+	locality localloc logbox logical-markup-utils logpap
+	longnamefilelist loops lsc lstaddons ltablex ltabptch
+	ltxdockit ltxindex ltxkeys ltxnew ltxtools magaz mailing
+	mailmerge makebarcode makebox makecell makecirc makecmds
+	makedtx makeglos mandi manfnt manuscript marginfix marginnote
+	mathalfa mathastext mathexam maybemath mbenotes mcaption
+	mceinleger mcite mciteplus mdframed media9 meetingmins
+	memexsupp memory menu menukeys method metre mftinc midpage
+	minibox minifp minipage-marginpar minitoc minted minutes
+	misc209 mla-paper mlist mmap mnotes moderncv moderntimeline
+	modref modroman monofill moreenum morefloats morehype moresize
+	moreverb morewrites movie15 mparhack msc msg mslapa mtgreek
+	multenum multibbl multicap multienv multiexpand multirow
+	mversion mwe mycv mylatexformat nag nameauth namespc ncclatex
+	ncctools needspace nestquot newcommand newenviron newfile
+	newlfm newspaper newunicodechar newvbtm newverbs nextpage
+	nfssext-cfr nicefilelist niceframe nicetext nlctdoc noconflict
+	noitcrul nolbreaks nomencl nomentbl nonfloat nonumonpart
+	nopageno notes notoccite nowidow ntheorem numberedblock
+	numname numprint ocg-p ocgx ocr-latex octavo oldstyle
+	onlyamsmath opcit optional outline outliner outlines overpic
+	pagecolor pagecont pagenote pagerange pageslts paper
+	papercdcase papermas papertex paracol paralist paresse
+	parnotes parselines patch patchcmd pauldoc pawpict pbox
+	pbsheet pdf14 pdfcomment pdfcprot pdfmarginpar pdfscreen
+	pdfslide pdfsync pdfwin pdfx pecha permute petiteannonce
+	philex photo piff pittetd placeins plantslabels plates plweb
+	polynom polynomial polytable postcards poster-mac ppr-prv
+	preprint prettyref preview printlen probsoln program progress
+	progressbar properties prosper protex protocol psfragx pst-pdf
+	pstool pxgreeks python qcm qstest qsymbols quotchap quoting
+	quotmark ran_toks randtext rccol rcs-multi rcsinfo readarray
+	realboxes recipe recipecard rectopma refcheck refman refstyle
+	regcount regexpatch register regstats relenc relsize
+	repeatindex rjlparshap rlepsf rmpage robustcommand robustindex
+	romanbar romanneg romannum rotfloat rotpages roundbox rterface
+	rtkinenc rvwrite sauerj savefnmark savesym savetrees scale
+	scalebar scalerel sdrt secdot sectionbox sectsty selectp
+	semantic semioneside sepfootnotes seqsplit sf298 sffms sfmath
+	shadethm shadow shadowtext shapepar shipunov shorttoc show2e
+	showcharinbox showdim showexpl showlabels sidecap sidenotes
+	silence simplecd simplecv simplewick sitem skb skdoc
+	skeycommand skeyval skrapport slantsc smalltableof smartref
+	snapshot snotez soul spanglish sparklines sphack spot
+	spotcolor spreadtab spverbatim srbook-mem srcltx sseq stack
+	standalone statistik stdclsdv stdpage stex storebox storecmd
+	stringstrings sttools stubs subdepth subeqn subeqnarray
+	subfigmat subfigure subfiles subfloat substitutefont substr
+	supertabular svg svgcolor svn svn-prov svninfo syntax syntrace
+	synttree tabfigures tableaux tablefootnote tableof tablists
+	tabls tabto-ltx tabu tabularborder tabularcalc tabularew
+	tabulary tagging talk tamefloats tcldoc tcolorbox tdclock
+	technics ted termcal termlist tex-label texlogos texmate
+	texments texpower texshade textfit textgreek textmerg textpos
+	theoremref threadcol thinsp thmtools threeparttable
+	threeparttablex thumb thumbs thumby ticket titlecaps titlefoot
 	titlepic titleref titlesec titling tocbibind tocloft tocvsec2
 	todo todonotes tokenizer toolbox topfloat totcount totpages
-	tram trfsigns trimspaces trivfloat trsym truncate tucv
-	turnthepage twoinone twoup txgreeks type1cm typeface typogrid
-	ucs uebungsblatt umoline underlin undolabl units upmethodology
-	upquote uri ushort uwmslide varindex varsfromjobname varwidth
-	verbasef verbatimbox verbatimcopy verbdef verbments version
-	versions vertbars vhistory vmargin volumes vruler vwcol
-	wallpaper warning warpcol was widetable williams wordlike
-	wrapfig xargs xbmc xcomment xdoc xfor xhfill xifthen xmpincl
-	xnewcommand xoptarg xpatch xpeek xpunctuate xstring xtab
-	xwatermark xytree yafoot yagusylo ydoc yplan zed-csp ziffer
-	zwgetfdate zwpagelayout"
+	trfsigns trimspaces trivfloat trsym truncate tucv turnthepage
+	twoinone twoup txgreeks type1cm typeface typogrid ucs
+	uebungsblatt umoline underlin underoverlap undolabl units
+	upmethodology upquote uri ushort uwmslide varindex
+	varsfromjobname varwidth vdmlisting verbasef verbatimbox
+	verbatimcopy verbdef verbments version versions vertbars
+	vhistory vmargin volumes vruler vwcol wallpaper warning
+	warpcol was widetable williams wordlike wrapfig xargs xbmc
+	xcomment xdoc xfor xhfill xifthen xint xmpincl xnewcommand
+	xoptarg xpatch xpeek xpunctuate xstring xtab xwatermark xytree
+	yafoot yagusylo ydoc yplan zed-csp ziffer zwgetfdate
+	zwpagelayout"
 
 TEXLIVE_ARCH_PKGS="authorindex exceltex glossaries pax perltex
 	splitindex svn-multi vpe"
