@@ -1,20 +1,25 @@
 NAME="texlive-collection-langcjk"
-VERSION=20121130
+VERSION=20130529
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="adobemapping arphic c90 cjk cjkpunct cns ctex dnp
-	 fonts-tlwg garuda-c90 ipaex japanese japanese-otf
+TEXLIVE_TEXMF_PKGS="adobemapping arphic bxbase bxjscls c90 cjk cjk-ko
+	 cjkpunct cns ctex dnp garuda-c90 ipaex japanese japanese-otf
 	 japanese-otf-uptex japanese-otf-uptex jsclasses luatexja
-	 norasi-c90 pxcjkcat thailatex uhc wadalab xpinyin zhmetrics
-	 zhnumber zhspacing"
+	 nanumtype1 norasi-c90 pxbase pxchfon pxcjkcat pxjahyper
+	 pxrubrica uhc wadalab xpinyin zhmetrics zhnumber zhspacing
+	 zxjafbfont zxjafont zxjatype"
 
-TEXLIVE_ARCH_PKGS="cjkutils jfontmaps ptex uptex"
+TEXLIVE_ARCH_PKGS="cjkutils convbkmk jfontmaps ptex ptex2pdf uptex"
 
-TEXLIVE_DOC_PKGS="arphic c90 cjk cjkpunct cjkutils cns ctex fonts-tlwg
-	ipaex japanese japanese-otf japanese-otf-uptex jfontmaps
-	luatexja ptex pxcjkcat thailatex uhc uptex wadalab xpinyin
-	zhmetrics zhnumber zhspacing"
-
-REQUIRES="texlive-collection-documentation-chinese"
+TEXLIVE_DOC_PKGS="arphic bxbase bxjscls c90 cjk cjk-ko cjkpunct
+	cjkutils cns convbkmk ctex ctex-faq ipaex japanese
+	japanese-otf japanese-otf-uptex japanese-otf-uptex jfontmaps
+	jsclasses latex-notes-zh-cn lshort-chinese lshort-japanese
+	lshort-korean luatexja nanumtype1 ptex ptex2pdf pxbase pxchfon
+	pxchfon pxcjkcat pxjahyper pxrubrica texlive-zh-cn uhc uptex
+	wadalab xpinyin zhmetrics zhnumber zhspacing zxjafbfont
+	zxjafont zxjatype"
 
 inherit texlive
+
+# doc only: ctex-faq latex-notes-zh-cn lshort-chinese lshort-japanese lshort-korean
