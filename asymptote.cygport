@@ -1,6 +1,6 @@
 NAME="asymptote"
-VERSION=2.16
-RELEASE=2
+VERSION=2.23
+RELEASE=1
 
 inherit emacs vim
 
@@ -17,7 +17,7 @@ DEPEND="gsl-devel
 	libfftw3-devel
 	libglut-devel
 	libncurses-devel
-	texlive-collection-texinfo
+	texlive-collection-plainextra
 	vim"
 
 MAKEOPTS+=" -j1"
@@ -30,8 +30,8 @@ src_compile() {
 	lndirs
 	cd ${B}
 	cygconf --disable-gc \
-		--with-latex=/usr/share/texmf/tex/latex \
-		--with-context=/usr/share/texmf/tex/context/third
+		--with-latex=/usr/share/texmf-dist/tex/latex \
+		--with-context=/usr/share/texmf-dist/tex/context/third
 	cygmake
 	cygmake -k -C doc
 }
