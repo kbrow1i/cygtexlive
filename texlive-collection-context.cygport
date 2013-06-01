@@ -1,14 +1,15 @@
 NAME="texlive-collection-context"
-VERSION=20121130
-RELEASE=2
+VERSION=20130529
+RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="jmn lmextra context-account context-algorithmic
+TEXLIVE_TEXMF_PKGS="jmn context-account context-algorithmic
 	context-bnf context-chromato context-construction-plan
-	context-degrade context-filter context-fixme context-french
-	context-fullpage context-games context-gantt context-gnuplot
-	context-letter context-lettrine context-lilypond
-	context-mathsets context-notes-zh-cn context-rst context-ruby
-	context-simplefonts context-simpleslides context-typearea
+	context-cyrillicnumbers context-degrade context-filter
+	context-fixme context-french context-fullpage context-games
+	context-gantt context-gnuplot context-letter context-lettrine
+	context-lilypond context-mathsets context-notes-zh-cn
+	context-rst context-ruby context-simplefonts
+	context-simpleslides context-transliterator context-typearea
 	context-typescripts context-vim"
 
 TEXLIVE_ARCH_PKGS="context"
