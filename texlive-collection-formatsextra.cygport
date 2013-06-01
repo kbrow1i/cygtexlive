@@ -1,9 +1,9 @@
 NAME="texlive-collection-formatsextra"
-VERSION=20120628
+VERSION=20130529
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="edmac psizzl startex"
 TEXLIVE_ARCH_PKGS="eplain mltex texsis"
-TEXLIVE_DOC_PKGS="${TEXLIVE_ARCH_PKGS} edmac psizzl startex"
+TEXLIVE_DOC_PKGS="edmac eplain mltex psizzl startex texsis"
 
 inherit texlive
