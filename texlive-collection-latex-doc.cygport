@@ -1,9 +1,10 @@
 NAME="texlive-collection-latex-doc"
-VERSION=20121130
+VERSION=20130529
 RELEASE=1
 
-TEXLIVE_DOC_PKGS="ae amscls amsmath babel babelbib carlisle colortbl
-	fancyhdr fix2col geometry graphics hyperref latex mfnfss
-	natbib oberdiek psnfss pspicture tools"
+TEXLIVE_DOC_PKGS="babel-english ae amscls amsmath babel babelbib
+	carlisle colortbl fancyhdr fix2col geometry graphics hyperref
+	latex latex-fonts mfnfss natbib oberdiek psnfss pspicture
+	tools"
 
 inherit texlive
