@@ -20,14 +20,15 @@ TEXLIVE_TEXMF_PKGS="aichej amsrefs apacite apalike2 beebe bibarts
 	sort-by-letters splitbib uni-wtal-ger uni-wtal-lin usebib vak
 	xcite"
 
-TEXLIVE_ARCH_PKGS="biber bibexport multibibliography urlbst"
+# Removed biber.
+TEXLIVE_ARCH_PKGS="bibexport multibibliography urlbst"
 
 REQUIRES="texlive-collection-latex"
 
 inherit texlive
 
-src_install() {
-	cd ${S}
-	texlive_install
-	dobin ${S}/bin/i386-cygwin/biber.exe
-}
+# src_install() {
+# 	cd ${S}
+# 	texlive_install
+# 	dobin ${S}/bin/i386-cygwin/biber.exe
+# }
