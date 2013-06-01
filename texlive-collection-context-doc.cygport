@@ -1,14 +1,15 @@
 NAME="texlive-collection-context-doc"
-VERSION=20121130
+VERSION=20130529
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="context context-account context-bnf context-chromato
-	context-construction-plan context-degrade context-filter
-	context-fixme context-french context-fullpage context-games
-	context-gantt context-gnuplot context-letter context-lettrine
-	context-lilypond context-mathsets context-notes-zh-cn
-	context-rst context-ruby context-simplefonts
-	context-simpleslides context-typearea context-typescripts
+	context-construction-plan context-cyrillicnumbers
+	context-degrade context-filter context-french context-fullpage
+	context-games context-gantt context-gnuplot context-letter
+	context-lettrine context-lilypond context-mathsets
+	context-notes-zh-cn context-rst context-ruby
+	context-simplefonts context-simpleslides
+	context-transliterator context-typearea context-typescripts
 	context-vim"
 
 inherit texlive
