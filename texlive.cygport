@@ -21,7 +21,7 @@ DEPEND="clisp
 	pkgconfig(cairo)
 	pkgconfig(fontconfig)
 	pkgconfig(freetype2)
-	pkgconfig(harfbuzz)
+	pkgconfig(graphite2)
 	pkgconfig(libpng)
 	pkgconfig(ncurses)
 	pkgconfig(pixman-1)
@@ -35,7 +35,7 @@ DEPEND="clisp
 	pkgconfig(zziplib)
 "
 
-
+# Don't have new enough version of harfbuzz.
 
 
 PKG_NAMES="${PN} libkpathsea6 libkpathsea-devel libptexenc1 libptexenc-devel"
@@ -89,7 +89,7 @@ src_compile() {
 		--with-system-cairo \
 		--with-system-freetype2 --with-freetype2-include=/usr/include \
 		--with-system-gd \
-		--with-system-harfbuzz \
+		--with-system-graphite2 \
 		--with-system-icu \
 		--with-system-libgs \
 		--with-system-libpng \

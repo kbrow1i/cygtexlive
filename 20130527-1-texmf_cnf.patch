@@ -1,7 +1,7 @@
 This needs to be kept in sync with a similar patch for texlive-collection-basic.
 
---- origsrc/texlive-20120525-source/texk/kpathsea/texmf.cnf	2012-05-12 19:34:52.000000000 -0400
-+++ src/texlive-20120525-source/texk/kpathsea/texmf.cnf	2012-05-26 13:53:22.099040900 -0400
+--- origsrc/texlive-20130527-source/texk/kpathsea/texmf.cnf	2013-04-15 12:58:08.000000000 -0400
++++ src/texlive-20130527-source/texk/kpathsea/texmf.cnf	2013-05-27 10:30:49.349725900 -0400
 @@ -51,7 +51,12 @@
  % Redistributors will probably want $SELFAUTODIR/share, i.e., /usr/share.
  % Kpathsea sets SELFAUTOLOC (the directory with the binary),
@@ -14,10 +14,10 @@ This needs to be kept in sync with a similar patch for texlive-collection-basic.
 +%
 +TEXMFROOT = /usr/share
  
- % The tree containing runtime files related to the specific
- % distribution and version.
-@@ -61,25 +66,25 @@ TEXMFMAIN = $TEXMFROOT/texmf
+ % The main tree of distributed packages and programs:
  TEXMFDIST = $TEXMFROOT/texmf-dist
+@@ -61,25 +66,25 @@ TEXMFDIST = $TEXMFROOT/texmf-dist
+ TEXMFMAIN = $TEXMFDIST
  
  % Local additions to the distribution trees.
 -TEXMFLOCAL = $TEXMFROOT/../texmf-local
@@ -39,46 +39,63 @@ This needs to be kept in sync with a similar patch for texlive-collection-basic.
 +TEXMFHOME = ~/.local/share/texmf
  
  % TEXMFVAR, where texconfig/updmap/fmtutil store cached runtime data.
--TEXMFVAR = ~/.texlive2012/texmf-var
+-TEXMFVAR = ~/.texlive2013/texmf-var
 +TEXMFVAR = ~/.cache/texmf
  
  % TEXMFCONFIG, where texconfig/updmap/fmtutil store configuration data.
--TEXMFCONFIG = ~/.texlive2012/texmf-config
+-TEXMFCONFIG = ~/.texlive2013/texmf-config
 +TEXMFCONFIG = ~/.config/texmf
  
- % List all the texmf trees.
- %
-@@ -480,18 +485,25 @@ RUBYINPUTS   = .;$TEXMF/scripts/{$progna
+ % List all the texmf trees. For an explanation of what they are, see the
+ % TeX Live manual.
+@@ -485,30 +490,42 @@ RUBYINPUTS   = .;$TEXMF/scripts/{$progna
  % since we don't want to scatter ../'s throughout the value.  Hence we
- % explicitly list every directory.  Arguably more understandable this
- % way anyway.
-+% 
+ % explicitly list every directory.  Arguably more understandable anyway.
+ %
+-TEXMFCNF = {\
 +% On Cygwin we might have SELFAUTODIR = / instead of /usr, as noted
 +% above (see the definition of TEXMFROOT).  So we also have to search
 +% below SELFAUTODIR/usr; this is harmless if SELFAUTODIR = /usr.
- %
--TEXMFCNF = {\
++%
 +TEXMFCNF = //{\
  $SELFAUTOLOC,\
--$SELFAUTOLOC/share/texmf-local/web2c,$SELFAUTOLOC/share/texmf/web2c,\
--$SELFAUTOLOC/texmf-local/web2c,$SELFAUTOLOC/texmf/web2c,\
-+$SELFAUTOLOC/share/texmf-site/web2c,$SELFAUTOLOC/share/texmf/web2c,\
-+$SELFAUTOLOC/texmf-site/web2c,$SELFAUTOLOC/texmf/web2c,\
+-$SELFAUTOLOC/share/texmf-local/web2c,\
++$SELFAUTOLOC/share/texmf-site/web2c,\
+ $SELFAUTOLOC/share/texmf-dist/web2c,\
+ $SELFAUTOLOC/share/texmf/web2c,\
+-$SELFAUTOLOC/texmf-local/web2c,\
++$SELFAUTOLOC/texmf-site/web2c,\
+ $SELFAUTOLOC/texmf-dist/web2c,\
+ $SELFAUTOLOC/texmf/web2c,\
+ \
  $SELFAUTODIR,\
--$SELFAUTODIR/share/texmf-local/web2c,$SELFAUTODIR/share/texmf/web2c,\
--$SELFAUTODIR/texmf-local/web2c,$SELFAUTODIR/texmf/web2c,\
+-$SELFAUTODIR/share/texmf-local/web2c,\
++$SELFAUTODIR/share/texmf-site/web2c,\
+ $SELFAUTODIR/share/texmf-dist/web2c,\
+ $SELFAUTODIR/share/texmf/web2c,\
+-$SELFAUTODIR/texmf-local/web2c,\
++$SELFAUTODIR/texmf-site/web2c,\
+ $SELFAUTODIR/texmf-dist/web2c,\
+ $SELFAUTODIR/texmf/web2c,\
+ \
 -$SELFAUTOPARENT/../texmf-local/web2c,\
-+$SELFAUTODIR/share/texmf-site/web2c,$SELFAUTODIR/share/texmf/web2c,\
-+$SELFAUTODIR/texmf-site/web2c,$SELFAUTODIR/texmf/web2c,\
 +$SELFAUTODIR/usr,\
-+$SELFAUTODIR/usr/share/texmf-site/web2c,$SELFAUTODIR/usr/share/texmf/web2c,\
-+$SELFAUTODIR/usr/texmf-site/web2c,$SELFAUTODIR/usr/texmf/web2c,\
++$SELFAUTODIR/usr/share/texmf-site/web2c,\
++$SELFAUTODIR/usr/share/texmf-dist/web2c,\
++$SELFAUTODIR/usr/share/texmf/web2c,\
++$SELFAUTODIR/usr/texmf-site/web2c,\
++$SELFAUTODIR/usr/texmf-dist/web2c,\
++$SELFAUTODIR/usr/texmf/web2c,\
++\
 +$SELFAUTOPARENT/../texmf-site/web2c,\
  $SELFAUTOPARENT,\
--$SELFAUTOPARENT/share/texmf-local/web2c,$SELFAUTOPARENT/share/texmf/web2c,\
--$SELFAUTOPARENT/texmf-local/web2c,$SELFAUTOPARENT/texmf/web2c\
-+$SELFAUTOPARENT/share/texmf-site/web2c,$SELFAUTOPARENT/share/texmf/web2c,\
-+$SELFAUTOPARENT/texmf-site/web2c,$SELFAUTOPARENT/texmf/web2c\
+ \
+-$SELFAUTOPARENT/share/texmf-local/web2c,\
++$SELFAUTOPARENT/share/texmf-site/web2c,\
+ $SELFAUTOPARENT/share/texmf-dist/web2c,\
+ $SELFAUTOPARENT/share/texmf/web2c,\
+-$SELFAUTOPARENT/texmf-local/web2c,\
++$SELFAUTOPARENT/texmf-site/web2c,\
+ $SELFAUTOPARENT/texmf-dist/web2c,\
+ $SELFAUTOPARENT/texmf/web2c\
  }
- %
- % For reference, here is the old brace-using definition:
