@@ -1,46 +1,57 @@
 NAME="texlive-collection-basic"
-VERSION=20130126
+VERSION=20130529
 RELEASE=1
 
 # texlive.infra: Perl modules required by updmap (tetex)
 # texlive-msg-translations: used only by tlmgrgui (texlive.infra)
 # texlive-infra doc: mostly man pages for tlmgr
 # texlive-scripts: we only need rungs
-TEXLIVE_TEXMF_PKGS="amsfonts bibtex cm dvipdfmx-def dvips enctex etex etex-pkg
-	glyphlist gsftopk ifluatex ifxetex lua-alt-getopt mflogo mfware misc
-	plain texlive.infra hyphen-base hyph-utf8 dehyph-exptl hyphen-german
-	hyphen-greek hyphen-ancientgreek ruhyphen ukrhyph"
 
-TEXLIVE_ARCH_PKGS="dvipdfm dvipdfmx kpathsea luatex makeindex metafont pdftex
+TEXLIVE_TEXMF_PKGS="amsfonts bibtex cm dvipdfmx-def dvips enctex etex
+	etex-pkg glyphlist gsftopk hyph-utf8 hyphen-base ifluatex
+	ifxetex lua-alt-getopt mflogo mfware misc plain texlive.infra
+	texlive-docindex"
+
+# As of TL13, the nontrivial hyphenation packages were moved to
+# language-specific collections.  This causes failures building
+# formats, maybe because I don't do the equivalent of what tlmgr does
+# with respect to language setup.  So I'm keeping them here.
+
+TEXLIVE_TEXMF_PKGS+=" dehyph-exptl hyphen-ancientgreek hyphen-german
+	hyphen-greek ruhyphen ukrhyph"
+
+TEXLIVE_ARCH_PKGS="dvipdfmx kpathsea luatex makeindex metafont pdftex
 	tetex tex texconfig texlive-scripts xdvi"
 
 TEXLIVE_DOC_PKGS="tex texconfig"
 
-SRC_URI="texlive_fix_updmap.sh texlive_generate_fmtutil.sh"
+SRC_URI="texlive_generate_fmtutil.sh"
 
 inherit texlive
 
 PATCH_URI="
-	20120611-1-texmf_cnf.patch
-	20130126-1-fmtutil_cnf.patch
-	20130126-1-texlive_scripts_only_rungs.patch
+	20130527-1-texmf_cnf.patch
+	20130526-1-fmtutil_cnf.patch
+	20130526-1-texlive_scripts_only_rungs.patch
 "
 
 texlive_collection_basic_CONTENTS="
 	--exclude=usr/share/texmf-dist/web2c/updmap.cfg
 	etc/
 	usr/
+	var/
 "
 
 texlive_collection_basic_IGNORE="usr/share/texmf-dist/web2c/updmap.cfg"
 
-REQUIRES="coreutils cygutils dialog ed ghostscript grep sed texlive texlive-collection-documentation-base"
+REQUIRES="coreutils cygutils dialog ed ghostscript grep sed texlive"
 
 src_install() {
-	local texmflocal=/usr/share/texmf-site
 	cd ${S}
 	texlive_install
+	keepdir /var/lib/texmf /etc/texmf
 	# Imitate make_local_skeleton in TLUtils.pm
+	local texmflocal=/usr/share/texmf-site
 	keepdir \
 	    ${texmflocal}/bibtex/bib/local \
 	    ${texmflocal}/bibtex/bst/local \
@@ -55,6 +66,5 @@ src_install() {
 	    ${texmflocal}/tex/plain/local \
 	    ${texmflocal}/tlpkg \
 	    ${texmflocal}/web2c
-	dobin ${S}/texlive_fix_updmap.sh
 	dobin ${S}/texlive_generate_fmtutil.sh
 }
