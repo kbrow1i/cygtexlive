@@ -1,5 +1,5 @@
 NAME="texlive-collection-langenglish"
-VERSION=20130526
+VERSION=20130529
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="FAQ-en MemoirChapStyles Type1fonts amslatex-primer
@@ -17,3 +17,5 @@ TEXLIVE_DOC_PKGS="FAQ-en MemoirChapStyles Type1fonts amslatex-primer
 	xetexref"
 
 inherit texlive
+
+# doc only: FAQ-en MemoirChapStyles Type1fonts amslatex-primer 	around-the-bend ascii-chart components-of-TeX comprehensive dtxtut first-latex-doc gentle guide-to-latex happy4th impatient intro-scientific knuth l2tabu-english latex-brochure latex-course latex-doc-ptr latex-graphics-companion latex-veryshortguide latex-web-companion latex2e-help-texinfo latex4wp latexcheat latexfileinfo-pkgs lshort-english macros2e math-e mathmode memdesign metafont-beginners metapost-examples mil3 patgen2-tutorial pictexsum plain-doc presentations-en pstricks-examples-en simplified-latex svg-inkscape tabulars-e tamethebeast tds tex-font-errors-cheatsheet tex-overview tex-refs texbytopic titlepages tlc2 visualfaq webguide xetexref
