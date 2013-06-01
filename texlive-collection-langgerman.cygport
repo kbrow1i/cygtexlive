@@ -1,11 +1,26 @@
 NAME="texlive-collection-langgerman"
-VERSION=20120628
+VERSION=20130529
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="bibleref-german dhua german germbib germkorr hausarbeit-jura r_und_s umlaute"
+TEXLIVE_TEXMF_PKGS="babel-german bibleref-german dhua german germbib
+	  germkorr hausarbeit-jura r_und_s umlaute"
 
-TEXLIVE_DOC_PKGS="bibleref-german booktabs-de csquotes-de dehyph-exptl
-	dhua etoolbox-de geometry-de german germbib germkorr
-	hausarbeit-jura microtype-de r_und_s tipa-de umlaute"
+# I'm omitting dehyph-exptl and hyphen-german; see the comment in
+# texlive-collection-basic.cygport.
+
+TEXLIVE_DOC_PKGS="babel-german bibleref-german booktabs-de csquotes-de
+	dehyph-exptl dhua etoolbox-de einfuehrung fifinddo-info
+	geometry-de german germbib germkorr hausarbeit-jura
+	koma-script-examples l2picfaq l2tabu latex-bib-ex
+	latex-referenz latex-tabellen lshort-german microtype-de
+	lualatex-doc-de presentations pstricks-examples r_und_s
+	templates-fenn templates-sommer texlive-de tipa-de
+	translation-arsclassica-de translation-biblatex-de
+	translation-chemsym-de translation-ecv-de
+	translation-enumitem-de translation-europecv-de
+	translation-filecontents-de translation-moreverb-de voss-de
+	umlaute"
 
 inherit texlive
+
+# doc only: booktabs-de csquotes-de einfuehrung etoolbox-de fifinddo-info geometry-de koma-script-examples l2picfaq l2tabu latex-bib-ex latex-referenz latex-tabellen lshort-german lualatex-doc-de microtype-de presentations pstricks-examples templates-fenn templates-sommer texlive-de tipa-de translation-arsclassica-de translation-biblatex-de translation-chemsym-de translation-ecv-de translation-enumitem-de translation-europecv-de translation-filecontents-de translation-moreverb-de voss-de
