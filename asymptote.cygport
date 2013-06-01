@@ -11,12 +11,15 @@ PATCH_URI="
 	mirror://portage/media-gfx/${PN}/files/${PN}-2.15-info.patch
 	asymptote-2.16-pdfviewer.patch"
 
-DEPEND="gsl-devel
-	libGL-devel
-	libGLU-devel
-	libfftw3-devel
+# Need genericrecommended for epsf.tex; need plainextra for texinfo.
+
+DEPEND="pkgconfig(gsl)
+	pkgconfig(gl)
+	pkgconfig(glu)
+	pkgconfig(fftw3)
 	libglut-devel
-	libncurses-devel
+	pkgconfig(ncurses)
+	texlive-collection-genericrecommended
 	texlive-collection-plainextra
 	vim"
 
