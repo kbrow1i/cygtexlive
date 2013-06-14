@@ -1,9 +1,12 @@
 NAME="texlive-collection-bibtexextra"
 VERSION=20130529
-RELEASE=1
+RELEASE=2
+
+# Until Perl gets updated so that I can build biber-1.6, I have to
+# ship biblatex-2.5.
 
 TEXLIVE_TEXMF_PKGS="aichej amsrefs apacite apalike2 beebe bibarts
-	bibhtml bibhtml biblatex biblatex-apa biblatex-bwl
+	bibhtml bibhtml biblatex-apa biblatex-bwl
 	biblatex-caspervector biblatex-chem biblatex-chicago
 	biblatex-dw biblatex-fiwi biblatex-gost biblatex-historian
 	biblatex-ieee biblatex-juradiss biblatex-luh-ipw biblatex-mla
@@ -20,15 +23,12 @@ TEXLIVE_TEXMF_PKGS="aichej amsrefs apacite apalike2 beebe bibarts
 	sort-by-letters splitbib uni-wtal-ger uni-wtal-lin usebib vak
 	xcite"
 
-# Removed biber.
+# biber is being packaged separately
 TEXLIVE_ARCH_PKGS="bibexport multibibliography urlbst"
 
-REQUIRES="texlive-collection-latex"
+REQUIRES="biber texlive-collection-latex"
 
 inherit texlive
 
-# src_install() {
-# 	cd ${S}
-# 	texlive_install
-# 	dobin ${S}/bin/i386-cygwin/biber.exe
-# }
+SRC_URI+=" biblatex-2.5.tar.xz"
+TEXLIVE_TEXMF_PKGS+=" biblatex"
