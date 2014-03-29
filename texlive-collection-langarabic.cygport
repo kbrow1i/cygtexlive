@@ -1,12 +1,12 @@
 NAME="texlive-collection-langarabic"
-VERSION=20130529
+VERSION=20140328
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="amiri arabi arabtex bidi ghab imsproc persian-bib
-	 persian-modern tram"
+	 persian-modern simurgh tram"
 
 TEXLIVE_DOC_PKGS="amiri arabi arabtex bidi ghab imsproc lshort-persian
-	persian-bib persian-modern tram"
+	persian-bib persian-modern simurgh tram"
 
 inherit texlive
 
