@@ -1,25 +1,27 @@
 NAME="texlive-collection-pictures"
-VERSION=20130529
+VERSION=20140328
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="asyfig autoarea bardiag bloques bodegraph
-	bondgraph braids bxeepic cachepic chemfig combinedgraphics
-	circuitikz curve curve2e curves dcpic diagmac2 doc-pictex
-	dottex dot2texi dratex drs duotenzor eepic epspdf
-	epspdfconversion esk fast-diagram fig4latex flowchart forest
-	gincltex gnuplottex gradientframe grafcet here hf-tikz hobby
-	hvfloat knitting knittingpattern lapdf lpic makeshape mathspic
-	miniplot modiagram numericplots pb-diagram petri-nets pgf
-	pgf-blur pgf-soroban pgf-umlsd pgfgantt pgfkeyx pgfmolbio
-	pgfopts pgfplots piano picinpar pict2e pictex pictex2 pinlabel
-	pmgraph prerex productbox pxpgfmark randbild randomwalk reotex
-	rviewport sa-tikz schemabloc setdeck smartdiagram spath3
-	swimgraf texdraw tikz-cd tikz-3dplot tikz-bayesnet
-	tikz-dependency tikz-inet tikz-qtree tikz-timing tikzinclude
-	tikzmark tikzorbital tikzpagenodes tikzpfeile tikzposter
-	tikzscale tikzsymbols tqft tkz-base tkz-berge tkz-doc
-	tkz-euclide tkz-fct tkz-graph tkz-kiviat tkz-linknodes tkz-orm
-	tkz-tab tsemlines tufte-latex venndiagram xpicture xypic"
+TEXLIVE_TEXMF_PKGS="aobs-tikz askmaps asyfig autoarea bardiag bloques
+	bodegraph bondgraph braids bxeepic cachepic chemfig
+	combinedgraphics circuitikz curve curve2e curves dcpic
+	diagmac2 doc-pictex dottex dot2texi dratex drs duotenzor eepic
+	epspdf epspdfconversion esk fast-diagram fig4latex flowchart
+	forest gincltex gnuplottex gradientframe grafcet graphviz
+	harveyballs here hf-tikz hobby hvfloat knitting
+	knittingpattern lapdf lpic makeshape mathspic miniplot
+	modiagram neuralnetwork numericplots pb-diagram petri-nets pgf
+	pgf-blur pgf-soroban pgf-umlcd pgf-umlsd pgfgantt pgfkeyx
+	pgfmolbio pgfopts pgfplots piano picinpar pict2e pictex
+	pictex2 pinlabel pmgraph prerex productbox pxpgfmark randbild
+	randomwalk reotex rviewport sa-tikz schemabloc setdeck
+	smartdiagram spath3 swimgraf texdraw tikz-cd tikz-3dplot
+	tikz-bayesnet tikz-dependency tikz-inet tikz-opm tikz-qtree
+	tikz-timing tikzinclude tikzmark tikzorbital tikzpagenodes
+	tikzpfeile tikzposter tikzscale tikzsymbols timing-diagrams
+	tqft tkz-base tkz-berge tkz-doc tkz-euclide tkz-fct tkz-graph
+	tkz-kiviat tkz-linknodes tkz-orm tkz-tab tsemlines tufte-latex
+	venndiagram xpicture xypic"
 
 TEXLIVE_ARCH_PKGS="cachepic epspdf fig4latex mathspic"
 
