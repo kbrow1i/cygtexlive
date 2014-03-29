@@ -1,9 +1,10 @@
 NAME="texlive-collection-langgerman"
-VERSION=20130529
+VERSION=20140328
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="babel-german bibleref-german dhua german germbib
-	  germkorr hausarbeit-jura r_und_s umlaute"
+	  germkorr hausarbeit-jura r_und_s udesoftec umlaute
+	  voss-mathcol"
 
 # I'm omitting dehyph-exptl and hyphen-german; see the comment in
 # texlive-collection-basic.cygport.
@@ -18,8 +19,8 @@ TEXLIVE_DOC_PKGS="babel-german bibleref-german booktabs-de csquotes-de
 	translation-arsclassica-de translation-biblatex-de
 	translation-chemsym-de translation-ecv-de
 	translation-enumitem-de translation-europecv-de
-	translation-filecontents-de translation-moreverb-de voss-de
-	umlaute"
+	translation-filecontents-de translation-moreverb-de udesoftec
+	voss-mathcol umlaute"
 
 inherit texlive
 
