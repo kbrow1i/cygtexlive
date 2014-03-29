@@ -1,24 +1,25 @@
 NAME="texlive-collection-bibtexextra"
-VERSION=20130529
+VERSION=20140328
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="aichej amsrefs apacite apalike2 beebe bibarts
-	bibhtml bibhtml biblatex biblatex-apa biblatex-bwl
+TEXLIVE_TEXMF_PKGS="aichej amsrefs apacite apalike2 beebe besjournals
+	bibarts bibhtml bibhtml biblatex biblatex-apa biblatex-bwl
 	biblatex-caspervector biblatex-chem biblatex-chicago
 	biblatex-dw biblatex-fiwi biblatex-gost biblatex-historian
-	biblatex-ieee biblatex-juradiss biblatex-luh-ipw biblatex-mla
-	biblatex-musuos biblatex-nature biblatex-nejm
-	biblatex-philosophy biblatex-phys biblatex-publist
-	biblatex-science biblatex-swiss-legal biblatex-trad biblist
-	bibtopic bibtopicprefix bibunits breakcites cell chbibref
-	chicago chicago-annote chembst chscite collref compactbib
-	custom-bib din1505 dk-bib doipubmed fbs figbib footbib
-	francais-bst geschichtsfrkl harvard harvmac
-	historische-zeitschrift ijqc inlinebib iopart-num jneurosci
-	jurabib ksfh_nat listbib logreq margbib multibib munich
-	notes2bib oscola perception pnas2009 rsc showtags
-	sort-by-letters splitbib uni-wtal-ger uni-wtal-lin usebib vak
-	xcite"
+	biblatex-ieee biblatex-juradiss biblatex-luh-ipw
+	biblatex-manuscripts-philology biblatex-mla biblatex-musuos
+	biblatex-nature biblatex-nejm biblatex-philosophy
+	biblatex-phys biblatex-publist biblatex-science
+	biblatex-source-division biblatex-swiss-legal biblatex-trad
+	biblatex-true-citepages-omit biblist bibtopic bibtopicprefix
+	bibunits breakcites cell chbibref chicago chicago-annote
+	chembst chscite collref compactbib custom-bib din1505 dk-bib
+	doipubmed economic fbs figbib footbib francais-bst
+	geschichtsfrkl harvard harvmac historische-zeitschrift ijqc
+	inlinebib iopart-num jneurosci jurabib ksfh_nat listbib logreq
+	margbib multibib munich notes2bib oscola perception pnas2009
+	rsc showtags sort-by-letters splitbib uni-wtal-ger
+	uni-wtal-lin usebib vak xcite"
 
 TEXLIVE_ARCH_PKGS="biber bibexport multibibliography urlbst"
 
