@@ -1,10 +1,10 @@
 NAME="texlive-collection-langportuguese"
-VERSION=20130529
+VERSION=20140328
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="babel-portuges ordinalpt"
+TEXLIVE_TEXMF_PKGS="babel-portuges cursolatex feupphdteses ordinalpt"
 
-TEXLIVE_DOC_PKGS="babel-portuges beamer-tut-pt cursolatex
+TEXLIVE_DOC_PKGS="babel-portuges beamer-tut-pt cursolatex feupphdteses
 	latexcheat-ptbr lshort-portuguese ordinalpt xypic-tut-pt"
 
 inherit texlive
