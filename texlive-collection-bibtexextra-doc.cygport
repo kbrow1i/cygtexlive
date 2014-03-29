@@ -1,22 +1,24 @@
 NAME="texlive-collection-bibtexextra-doc"
-VERSION=20130529
+VERSION=20140328
 RELEASE=1
 
-TEXLIVE_DOC_PKGS="amsrefs apacite bibarts biber bibexport bibhtml
-	biblatex biblatex-apa biblatex-bwl biblatex-caspervector
-	biblatex-chem biblatex-chicago biblatex-dw biblatex-fiwi
-	biblatex-gost biblatex-historian biblatex-ieee
-	biblatex-juradiss biblatex-luh-ipw biblatex-mla
-	biblatex-musuos biblatex-nature biblatex-nejm
-	biblatex-philosophy biblatex-phys biblatex-publist
-	biblatex-science biblatex-swiss-legal biblatex-trad biblist
-	bibtopic bibtopicprefix bibunits breakcites cell chbibref
-	chembst chicago-annote chscite collref custom-bib din1505
-	dk-bib doipubmed figbib footbib francais-bst geschichtsfrkl
-	harvard harvmac historische-zeitschrift ijqc inlinebib
-	iopart-num jneurosci jurabib listbib logreq margbib multibib
-	multibibliography munich notes2bib oscola perception rsc
-	showtags sort-by-letters splitbib uni-wtal-ger uni-wtal-lin
-	urlbst usebib vak xcite"
+TEXLIVE_DOC_PKGS="amsrefs apacite besjournals bibarts biber bibexport
+	bibhtml biblatex biblatex-apa biblatex-bwl
+	biblatex-caspervector biblatex-chem biblatex-chicago
+	biblatex-dw biblatex-fiwi biblatex-gost biblatex-historian
+	biblatex-ieee biblatex-juradiss biblatex-luh-ipw
+	biblatex-manuscripts-philology biblatex-mla biblatex-musuos
+	biblatex-nature biblatex-nejm biblatex-philosophy
+	biblatex-phys biblatex-publist biblatex-science
+	biblatex-source-division biblatex-swiss-legal biblatex-trad
+	biblatex-true-citepages-omit biblist bibtopic bibtopicprefix
+	bibunits breakcites cell chbibref chembst chicago-annote
+	chscite collref custom-bib din1505 dk-bib doipubmed economic
+	figbib footbib francais-bst geschichtsfrkl harvard harvmac
+	historische-zeitschrift ijqc inlinebib iopart-num jneurosci
+	jurabib listbib logreq margbib multibib multibibliography
+	munich notes2bib oscola perception rsc showtags
+	sort-by-letters splitbib uni-wtal-ger uni-wtal-lin urlbst
+	usebib vak xcite"
 
 inherit texlive
