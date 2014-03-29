@@ -1,24 +1,26 @@
 NAME="texlive-collection-publishers-doc"
-VERSION=20130529
+VERSION=20140328
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="IEEEconf IEEEtran aastex abntex2 acmconf active-conf
 	adfathesis afthesis aguplus aiaa ametsoc anufinalexam aomart
 	apa apa6 apa6e arsclassica articleingud asaetr ascelike
-	beamer-FUBerlin bgteubner cascadilla classicthesis cmpj
-	confproc ebook ebsthesis ejpecp elbioimp elsarticle
-	elteikthesis erdc estcpmm fbithesis fcltxdoc gaceta
-	gatech-thesis har2nat hobete icsv ieeepes ijmart imac imtekda
-	jmlr jpsj kdgdocs kluwer lps matc3 matc3mem mentis msu-thesis
-	musuos muthesis nature nddiss nih nostarch nrc onrannual
-	opteng philosophersimprint pkuthss powerdot-FUBerlin pracjourn
-	procIAGssymp proposal psu-thesis ptptex resumecls
-	resphilosophica revtex revtex4 ryethesis sageep sapthesis
-	scrjrnl seuthesis soton spie stellenbosch suftesi sugconf
-	tabriz-thesis thesis-titlepage-fhac thuthesis toptesi tugboat
-	tugboat-plain tui uaclasses uadocs uafthesis ucdavisthesis
-	ucthesis uestcthesis uiucredborder uiucthesis ulthese
-	umich-thesis umthesis unamthesis unswcover uothesis uowthesis
-	ut-thesis uspatent uwthesis vancouver xcookybooky york-thesis"
+	beamer-FUBerlin bgteubner brandeis-dissertation cascadilla
+	classicthesis cmpj confproc dccpaper ebook ebsthesis ejpecp
+	elbioimp elsarticle elteikthesis erdc estcpmm fbithesis
+	fcltxdoc gaceta gatech-thesis har2nat hobete icsv ieeepes
+	ijmart imac imtekda jmlr jpsj kdgdocs kluwer lps matc3
+	matc3mem mentis msu-thesis musuos muthesis nature nddiss nih
+	nostarch nrc onrannual opteng philosophersimprint pittetd
+	pkuthss powerdot-FUBerlin pracjourn procIAGssymp proposal
+	psu-thesis ptptex resumecls resphilosophica revtex revtex4
+	ryethesis sageep sapthesis scrjrnl seuthesis soton spie
+	sr-vorl stellenbosch suftesi sugconf tabriz-thesis
+	thesis-titlepage-fhac thuthesis toptesi tugboat tugboat-plain
+	tui uaclasses uadocs uafthesis ucdavisthesis ucthesis
+	uestcthesis uiucredborder uiucthesis ulthese umich-thesis
+	umthesis unamthesis unswcover uothesis uowthesis
+	uowthesistitlepage ut-thesis uspatent uwthesis vancouver
+	wsemclassic xcookybooky york-thesis"
 
 inherit texlive
