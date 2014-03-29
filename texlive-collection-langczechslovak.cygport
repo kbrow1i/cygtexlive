@@ -1,12 +1,12 @@
 NAME="texlive-collection-langczechslovak"
-VERSION=20130529
+VERSION=20140328
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="babel-czech babel-slovak cs csbulletin vlna"
+TEXLIVE_TEXMF_PKGS="babel-czech babel-slovak cnbwp cs csbulletin vlna"
 
 TEXLIVE_ARCH_PKGS="cslatex csplain"
 
-TEXLIVE_DOC_PKGS="babel-czech babel-slovak csbulletin cstex
+TEXLIVE_DOC_PKGS="babel-czech babel-slovak cnbwp csbulletin cstex
 	lshort-czech lshort-slovak texlive-cz vlna"
 
 REQUIRES="texlive-collection-latex"
