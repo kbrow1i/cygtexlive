@@ -1,10 +1,11 @@
 NAME="texlive-collection-fontsrecommended"
-VERSION=20130529
+VERSION=20140328
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="avantgar bookman charter cm-super cmextra courier
-	euro euro-ce eurosym fpl helvetic lm lm-math marvosym mathpazo
-	ncntrsbk palatino pxfonts rsfs symbol tex-gyre tex-gyre-math
-	times tipa txfonts utopia wasy wasysym zapfchan zapfding"
+	ec euro euro-ce eurosym fpl helvetic lm lm-math marvosym
+	mathpazo ncntrsbk palatino pxfonts rsfs symbol tex-gyre
+	tex-gyre-math times tipa txfonts utopia wasy wasysym zapfchan
+	zapfding"
 
 inherit texlive
