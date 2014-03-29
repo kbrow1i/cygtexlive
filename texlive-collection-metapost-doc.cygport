@@ -1,12 +1,12 @@
 NAME="texlive-collection-metapost-doc"
-VERSION=20130529
+VERSION=20140328
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="automata bbcard blockdraw_mp bpolynomial cmarrows
 	drv dviincl emp epsincl expressg exteps featpost feynmf
 	feynmp-auto garrigues gmp hatching latexmp metago metaobj
 	metaplot metapost metauml mfpic mfpic4ode mp3d mpattern
-	mpcolornames mpgraphics piechartmp slideshow splines suanpan
-	textpath threeddice"
+	mpcolornames mpgraphics piechartmp repere slideshow splines
+	suanpan textpath threeddice"
 
 inherit texlive
