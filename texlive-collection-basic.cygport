@@ -1,5 +1,5 @@
 NAME="texlive-collection-basic"
-VERSION=20130529
+VERSION=20140328
 RELEASE=1
 
 # texlive.infra: Perl modules required by updmap (tetex)
@@ -9,7 +9,7 @@ RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="amsfonts bibtex cm dvipdfmx-def dvips enctex etex
 	etex-pkg glyphlist gsftopk hyph-utf8 hyphen-base ifluatex
-	ifxetex lua-alt-getopt mflogo mfware misc plain texlive.infra
+	ifxetex lua-alt-getopt mflogo mfware plain texlive.infra
 	texlive-docindex"
 
 # As of TL13, the nontrivial hyphenation packages were moved to
@@ -18,7 +18,7 @@ TEXLIVE_TEXMF_PKGS="amsfonts bibtex cm dvipdfmx-def dvips enctex etex
 # with respect to language setup.  So I'm keeping them here.
 
 TEXLIVE_TEXMF_PKGS+=" dehyph-exptl hyphen-ancientgreek hyphen-german
-	hyphen-greek ruhyphen ukrhyph"
+	hyphen-greek knuth-lib knuth-local ruhyphen ukrhyph"
 
 TEXLIVE_ARCH_PKGS="dvipdfmx kpathsea luatex makeindex metafont pdftex
 	tetex tex texconfig texlive-scripts xdvi"
