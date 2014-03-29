@@ -1,5 +1,5 @@
 NAME="texlive-collection-science-doc"
-VERSION=20130529
+VERSION=20140328
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="SIstyle SIunits alg algorithm2e algorithmicx
@@ -11,6 +11,6 @@ TEXLIVE_DOC_PKGS="SIstyle SIunits alg algorithm2e algorithmicx
 	hepthesis hepunits karnaugh mhchem miller mychemistry nuc
 	objectz physics physymb pseudocode sasnrdisplay sciposter sfg
 	siunitx steinmetz struktex substances t-angles textopo ulqda
-	unitsdef youngtab"
+	unitsdef xymtex youngtab"
 
 inherit texlive
