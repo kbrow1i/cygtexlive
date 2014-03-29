@@ -1,24 +1,27 @@
 NAME="texlive-collection-langcjk"
-VERSION=20130529
+VERSION=20140328
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="adobemapping arphic bxbase bxjscls c90 cjk cjk-ko
-	 cjkpunct cns ctex dnp garuda-c90 ipaex japanese japanese-otf
-	 japanese-otf-uptex japanese-otf-uptex jsclasses luatexja
+TEXLIVE_TEXMF_PKGS="adobemapping arphic bxbase bxcjkjatype bxjscls c90
+	 cjk cjk-ko cjkpunct cns ctex dnp fandol garuda-c90 ipaex
+	 japanese japanese-otf japanese-otf-uptex japanese-otf-uptex
+	 jsclasses kotex-oblivoir kotex-plain kotex-utf luatexja
 	 nanumtype1 norasi-c90 pxbase pxchfon pxcjkcat pxjahyper
-	 pxrubrica uhc wadalab xpinyin zhmetrics zhnumber zhspacing
-	 zxjafbfont zxjafont zxjatype"
+	 pxrubrica uhc wadalab xcjk2uni xpinyin zhmetrics zhnumber
+	 zhspacing zxjafbfont zxjafont zxjatype"
 
-TEXLIVE_ARCH_PKGS="cjkutils convbkmk jfontmaps ptex ptex2pdf uptex"
+TEXLIVE_ARCH_PKGS="cjkutils convbkmk jfontmaps kotex-utils ptex
+	ptex2pdf uptex"
 
-TEXLIVE_DOC_PKGS="arphic bxbase bxjscls c90 cjk cjk-ko cjkpunct
-	cjkutils cns convbkmk ctex ctex-faq ipaex japanese
-	japanese-otf japanese-otf-uptex japanese-otf-uptex jfontmaps
-	jsclasses latex-notes-zh-cn lshort-chinese lshort-japanese
+TEXLIVE_DOC_PKGS="arphic bxbase bxcjkjatype bxjscls c90 cjk cjk-ko
+	cjkpunct cjkutils cns convbkmk ctex ctex-faq fandol ipaex
+	japanese japanese-otf japanese-otf-uptex japanese-otf-uptex
+	jfontmaps jsclasses kotex-oblivoir kotex-plain kotex-utf
+	kotex-utils latex-notes-zh-cn lshort-chinese lshort-japanese
 	lshort-korean luatexja nanumtype1 ptex ptex2pdf pxbase pxchfon
 	pxchfon pxcjkcat pxjahyper pxrubrica texlive-zh-cn uhc uptex
-	wadalab xpinyin zhmetrics zhnumber zhspacing zxjafbfont
-	zxjafont zxjatype"
+	wadalab xcjk2uni xpinyin zhmetrics zhnumber zhspacing
+	zxjafbfont zxjafont zxjatype"
 
 inherit texlive
 
