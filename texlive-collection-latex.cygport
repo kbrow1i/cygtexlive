@@ -1,5 +1,5 @@
 NAME="texlive-collection-latex"
-VERSION=20130529
+VERSION=20140328
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="ae amscls amsmath babel babel-english babelbib
@@ -7,7 +7,7 @@ TEXLIVE_TEXMF_PKGS="ae amscls amsmath babel babel-english babelbib
 	latex latex-fonts latexconfig ltxmisc mfnfss natbib oberdiek
 	pdftex-def pslatex psnfss pspicture tools"
 
-TEXLIVE_ARCH_PKGS="latex-bin mptopdf"
+TEXLIVE_ARCH_PKGS="latex-bin mptopdf url"
 
 TEXLIVE_DOC_PKGS=${TEXLIVE_ARCH_PKGS}
 
