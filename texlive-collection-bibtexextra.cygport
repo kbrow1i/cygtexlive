@@ -1,30 +1,53 @@
 NAME="texlive-collection-bibtexextra"
-VERSION=20120821
+VERSION=20140328
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="aichej amsrefs apacite apalike2 beebe bibarts
-	bibhtml bibhtml biblatex biblatex-apa biblatex-bwl
-	biblatex-chem biblatex-chicago biblatex-dw biblatex-fiwi
-	biblatex-historian biblatex-ieee biblatex-juradiss
-	biblatex-luh-ipw biblatex-mla biblatex-musuos biblatex-nature
-	biblatex-nejm biblatex-philosophy biblatex-science
-	biblatex-swiss-legal biblist bibtopic bibtopicprefix bibunits
-	breakcites cell chbibref chicago chicago-annote chembst
-	chscite collref compactbib custom-bib din1505 dk-bib doipubmed
-	fbs figbib footbib geschichtsfrkl harvard harvmac
-	historische-zeitschrift ijqc inlinebib iopart-num jneurosci
-	jurabib ksfh_nat listbib logreq margbib multibib munich
-	notes2bib perception pnas2009 rsc showtags sort-by-letters
-	splitbib uni-wtal-ger usebib vak xcite"
+TEXLIVE_TEXMF_PKGS="aichej amsrefs apacite apalike2 beebe besjournals
+	bibarts bibhtml bibhtml biblatex-apa biblatex-bwl
+	biblatex-caspervector biblatex-chem biblatex-chicago
+	biblatex-dw biblatex-fiwi biblatex-gost biblatex-historian
+	biblatex-ieee biblatex-juradiss biblatex-luh-ipw
+	biblatex-manuscripts-philology biblatex-mla biblatex-musuos
+	biblatex-nature biblatex-nejm biblatex-philosophy
+	biblatex-phys biblatex-publist biblatex-science
+	biblatex-source-division biblatex-swiss-legal biblatex-trad
+	biblatex-true-citepages-omit biblist bibtopic bibtopicprefix
+	bibunits breakcites cell chbibref chicago chicago-annote
+	chembst chscite collref compactbib custom-bib din1505 dk-bib
+	doipubmed economic fbs figbib footbib francais-bst
+	geschichtsfrkl harvard harvmac historische-zeitschrift ijqc
+	inlinebib iopart-num jneurosci jurabib ksfh_nat listbib logreq
+	margbib multibib munich notes2bib oscola perception pnas2009
+	rsc showtags sort-by-letters splitbib uni-wtal-ger
+	uni-wtal-lin usebib vak xcite"
 
-TEXLIVE_ARCH_PKGS="biber bibexport urlbst"
+TEXLIVE_ARCH_PKGS="bibexport multibibliography urlbst"
 
 REQUIRES="texlive-collection-latex"
 
+# Until perl gets updated so that I can build biber-1.6 as a perl
+# script, I have to ship biblatex-2.5 on x86_64, and I'll use the
+# upstream biber on x86.
+case ${ARCH} in
+    i686)
+	TEXLIVE_ARCH_PKGS+=" biber"
+	TEXLIVE_TEXMF_PKGS+=" biblatex"
+	;;
+    x86_64)
+	REQUIRES+=" biber"
+	SRC_URI="biblatex-2.5.tar.xz"
+	;;
+esac
+
 inherit texlive
 
-src_install() {
-	cd ${S}
-	texlive_install
-	dobin ${S}/bin/i386-cygwin/biber.exe
-}
+case ${ARCH} in
+    i686)
+	src_install() {
+	    cd ${S}
+	    texlive_install
+	    dobin ${S}/bin/i386-cygwin/biber.exe
+	}
+	;;
+esac
+
