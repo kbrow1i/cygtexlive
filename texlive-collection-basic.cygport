@@ -29,11 +29,9 @@ SRC_URI="texlive_generate_fmtutil.sh"
 
 inherit texlive
 
-PATCH_URI="
-	20130527-1-texmf_cnf.patch
-	20130526-1-fmtutil_cnf.patch
-	20130526-1-texlive_scripts_only_rungs.patch
-"
+PATCH_URI="20130527-1-texmf_cnf.patch"
+PATCH_URI+=" 20140328-1-fmtutil_cnf.patch"
+PATCH_URI+=" 20140328-1-texlive_scripts_only_rungs.patch"
 
 texlive_collection_basic_CONTENTS="
 	--exclude=usr/share/texmf-dist/web2c/updmap.cfg

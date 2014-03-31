@@ -1,5 +1,5 @@
---- origsrc/texmf/web2c/fmtutil.cnf	2013-01-10 22:32:17.000000000 -0500
-+++ src/texmf/web2c/fmtutil.cnf	2013-01-27 13:39:28.678713900 -0500
+--- origsrc/texmf-dist/web2c/fmtutil.cnf	2013-11-27 21:21:17.000000000 -0500
++++ src/texmf-dist/web2c/fmtutil.cnf	2014-03-31 14:37:50.341580500 -0400
 @@ -7,6 +7,10 @@
  # tlmgr generate fmtutil -localcfg /some/file to make local additions.
  # See tlmgr --help for more info.
@@ -25,15 +25,15 @@
 +#! amstex pdftex - -translate-file=cp227.tcx *amstex.ini
  #
  # from context:
--cont-en pdftex cont-usr.tex -8bit *cont-en.ini
--cont-en xetex cont-usr.tex -8bit *cont-en.ini
-+#! cont-en pdftex cont-usr.tex -8bit *cont-en.ini
-+#! cont-en xetex cont-usr.tex -8bit *cont-en.ini
- #! cont-de pdftex cont-usr.tex -8bit *cont-de.ini
- #! cont-fr pdftex cont-usr.tex -8bit *cont-fr.ini
- #! cont-it pdftex cont-usr.tex -8bit *cont-it.ini
+-cont-en pdftex cont-usr.tex -8bit *cont-en.mkii
+-cont-en xetex cont-usr.tex -8bit *cont-en.mkii
++#! cont-en pdftex cont-usr.tex -8bit *cont-en.mkii
++#! cont-en xetex cont-usr.tex -8bit *cont-en.mkii
+ #! cont-de pdftex cont-usr.tex -8bit *cont-de.mkii
+ #! cont-fr pdftex cont-usr.tex -8bit *cont-fr.mkii
+ #! cont-it pdftex cont-usr.tex -8bit *cont-it.mkii
 @@ -52,56 +56,56 @@ cont-en xetex cont-usr.tex -8bit *cont-e
- #! cont-ro pdftex cont-usr.tex -8bit *cont-ro.ini
+ #! cont-ro pdftex cont-usr.tex -8bit *cont-ro.mkii
  #
  # from cslatex:
 -cslatex pdftex - -etex cslatex.ini
@@ -44,10 +44,12 @@
  # from csplain:
 -csplain pdftex - -etex -enc csplain-utf8.ini
 -pdfcsplain pdftex - -etex -enc csplain-utf8.ini
+-pdfcsplain xetex - -etex csplain.ini
+-pdfcsplain luatex - -etex csplain.ini
 +#! csplain pdftex - -etex -enc csplain-utf8.ini
 +#! pdfcsplain pdftex - -etex -enc csplain-utf8.ini
- #! pdfcsplain xetex - -etex csplain.ini
- #! pdfcsplain luatex - -etex csplain.ini
++#! pdfcsplain xetex - -etex csplain.ini
++#! pdfcsplain luatex - -etex csplain.ini
  #
  # from eplain:
 -eplain pdftex language.dat -translate-file=cp227.tcx *eplain.ini
@@ -88,9 +90,9 @@
 +#! utf8mex pdftex mexconf.tex -enc *utf8mex.ini
  #
  # from mltex:
--mllatex pdftex language.dat -translate-file=cp227.tcx -mltex mllatex.ini
+-mllatex pdftex language.dat -translate-file=cp227.tcx -mltex *mllatex.ini
 -mltex pdftex - -translate-file=cp227.tcx -mltex mltex.ini
-+#! mllatex pdftex language.dat -translate-file=cp227.tcx -mltex mllatex.ini
++#! mllatex pdftex language.dat -translate-file=cp227.tcx -mltex *mllatex.ini
 +#! mltex pdftex - -translate-file=cp227.tcx -mltex mltex.ini
  #
  # from mptopdf:
