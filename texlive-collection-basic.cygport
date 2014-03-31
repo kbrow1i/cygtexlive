@@ -40,7 +40,7 @@ texlive_collection_basic_CONTENTS="
 	var/
 "
 
-texlive_collection_basic_IGNORE="usr/share/texmf-dist/web2c/updmap.cfg"
+PKG_IGNORE="usr/share/texmf-dist/web2c/updmap.cfg"
 
 REQUIRES="coreutils cygutils dialog ed ghostscript grep sed texlive"
 
