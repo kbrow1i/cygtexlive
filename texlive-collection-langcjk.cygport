@@ -26,3 +26,4 @@ TEXLIVE_DOC_PKGS="arphic bxbase bxcjkjatype bxjscls c90 cjk cjk-ko
 inherit texlive
 
 # doc only: ctex-faq latex-notes-zh-cn lshort-chinese lshort-japanese lshort-korean
+ARCH=noarch
