@@ -26,3 +26,4 @@ REQUIRES="texlive-collection-latex"
 inherit texlive
 
 # doc only: lshort-bulgarian lshort-mongol lshort-russian lshort-ukr mpman-ru pst-eucl-translation-bg texlive-ru texlive-sr
+ARCH=noarch
