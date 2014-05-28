@@ -14,3 +14,4 @@ TEXLIVE_TEXMF_PKGS="alnumsec arydshln bibleref bibleref-lds
 REQUIRES="texlive-collection-latex"
 
 inherit texlive
+ARCH=noarch
