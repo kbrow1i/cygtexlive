@@ -10,3 +10,4 @@ TEXLIVE_DOC_PKGS="abbr abstyles barr bitelist borceux c-pascal
 	upca xlop yax"
 
 inherit texlive
+ARCH=noarch
