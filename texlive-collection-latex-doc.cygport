@@ -8,3 +8,4 @@ TEXLIVE_DOC_PKGS="babel-english ae amscls amsmath babel babelbib
 	tools"
 
 inherit texlive
+ARCH=noarch
