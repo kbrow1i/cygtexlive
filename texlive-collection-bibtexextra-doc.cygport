@@ -22,3 +22,4 @@ TEXLIVE_DOC_PKGS="amsrefs apacite besjournals bibarts biber bibexport
 	usebib vak xcite"
 
 inherit texlive
+ARCH=noarch
