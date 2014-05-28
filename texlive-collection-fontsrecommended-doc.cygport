@@ -7,3 +7,4 @@ TEXLIVE_DOC_PKGS="charter cm-super ec euro euro-ce eurosym fpl lm
 	tipa txfonts utopia wasy wasysym"
 
 inherit texlive
+ARCH=noarch
