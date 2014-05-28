@@ -9,3 +9,4 @@ TEXLIVE_TEXMF_PKGS="avantgar bookman charter cm-super cmextra courier
 	zapfding"
 
 inherit texlive
+ARCH=noarch
