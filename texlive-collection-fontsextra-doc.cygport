@@ -34,3 +34,4 @@ TEXLIVE_DOC_PKGS="Asana-Math accanthis adforn adfsymbols aecc alegreya
 	yfonts zlmtt"
 
 inherit texlive
+ARCH=noarch
