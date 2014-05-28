@@ -16,3 +16,4 @@ TEXLIVE_ARCH_PKGS="amstex"
 REQUIRES="texlive-collection-latex texlive-collection-fontsrecommended"
 
 inherit texlive
+ARCH=noarch
