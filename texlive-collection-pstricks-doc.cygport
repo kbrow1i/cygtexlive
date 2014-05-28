@@ -20,3 +20,4 @@ TEXLIVE_DOC_PKGS="auto-pst-pdf bclogo makeplot pdftricks pdftricks2
 	pstricks-add pstricks_calcnotes uml vaucanson-g vocaltract"
 
 inherit texlive
+ARCH=noarch
