@@ -11,3 +11,4 @@ TEXLIVE_DOC_PKGS="amiri arabi arabtex bidi ghab imsproc lshort-persian
 inherit texlive
 
 # doc only: lshort-persian
+ARCH=noarch
