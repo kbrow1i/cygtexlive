@@ -17,3 +17,4 @@ inherit texlive
 
 # doc only:  gustprog lshort-polish tex-virtual-academy-pl texlive-pl
 
+ARCH=noarch
