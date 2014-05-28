@@ -11,3 +11,4 @@ TEXLIVE_DOC_PKGS="anysize beamer booktabs caption cite cmap crop
 	underscore xcolor xkeyval"
 
 inherit texlive
+ARCH=noarch
