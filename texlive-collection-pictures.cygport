@@ -26,3 +26,4 @@ TEXLIVE_TEXMF_PKGS="aobs-tikz askmaps asyfig autoarea bardiag bloques
 TEXLIVE_ARCH_PKGS="cachepic epspdf fig4latex mathspic"
 
 inherit texlive
+ARCH=noarch
