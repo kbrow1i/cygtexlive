@@ -12,3 +12,4 @@ TEXLIVE_DOC_PKGS="alnumsec arydshln bibleref bibleref-lds
 	xyling"
 
 inherit texlive
+ARCH=noarch
