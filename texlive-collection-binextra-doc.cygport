@@ -14,3 +14,4 @@ TEXLIVE_DOC_PKGS="a2ping adhocfilelist arara bibtex8 bibtexu bundledoc
 	tpic2pdftex typeoutfileinfo web xindy"
 
 inherit texlive
+ARCH=noarch
