@@ -27,3 +27,4 @@ TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex abntex2 acmconf
 REQUIRES="texlive-collection-latex"
 
 inherit texlive
+ARCH=noarch
