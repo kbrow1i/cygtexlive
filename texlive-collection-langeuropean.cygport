@@ -24,3 +24,4 @@ inherit texlive
 SUMMARY="TeX Live support for several European languages"
 
 # doc only: hyphen-hungarian lshort-dutch lshort-finnish lshort-slovenian lshort-turkish
+ARCH=noarch
