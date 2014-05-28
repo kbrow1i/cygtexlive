@@ -12,3 +12,4 @@ TEXLIVE_DOC_PKGS="figflow font-change fontch getoptk graphics-pln
 	plstmary present resumemac treetex varisize xii"
 
 inherit texlive
+ARCH=noarch
