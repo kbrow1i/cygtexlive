@@ -14,3 +14,4 @@ REQUIRES="texlive-collection-latex"
 inherit texlive
 
 # doc only: cstex lshort-czech lshort-slovak texlive-cz
+ARCH=noarch
