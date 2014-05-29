@@ -1,8 +1,8 @@
 NAME="texlive-collection-langeuropean"
-VERSION=20130529
+VERSION=20140523
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="babel-albanian babel-breton babel-croatian
+TEXLIVE_TEXMF_PKGS="armtex babel-albanian babel-breton babel-croatian
 	babel-danish babel-dutch babel-estonian babel-finnish
 	babel-friulan babel-hungarian babel-icelandic babel-irish
 	babel-kurmanji babel-latin babel-norsk babel-piedmontese
@@ -10,7 +10,7 @@ TEXLIVE_TEXMF_PKGS="babel-albanian babel-breton babel-croatian
 	babel-slovenian babel-swedish babel-turkish babel-welsh finbib
 	hrlatex lithuanian swebib turkmen"
 
-TEXLIVE_DOC_PKGS="babel-albanian babel-breton babel-croatian
+TEXLIVE_DOC_PKGS="armtex babel-albanian babel-breton babel-croatian
 	babel-danish babel-dutch babel-estonian babel-finnish
 	babel-friulan babel-icelandic babel-irish babel-kurmanji
 	babel-latin babel-norsk babel-piedmontese babel-romanian
