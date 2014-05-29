@@ -1,5 +1,5 @@
 NAME="texlive-collection-bibtexextra-doc"
-VERSION=20140328
+VERSION=20140523
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="amsrefs apacite besjournals bibarts biber bibexport
