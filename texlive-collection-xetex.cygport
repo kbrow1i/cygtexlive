@@ -1,5 +1,5 @@
 NAME="texlive-collection-xetex"
-VERSION=20130529
+VERSION=20140523
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="arabxetex euenc fixlatvian fontbook fontwrap
