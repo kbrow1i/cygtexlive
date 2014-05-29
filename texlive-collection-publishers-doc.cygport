@@ -1,5 +1,5 @@
 NAME="texlive-collection-publishers-doc"
-VERSION=20140328
+VERSION=20140523
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="IEEEconf IEEEtran aastex abntex2 acmconf active-conf
@@ -14,14 +14,15 @@ TEXLIVE_DOC_PKGS="IEEEconf IEEEtran aastex abntex2 acmconf active-conf
 	nostarch nrc onrannual opteng philosophersimprint pittetd
 	pkuthss powerdot-FUBerlin pracjourn procIAGssymp proposal
 	psu-thesis ptptex resumecls resphilosophica revtex revtex4
-	ryethesis sageep sapthesis scrjrnl seuthesis soton spie
-	sr-vorl stellenbosch suftesi sugconf tabriz-thesis
-	thesis-titlepage-fhac thuthesis toptesi tugboat tugboat-plain
-	tui uaclasses uadocs uafthesis ucdavisthesis ucthesis
-	uestcthesis uiucredborder uiucthesis ulthese umich-thesis
-	umthesis unamthesis unswcover uothesis uowthesis
-	uowthesistitlepage ut-thesis uspatent uwthesis vancouver
-	wsemclassic xcookybooky york-thesis"
+	ryethesis sageep sapthesis scrjrnl schule seuthesis soton spie
+	sr-vorl stellenbosch suftesi sugconf tabriz-thesis thesis-ekf
+	thesis-titlepage-fhac thuthesis toptesi tudscr tugboat
+	tugboat-plain tui uaclasses uadocs uafthesis ucbthesis
+	ucdavisthesis ucthesis uestcthesis uiucredborder uiucthesis
+	ulthese umich-thesis umthesis unamthesis unamth-template
+	unswcover uothesis uowthesis uowthesistitlepage ut-thesis
+	uspatent uwthesis vancouver wsemclassic xcookybooky
+	york-thesis"
 
 inherit texlive
 ARCH=noarch
