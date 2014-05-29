@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra-doc"
-VERSION=20140328
+VERSION=20140523
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
@@ -42,11 +42,11 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	enotez enumitem enumitem-zref envbig environ envlab epigraph
 	epiolmec eqell eqlist eqparbox errata esami esdiff esint
 	esint-type1 etaremune etextools etoc etoolbox eukdate europecv
-	everyhook everypage exam examdesign examplep exceltex
-	excludeonly exercise exp-testopt expdlist export exsheets
-	exsol extract facsimile factura fancynum fancypar fancytabs
-	fancytooltips fifo-stack figsize filecontents filedate
-	filehook fileinfo filemod fink finstrut fixfoot fixme
+	everyhook everypage exam exam-n examdesign example examplep
+	exceltex excludeonly exercise exp-testopt expdlist export
+	exsheets exsol extract facsimile factura fancynum fancypar
+	fancytabs fancytooltips fifo-stack figsize filecontents
+	filedate filehook fileinfo filemod fink finstrut fixfoot fixme
 	fixmetodonotes fjodor flabels flacards flagderiv flashcards
 	flashmovie flipbook flippdf floatflt floatrow flowfram fmp
 	fmtcount fn2end fnbreak fncychap fncylab fnpara fnpct
@@ -106,27 +106,28 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	randtext rccol rcs-multi rcsinfo readarray realboxes recipe
 	recipecard rectopma refcheck refenums reflectgraphics refman
 	refstyle regcount regexpatch register regstats relenc relsize
-	repeatindex rjlparshap rlepsf rmpage robustcommand robustindex
-	romanbar romanneg romannum rotfloat rotpages roundbox rterface
-	rtkinenc rulercompass rvwrite sauerj savefnmark savetrees
-	scale scalebar scalerel scanpages sdrt secdot sectionbox
-	sectsty selectp semantic semioneside sepfootnotes seqsplit
-	sf298 sffms shadethm shadow shadowtext shapepar shipunov
-	shorttoc show2e showcharinbox showdim showexpl showlabels
-	sidecap sidenotes silence simplecd simplecv simplewick sitem
-	skb skdoc skeycommand skeyval skrapport slantsc smalltableof
-	smartref snapshot snotez soul spanglish sparklines sphack
-	splitindex spot spotcolor spreadtab spverbatim srbook-mem
-	srcltx sseq sslides stackengine standalone statistik stdclsdv
-	stdpage stex storebox storecmd stringstrings sttools stubs
-	subdepth subeqn subeqnarray subfigmat subfigure subfiles
-	subfloat substitutefont substr supertabular svg svgcolor svn
-	svn-multi svn-prov svninfo syntax syntrace synttree tabfigures
-	tableaux tablefootnote tableof tablists tabls tabstackengine
-	tabto-ltx tabu tabularborder tabularcalc tabularew tabulary
-	tagging talk tamefloats tcldoc tcolorbox tdclock technics ted
-	termcal termlist tex-label texmate texments texpower texshade
-	textfit textgreek textmerg textpos theoremref thinsp thmtools
+	repeatindex repltext rjlparshap rlepsf rmpage robustcommand
+	robustindex romanbar romanneg romannum rotfloat rotpages
+	roundbox rterface rtkinenc rulercompass rvwrite sauerj
+	savefnmark savetrees scale scalebar scalerel scanpages sdrt
+	secdot sectionbox sectsty seealso selectp semantic semioneside
+	sepfootnotes seqsplit sf298 sffms shadethm shadow shadowtext
+	shapepar shipunov shorttoc show2e showcharinbox showdim
+	showexpl showlabels sidecap sidenotes silence simplecd
+	simplecv simplewick sitem skb skdoc skeycommand skeyval
+	skrapport slantsc smalltableof smartref snapshot snotez soul
+	spanglish sparklines sphack splitindex spot spotcolor
+	spreadtab spverbatim srbook-mem srcltx sseq sslides
+	stackengine standalone statistik stdclsdv stdpage stex
+	storebox storecmd stringstrings sttools stubs subdepth subeqn
+	subeqnarray subfigmat subfigure subfiles subfloat
+	substitutefont substr supertabular svg svgcolor svn svn-multi
+	svn-prov svninfo syntax syntrace synttree tabfigures tableaux
+	tablefootnote tableof tablists tabls tabstackengine tabto-ltx
+	tabu tabularborder tabularcalc tabularew tabulary tagging talk
+	tamefloats tcldoc tcolorbox tdclock technics ted termcal
+	termlist tex-label texmate texments texpower texshade textfit
+	textgreek textmerg textpos theoremref thinsp thmtools
 	threadcol threeparttable threeparttablex thumb thumbs thumby
 	ticket titlecaps titlepic titleref titlesec titling tocbibind
 	tocloft tocvsec2 todo todonotes tokenizer toolbox topfloat
