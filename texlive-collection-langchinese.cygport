@@ -1,0 +1,19 @@
+NAME="texlive-collection-langchinese"
+VERSION=20140328
+RELEASE=1
+
+TEXLIVE_TEXMF_PKGS="arphic cns ctex fandol xpinyin zhmetrics zhnumber
+	zhspacing"
+
+TEXLIVE_ARCH_PKGS=""
+
+TEXLIVE_DOC_PKGS="arphic cns ctex ctex-faq fandol latex-notes-zh-cn
+	lshort-chinese texlive-zh-cn xpinyin zhmetrics zhnumber
+	zhspacing"
+
+REQUIRES="texlive-collection-langcjk"
+
+inherit texlive
+
+# doc only: ctex-faq latex-notes-zh-cn lshort-chinese texlive-zh-cn
+ARCH=noarch
