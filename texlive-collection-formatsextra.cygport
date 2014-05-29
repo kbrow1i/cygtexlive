@@ -1,10 +1,10 @@
 NAME="texlive-collection-formatsextra"
-VERSION=20130529
+VERSION=20140523
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="edmac psizzl startex"
-TEXLIVE_ARCH_PKGS="eplain mltex texsis"
-TEXLIVE_DOC_PKGS="edmac eplain mltex psizzl startex texsis"
+TEXLIVE_ARCH_PKGS="eplain lollipop mltex texsis"
+TEXLIVE_DOC_PKGS="edmac eplain lollipop mltex psizzl startex texsis"
 
 inherit texlive
 ARCH=noarch
