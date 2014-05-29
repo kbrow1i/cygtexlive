@@ -1,5 +1,5 @@
 NAME="texlive-collection-pstricks-doc"
-VERSION=20140328
+VERSION=20140523
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="auto-pst-pdf bclogo makeplot pdftricks pdftricks2
@@ -12,12 +12,13 @@ TEXLIVE_DOC_PKGS="auto-pst-pdf bclogo makeplot pdftricks pdftricks2
 	pst-infixplot pst-intersect pst-jtree pst-knot pst-labo
 	pst-layout pst-lens pst-light3d pst-magneticfield pst-math
 	pst-mirror pst-node pst-ob3d pst-ode pst-optexp pst-optic
-	pst-osci pst-ovl pst-pad pst-pdgr pst-platon pst-plot pst-poly
-	pst-pulley pst-qtree pst-rubans pst-sigsys pst-slpe
-	pst-solarsystem pst-solides3d pst-soroban pst-spectra pst-stru
-	pst-support pst-text pst-thick pst-tools pst-tree pst-tvz
-	pst-uml pst-vectorian pst-vowel pst-vue3d pst2pdf pstricks
-	pstricks-add pstricks_calcnotes uml vaucanson-g vocaltract"
+	pst-osci pst-ovl pst-pad pst-pdgr pst-perspective pst-platon
+	pst-plot pst-poly pst-pulley pst-qtree pst-rubans pst-sigsys
+	pst-slpe pst-solarsystem pst-solides3d pst-soroban pst-spectra
+	pst-stru pst-support pst-text pst-thick pst-tools pst-tree
+	pst-tvz pst-uml pst-vectorian pst-vowel pst-vue3d pst2pdf
+	pstricks pstricks-add pstricks_calcnotes uml vaucanson-g
+	vocaltract"
 
 inherit texlive
 ARCH=noarch
