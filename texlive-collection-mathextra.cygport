@@ -1,5 +1,5 @@
 NAME="texlive-collection-mathextra"
-VERSION=20140328
+VERSION=20140523
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="12many backnaur begriff binomexp boldtensors
@@ -8,8 +8,9 @@ TEXLIVE_TEXMF_PKGS="12many backnaur begriff binomexp boldtensors
 	ionumbers isomath logicproof lplfitch mathcomp mattens mhequ
 	multiobjective natded nath ot-tableau oubraces proba rec-thy
 	ribbonproofs shuffle skmath statex statex2 stmaryrd
-	subsupscripts susy syllogism synproof tablor tensor tex-ewd
-	thmbox turnstile unicode-math venn yhmath ytableau"
+	subsupscripts susy syllogism sympytexpackage synproof tablor
+	tensor tex-ewd thmbox turnstile unicode-math venn yhmath
+	ytableau"
 
 TEXLIVE_ARCH_PKGS="amstex"
 
