@@ -1,10 +1,10 @@
 NAME="texlive-collection-pictures"
-VERSION=20140328
+VERSION=20140523
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="aobs-tikz askmaps asyfig autoarea bardiag bloques
-	bodegraph bondgraph braids bxeepic cachepic chemfig
-	combinedgraphics circuitikz curve curve2e curves dcpic
+TEXLIVE_TEXMF_PKGS="aobs-tikz askmaps asyfig asypictureb autoarea
+	bardiag bloques bodegraph bondgraph braids bxeepic cachepic
+	chemfig combinedgraphics circuitikz curve curve2e curves dcpic
 	diagmac2 doc-pictex dottex dot2texi dratex drs duotenzor eepic
 	epspdf epspdfconversion esk fast-diagram fig4latex flowchart
 	forest gincltex gnuplottex gradientframe grafcet graphviz
@@ -23,7 +23,7 @@ TEXLIVE_TEXMF_PKGS="aobs-tikz askmaps asyfig autoarea bardiag bloques
 	tkz-kiviat tkz-linknodes tkz-orm tkz-tab tsemlines tufte-latex
 	venndiagram xpicture xypic"
 
-TEXLIVE_ARCH_PKGS="cachepic epspdf fig4latex mathspic"
+TEXLIVE_ARCH_PKGS="cachepic epspdf fig4latex mathspic mkpic"
 
 inherit texlive
 ARCH=noarch
