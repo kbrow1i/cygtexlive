@@ -1,5 +1,5 @@
 NAME="texlive-collection-langspanish"
-VERSION=20130529
+VERSION=20140523
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="babel-catalan babel-galician babel-spanish
