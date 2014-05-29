@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra"
-VERSION=20140328
+VERSION=20140523
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
@@ -42,11 +42,11 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	enotez enumitem enumitem-zref envbig environ envlab epigraph
 	epiolmec eqell eqlist eqname eqparbox errata esami esdiff
 	esint esint-type1 etaremune etextools etoc etoolbox eukdate
-	europecv everyhook everypage exam examdesign examplep
-	excludeonly exercise exp-testopt expdlist export exsheets
-	exsol extract facsimile factura fancynum fancypar fancytabs
-	fancytooltips fifo-stack figsize filecontents filedate
-	filehook fileinfo filemod fink finstrut fixfoot fixme
+	europecv everyhook everypage exam exam-n examdesign example
+	examplep excludeonly exercise exp-testopt expdlist export
+	exsheets exsol extract facsimile factura fancynum fancypar
+	fancytabs fancytooltips fifo-stack figsize filecontents
+	filedate filehook fileinfo filemod fink finstrut fixfoot fixme
 	fixmetodonotes fjodor flabels flacards flagderiv flashcards
 	flashmovie flipbook flippdf floatflt floatrow flowfram fmp
 	fmtcount fn2end fnbreak fncychap fncylab fnpara fnpct
@@ -80,14 +80,14 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	mcaption mceinleger mcite mciteplus mdframed media9
 	meetingmins memexsupp memory menu menukeys method metre mftinc
 	midpage minibox minifp minipage-marginpar minitoc
-	minorrevision minted minutes misc209 mla-paper mlist mmap
-	mnotes moderncv moderntimeline modref modroman monofill
-	moreenum morefloats morehype moresize moreverb morewrites
-	movie15 mparhack msc msg mslapa mtgreek multenum multibbl
-	multicap multienv multiexpand multirow mversion mwe mweights
-	mycv mylatexformat nag nameauth namespc ncclatex ncctools
-	needspace nestquot newcommand newenviron newfile newlfm
-	newspaper newunicodechar newvbtm newverbs nextpage nfssext-cfr
+	minorrevision minted minutes mla-paper mlist mmap mnotes
+	moderncv moderntimeline modref modroman monofill moreenum
+	morefloats morehype moresize moreverb morewrites movie15
+	mparhack msc msg mslapa mtgreek multenum multibbl multicap
+	multienv multiexpand multirow mversion mwe mweights mycv
+	mylatexformat nag nameauth namespc ncclatex ncctools needspace
+	nestquot newcommand newenviron newfile newlfm newspaper
+	newunicodechar newvbtm newverbs nextpage nfssext-cfr
 	nicefilelist niceframe nicetext nlctdoc noconflict
 	noindentafter noitcrul nolbreaks nomencl nomentbl nonfloat
 	nonumonpart nopageno notes notoccite nowidow nox ntheorem
@@ -107,15 +107,15 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	quotmark ran_toks randtext rccol rcs-multi rcsinfo readarray
 	realboxes recipe recipecard rectopma refcheck refenums
 	reflectgraphics refman refstyle regcount regexpatch register
-	regstats relenc relsize repeatindex rjlparshap rlepsf rmpage
-	robustcommand robustindex romanbar romanneg romannum rotfloat
-	rotpages roundbox rterface rtkinenc rulercompass rvwrite
-	sauerj savefnmark savesym savetrees scale scalebar scalerel
-	scanpages sdrt secdot sectionbox sectsty selectp semantic
-	semioneside sepfootnotes seqsplit sf298 sffms sfmath shadethm
-	shadow shadowtext shapepar shipunov shorttoc show2e
-	showcharinbox showdim showexpl showlabels sidecap sidenotes
-	silence simplecd simplecv simplewick sitem skb skdoc
+	regstats relenc relsize repeatindex repltext rjlparshap rlepsf
+	rmpage robustcommand robustindex romanbar romanneg romannum
+	rotfloat rotpages roundbox rterface rtkinenc rulercompass
+	rvwrite sauerj savefnmark savesym savetrees scale scalebar
+	scalerel scanpages sdrt secdot sectionbox sectsty seealso
+	selectp semantic semioneside sepfootnotes seqsplit sf298 sffms
+	sfmath shadethm shadow shadowtext shapepar shipunov shorttoc
+	show2e showcharinbox showdim showexpl showlabels sidecap
+	sidenotes silence simplecd simplecv simplewick sitem skb skdoc
 	skeycommand skeyval skrapport slantsc smalltableof smartref
 	snapshot snotez soul spanglish sparklines sphack spot
 	spotcolor spreadtab spverbatim srbook-mem srcltx sseq sslides
