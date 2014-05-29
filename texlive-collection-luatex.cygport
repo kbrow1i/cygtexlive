@@ -1,12 +1,12 @@
 NAME="texlive-collection-luatex"
-VERSION=20130529
+VERSION=20140523
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="checkcites chickenize enigma interpreter
 	lua-check-hyphen lua-visual-debug luabibentry luabidi luacode
 	luaindex luainputenc lualatex-doc lualatex-math lualibs
 	luamplib luasseq luatexbase luatexko luatextra luaxml odsfile
-	selnolig showhyphens spelling"
+	placeat selnolig showhyphens spelling"
 
 TEXLIVE_ARCH_PKGS="luaotfload lua2dox"
 
