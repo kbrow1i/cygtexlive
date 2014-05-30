@@ -9,4 +9,3 @@ TEXLIVE_DOC_PKGS="classpack jadetex tex4ht xmltex"
 REQUIRES="texlive-collection-latex texlive-collection-fontsrecommended"
 
 inherit texlive
-ARCH=noarch
