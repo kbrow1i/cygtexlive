@@ -8,4 +8,3 @@ TEXLIVE_ARCH_PKGS="accfonts dosepsbin epstopdf fontinst fontools
 	mf2pt1 pstools psutils"
 
 inherit texlive
-ARCH=noarch
