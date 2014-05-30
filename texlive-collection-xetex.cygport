@@ -11,4 +11,3 @@ TEXLIVE_TEXMF_PKGS="arabxetex euenc fixlatvian fontbook fontwrap
 TEXLIVE_ARCH_PKGS="xetex"
 
 inherit texlive
-ARCH=noarch
