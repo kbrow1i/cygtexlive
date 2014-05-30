@@ -7,4 +7,3 @@ TEXLIVE_ARCH_PKGS="eplain lollipop mltex texsis"
 TEXLIVE_DOC_PKGS="edmac eplain lollipop mltex psizzl startex texsis"
 
 inherit texlive
-ARCH=noarch
