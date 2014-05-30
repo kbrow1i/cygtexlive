@@ -1,5 +1,5 @@
 NAME="texlive-collection-basic"
-VERSION=20140523
+VERSION=20140525
 RELEASE=1
 
 # texlive.infra: Perl modules required by updmap (tetex)
