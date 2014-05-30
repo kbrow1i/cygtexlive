@@ -12,4 +12,3 @@ TEXLIVE_ARCH_PKGS="latex-bin mptopdf"
 TEXLIVE_DOC_PKGS=${TEXLIVE_ARCH_PKGS}
 
 inherit texlive
-ARCH=noarch
