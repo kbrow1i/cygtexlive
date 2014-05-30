@@ -1,5 +1,5 @@
 NAME="texlive-collection-humanities"
-VERSION=20140523
+VERSION=20140525
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="alnumsec arydshln bibleref bibleref-lds
