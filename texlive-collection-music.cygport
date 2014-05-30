@@ -11,4 +11,3 @@ TEXLIVE_ARCH_PKGS="lilyglyphs musixtex pmx pmxchords m-tx"
 REQUIRES="texlive-collection-latex"
 
 inherit texlive
-ARCH=noarch
