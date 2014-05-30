@@ -15,4 +15,3 @@ REQUIRES="texlive-collection-langcjk"
 inherit texlive
 
 # doc only: lshort-korean
-ARCH=noarch
