@@ -1,5 +1,5 @@
 NAME="texlive-collection-bibtexextra"
-VERSION=20140523
+VERSION=20140525
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="aichej ajl amsrefs apacite apalike2 beebe besjournals
@@ -21,36 +21,37 @@ TEXLIVE_TEXMF_PKGS="aichej ajl amsrefs apacite apalike2 beebe besjournals
 	rsc showtags sort-by-letters splitbib uni-wtal-ger
 	uni-wtal-lin usebib vak xcite"
 
-TEXLIVE_TEXMF_PKGS+=" biblatex"
+# TEXLIVE_TEXMF_PKGS+=" biblatex"
 
 TEXLIVE_ARCH_PKGS="bibexport multibibliography urlbst"
 
 
-REQUIRES="texlive-collection-latex biber"
+# REQUIRES="texlive-collection-latex biber"
+REQUIRES="texlive-collection-latex"
 
-# Until perl gets updated so that I can build biber-1.6 as a perl
-# script, I have to ship biblatex-2.5 on x86_64, and I'll use the
+# Until perl gets updated so that I can build the latest biber as a
+# perl script, I have to ship biblatex-2.5 on x86_64, and I'll use the
 # upstream biber on x86.
-# case ${ARCH} in
-#     i686)
-# 	TEXLIVE_ARCH_PKGS+=" biber"
-# 	TEXLIVE_TEXMF_PKGS+=" biblatex"
-# 	;;
-#     x86_64)
-# 	REQUIRES+=" biber"
-# 	SRC_URI="biblatex-2.5.tar.xz"
-# 	;;
-# esac
+case ${ARCH} in
+    i686)
+	TEXLIVE_ARCH_PKGS+=" biber"
+	TEXLIVE_TEXMF_PKGS+=" biblatex"
+	;;
+    x86_64)
+	REQUIRES+=" biber"
+	SRC_URI="biblatex-2.5.tar.xz"
+	;;
+esac
 
 inherit texlive
 
-# case ${ARCH} in
-#     i686)
-# 	src_install() {
-# 	    cd ${S}
-# 	    texlive_install
-# 	    dobin ${S}/bin/i386-cygwin/biber.exe
-# 	}
-# 	;;
-# esac
+case ${ARCH} in
+    i686)
+	src_install() {
+	    cd ${S}
+	    texlive_install
+	    dobin ${S}/bin/i386-cygwin/biber.exe
+	}
+	;;
+esac
 
