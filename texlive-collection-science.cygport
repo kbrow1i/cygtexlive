@@ -18,4 +18,3 @@ TEXLIVE_ARCH_PKGS="ulqda"
 REQUIRES="texlive-collection-latex"
 
 inherit texlive
-ARCH=noarch
