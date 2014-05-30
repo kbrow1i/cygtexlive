@@ -19,4 +19,3 @@ TEXLIVE_DOC_PKGS="bartel-chess-fonts chess chess-problem-diagrams
 REQUIRES="texlive-collection-latex"
 
 inherit texlive
-ARCH=noarch
