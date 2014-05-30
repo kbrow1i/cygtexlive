@@ -11,6 +11,9 @@ TEXLIVE_ARCH_PKGS="a2ping adhocfilelist arara bundledoc chktex ctanify
 	ltxfileinfo ltximg match_parens mkjobtexmf pdfcrop pdfjam
 	pdftools pfarrei pkfix pkfix-helper purifyeps pythontex
 	sty2dtx texcount texdef texdiff texdirflatten texdoc texfot
-	texliveonfly texloganalyser tpic2pdftex typeoutfileinfo xindy"
+	texliveonfly texloganalyser tpic2pdftex typeoutfileinfo"
+case ${ARCH} in
+    i686) TEXLIVE_ARCH_PKGS+="xindy" ;;
+esac
 
 inherit texlive
