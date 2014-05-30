@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra-doc"
-VERSION=20140523
+VERSION=20140525
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
@@ -42,11 +42,11 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	enotez enumitem enumitem-zref envbig environ envlab epigraph
 	epiolmec eqell eqlist eqparbox errata esami esdiff esint
 	esint-type1 etaremune etextools etoc etoolbox eukdate europecv
-	everyhook everypage exam exam-n examdesign example examplep
-	exceltex excludeonly exercise exp-testopt expdlist export
-	exsheets exsol extract facsimile factura fancynum fancypar
-	fancytabs fancytooltips fifo-stack figsize filecontents
-	filedate filehook fileinfo filemod fink finstrut fixfoot fixme
+	everyhook everypage exam exam-n examdesign examplep exceltex
+	excludeonly exercise exp-testopt expdlist export exsheets
+	exsol extract facsimile factura fancynum fancypar fancytabs
+	fancytooltips fifo-stack figsize filecontents filedate
+	filehook fileinfo filemod fink finstrut fixfoot fixme
 	fixmetodonotes fjodor flabels flacards flagderiv flashcards
 	flashmovie flipbook flippdf floatflt floatrow flowfram fmp
 	fmtcount fn2end fnbreak fncychap fncylab fnpara fnpct
