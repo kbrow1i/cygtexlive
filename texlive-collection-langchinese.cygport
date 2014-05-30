@@ -16,4 +16,3 @@ REQUIRES="texlive-collection-langcjk"
 inherit texlive
 
 # doc only: ctex-faq latex-notes-zh-cn lshort-chinese texlive-zh-cn
-ARCH=noarch
