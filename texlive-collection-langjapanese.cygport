@@ -19,4 +19,3 @@ REQUIRES="texlive-collection-langcjk"
 inherit texlive
 
 # doc only: lshort-japanese
-ARCH=noarch
