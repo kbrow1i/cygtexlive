@@ -18,4 +18,3 @@ TEXLIVE_DOC_PKGS="babel-greek betababel bgreek cbfonts cbfonts-fd
 	levy lgreek mkgrkindex teubner xgreek yannisgr"
 
 inherit texlive
-ARCH=noarch
