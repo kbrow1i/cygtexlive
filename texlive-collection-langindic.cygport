@@ -11,4 +11,3 @@ TEXLIVE_DOC_PKGS="ebong bangtex bengali burmese sanskrit velthuis wnri
 	wnri-latex xetex-devanagari"
 
 inherit texlive
-ARCH=noarch
