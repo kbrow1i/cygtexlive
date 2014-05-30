@@ -11,4 +11,3 @@ TEXLIVE_DOC_PKGS="c90 cjk cjkpunct cjkutils xcjk2uni zxjafont"
 
 inherit texlive
 
-ARCH=noarch
