@@ -15,4 +15,3 @@ TEXLIVE_ARCH_PKGS="thumbpdf"
 REQUIRES="texlive-collection-latex"
 
 inherit texlive
-ARCH=noarch
