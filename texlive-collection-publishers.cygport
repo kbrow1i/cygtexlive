@@ -1,5 +1,5 @@
 NAME="texlive-collection-publishers"
-VERSION=20140523
+VERSION=20140525
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex abntex2 acmconf
