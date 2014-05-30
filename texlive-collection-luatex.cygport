@@ -11,4 +11,3 @@ TEXLIVE_TEXMF_PKGS="checkcites chickenize enigma interpreter
 TEXLIVE_ARCH_PKGS="luaotfload lua2dox"
 
 inherit texlive
-ARCH=noarch
