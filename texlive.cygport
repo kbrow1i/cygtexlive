@@ -1,18 +1,16 @@
 NAME="texlive"
-VERSION=20130529
+VERSION=20140525
 RELEASE=1
 
 HOMEPAGE="http://www.tug.org/texlive/"
-# SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
-SRC_URI="mirror://ctan/systems/texlive/Source/${P}-source.tar.xz"
+SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
+# SRC_URI="mirror://ctan/systems/texlive/Source/${P}-source.tar.xz"
 SRC_DIR="${P}-source"
 
-PATCH_URI="
-	20120628-2-remove_zlib_version_check.patch
-	20130527-1-texmf_cnf.patch
-"
+PATCH_URI="20120628-2-remove_zlib_version_check.patch"
+PATCH_URI+=" 20140525-1-texmf_cnf.patch"
 
-DEPEND="clisp
+DEPEND="
 	libgd-devel
 	libgs-devel
 	libiconv
@@ -22,6 +20,7 @@ DEPEND="clisp
 	pkgconfig(fontconfig)
 	pkgconfig(freetype2)
 	pkgconfig(graphite2)
+	pkgconfig(harfbuzz)
 	pkgconfig(libpng)
 	pkgconfig(ncurses)
 	pkgconfig(pixman-1)
@@ -35,16 +34,21 @@ DEPEND="clisp
 	pkgconfig(zziplib)
 "
 
-# Don't have new enough version of harfbuzz.
-
-
 PKG_NAMES="${PN} libkpathsea6 libkpathsea-devel libptexenc1 libptexenc-devel"
 texlive_CONTENTS="
-	--exclude=usr/bin/biber.exe
 	usr/bin/*.exe
-	usr/bin/xindy.mem
 	etc/postinstall/
 "
+
+PKG_IGNORE="usr/share/"
+
+case ${ARCH} in
+    i686) texlive_CONTENTS+=" usr/bin/xindy.mem"
+	  DEPEND+=" clisp"
+	  CYGCONF_ARGS="--enable-xindy"
+	  ;;
+esac
+
 libkpathsea6_CONTENTS="usr/bin/cygkpathsea-6.dll"
 libkpathsea_devel_CONTENTS="usr/include/kpathsea/ usr/lib/libkpathsea.*"
 libptexenc1_CONTENTS="usr/bin/cygptexenc-1.dll"
@@ -65,18 +69,17 @@ includes all the major TeX-related programs, macro packages, and fonts
 that are free software, including support for many languages around the 
 world."
 
-texlive_IGNORE="usr/share/ usr/bin/biber.exe"
-
 DIFF_EXCLUDES="*.in configure build-aux m4 aclocal.m4"
 
 src_compile() {
-	# Autoreconf doesn't work well right now because Cygwin has an
-	# older version of automake than upstream.
-
-	# cd ${S}
-	# libtoolize --force --install
-	# ./reautoconf
-
+	# On i686 autotools and/or libtool are too old.
+	case ${ARCH} in
+	    x86_64)
+		cd ${S}
+		libtoolize --force --install
+		./reautoconf
+		;;
+	esac
 	# asymptote: does not build in tree, upstream is newer
 	# dialog: use standalone dialog (tcdialog has been removed from trunk)
 	cd ${B}
@@ -84,12 +87,12 @@ src_compile() {
 		--enable-shared \
 		--disable-native-texlive-build \
 		--disable-dialog \
-		--enable-xindy \
 		--with-banner-add=/Cygwin \
 		--with-system-cairo \
 		--with-system-freetype2 --with-freetype2-include=/usr/include \
 		--with-system-gd \
 		--with-system-graphite2 \
+		--with-system-harfbuzz \
 		--with-system-icu \
 		--with-system-libgs \
 		--with-system-libpng \
@@ -111,6 +114,11 @@ src_install() {
 	# all we want is the binaries, everything else will come from other pkgs
 	rm -fr ${D}/usr/share/texmf*
 	find ${D}/usr/bin/ -mindepth 1 ! -name '*.exe' ! -name '*.dll' ! -name '*.mem' -delete
+	cd ${C}
+	cat > texlive.postinstall <<-_EOF
+		/usr/bin/mktexlsr
+		/usr/bin/fmtutil-sys --refresh
+		_EOF
 }
 
 KEEP_LA_FILES="none"
