@@ -24,4 +24,3 @@ TEXLIVE_ARCH_PKGS="pst2pdf pedigree-perl"
 REQUIRES="texlive-collection-genericrecommended"
 
 inherit texlive
-ARCH=noarch
