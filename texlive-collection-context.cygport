@@ -23,4 +23,3 @@ src_install() {
 }
 
 # Should we have a postinstall action that runs 'mtxrun --generate'?
-ARCH=noarch
