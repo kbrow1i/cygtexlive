@@ -1,5 +1,5 @@
 NAME="texlive-collection-pictures"
-VERSION=20140523
+VERSION=20140525
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="aobs-tikz askmaps asyfig asypictureb autoarea
