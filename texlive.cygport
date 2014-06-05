@@ -72,16 +72,9 @@ world."
 DIFF_EXCLUDES="*.in configure build-aux m4 aclocal.m4"
 
 src_compile() {
-	# On i686 autotools and/or libtool are too old.
-	case ${ARCH} in
-	    x86_64)
-		cd ${S}
-		libtoolize --force --install
-		./reautoconf
-		;;
-	esac
-	# asymptote: does not build in tree, upstream is newer
-	# dialog: use standalone dialog (tcdialog has been removed from trunk)
+	cd ${S}
+	libtoolize --force --install
+	./reautoconf
 	cd ${B}
 	cygconf \
 		--enable-shared \
