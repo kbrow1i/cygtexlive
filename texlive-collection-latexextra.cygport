@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra"
-VERSION=20140525
+VERSION=20140523
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
