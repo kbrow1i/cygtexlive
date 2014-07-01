@@ -11,3 +11,12 @@ TEXLIVE_DOC_PKGS="aleph omegaware antomega mxedruli omega otibet"
 REQUIRES="texlive-collection-latex"
 
 inherit texlive
+
+src_install() {
+	cd ${S}
+	texlive_install
+	cd ${C}
+	cat > texlive-collection-omega.postinstall <<-_EOF
+		/etc/texmf/web2c/20140523-1-update_fmtutil_cnf
+		_EOF
+}
