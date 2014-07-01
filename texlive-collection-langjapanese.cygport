@@ -20,11 +20,20 @@ inherit texlive
 
 # doc only: lshort-japanese
 
+SRC_URI+=" preremove.new.sh"
+
 src_install() {
 	cd ${S}
 	texlive_install
+	exeinto /etc/preremove
+	newexe preremove.new.sh ${PN}.new
 	cd ${C}
 	cat > texlive-collection-langjapanese.postinstall <<-_EOF
 		/etc/texmf/web2c/20140523-1-update_fmtutil_cnf
+		# Fix up preremove script so it will do the KanjiMap substitutions
+		# involving @kanjiEmbed@ and @kanjiVariant@; otherwise the
+		# corresponding maps will not be disabled.
+		mv /etc/preremove/${PN}.sh /etc/preremove/${PN}.in
+		mv /etc/preremove/${PN}.new /etc/preremove/${PN}.sh
 		_EOF
 }
