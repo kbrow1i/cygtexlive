@@ -1,5 +1,5 @@
 NAME="texlive-collection-langchinese"
-VERSION=20140525
+VERSION=20140523
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="arphic cns ctex fandol xpinyin zhmetrics zhnumber
