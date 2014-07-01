@@ -17,3 +17,11 @@ inherit texlive
 
 # doc only:  gustprog lshort-polish tex-virtual-academy-pl texlive-pl
 
+src_install() {
+	cd ${S}
+	texlive_install
+	cd ${C}
+	cat > texlive-collection-langpolish.postinstall <<-_EOF
+		/etc/texmf/web2c/20140523-1-update_fmtutil_cnf
+		_EOF
+}
