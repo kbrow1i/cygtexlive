@@ -1,5 +1,5 @@
 NAME="texlive-collection-binextra"
-VERSION=20140525
+VERSION=20140523
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="bibtex8 bibtexu cweb dtl dvi2tty dvidvi hyphenex lacheck seetexk"
