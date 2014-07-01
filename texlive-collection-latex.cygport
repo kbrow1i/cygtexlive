@@ -12,3 +12,12 @@ TEXLIVE_ARCH_PKGS="latex-bin mptopdf"
 TEXLIVE_DOC_PKGS=${TEXLIVE_ARCH_PKGS}
 
 inherit texlive
+
+src_install() {
+	cd ${S}
+	texlive_install
+	cd ${C}
+	cat > texlive-collection-latex.postinstall <<-_EOF
+		/etc/texmf/web2c/20140523-1-update_fmtutil_cnf
+		_EOF
+}
