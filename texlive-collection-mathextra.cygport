@@ -17,3 +17,12 @@ TEXLIVE_ARCH_PKGS="amstex"
 REQUIRES="texlive-collection-latex texlive-collection-fontsrecommended"
 
 inherit texlive
+
+src_install() {
+	cd ${S}
+	texlive_install
+	cd ${C}
+	cat > texlive-collection-mathextra.postinstall <<-_EOF
+		/etc/texmf/web2c/20140523-1-update_fmtutil_cnf
+		_EOF
+}
