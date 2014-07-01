@@ -26,28 +26,36 @@ TEXLIVE_ARCH_PKGS="dvipdfmx kpathsea luatex makeindex metafont pdftex
 TEXLIVE_DOC_PKGS="tex texconfig"
 
 SRC_URI="texlive_generate_fmtutil.sh"
+SRC_URI+=" 20140523-1-update_fmtutil_cnf.lua"
 
 inherit texlive
 
-PATCH_URI="20130527-1-texmf_cnf.patch"
-PATCH_URI+=" 20140328-1-fmtutil_cnf.patch"
-PATCH_URI+=" 20140328-1-texlive_scripts_only_rungs.patch"
+PATCH_URI="20140523-1-texmf_cnf.patch"
+PATCH_URI+=" 20140523-1-fmtutil_cnf.patch"
+PATCH_URI+=" 20140523-1-updmap_cfg.patch"
+PATCH_URI+=" 20140523-1-${ARCH}-texlive_scripts_only_rungs.patch"
+
+case ${ARCH} in
+    x86_64)
+	PATCH_URI+=" 20140523-1-x86_64-no_luajittex.patch"
+	;;
+esac
 
 texlive_collection_basic_CONTENTS="
-	--exclude=usr/share/texmf-dist/web2c/updmap.cfg
 	etc/
 	usr/
 	var/
 "
-
-PKG_IGNORE="usr/share/texmf-dist/web2c/updmap.cfg"
 
 REQUIRES="coreutils cygutils dialog ed ghostscript grep sed texlive"
 
 src_install() {
 	cd ${S}
 	texlive_install
-	keepdir /var/lib/texmf /etc/texmf
+	dobin texlive_generate_fmtutil.sh
+	exeinto /etc/texmf/web2c
+	newexe 20140523-1-update_fmtutil_cnf.lua 20140523-1-update_fmtutil_cnf
+	keepdir /var/lib/texmf /etc/texmf/web2c
 	# Imitate make_local_skeleton in TLUtils.pm
 	local texmflocal=/usr/share/texmf-site
 	keepdir \
@@ -64,5 +72,8 @@ src_install() {
 	    ${texmflocal}/tex/plain/local \
 	    ${texmflocal}/tlpkg \
 	    ${texmflocal}/web2c
-	dobin ${S}/texlive_generate_fmtutil.sh
+	cd ${C}
+	cat > texlive-collection-basic.postinstall <<-_EOF
+		/etc/texmf/web2c/20140523-1-update_fmtutil_cnf
+		_EOF
 }

@@ -1,5 +1,5 @@
---- origsrc/texmf-dist/web2c/fmtutil.cnf	2013-11-27 21:21:17.000000000 -0500
-+++ src/texmf-dist/web2c/fmtutil.cnf	2014-03-31 14:37:50.341580500 -0400
+--- origsrc/texmf-dist/web2c/fmtutil.cnf	2014-04-24 21:23:28.000000000 -0400
++++ src/texmf-dist/web2c/fmtutil.cnf	2014-06-15 18:17:27.344084500 -0400
 @@ -7,6 +7,10 @@
  # tlmgr generate fmtutil -localcfg /some/file to make local additions.
  # See tlmgr --help for more info.
@@ -11,7 +11,7 @@
  # The format of the table is:
  #
  # format  engine  pattern-file  arguments
-@@ -36,15 +40,15 @@
+@@ -36,80 +40,80 @@
  
  #
  # from aleph:
@@ -29,10 +29,9 @@
 -cont-en xetex cont-usr.tex -8bit *cont-en.mkii
 +#! cont-en pdftex cont-usr.tex -8bit *cont-en.mkii
 +#! cont-en xetex cont-usr.tex -8bit *cont-en.mkii
- #! cont-de pdftex cont-usr.tex -8bit *cont-de.mkii
  #! cont-fr pdftex cont-usr.tex -8bit *cont-fr.mkii
  #! cont-it pdftex cont-usr.tex -8bit *cont-it.mkii
-@@ -52,56 +56,56 @@ cont-en xetex cont-usr.tex -8bit *cont-e
+ #! cont-nl pdftex cont-usr.tex -8bit *cont-nl.mkii
  #! cont-ro pdftex cont-usr.tex -8bit *cont-ro.mkii
  #
  # from cslatex:
@@ -70,12 +69,25 @@
 +#! pdflatex pdftex language.dat -translate-file=cp227.tcx *pdflatex.ini
 +#! dvilualatex luatex language.dat,language.dat.lua dvilualatex.ini
 +#! lualatex luatex language.dat,language.dat.lua lualatex.ini
+ #! luajitlatex luajittex language.dat,language.dat.lua lualatex.ini
+ #
+ # from lollipop:
+-lollipop pdftex - -translate-file=cp227.tcx *lollipop.ini
+-lualollipop luatex - lualollipop.ini
+-xelollipop xetex - -etex xelollipop.ini
++#! lollipop pdftex - -translate-file=cp227.tcx *lollipop.ini
++#! lualollipop luatex - lualollipop.ini
++#! xelollipop xetex - -etex xelollipop.ini
+ #! dvilollipop pdftex - -translate-file=cp227.tcx *lollipop.ini
+ #! dvilualollipop luatex - -translate-file=cp227.tcx lualollipop.ini
  #
  # from luatex:
 -luatex luatex language.def,language.dat.lua luatex.ini
 -dviluatex luatex language.def,language.dat.lua dviluatex.ini
+-luajittex luajittex language.def,language.dat.lua luatex.ini
 +#! luatex luatex language.def,language.dat.lua luatex.ini
 +#! dviluatex luatex language.def,language.dat.lua dviluatex.ini
++#! luajittex luajittex language.def,language.dat.lua luatex.ini
  #
  # from metafont:
 -mf mf-nowin - -translate-file=cp227.tcx mf.ini
@@ -117,7 +129,7 @@
  #
  # from t2:
  #! cyramstex pdftex language.dat -translate-file=cp227.tcx *cyramstx.ini
-@@ -109,20 +113,20 @@ platex eptex language.dat *platex.ini
+@@ -117,20 +121,20 @@ platex eptex language.dat *platex.ini
  #! cyrtexinfo pdftex language.dat -translate-file=cp227.tcx *cyrtxinf.ini
  #
  # from tex:

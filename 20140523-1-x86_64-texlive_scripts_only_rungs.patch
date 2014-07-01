@@ -1,0 +1,38 @@
+--- origsrc/tlpkg/tlpobj/texlive-scripts.tlpobj	2014-05-18 21:30:50.000000000 -0400
++++ src/tlpkg/tlpobj/texlive-scripts.tlpobj	2014-05-30 15:38:29.740568500 -0400
+@@ -8,15 +8,15 @@ depend texlive.infra
+ depend texlive-scripts.ARCH
+ postaction shortcut type=menu name="TeX Live command-line"   cmd=TEXDIR/tlpkg/installer/tl-cmd.bat
+ runfiles size=65
+- install-tl
+- texmf-dist/scripts/texlive/lua/texlive/getopt.tlu
+- texmf-dist/scripts/texlive/lua/texlive/tlpdb.tlu
+- texmf-dist/scripts/texlive/lua/texlive/utils.tlu
++# install-tl
++# texmf-dist/scripts/texlive/lua/texlive/getopt.tlu
++# texmf-dist/scripts/texlive/lua/texlive/tlpdb.tlu
++# texmf-dist/scripts/texlive/lua/texlive/utils.tlu
+  texmf-dist/scripts/texlive/rungs.tlu
+- texmf-dist/scripts/texlive/test-tlpdb.tlu
+- texmf-dist/scripts/texlive/texconf.tlu
+- tlpkg/installer/ctan-mirrors.pl
+- tlpkg/installer/install-menu-perltk.pl
+- tlpkg/installer/install-menu-text.pl
+- tlpkg/installer/install-menu-wizard.pl
+- tlpkg/installer/texlive.png
++# texmf-dist/scripts/texlive/test-tlpdb.tlu
++# texmf-dist/scripts/texlive/texconf.tlu
++# tlpkg/installer/ctan-mirrors.pl
++# tlpkg/installer/install-menu-perltk.pl
++# tlpkg/installer/install-menu-text.pl
++# tlpkg/installer/install-menu-wizard.pl
++# tlpkg/installer/texlive.png
+--- origsrc/tlpkg/tlpobj/texlive-scripts.x86_64-cygwin.tlpobj	2014-04-21 14:55:51.000000000 -0400
++++ src/tlpkg/tlpobj/texlive-scripts.x86_64-cygwin.tlpobj	2014-05-30 15:36:49.131814000 -0400
+@@ -3,5 +3,5 @@ category TLCore
+ revision 33557
+ shortdesc x86_64-cygwin files of texlive-scripts
+ binfiles arch=x86_64-cygwin size=2
+- bin/x86_64-cygwin/man
++# bin/x86_64-cygwin/man
+  bin/x86_64-cygwin/rungs
