@@ -1,6 +1,6 @@
 NAME="texlive-collection-publishers-doc"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_DOC_PKGS="IEEEconf IEEEtran aastex abntex2 acmconf active-conf
 	adfathesis afthesis aguplus aiaa ametsoc anufinalexam aomart
@@ -26,3 +26,4 @@ TEXLIVE_DOC_PKGS="IEEEconf IEEEtran aastex abntex2 acmconf active-conf
 
 inherit texlive
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
