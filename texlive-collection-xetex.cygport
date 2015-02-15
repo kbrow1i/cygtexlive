@@ -1,6 +1,6 @@
 NAME="texlive-collection-xetex"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="arabxetex euenc fixlatvian fontbook fontwrap
 	mathspec philokalia polyglossia ptext realscripts ucharclasses
@@ -11,12 +11,4 @@ TEXLIVE_TEXMF_PKGS="arabxetex euenc fixlatvian fontbook fontwrap
 TEXLIVE_ARCH_PKGS="xetex"
 
 inherit texlive
-
-src_install() {
-	cd ${S}
-	texlive_install
-	cd ${C}
-	cat > texlive-collection-xetex.postinstall <<-_EOF
-		/etc/texmf/web2c/20140523-1-update_fmtutil_cnf
-		_EOF
-}
+REQUIRES="fontconfig"
