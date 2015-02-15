@@ -1,6 +1,6 @@
 NAME="texlive-collection-context-doc"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_DOC_PKGS="context context-account context-bnf context-chromato
 	context-construction-plan context-cyrillicnumbers
@@ -14,3 +14,4 @@ TEXLIVE_DOC_PKGS="context context-account context-bnf context-chromato
 
 inherit texlive
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
