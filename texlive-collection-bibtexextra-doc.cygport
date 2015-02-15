@@ -1,6 +1,6 @@
 NAME="texlive-collection-bibtexextra-doc"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_DOC_PKGS="amsrefs apacite besjournals bibarts biber bibexport
 	bibhtml biblatex biblatex-apa biblatex-bwl
@@ -23,3 +23,4 @@ TEXLIVE_DOC_PKGS="amsrefs apacite besjournals bibarts biber bibexport
 
 inherit texlive
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
