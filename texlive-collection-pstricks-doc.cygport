@@ -1,6 +1,6 @@
 NAME="texlive-collection-pstricks-doc"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_DOC_PKGS="auto-pst-pdf bclogo makeplot pdftricks pdftricks2
 	pedigree-perl psbao pst-2dplot pst-3d pst-3dplot pst-abspos
@@ -22,3 +22,4 @@ TEXLIVE_DOC_PKGS="auto-pst-pdf bclogo makeplot pdftricks pdftricks2
 
 inherit texlive
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
