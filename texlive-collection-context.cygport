@@ -1,6 +1,6 @@
 NAME="texlive-collection-context"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="jmn context-account context-algorithmic
 	context-bnf context-chromato context-construction-plan
@@ -20,10 +20,7 @@ src_install() {
 	cd ${S}
 	texlive_install
 	rm -rf ${D}/usr/share/texmf-dist/scripts/context/stubs/mswin
-	cd ${C}
-	cat > texlive-collection-context.postinstall <<-_EOF
-		/etc/texmf/web2c/20140523-1-update_fmtutil_cnf
-		_EOF
 }
 
 # Should we have a postinstall action that runs 'mtxrun --generate'?
+REQUIRES="fontconfig"
