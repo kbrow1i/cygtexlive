@@ -1,6 +1,6 @@
 NAME="texlive-collection-langenglish"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_DOC_PKGS="FAQ-en MemoirChapStyles Type1fonts amslatex-primer
 	around-the-bend ascii-chart components-of-TeX comprehensive
@@ -18,3 +18,4 @@ TEXLIVE_DOC_PKGS="FAQ-en MemoirChapStyles Type1fonts amslatex-primer
 
 inherit texlive
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
