@@ -1,6 +1,6 @@
 NAME="texlive-collection-langother"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="aramaic-serto babel-bahasa babel-esperanto
 	babel-georgian babel-hebrew babel-interlingua babel-sorbian
@@ -17,3 +17,4 @@ SUMMARY="TeX Live support for several languages"
 
 # doc only:  amsldoc-vn lshort-thai lshort-vietnamese ntheorem-vn
 ARCH=noarch
+REQUIRES="fontconfig"
