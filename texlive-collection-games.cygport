@@ -1,6 +1,6 @@
 NAME="texlive-collection-games"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="bartel-chess-fonts chess chess-problem-diagrams
 	chessboard chessfss crossword crosswrd egameps gamebook go
@@ -16,6 +16,6 @@ TEXLIVE_DOC_PKGS="bartel-chess-fonts chess chess-problem-diagrams
 	pas-crosswords psgo reverxii rubik schwalbe-chess sgame skak
 	skaknew sudoku sudokubundle xq xskak"
 
-REQUIRES="texlive-collection-latex"
+REQUIRES="texlive-collection-latex fontconfig"
 
 inherit texlive
