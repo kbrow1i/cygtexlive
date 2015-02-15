@@ -1,6 +1,6 @@
 NAME="texlive-collection-pictures-doc"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_DOC_PKGS="aobs-tikz askmaps asyfig asypictureb bxeepic
 	fast-diagram fig4latex flowchart mathspic asyfig autoarea
@@ -25,3 +25,4 @@ TEXLIVE_DOC_PKGS="aobs-tikz askmaps asyfig asypictureb bxeepic
 
 inherit texlive
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
