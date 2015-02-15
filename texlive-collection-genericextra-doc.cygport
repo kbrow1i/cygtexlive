@@ -1,6 +1,6 @@
 NAME="texlive-collection-genericextra-doc"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_DOC_PKGS="abbr abstyles barr bitelist borceux c-pascal
 	catcodes chronosys dinat dirtree docbytex dowith encxvlna
@@ -11,3 +11,4 @@ TEXLIVE_DOC_PKGS="abbr abstyles barr bitelist borceux c-pascal
 
 inherit texlive
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
