@@ -1,6 +1,6 @@
 NAME="texlive-collection-langjapanese"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="bxbase bxcjkjatype bxjscls ipaex japanese
 	japanese-otf japanese-otf-uptex jsclasses luatexja pxbase
@@ -14,26 +14,20 @@ TEXLIVE_DOC_PKGS="bxbase bxcjkjatype bxjscls convbkmk ipaex japanese
 	lshort-japanese luatexja ptex ptex2pdf pxbase pxchfon pxcjkcat
 	pxjahyper pxrubrica uptex wadalab zxjafbfont zxjatype"
 
-REQUIRES="texlive-collection-langcjk"
+REQUIRES="texlive-collection-langcjk fontconfig"
 
 inherit texlive
 
 # doc only: lshort-japanese
 
 SRC_URI+=" preremove.new.sh"
+SRC_URI+=" postinstall.sh"
 
 src_install() {
 	cd ${S}
 	texlive_install
 	exeinto /etc/preremove
 	newexe preremove.new.sh ${PN}.new
-	cd ${C}
-	cat > texlive-collection-langjapanese.postinstall <<-_EOF
-		/etc/texmf/web2c/20140523-1-update_fmtutil_cnf
-		# Fix up preremove script so it will do the KanjiMap substitutions
-		# involving @kanjiEmbed@ and @kanjiVariant@; otherwise the
-		# corresponding maps will not be disabled.
-		mv /etc/preremove/${PN}.sh /etc/preremove/${PN}.in
-		mv /etc/preremove/${PN}.new /etc/preremove/${PN}.sh
-		_EOF
+	exeinto /etc/postinstall
+	newexe postinstall.sh texlive-collection-langjapanese.sh
 }
