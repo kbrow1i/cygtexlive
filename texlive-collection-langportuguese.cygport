@@ -1,6 +1,6 @@
 NAME="texlive-collection-langportuguese"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="babel-portuges cursolatex feupphdteses ordinalpt"
 
@@ -11,3 +11,4 @@ inherit texlive
 
 # doc only:  beamer-tut-pt cursolatex latexcheat-ptbr lshort-portuguese xypic-tut-pt
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
