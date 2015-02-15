@@ -1,6 +1,6 @@
 NAME="texlive-collection-science-doc"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_DOC_PKGS="SIstyle SIunits alg algorithm2e algorithmicx
 	algorithms biocon bohr bpchem bytefield chemarrow
@@ -15,3 +15,4 @@ TEXLIVE_DOC_PKGS="SIstyle SIunits alg algorithm2e algorithmicx
 
 inherit texlive
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
