@@ -1,6 +1,6 @@
 NAME="texlive-collection-latex-doc"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_DOC_PKGS="babel-english ae amscls amsmath babel babelbib
 	carlisle colortbl fancyhdr fix2col geometry graphics hyperref
@@ -9,3 +9,4 @@ TEXLIVE_DOC_PKGS="babel-english ae amscls amsmath babel babelbib
 
 inherit texlive
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
