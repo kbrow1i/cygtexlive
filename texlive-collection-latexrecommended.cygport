@@ -1,6 +1,6 @@
 NAME="texlive-collection-latexrecommended"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="anysize beamer booktabs caption cite cmap crop
 	ctable eso-pic euler extsizes fancybox fancyref fancyvrb float
@@ -12,6 +12,6 @@ TEXLIVE_TEXMF_PKGS="anysize beamer booktabs caption cite cmap crop
 
 TEXLIVE_ARCH_PKGS="thumbpdf"
 
-REQUIRES="texlive-collection-latex"
+REQUIRES="texlive-collection-basic texlive-collection-latex"
 
 inherit texlive
