@@ -1,6 +1,6 @@
 NAME="texlive-collection-plainextra"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="figflow fixpdfmag font-change fontch getoptk
 	graphics-pln hyplain js-misc mkpattern newsletr pitex
@@ -13,3 +13,4 @@ TEXLIVE_DOC_PKGS="figflow font-change fontch getoptk graphics-pln
 
 inherit texlive
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
