@@ -1,6 +1,6 @@
 NAME="asymptote"
 VERSION=2.32
-RELEASE=1
+RELEASE=2
 
 inherit emacs vim
 
@@ -9,7 +9,8 @@ SRC_URI="mirror://sourceforge/asymptote/${P}.src.tgz"
 
 PATCH_URI="
 	mirror://portage/media-gfx/${PN}/files/${PN}-2.15-info.patch
-	asymptote-2.16-pdfviewer.patch"
+	asymptote-2.16-pdfviewer.patch
+	http://pkgs.fedoraproject.org/cgit/asymptote.git/plain/asymptote-2.32-eps2write.patch"
 
 # Need genericrecommended for epsf.tex; need plainextra for texinfo.
 
@@ -21,7 +22,8 @@ DEPEND="pkgconfig(gsl)
 	pkgconfig(ncurses)
 	texlive-collection-genericrecommended
 	texlive-collection-plainextra
-	vim"
+	vim
+	texinfo-tex"
 
 MAKEOPTS+=" -j1"
 
