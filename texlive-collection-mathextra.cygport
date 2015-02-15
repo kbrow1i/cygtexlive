@@ -1,6 +1,6 @@
 NAME="texlive-collection-mathextra"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="12many backnaur begriff binomexp boldtensors
 	bosisio bropd ccfonts commath concmath concrete conteq
@@ -14,15 +14,6 @@ TEXLIVE_TEXMF_PKGS="12many backnaur begriff binomexp boldtensors
 
 TEXLIVE_ARCH_PKGS="amstex"
 
-REQUIRES="texlive-collection-latex texlive-collection-fontsrecommended"
+REQUIRES="texlive-collection-latex texlive-collection-fontsrecommended fontconfig"
 
 inherit texlive
-
-src_install() {
-	cd ${S}
-	texlive_install
-	cd ${C}
-	cat > texlive-collection-mathextra.postinstall <<-_EOF
-		/etc/texmf/web2c/20140523-1-update_fmtutil_cnf
-		_EOF
-}
