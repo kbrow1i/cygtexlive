@@ -1,6 +1,6 @@
 NAME="texlive-collection-htmlxml"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="classpack passivetex"
 TEXLIVE_ARCH_PKGS="jadetex tex4ht xmltex"
@@ -9,12 +9,3 @@ TEXLIVE_DOC_PKGS="classpack jadetex tex4ht xmltex"
 REQUIRES="texlive-collection-latex texlive-collection-fontsrecommended"
 
 inherit texlive
-
-src_install() {
-	cd ${S}
-	texlive_install
-	cd ${C}
-	cat > texlive-collection-htmlxml.postinstall <<-_EOF
-		/etc/texmf/web2c/20140523-1-update_fmtutil_cnf
-		_EOF
-}
