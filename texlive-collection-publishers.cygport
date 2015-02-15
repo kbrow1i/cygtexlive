@@ -1,6 +1,6 @@
 NAME="texlive-collection-publishers"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex abntex2 acmconf
 	active-conf adfathesis afthesis aguplus aiaa ametsoc
@@ -25,7 +25,7 @@ TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex abntex2 acmconf
 	uowthesistitlepage ut-thesis uspatent uwthesis vancouver
 	wsemclassic xcookybooky york-thesis"
 
-REQUIRES="texlive-collection-latex"
+REQUIRES="texlive-collection-basic texlive-collection-latex"
 
 inherit texlive
 ARCH=noarch
