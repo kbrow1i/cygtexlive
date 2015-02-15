@@ -1,6 +1,6 @@
 NAME="texlive-collection-basic-doc"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_DOC_PKGS="amsfonts bibtex cm dvipdfmx dvips enctex etex
 	etex-pkg gsftopk hyph-utf8 ifluatex ifxetex kpathsea
@@ -11,3 +11,4 @@ TEXLIVE_DOC_PKGS="amsfonts bibtex cm dvipdfmx dvips enctex etex
 
 inherit texlive
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
