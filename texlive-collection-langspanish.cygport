@@ -1,6 +1,6 @@
 NAME="texlive-collection-langspanish"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="babel-catalan babel-galician babel-spanish
 	spanish-mx"
@@ -13,3 +13,4 @@ inherit texlive
 
 # doc only:  es-tex-faq l2tabu-spanish latex2e-help-texinfo-spanish latexcheat-esmx lshort-spanish
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
