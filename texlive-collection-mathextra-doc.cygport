@@ -1,6 +1,6 @@
 NAME="texlive-collection-mathextra-doc"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_DOC_PKGS="12many amstex backnaur begriff binomexp boldtensors
 	bosisio bropd ccfonts commath concmath concrete eqnarray
@@ -14,3 +14,4 @@ TEXLIVE_DOC_PKGS="12many amstex backnaur begriff binomexp boldtensors
 
 inherit texlive
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
