@@ -1,6 +1,6 @@
 NAME="texlive-collection-xetex-doc"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_DOC_PKGS="arabxetex euenc fixlatvian fontbook fontwrap
 	mathspec philokalia polyglossia ptext realscripts ucharclasses
@@ -10,3 +10,4 @@ TEXLIVE_DOC_PKGS="arabxetex euenc fixlatvian fontbook fontwrap
 
 inherit texlive
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
