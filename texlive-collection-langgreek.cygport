@@ -1,6 +1,6 @@
 NAME="texlive-collection-langgreek"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="babel-greek betababel bgreek cbfonts cbfonts-fd
 	gfsbaskerville gfsporson greek-fontenc greek-inputenc
@@ -18,3 +18,4 @@ TEXLIVE_DOC_PKGS="babel-greek betababel bgreek cbfonts cbfonts-fd
 	levy lgreek mkgrkindex teubner xgreek yannisgr"
 
 inherit texlive
+REQUIRES="fontconfig"
