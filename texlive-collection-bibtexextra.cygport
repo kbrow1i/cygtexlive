@@ -1,6 +1,6 @@
 NAME="texlive-collection-bibtexextra"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="aichej ajl amsrefs apacite apalike2 beebe besjournals
 	bibarts bibhtml bibhtml biblatex-apa biblatex-bwl
@@ -25,7 +25,7 @@ TEXLIVE_ARCH_PKGS="bibexport multibibliography urlbst"
 
 
 # REQUIRES="texlive-collection-latex biber"
-REQUIRES="texlive-collection-latex"
+REQUIRES="texlive-collection-basic texlive-collection-latex"
 
 inherit texlive
 
