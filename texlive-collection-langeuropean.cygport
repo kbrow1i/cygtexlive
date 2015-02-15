@@ -1,6 +1,6 @@
 NAME="texlive-collection-langeuropean"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="armtex babel-albanian babel-breton babel-croatian
 	babel-danish babel-dutch babel-estonian babel-finnish
@@ -25,3 +25,4 @@ SUMMARY="TeX Live support for several European languages"
 
 # doc only: hyphen-hungarian lshort-dutch lshort-finnish lshort-slovenian lshort-turkish
 ARCH=noarch
+REQUIRES="fontconfig"
