@@ -1,6 +1,6 @@
 NAME="texlive-collection-latex"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="ae amscls amsmath babel babel-english babelbib
 	carlisle colortbl fancyhdr fix2col geometry graphics hyperref
@@ -12,12 +12,3 @@ TEXLIVE_ARCH_PKGS="latex-bin mptopdf"
 TEXLIVE_DOC_PKGS=${TEXLIVE_ARCH_PKGS}
 
 inherit texlive
-
-src_install() {
-	cd ${S}
-	texlive_install
-	cd ${C}
-	cat > texlive-collection-latex.postinstall <<-_EOF
-		/etc/texmf/web2c/20140523-1-update_fmtutil_cnf
-		_EOF
-}
