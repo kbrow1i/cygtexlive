@@ -1,0 +1,23 @@
+#! /bin/dash
+
+markerdir=/var/lib/texmf/postinstall
+
+for f in ${markerdir}/*.lsr
+do
+    if [ -f ${f} ]
+    then
+	/usr/bin/mktexlsr
+	for g in ${markerdir}/*.lsr
+	do
+	    mv -f ${g} ${g}.done
+	done
+    fi
+    break
+done
+
+if [ -f ${markerdir}/texlive.refresh_fmts ]
+then
+    /usr/bin/fmtutil-sys --refresh
+    mv -f ${markerdir}/texlive.refresh_fmts \
+       ${markerdir}/texlive.refresh_fmts.done
+fi

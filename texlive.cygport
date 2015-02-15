@@ -1,14 +1,23 @@
 NAME="texlive"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 HOMEPAGE="http://www.tug.org/texlive/"
 # SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
-SRC_URI="mirror://ctan/systems/texlive/Source/${P}-source.tar.xz"
+SRC_URI="mirror://ctan/systems/texlive/Source/${P}-source.tar.xz
+	0p_texlive_prep.dash
+	zp_texlive_finish.dash
+	texlive-enable-fontconfig.sh
+	README.Cygwin
+	09-texlive.conf
+"
 SRC_DIR="${P}-source"
 
 PATCH_URI="20120628-2-remove_zlib_version_check.patch"
 PATCH_URI+=" 20140523-1-texmf_cnf.patch"
+PATCH_URI+=" 20140523-2-reautoconf.patch"
+
+DOCS="README.Cygwin"
 
 DEPEND="
 	libgd-devel
@@ -36,11 +45,14 @@ DEPEND="
 
 PKG_NAMES="${PN} libkpathsea6 libkpathsea-devel libptexenc1 libptexenc-devel"
 texlive_CONTENTS="
+	etc/
 	usr/bin/*.exe
-	etc/postinstall/
+	usr/bin/texlive-enable-fontconfig
+	usr/share/doc
+	var/
 "
 
-PKG_IGNORE="usr/share/"
+PKG_IGNORE="usr/share/info usr/share/man"
 
 # Building xindy docs requires the two language collections below.
 
@@ -68,6 +80,7 @@ libptexenc_devel_CONTENTS="usr/include/ptexenc/ usr/lib/libptexenc.*"
 
 CATEGORY="Publishing"
 
+texlive_REQUIRES="texlive-collection-basic"
 libptexenc_devel_REQUIRES="libkpathsea-devel"
 
 texlive_SUMMARY="TeX Live binaries"
@@ -97,6 +110,7 @@ src_compile() {
 		--with-banner-add=/Cygwin \
 		--with-system-cairo \
 		--with-system-freetype2 --with-freetype2-include=/usr/include \
+		--with-system-gd \
 		--with-system-graphite2 \
 		--with-system-harfbuzz \
 		--with-system-icu \
@@ -116,14 +130,18 @@ src_install() {
 	cd ${B}
 	cyginstall
 
-	# all we want is the binaries, everything else will come from other pkgs
+	# All we want from cyginstall is the binaries.
 	rm -fr ${D}/usr/share/texmf*
 	find ${D}/usr/bin/ -mindepth 1 ! -name '*.exe' ! -name '*.dll' ! -name '*.mem' -delete
-	cd ${C}
-	cat > texlive.postinstall <<-_EOF
-		/usr/bin/mktexlsr
-		/usr/bin/fmtutil-sys --refresh
-		_EOF
+	newbin ${S}/texlive-enable-fontconfig.sh texlive-enable-fontconfig
+	insinto /etc/fonts/conf.avail
+	doins ${S}/09-texlive.conf
+	markerdir=/var/lib/texmf/postinstall
+	insinto ${markerdir}
+	newins /dev/null ${PN}.lsr
+	newins /dev/null ${PN}.refresh_fmts
+	exeinto /etc/postinstall
+	doexe ${S}/0p_texlive_prep.dash ${S}/zp_texlive_finish.dash
 }
 
 KEEP_LA_FILES="none"

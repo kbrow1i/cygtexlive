@@ -1,0 +1,17 @@
+Font information for TeX Live on Cygwin
+=======================================
+
+Some of the texlive-collection-* packages provide fonts in
+/usr/share/texmf-dist/fonts/{opentype,truetype,type1}.  These fonts
+can be made available to fontconfig, so that applications that rely on
+fontconfig (xetex, emacs-X11,...) can use them.  This is *not* done by
+default.
+
+If you want the TeX Live fonts to be available to fontconfig, run the
+script
+
+    /usr/bin/texlive-enable-fontconfig
+
+This only has to be done once; the TeX Live postinstall scripts will
+then keep the font caches for these directories up to date when
+texlive-collection-* packages are installed or updated.

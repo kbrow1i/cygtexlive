@@ -1,0 +1,11 @@
+--- origsrc/texlive-20140523-source/reautoconf	2009-11-10 05:34:20.000000000 -0500
++++ src/texlive-20140523-source/reautoconf	2015-02-13 18:07:52.855481200 -0500
+@@ -119,7 +119,7 @@ for dir in $list; do
+   else
+     extra_dirs=
+   fi
+-  do_it autoreconf $verbose --no-recursive $dir $extra_dirs
++  do_it autoreconf $verbose --no-recursive --install $dir $extra_dirs
+ done
+ 
+ echo "$0: done."
