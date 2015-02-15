@@ -1,6 +1,6 @@
 NAME="texlive-collection-luatex-doc"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_DOC_PKGS="checkcites chickenize enigma interpreter
 	lua-check-hyphen lua-visual-debug lua2dox luabibentry luabidi
@@ -11,3 +11,4 @@ TEXLIVE_DOC_PKGS="checkcites chickenize enigma interpreter
 
 inherit texlive
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
