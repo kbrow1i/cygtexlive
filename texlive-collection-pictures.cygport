@@ -1,6 +1,6 @@
 NAME="texlive-collection-pictures"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="aobs-tikz askmaps asyfig asypictureb autoarea
 	bardiag bloques bodegraph bondgraph braids bxeepic cachepic
@@ -26,3 +26,4 @@ TEXLIVE_TEXMF_PKGS="aobs-tikz askmaps asyfig asypictureb autoarea
 TEXLIVE_ARCH_PKGS="cachepic epspdf fig4latex mathspic mkpic"
 
 inherit texlive
+REQUIRES="fontconfig"
