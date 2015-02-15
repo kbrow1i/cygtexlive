@@ -1,6 +1,6 @@
 NAME="texlive-collection-latexextra-doc"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	a5comb abraces abstract achemso acro acronym acroterm
@@ -146,3 +146,4 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 
 inherit texlive
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
