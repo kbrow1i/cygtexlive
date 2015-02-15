@@ -1,6 +1,6 @@
 NAME="texlive-collection-humanities-doc"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_DOC_PKGS="alnumsec arydshln bibleref bibleref-lds
 	bibleref-mouth bibleref-parse covington dramatist dvgloss
@@ -13,3 +13,4 @@ TEXLIVE_DOC_PKGS="alnumsec arydshln bibleref bibleref-lds
 
 inherit texlive
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
