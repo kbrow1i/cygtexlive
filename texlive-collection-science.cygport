@@ -1,6 +1,6 @@
 NAME="texlive-collection-science"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="SIstyle SIunits alg algorithm2e algorithmicx
 	algorithms biocon bohr bpchem bytefield chemarrow
@@ -15,6 +15,6 @@ TEXLIVE_TEXMF_PKGS="SIstyle SIunits alg algorithm2e algorithmicx
 
 TEXLIVE_ARCH_PKGS="ulqda"
 
-REQUIRES="texlive-collection-latex"
+REQUIRES="texlive-collection-latex fontconfig"
 
 inherit texlive
