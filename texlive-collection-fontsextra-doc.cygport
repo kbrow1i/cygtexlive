@@ -1,6 +1,6 @@
 NAME="texlive-collection-fontsextra-doc"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_DOC_PKGS="Asana-Math accanthis adforn adfsymbols aecc alegreya
 	allrunes anonymouspro antiqua antt archaic arev ascii-font
@@ -36,3 +36,4 @@ TEXLIVE_DOC_PKGS="Asana-Math accanthis adforn adfsymbols aecc alegreya
 
 inherit texlive
 ARCH=noarch
+REQUIRES="texlive-collection-basic"
