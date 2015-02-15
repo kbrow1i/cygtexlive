@@ -1,6 +1,6 @@
 NAME="texlive-collection-langpolish"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="babel-polish cc-pl gustlib mwcls pl polski
 	przechlewski-book qpxqtx tap utf8mex"
@@ -11,17 +11,8 @@ TEXLIVE_DOC_PKGS="mex babel-polish cc-pl gustlib
 	gustprog lshort-polish mwcls pl polski przechlewski-book
 	qpxqtx tap tex-virtual-academy-pl texlive-pl utf8mex"
 
-REQUIRES="texlive-collection-latex"
+REQUIRES="texlive-collection-latex fontconfig"
 
 inherit texlive
 
 # doc only:  gustprog lshort-polish tex-virtual-academy-pl texlive-pl
-
-src_install() {
-	cd ${S}
-	texlive_install
-	cd ${C}
-	cat > texlive-collection-langpolish.postinstall <<-_EOF
-		/etc/texmf/web2c/20140523-1-update_fmtutil_cnf
-		_EOF
-}
