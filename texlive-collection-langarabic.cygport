@@ -1,6 +1,6 @@
 NAME="texlive-collection-langarabic"
 VERSION=20140523
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="amiri arabi arabtex bidi ghab imsproc persian-bib
 	 persian-modern simurgh tram"
@@ -12,3 +12,4 @@ inherit texlive
 
 # doc only: lshort-persian
 ARCH=noarch
+REQUIRES="fontconfig"
