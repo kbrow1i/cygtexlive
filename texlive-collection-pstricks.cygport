@@ -1,11 +1,11 @@
 NAME="texlive-collection-pstricks"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="auto-pst-pdf bclogo makeplot pdftricks pdftricks2
-	psbao pst-2dplot pst-3d pst-3dplot pst-abspos pst-am pst-asr
-	pst-bar pst-barcode pst-bezier pst-blur pst-bspline
-	pst-calendar pst-circ pst-coil pst-cox pst-dbicons
+TEXLIVE_TEXMF_PKGS="auto-pst-pdf bclogo dsptricks makeplot pdftricks
+	pdftricks2 psbao pst-2dplot pst-3d pst-3dplot pst-abspos
+	pst-am pst-asr pst-bar pst-barcode pst-bezier pst-blur
+	pst-bspline pst-calendar pst-circ pst-coil pst-cox pst-dbicons
 	pst-diffraction pst-electricfield pst-eps pst-eucl pst-exa
 	pst-fill pst-fit pst-fr3d pst-fractal pst-fun pst-func
 	pst-gantt pst-geo pst-ghsb pst-gr3d pst-grad pst-graphicx
@@ -14,10 +14,11 @@ TEXLIVE_TEXMF_PKGS="auto-pst-pdf bclogo makeplot pdftricks pdftricks2
 	pst-mirror pst-node pst-ob3d pst-ode pst-optexp pst-optic
 	pst-osci pst-ovl pst-pad pst-pdgr pst-perspective pst-platon
 	pst-plot pst-poly pst-pulley pst-qtree pst-rubans pst-sigsys
-	pst-slpe pst-solarsystem pst-spectra pst-solides3d pst-soroban
-	pst-stru pst-support pst-text pst-thick pst-tools pst-tree
-	pst-tvz pst-uml pst-vectorian pst-vowel pst-vue3d pstricks
-	pstricks-add pstricks_calcnotes uml vaucanson-g vocaltract"
+	pst-slpe pst-solarsystem pst-solides3d pst-soroban pst-spectra
+	pst-spirograph pst-stru pst-support pst-text pst-thick
+	pst-tools pst-tree pst-tvz pst-uml pst-vectorian pst-vowel
+	pst-vue3d pstricks pstricks-add pstricks_calcnotes uml
+	vaucanson-g vocaltract"
 
 TEXLIVE_ARCH_PKGS="pst2pdf pedigree-perl"
 
