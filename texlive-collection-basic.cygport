@@ -1,6 +1,6 @@
 NAME="texlive-collection-basic"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
 # texlive.infra: Perl modules required by updmap (tetex)
 # texlive-msg-translations: used only by tlmgrgui (texlive.infra)
