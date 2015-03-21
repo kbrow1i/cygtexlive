@@ -1,6 +1,6 @@
 NAME="texlive-collection-langcyrillic"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="babel-bulgarian babel-russian babel-serbian
 	babel-serbianc babel-ukraineb cmcyr cyrillic cyrplain disser
