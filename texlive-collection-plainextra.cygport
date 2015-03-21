@@ -1,15 +1,15 @@
 NAME="texlive-collection-plainextra"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="figflow fixpdfmag font-change fontch getoptk
-	graphics-pln hyplain js-misc mkpattern newsletr pitex
+TEXLIVE_TEXMF_PKGS="epsf-dvipdfmx figflow fixpdfmag font-change fontch
+	getoptk graphics-pln hyplain js-misc mkpattern newsletr pitex
 	placeins-plain plipsum plnfss plstmary present resumemac
 	texinfo timetable treetex varisize xii"
 
-TEXLIVE_DOC_PKGS="figflow font-change fontch getoptk graphics-pln
-	hyplain js-misc mkpattern newsletr pitex plipsum plnfss
-	plstmary present resumemac treetex varisize xii"
+TEXLIVE_DOC_PKGS="epsf-dvipdfmx figflow font-change fontch getoptk
+	graphics-pln hyplain js-misc mkpattern newsletr pitex plipsum
+	plnfss plstmary present resumemac treetex varisize xii"
 
 inherit texlive
 ARCH=noarch
