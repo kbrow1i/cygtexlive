@@ -1,15 +1,15 @@
 NAME="texlive-collection-langchinese"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="arphic cns ctex fandol xpinyin zhmetrics zhnumber
 	zhspacing"
 
 TEXLIVE_ARCH_PKGS=""
 
-TEXLIVE_DOC_PKGS="arphic cns ctex ctex-faq fandol latex-notes-zh-cn
-	lshort-chinese texlive-zh-cn xpinyin zhmetrics zhnumber
-	zhspacing"
+TEXLIVE_DOC_PKGS="arphic cns ctex ctex-faq fandol impatient-cn
+	latex-notes-zh-cn lshort-chinese texlive-zh-cn xpinyin
+	zhmetrics zhnumber zhspacing"
 
 REQUIRES="texlive-collection-langcjk fontconfig"
 
