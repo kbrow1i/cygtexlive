@@ -1,12 +1,13 @@
 NAME="texlive-collection-xetex-doc"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
-TEXLIVE_DOC_PKGS="arabxetex euenc fixlatvian fontbook fontwrap
-	mathspec philokalia polyglossia ptext realscripts ucharclasses
-	unisugar xecjk xecolor xecyr xeindex xepersian xesearch xetex
-	xetex-itrans xetex-pstricks xetexfontinfo xetex-tibetan
-	xetexko xevlna xltxtra xunicode"
+TEXLIVE_DOC_PKGS="arabxetex bidi-atbegshi bidicontour bidipagegrid
+	bidishadowtext bidipresentation fixlatvian fontbook fontwrap
+	interchar mathspec philokalia polyglossia ptext realscripts
+	ucharclasses unisugar xecjk xecolor xecyr xeindex xepersian
+	xesearch xespotcolor xetex xetex-itrans xetex-pstricks
+	xetexfontinfo xetex-tibetan xetexko xevlna xltxtra xunicode"
 
 inherit texlive
 ARCH=noarch
