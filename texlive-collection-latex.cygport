@@ -1,6 +1,6 @@
 NAME="texlive-collection-latex"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="ae amscls amsmath babel babel-english babelbib
 	carlisle colortbl fancyhdr fix2col geometry graphics hyperref
