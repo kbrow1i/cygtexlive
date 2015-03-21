@@ -1,17 +1,18 @@
 NAME="texlive-collection-binextra-doc"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
 TEXLIVE_DOC_PKGS="a2ping adhocfilelist arara bibtex8 bibtexu bundledoc
-	chktex ctanify ctanupload ctie cweb de-macro detex dtxgen
-	dvi2tty dvicopy dviljk dvipng dvipos dvisvgm findhyph
-	fragmaster installfont latex-git-log latex2man latexdiff
-	latexfileversion latexindent latexmk latexpand listings-ext
-	ltxfileinfo ltximg match_parens mkjobtexmf patgen pdfcrop
-	pdfjam pdftools pfarrei pkfix pkfix-helper purifyeps pythontex
-	sty2dtx synctex texcount texdef texdiff texdirflatten texdoc
-	texfot texliveonfly texloganalyser texware tie tpic2pdftex
-	tpic2pdftex typeoutfileinfo web xindy"
+	ctan_chk chktex ctanify ctanupload ctie cweb de-macro detex
+	dtxgen dvi2tty dvicopy dviljk dvipng dvipos dvisvgm findhyph
+	fragmaster hook-pre-commit-pkg installfont latex-git-log
+	latex2man latexdiff latexfileversion latexindent latexmk
+	latexpand listings-ext ltxfileinfo ltximg match_parens
+	mkjobtexmf patgen pdfcrop pdfjam pdftools pfarrei pkfix
+	pkfix-helper purifyeps pythontex sty2dtx synctex texcount
+	texdef texdiff texdirflatten texdoc texfot texliveonfly
+	texloganalyser texware tie tpic2pdftex tpic2pdftex
+	typeoutfileinfo web xindy"
 
 inherit texlive
 ARCH=noarch
