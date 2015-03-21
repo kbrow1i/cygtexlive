@@ -1,25 +1,27 @@
 NAME="texlive-collection-bibtexextra-doc"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
 TEXLIVE_DOC_PKGS="amsrefs apacite besjournals bibarts biber bibexport
-	bibhtml biblatex biblatex-apa biblatex-bwl
-	biblatex-caspervector biblatex-chem biblatex-chicago
-	biblatex-dw biblatex-fiwi biblatex-gost biblatex-historian
-	biblatex-ieee biblatex-juradiss biblatex-luh-ipw
-	biblatex-manuscripts-philology biblatex-mla biblatex-musuos
-	biblatex-nature biblatex-nejm biblatex-philosophy
-	biblatex-phys biblatex-publist biblatex-science
+	bibhtml biblatex biblatex-anonymous biblatex-apa
+	biblatex-bookinarticle biblatex-bwl biblatex-caspervector
+	biblatex-chem biblatex-chicago biblatex-dw biblatex-fiwi
+	biblatex-gost biblatex-historian biblatex-ieee
+	biblatex-juradiss biblatex-luh-ipw
+	biblatex-manuscripts-philology biblatex-mla
+	biblatex-multiple-dm biblatex-musuos biblatex-nature
+	biblatex-nejm biblatex-philosophy biblatex-phys
+	biblatex-publist biblatex-realauthor biblatex-science
 	biblatex-source-division biblatex-swiss-legal biblatex-trad
 	biblatex-true-citepages-omit biblist bibtopic bibtopicprefix
 	bibunits breakcites cell chbibref chembst chicago-annote
-	chscite collref custom-bib din1505 dk-bib doipubmed economic
-	figbib footbib francais-bst geschichtsfrkl harvard harvmac
-	historische-zeitschrift ijqc inlinebib iopart-num jneurosci
-	jurabib listbib logreq margbib multibib multibibliography
-	munich notes2bib oscola perception rsc showtags
-	sort-by-letters splitbib uni-wtal-ger uni-wtal-lin urlbst
-	usebib vak xcite"
+	chscite citeall collref crossrefware custom-bib din1505 dk-bib
+	doipubmed economic figbib footbib francais-bst geschichtsfrkl
+	harvard harvmac historische-zeitschrift ijqc inlinebib
+	iopart-num jneurosci jurabib listbib logreq margbib multibib
+	multibibliography munich notes2bib oscola perception rsc
+	showtags sort-by-letters splitbib turabian-formatting
+	uni-wtal-ger uni-wtal-lin urlbst usebib vak xcite"
 
 inherit texlive
 ARCH=noarch
