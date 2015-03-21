@@ -1,16 +1,18 @@
 NAME="texlive-collection-context"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="jmn context-account context-algorithmic
-	context-bnf context-chromato context-construction-plan
-	context-cyrillicnumbers context-degrade context-filter
-	context-fixme context-french context-fullpage context-games
-	context-gantt context-gnuplot context-letter context-lettrine
-	context-lilypond context-mathsets context-notes-zh-cn
-	context-rst context-ruby context-simplefonts
-	context-simpleslides context-transliterator context-typearea
-	context-typescripts context-vim"
+	context-animation context-annotation context-bnf
+	context-chromato context-construction-plan
+	context-cyrillicnumbers context-degrade context-fancybreak
+	context-filter context-fixme context-french context-fullpage
+	context-games context-gantt context-gnuplot context-letter
+	context-lettrine context-lilypond context-mathsets
+	context-notes-zh-cn context-rst context-ruby
+	context-simplefonts context-simpleslides context-title
+	context-transliterator context-typearea context-typescripts
+	context-vim context-visualcounter"
 
 TEXLIVE_ARCH_PKGS="context"
 
