@@ -1,6 +1,6 @@
 NAME="texlive-collection-langafrican"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="ethiop ethiop-t1 fc"
 TEXLIVE_DOC_PKGS="ethiop ethiop-t1 fc"
