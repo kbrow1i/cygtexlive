@@ -1,10 +1,11 @@
 NAME="texlive-collection-music-doc"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
-TEXLIVE_DOC_PKGS="abc figbas gchords gtrcrd guitar guitarchordschemes
-	harmony lilyglyphs m-tx musixguit musixtex musixtex-fonts pmx
-	pmxchords songbook songs"
+TEXLIVE_DOC_PKGS="abc bagpipe figbas gchords gtrcrd guitar
+	guitarchordschemes harmony leadsheets lilyglyphs m-tx
+	musixguit musixtex musixtex-fonts pmx pmxchords songbook
+	songs"
 
 inherit texlive
 
