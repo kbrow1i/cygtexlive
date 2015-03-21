@@ -1,8 +1,8 @@
 NAME="texlive-collection-htmlxml"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="classpack passivetex"
+TEXLIVE_TEXMF_PKGS="classpack passivetex xmltexconfig"
 TEXLIVE_ARCH_PKGS="jadetex tex4ht xmltex"
 TEXLIVE_DOC_PKGS="classpack jadetex tex4ht xmltex"
 
