@@ -1,19 +1,18 @@
 NAME="texlive-collection-binextra"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="bibtex8 bibtexu cweb dtl dvi2tty dvidvi hyphenex lacheck seetexk"
 
-TEXLIVE_ARCH_PKGS="a2ping adhocfilelist arara bundledoc chktex ctanify
-	ctanupload de-macro dtxgen dviasm dviljk dvipng findhyph
-	fragmaster installfont latex-git-log latex2man latexdiff
-	latexfileversion latexindent latexmk latexpand listings-ext
-	ltxfileinfo ltximg match_parens mkjobtexmf pdfcrop pdfjam
-	pdftools pfarrei pkfix pkfix-helper purifyeps pythontex
-	sty2dtx texcount texdef texdiff texdirflatten texdoc texfot
-	texliveonfly texloganalyser tpic2pdftex typeoutfileinfo"
-case ${ARCH} in
-    i686) TEXLIVE_ARCH_PKGS+=" xindy" ;;
-esac
+TEXLIVE_ARCH_PKGS="a2ping adhocfilelist arara bundledoc chktex
+	hook-pre-commit-pkg ctanify ctanupload de-macro dtxgen dviasm
+	dviljk dvipng findhyph fragmaster hook-pre-commit-pkg
+	installfont latex-git-log latex2man latexdiff latexfileversion
+	latexindent latexmk latexpand listings-ext ltxfileinfo ltximg
+	match_parens mkjobtexmf pdfcrop pdfjam pdftools pfarrei pkfix
+	pkfix-helper purifyeps pythontex sty2dtx texcount texdef
+	texdiff texdirflatten texdoc texfot texliveonfly
+	texloganalyser tpic2pdftex typeoutfileinfo" case ${ARCH} in
+	i686) TEXLIVE_ARCH_PKGS+=" xindy" ;; esac
 
 inherit texlive
