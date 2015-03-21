@@ -1,6 +1,6 @@
 NAME="texlive-collection-langjapanese"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="bxbase bxcjkjatype bxjscls ipaex japanese
 	japanese-otf japanese-otf-uptex jsclasses luatexja pxbase
