@@ -1,15 +1,14 @@
 NAME="texlive-collection-humanities"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="alnumsec arydshln bibleref bibleref-lds
-	bibleref-mouth bibleref-parse covington dramatist dvgloss
-	ecltree edfnotes ednotes eledform eledmac expex gb4e gmverse
-	jura juraabbrev juramisc jurarsp ledmac leipzig lexikon lexref
-	lineno linguex liturg metrix parallel parrun phonrule plari
-	play poemscol poetrytex qobitree qtree rrgtrees rtklage
-	screenplay sides stage textglos thalie tree-dvips verse
-	xyling"
+TEXLIVE_TEXMF_PKGS="bibleref bibleref-lds bibleref-mouth
+	bibleref-parse covington dramatist dvgloss ecltree edfnotes
+	ednotes eledform eledmac expex gb4e gmverse jura juraabbrev
+	juramisc jurarsp ledmac leipzig lexikon lexref linguex liturg
+	metrix parallel parrun phonrule plari play poemscol poetrytex
+	qobitree qtree rrgtrees rtklage screenplay sides stage
+	textglos thalie tree-dvips verse xyling"
 
 REQUIRES="texlive-collection-basic texlive-collection-latex"
 
