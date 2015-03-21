@@ -1,11 +1,11 @@
 NAME="texlive-collection-fontutils"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="afm2pl dvipsconfig ps2pkm ttfutils"
+TEXLIVE_TEXMF_PKGS="afm2pl dvipsconfig ttfutils"
 
 TEXLIVE_ARCH_PKGS="accfonts dosepsbin epstopdf fontinst fontools
-	mf2pt1 pstools psutils"
+	mf2pt1 ps2pk pstools psutils"
 
 inherit texlive
 REQUIRES="texlive-collection-basic"
