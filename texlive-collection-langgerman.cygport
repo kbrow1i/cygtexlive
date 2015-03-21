@@ -1,6 +1,6 @@
 NAME="texlive-collection-langgerman"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="babel-german bibleref-german dhua german germbib
 	  germkorr hausarbeit-jura r_und_s udesoftec umlaute
@@ -10,12 +10,12 @@ TEXLIVE_TEXMF_PKGS="babel-german bibleref-german dhua german germbib
 # texlive-collection-basic.cygport.
 
 TEXLIVE_DOC_PKGS="babel-german bibleref-german booktabs-de csquotes-de
-	dehyph-exptl dhua etoolbox-de einfuehrung fifinddo-info
+	dehyph-exptl dhua etoolbox-de einfuehrung etdipa fifinddo-info
 	geometry-de german germbib germkorr hausarbeit-jura
 	koma-script-examples l2picfaq l2tabu latex-bib-ex
-	latex-referenz latex-tabellen lshort-german microtype-de
-	lualatex-doc-de presentations pstricks-examples r_und_s
-	templates-fenn templates-sommer texlive-de tipa-de
+	latex-referenz latex-tabellen latexcheat-de lshort-german
+	microtype-de lualatex-doc-de presentations pstricks-examples
+	r_und_s templates-fenn templates-sommer texlive-de tipa-de
 	translation-arsclassica-de translation-biblatex-de
 	translation-chemsym-de translation-ecv-de
 	translation-enumitem-de translation-europecv-de
