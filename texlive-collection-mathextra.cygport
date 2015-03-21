@@ -1,16 +1,16 @@
 NAME="texlive-collection-mathextra"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="12many backnaur begriff binomexp boldtensors
-	bosisio bropd ccfonts commath concmath concrete conteq
-	eqnarray extarrows extpfeil faktor grundgesetze interval
-	ionumbers isomath logicproof lplfitch mathcomp mattens mhequ
-	multiobjective natded nath ot-tableau oubraces proba rec-thy
-	ribbonproofs shuffle skmath statex statex2 stmaryrd
-	subsupscripts susy syllogism sympytexpackage synproof tablor
-	tensor tex-ewd thmbox turnstile unicode-math venn yhmath
-	ytableau"
+	bosisio bropd calculation ccfonts commath concmath concrete
+	conteq ebproof eqnarray extarrows extpfeil faktor grundgesetze
+	interval ionumbers isomath logicproof lpform lplfitch mathcomp
+	mattens mhequ multiobjective natded nath ot-tableau oubraces
+	perfectcut proba rec-thy ribbonproofs sesamanuel shuffle
+	skmath statex statex2 stmaryrd subsupscripts susy syllogism
+	sympytexpackage synproof tablor tensor tex-ewd thmbox
+	turnstile unicode-math venn yhmath ytableau"
 
 TEXLIVE_ARCH_PKGS="amstex"
 
