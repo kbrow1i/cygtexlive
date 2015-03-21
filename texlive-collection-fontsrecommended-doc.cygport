@@ -1,10 +1,10 @@
 NAME="texlive-collection-fontsrecommended-doc"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
 TEXLIVE_DOC_PKGS="charter cm-super ec euro euro-ce eurosym fpl lm
-	lm-math marvosym mathpazo pxfonts rsfs tex-gyre tex-gyre-math
-	tipa txfonts utopia wasy wasysym"
+	lm-math mflogo-font marvosym mathpazo pxfonts rsfs tex-gyre
+	tex-gyre-math tipa txfonts utopia wasy wasy2-ps wasysym"
 
 inherit texlive
 ARCH=noarch
