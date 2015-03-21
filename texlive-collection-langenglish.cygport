@@ -1,6 +1,6 @@
 NAME="texlive-collection-langenglish"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
 TEXLIVE_DOC_PKGS="FAQ-en MemoirChapStyles Type1fonts amslatex-primer
 	around-the-bend ascii-chart components-of-TeX comprehensive
@@ -8,13 +8,13 @@ TEXLIVE_DOC_PKGS="FAQ-en MemoirChapStyles Type1fonts amslatex-primer
 	impatient intro-scientific knuth l2tabu-english latex-brochure
 	latex-course latex-doc-ptr latex-graphics-companion
 	latex-veryshortguide latex-web-companion latex2e-help-texinfo
-	latex4wp latexcheat latexfileinfo-pkgs lshort-english macros2e
-	math-e memdesign metafont-beginners metapost-examples mil3
-	patgen2-tutorial pictexsum plain-doc presentations-en
-	pstricks-examples-en simplified-latex svg-inkscape tabulars-e
-	tamethebeast tds tex-font-errors-cheatsheet tex-overview
-	tex-refs texbytopic titlepages tlc2 visualfaq voss-mathmode
-	webguide xetexref"
+	latex4wp latexcheat latexcourse-rug latexfileinfo-pkgs
+	lshort-english macros2e math-e memdesign metafont-beginners
+	metapost-examples mil3 patgen2-tutorial pictexsum plain-doc
+	presentations-en pstricks-examples-en simplified-latex
+	svg-inkscape tabulars-e tamethebeast tds
+	tex-font-errors-cheatsheet tex-overview tex-refs texbytopic
+	titlepages tlc2 visualfaq voss-mathmode webguide xetexref"
 
 inherit texlive
 ARCH=noarch
