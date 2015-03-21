@@ -1,21 +1,21 @@
 NAME="texlive-collection-langgreek"
-VERSION=20140523
-RELEASE=2
+VERSION=20150318
+RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="babel-greek betababel bgreek cbfonts cbfonts-fd
-	gfsbaskerville gfsporson greek-fontenc greek-inputenc
-	greekdates greektex ibycus-babel ibygrk kerkis levy lgreek
-	teubner xgreek yannisgr"
+TEXLIVE_TEXMF_PKGS="babel-greek begingreek betababel bgreek cbfonts
+	cbfonts-fd gfsbaskerville gfsporson greek-fontenc
+	greek-inputenc greekdates greektex ibycus-babel ibygrk kerkis
+	levy lgreek teubner xgreek yannisgr"
 
 # I'm omitting hyphen-ancientgreek and hyphen-greek; see the comment
 # in texlive-collection-basic.cygport.
 
 TEXLIVE_ARCH_PKGS="mkgrkindex"
 
-TEXLIVE_DOC_PKGS="babel-greek betababel bgreek cbfonts cbfonts-fd
-	gfsbaskerville gfsporson greek-inputenc greek-fontenc
-	greekdates greektex hyphen-greek ibycus-babel ibygrk kerkis
-	levy lgreek mkgrkindex teubner xgreek yannisgr"
+TEXLIVE_DOC_PKGS="babel-greek begingreek betababel bgreek cbfonts
+	cbfonts-fd gfsbaskerville gfsporson greek-inputenc
+	greek-fontenc greekdates greektex hyphen-greek ibycus-babel
+	ibygrk kerkis levy lgreek mkgrkindex teubner xgreek yannisgr"
 
 inherit texlive
 REQUIRES="fontconfig"
