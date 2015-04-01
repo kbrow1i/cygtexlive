@@ -1,6 +1,6 @@
 NAME="texlive"
 VERSION=20140523
-RELEASE=3
+RELEASE=4
 
 HOMEPAGE="http://www.tug.org/texlive/"
 # SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
@@ -55,16 +55,6 @@ texlive_CONTENTS="
 PKG_IGNORE="usr/share/info usr/share/man"
 
 # Building xindy docs requires the two language collections below.
-
-# Building --with-system-gd on x86 fails as follows in texk/dvipng:
-# configure:16023: checking for gdImageCreate
-# configure:16023: ./libtool --mode=link --tag=CC gcc -o conftest.exe -ggdb -O2 -pipe -Wimplicit-function-declaration -fdebug-prefix-map=/home/kbrown/src/cygtexlive/texlive/texlive-20140523-1.i686/build=/usr/src/debug/texlive-20140523-1 -fdebug-prefix-map=/home/kbrown/src/cygtexlive/texlive/texlive-20140523-1.i686/src/texlive-20140523-source=/usr/src/debug/texlive-20140523-1  -I/usr/include/freetype2 -I/usr/include/libpng15    conftest.c -lgd -lfreetype -lpng15 -lm -lz -lz  >&5
-# libtool: link: cannot find the library `/usr/lib/libjpeg.la' or unhandled argument `/usr/lib/libjpeg.la'
-
-# I think this started after recent jpeg update.  It may fail on
-# x86_64 also, but I haven't retried since last (successful) build.
-# So the release of TL2014 will use system-gd on x86_64 bit but not
-# x86.  I'll look into this further for TL2015 if it's still broken.
 
 case ${ARCH} in
     i686) texlive_CONTENTS+=" usr/bin/xindy.mem"
