@@ -1,5 +1,5 @@
 NAME="texlive-collection-luatex"
-VERSION=20150318
+VERSION=20150521
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="checkcites chickenize enigma interpreter
