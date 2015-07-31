@@ -1,5 +1,5 @@
 NAME="texlive-collection-langcyrillic"
-VERSION=20150318
+VERSION=20150521
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="babel-bulgarian babel-russian babel-serbian
