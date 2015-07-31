@@ -1,29 +1,33 @@
 NAME="texlive"
-VERSION=20140523
-RELEASE=4
+VERSION=20150521
+RELEASE=1
 
 HOMEPAGE="http://www.tug.org/texlive/"
 # SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
-SRC_URI="mirror://ctan/systems/texlive/Source/${P}-source.tar.xz
-	0p_texlive_prep.dash
-	zp_texlive_finish.dash
-	texlive-enable-fontconfig.sh
-	README.Cygwin
-	09-texlive.conf
-"
+SRC_URI="mirror://ctan/systems/texlive/Source/${P}-source.tar.xz"
+SRC_URI+=" 0p_texlive_prep.dash"
+SRC_URI+=" zp_texlive_finish.dash"
+SRC_URI+=" texlive-enable-fontconfig.sh"
+SRC_URI+=" README.Cygwin"
+SRC_URI+=" 09-texlive.conf"
+
 SRC_DIR="${P}-source"
 
-PATCH_URI="20120628-2-remove_zlib_version_check.patch"
-PATCH_URI+=" 20140523-1-texmf_cnf.patch"
+# The zlib check no longer checks third part of version.
+# PATCH_URI="20150506-1-remove_zlib_version_check.patch"
+PATCH_URI+=" 20150506-1-texmf_cnf.patch"
 PATCH_URI+=" 20140523-2-reautoconf.patch"
 
 DOCS="README.Cygwin"
 
 DEPEND="
 	libgd-devel
+	libgmp-devel
 	libgs-devel
 	libiconv
 	libicu-devel
+	libmpfr-devel
+	libpaper-devel
 	t1lib-devel
 	pkgconfig(cairo)
 	pkgconfig(fontconfig)
@@ -43,7 +47,8 @@ DEPEND="
 	pkgconfig(zziplib)
 "
 
-PKG_NAMES="${PN} libkpathsea6 libkpathsea-devel libptexenc1 libptexenc-devel"
+PKG_NAMES="${PN} libkpathsea6 libkpathsea-devel libptexenc1 libptexenc-devel libsynctex1 libsynctex-devel libtexlua52_5 libtexlua52-devel"
+
 texlive_CONTENTS="
 	etc/
 	usr/bin/*.exe
@@ -64,20 +69,41 @@ case ${ARCH} in
 esac
 
 libkpathsea6_CONTENTS="usr/bin/cygkpathsea-6.dll"
-libkpathsea_devel_CONTENTS="usr/include/kpathsea/ usr/lib/libkpathsea.*"
+libkpathsea_devel_CONTENTS="usr/include/kpathsea/ usr/lib/kpathsea/
+	usr/lib/libkpathsea.* usr/lib/pkgconfig/kpathsea.pc"
 libptexenc1_CONTENTS="usr/bin/cygptexenc-1.dll"
-libptexenc_devel_CONTENTS="usr/include/ptexenc/ usr/lib/libptexenc.*"
+libptexenc_devel_CONTENTS="usr/include/ptexenc/ usr/lib/libptexenc.*
+	usr/lib/pkgconfig/ptexenc.pc"
+libsynctex1_CONTENTS="usr/bin/cygsynctex-1.dll"
+libsynctex_devel_CONTENTS="usr/include/synctex/ usr/lib/libsynctex.*
+	usr/lib/pkgconfig/synctex.pc"
+libtexlua52_5_CONTENTS="usr/bin/cygtexlua52-5.dll"
+libtexlua52_devel_CONTENTS="usr/include/texlua52/
+	usr/lib/libtexlua52.* usr/lib/pkgconfig/texlua52.pc"
 
 CATEGORY="Publishing"
 
 texlive_REQUIRES="texlive-collection-basic"
-libptexenc_devel_REQUIRES="libkpathsea-devel"
 
 texlive_SUMMARY="TeX Live binaries"
 libkpathsea6_SUMMARY="TeX file and path search library (runtime)"
 libkpathsea_devel_SUMMARY="TeX file and path search library (development)"
 libptexenc1_SUMMARY="TeX Unicode encoding library (runtime)"
 libptexenc_devel_SUMMARY="TeX Unicode encoding library (development)"
+libsynctex1_SUMMARY="TeX source/output synchronization library (runtime)"
+libsynctex_devel_SUMMARY="TeX source/output synchronization library (development)"
+libtexlua52_5_SUMMARY="TeX lua scripting library (runtime)"
+libtexlua52_devel_SUMMARY="TeX lua scripting library (development)"
+
+if [ ${ARCH} = i686 ]
+then
+    PKG_NAMES+=" libtexluajit2 libtexluajit-devel"
+    libtexluajit2_CONTENTS="usr/bin/cygtexluajit-2.dll"
+    libtexluajit_devel_CONTENTS="usr/include/texluajit/
+	 usr/lib/libtexluajit* usr/lib/pkgconfig/texluajit.pc"
+    libtexluajit2_SUMMARY="TeX Just-In-Time lua compiler library (runtime)"
+    libtexluajit_devel_SUMMARY="TeX Just-In-Time lua compiler library (development)"
+fi
 
 DESCRIPTION="TeX Live provides a comprehensive, cross-platform TeX system. It 
 includes all the major TeX-related programs, macro packages, and fonts 
@@ -101,11 +127,14 @@ src_compile() {
 		--with-system-cairo \
 		--with-system-freetype2 --with-freetype2-include=/usr/include \
 		--with-system-gd \
+		--with-system-gmp \
 		--with-system-graphite2 \
 		--with-system-harfbuzz \
 		--with-system-icu \
 		--with-system-libgs \
+		--with-system-libpaper \
 		--with-system-libpng \
+		--with-system-mpfr \
 		--with-system-ncurses \
 		--with-system-pixman \
 		--with-system-poppler \
