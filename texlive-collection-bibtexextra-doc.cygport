@@ -1,5 +1,5 @@
 NAME="texlive-collection-bibtexextra-doc"
-VERSION=20150318
+VERSION=20150521
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="amsrefs apacite besjournals bibarts biber bibexport
@@ -12,7 +12,8 @@ TEXLIVE_DOC_PKGS="amsrefs apacite besjournals bibarts biber bibexport
 	biblatex-multiple-dm biblatex-musuos biblatex-nature
 	biblatex-nejm biblatex-philosophy biblatex-phys
 	biblatex-publist biblatex-realauthor biblatex-science
-	biblatex-source-division biblatex-swiss-legal biblatex-trad
+	biblatex-source-division biblatex-subseries
+	biblatex-swiss-legal biblatex-trad
 	biblatex-true-citepages-omit biblist bibtopic bibtopicprefix
 	bibunits breakcites cell chbibref chembst chicago-annote
 	chscite citeall collref crossrefware custom-bib din1505 dk-bib
