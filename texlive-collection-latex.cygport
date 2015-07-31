@@ -1,5 +1,5 @@
 NAME="texlive-collection-latex"
-VERSION=20150318
+VERSION=20150521
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="ae amscls amsmath babel babel-english babelbib
