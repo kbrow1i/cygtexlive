@@ -1,7 +1,7 @@
 This needs to be kept in sync with a similar patch for texlive.
 
---- origsrc/texmf-dist/web2c/texmf.cnf	2014-04-22 17:07:54.000000000 -0400
-+++ src/texmf-dist/web2c/texmf.cnf	2014-05-30 15:24:13.217578200 -0400
+--- origsrc/texmf-dist/web2c/texmf.cnf	2015-04-12 11:20:30.000000000 -0400
++++ src/texmf-dist/web2c/texmf.cnf	2015-05-05 15:12:51.548905300 -0400
 @@ -51,7 +51,12 @@
  % Redistributors will probably want $SELFAUTODIR/share, i.e., /usr/share.
  % Kpathsea sets SELFAUTOLOC (the directory with the binary),
@@ -39,16 +39,16 @@ This needs to be kept in sync with a similar patch for texlive.
 +TEXMFHOME = ~/.local/share/texmf
  
  % TEXMFVAR, where texconfig/updmap/fmtutil store cached runtime data.
--TEXMFVAR = ~/.texlive2014/texmf-var
+-TEXMFVAR = ~/.texlive2015/texmf-var
 +TEXMFVAR = ~/.cache/texmf
  
  % TEXMFCONFIG, where texconfig/updmap/fmtutil store configuration data.
--TEXMFCONFIG = ~/.texlive2014/texmf-config
+-TEXMFCONFIG = ~/.texlive2015/texmf-config
 +TEXMFCONFIG = ~/.config/texmf
  
  % List all the texmf trees. For an explanation of what they are, see the
  % TeX Live manual.
-@@ -481,30 +486,42 @@ RUBYINPUTS   = .;$TEXMF/scripts/{$progna
+@@ -486,30 +491,42 @@ RUBYINPUTS   = .;$TEXMF/scripts/{$progna
  % since we don't want to scatter ../'s throughout the value.  Hence we
  % explicitly list every directory.  Arguably more understandable anyway.
  %

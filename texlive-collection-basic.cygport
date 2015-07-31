@@ -1,6 +1,9 @@
 NAME="texlive-collection-basic"
-VERSION=20150318
+VERSION=20150617
 RELEASE=1
+
+# The original release of fmtutil was buggy and not well documented.
+# We need to use the version of the tetex package from 20150616.
 
 # texlive.infra: Perl modules required by updmap (tetex)
 # texlive-msg-translations: used only by tlmgrgui (texlive.infra)
@@ -31,14 +34,21 @@ SRC_URI+=" postinstall.sh"
 
 inherit texlive
 
-PATCH_URI="20140523-1-texmf_cnf.patch"
+PATCH_URI="20150505-1-texmf_cnf.patch"
 PATCH_URI+=" 20140523-1-fmtutil_cnf.patch"
-PATCH_URI+=" 20140523-1-updmap_cfg.patch"
-PATCH_URI+=" 20140523-1-${ARCH}-texlive_scripts_only_rungs.patch"
+PATCH_URI+=" 20150521-1-updmap_cfg.patch"
+PATCH_URI+=" 20150505-1-${ARCH}-texlive_scripts_only_rungs.patch"
+PATCH_URI+=" 20150505-1-texmfcnf_lua.patch"
 
+# http://tug.org/mailman/htdig/tlbuild/2015q1/003104.html
+# https://cygwin.com/ml/cygwin-apps/2015-05/msg00067.html
 case ${ARCH} in
     x86_64)
 	PATCH_URI+=" 20140523-1-x86_64-no_luajittex.patch"
+	PATCH_URI+=" 20150521-1-mktexlsr_use_mktemp_x86_64.patch"
+	;;
+    i686)
+	PATCH_URI+=" 20150521-1-mktexlsr_use_mktemp_x86.patch"
 	;;
 esac
 
