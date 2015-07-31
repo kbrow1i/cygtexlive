@@ -1,8 +1,8 @@
 NAME="texlive-collection-fontutils"
-VERSION=20150318
+VERSION=20150521
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="afm2pl dvipsconfig ttfutils"
+TEXLIVE_TEXMF_PKGS="afm2pl dvipsconfig metatype1 ttfutils"
 
 TEXLIVE_ARCH_PKGS="accfonts dosepsbin epstopdf fontinst fontools
 	mf2pt1 ps2pk pstools psutils"
