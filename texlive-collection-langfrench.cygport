@@ -1,5 +1,5 @@
 NAME="texlive-collection-langfrench"
-VERSION=20150318
+VERSION=20150521
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="aeguill babel-basque babel-french basque-book
