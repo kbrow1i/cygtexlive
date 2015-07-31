@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra-doc"
-VERSION=20150318
+VERSION=20150521
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
@@ -8,7 +8,7 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	akktex akletter alnumsec alterqcm altfont amsaddr animate
 	anonchap answers anyfontsize appendix appendixnumberbeamer
 	apptools arcs arrayjobx arraysort arydshln assignment assoccnt
-	attachfile authoraftertitle authorindex autonum avremu autopdf
+	attachfile authoraftertitle authorindex autonum autopdf avremu
 	background bankstatement bashful basicarith bchart
 	beamer2thesis beameraudience beamerdarkthemes beamerposter
 	beamersubframe beamertheme-upenn-bc beamerthemenirma
@@ -23,61 +23,76 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	cdpbundl cellspace censor changebar changelayout changepage
 	changes chappg chapterfolder chet chextras chkfloat chletter
 	chngcntr chronology circ classics clefval cleveref clipboard
-	clock cmdstring cmdtrack cmsd cnltx cntformats codedoc
-	codepage codesection collcell collectbox colordoc colorinfo
-	colortab colorwav colorweb colourchange combelow combine comma
-	commado comment concepts concprog constants contour contracard
-	cooking cool coollist coolstr coolthms cooltooltips coordsys
-	copyrightbox coseoul counttexruns courseoutline coursepaper
-	coverpage cprotect crbox crossreference csquotes csvsimple
-	csvtools cuisine currfile currvita cutwin cv cv4tw cweb-latex
-	dashbox dashrule dashundergaps dataref datatool dateiliste
-	datenumber datetime dblfloatfix decimal decorule delim
-	delimtxt detlev-cm diagbox diagnose dialogl dichokey dinbrief
+	clock cmdstring cmdtrack cmsd cnltx cntformats cntperchap
+	codedoc codepage codesection collcell collectbox colordoc
+	colorinfo colorspace colortab colorwav colorweb colourchange
+	combelow combine comma commado comment concepts concprog
+	constants contour contracard cooking cool coollist coolstr
+	coolthms cooltooltips coordsys copyrightbox coseoul
+	counttexruns courseoutline coursepaper coverpage cprotect
+	crbox crossreference csquotes csvsimple cuisine currfile
+	currvita cutwin cv cv4tw cweb-latex cyber cybercic dashbox
+	dashrule dashundergaps dataref datatool dateiliste datenumber
+	datetime datetime2 datetime2-bahasai datetime2-basque
+	datetime2-breton datetime2-bulgarian datetime2-catalan
+	datetime2-croatian datetime2-czech datetime2-danish
+	datetime2-dutch datetime2-en-fulltext datetime2-english
+	datetime2-esperanto datetime2-estonian datetime2-finnish
+	datetime2-french datetime2-galician datetime2-german
+	datetime2-greek datetime2-hebrew datetime2-icelandic
+	datetime2-irish datetime2-italian datetime2-it-fulltext
+	datetime2-latin datetime2-lsorbian datetime2-magyar
+	datetime2-norsk datetime2-polish datetime2-portuges
+	datetime2-romanian datetime2-russian datetime2-samin
+	datetime2-scottish datetime2-serbian datetime2-slovak
+	datetime2-slovene datetime2-spanish datetime2-swedish
+	datetime2-turkish datetime2-ukrainian datetime2-usorbian
+	datetime2-welsh dblfloatfix decimal decorule delim delimtxt
+	denisbdoc detlev-cm diagbox diagnose dialogl dichokey dinbrief
 	directory dirtytalk dlfltxb dnaseq doclicense docmfp docmute
 	doctools documentation doi dotarrow dotseqn download dox
 	dpfloat dprogress drac draftcopy draftwatermark dtk dtxgallery
-	dvdcoll dynblocks ean13isbn easy easy-todo easyfig easylist
+	dvdcoll dynblocks easy easy-todo easyfig easylist ean13isbn
 	ebezier ecclesiastic ecv ed edmargin eemeir efbox egplot
-	ellipsis elmath elpres elzcards emarks embedall embrac
-	emptypage emulateapj endfloat endheads endnotes engpron engrec
-	enotez enumitem enumitem-zref envbig environ envlab epigraph
-	epiolmec eqell eqlist eqparbox errata esami esdiff esint
-	esint-type1 etaremune etextools etoolbox eukdate europasscv
-	europecv everyhook everypage exam exam-n examdesign examplep
-	exceltex excludeonly exercise exp-testopt expdlist export
-	exsheets exsol extract facsimile factura fancylabel fancynum
-	fancypar fancyslides fancytabs fancytooltips fcolumn
-	fifo-stack figsize filecontents filedate filehook fileinfo
-	filemod fink finstrut fixfoot fixme fixmetodonotes fixocgx
-	fjodor flabels flacards flagderiv flashcards flashmovie
-	flipbook flippdf floatflt floatrow flowfram fmp fmtcount
-	fn2end fnbreak fncychap fncylab fnpara fnpct fnumprint
-	foilhtml fontaxes fonttable footmisc footnotebackref
-	footnoterange footnpag forarray foreign forloop formlett
-	formular fragments frame framed frankenstein frege ftcap
-	ftnxtra fullblck fullminipage fullwidth fundus-calligra
-	fundus-sueterlin fwlw g-brief gauss gcard gcite gender
-	genmpage getfiledate ginpenc gitinfo gitinfo2 gloss glossaries
-	glossaries-danish glossaries-dutch glossaries-english
-	glossaries-french glossaries-german glossaries-irish
-	glossaries-italian glossaries-magyar glossaries-polish
-	glossaries-portuges glossaries-serbian glossaries-spanish
-	gmdoc gmdoc-enhance gmiflink gmutils gmverb graphbox
-	graphicx-psmin graphicxbox grfpaste grid grid-system gridset
-	gtl guitlogo handout hanging hardwrap harnon-cv harpoon hc
-	he-she hhtensor histogr hitec hletter hpsdiss hrefhide hvindex
-	hypdvips hyper hypernat hyperref-docsrc hyperxmp hyphenat
-	idxcmds idxlayout ifmslide ifmtarg ifnextok ifoddpage
-	ifplatform ifthenx iitem image-gallery imakeidx import
-	incgraph indextools inlinedef inputtrc interactiveworkbook
-	interfaces inversepath invoice iso iso10303 isodate isodoc
-	isonums isorot isotope issuulinks iwhdp jlabels
-	jslectureplanner jumplines jvlisting kantlipsum kerntest
-	keycommand keyreader keystroke keyval2e kix
+	ellipsis elmath elocalloc elpres elzcards emarks embedall
+	embrac emptypage emulateapj endfloat endheads endnotes engpron
+	engrec enotez enumitem enumitem-zref envbig environ envlab
+	epigraph epiolmec epyt eqell eqlist eqparbox errata esami
+	esdiff esint esint-type1 etaremune etextools etoc etoolbox
+	eukdate europasscv europecv everyhook everypage exam exam-n
+	examdesign examplep exceltex excludeonly exercise exp-testopt
+	expdlist export exsheets exsol extract facsimile factura
+	fancylabel fancynum fancypar fancyslides fancytabs
+	fancytooltips fcolumn fifo-stack figsize filecontents filedate
+	filehook fileinfo filemod fink finstrut fixfoot fixme
+	fixmetodonotes fixocgx fjodor flabels flacards flagderiv
+	flashcards flashmovie flipbook flippdf floatflt floatrow
+	flowfram fmp fmtcount fn2end fnbreak fncychap fncylab fnpara
+	fnpct fnumprint foilhtml fontaxes fonttable footmisc
+	footnotebackref footnoterange footnpag forarray foreign
+	forloop formlett formular fragments frame framed frankenstein
+	frege ftcap ftnxtra fullblck fullminipage fullwidth
+	fundus-calligra fundus-sueterlin fwlw g-brief gauss gcard
+	gcite gender genmpage getfiledate ginpenc gitinfo gitinfo2
+	gloss glossaries glossaries-danish glossaries-dutch
+	glossaries-english glossaries-french glossaries-german
+	glossaries-irish glossaries-italian glossaries-magyar
+	glossaries-polish glossaries-portuges glossaries-serbian
+	glossaries-spanish gmdoc gmdoc-enhance gmiflink gmutils gmverb
+	graphbox graphicx-psmin graphicxbox grfpaste grid grid-system
+	gridset gtl guitlogo handout hang hanging hardwrap harnon-cv
+	harpoon hc he-she hhtensor histogr hitec hletter hpsdiss
+	hrefhide hvindex hypdvips hyper hypernat hyperref-docsrc
+	hyperxmp hyphenat idxcmds idxlayout ifmslide ifmtarg ifnextok
+	ifoddpage ifplatform ifthenx iitem image-gallery imakeidx
+	import incgraph indextools inlinedef inputtrc
+	interactiveworkbook interfaces inversepath invoice iso
+	iso10303 isodate isodoc isonums isorot isotope issuulinks
+	iwhdp jlabels jslectureplanner jumplines jvlisting kantlipsum
+	kerntest keycommand keyreader keystroke keyval2e kix
 	koma-moderncvclassic koma-script-sfs komacv ktv-texdata
-	l3build labbook labelcas labels lastpackage lastpage latexdemo
-	latex-tds layouts lazylist lcd lcg leading leaflet leftidx
+	l3build labbook labelcas labels lastpackage lastpage latex-tds
+	latexdemo layouts lazylist lcd lcg leading leaflet leftidx
 	lengthconvert lettre lettrine lewis lhelp libgreek linegoal
 	lipsum lisp-on-tex listing listlbls listliketab listofsymbols
 	lkproof lmake locality localloc logbox logical-markup-utils
@@ -109,42 +124,42 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	pdfwin pdfx pecha perltex permute petiteannonce philex photo
 	piff pkgloader placeins plantslabels plates plweb polynom
 	polynomial polytable postcards poster-mac ppr-prv preprint
-	pressrelease prettyref preview printlen probsoln program
-	progress progressbar properties prosper protex protocol
-	psfragx pst-pdf pstool pxgreeks python qcm qstest qsymbols
-	quotchap quoting quotmark ran_toks randtext rccol rcs-multi
-	rcsinfo readarray realboxes recipe recipecard rectopma
-	refcheck refenums reflectgraphics refman refstyle regcount
-	regexpatch register regstats relenc relsize repeatindex
-	repltext rjlparshap rlepsf rmpage robustcommand robustindex
-	romanbar romanbarpagenumber romanneg romannum rotfloat
-	rotpages roundbox rterface rtkinenc rulercompass rvwrite
-	sauerj savefnmark savetrees scale scalebar scalerel scanpages
-	sdrt secdot sectionbox sectsty seealso selectp semantic
-	semioneside sepfootnotes seqsplit sf298 sffms shadethm shadow
-	shadowtext shapepar shipunov shorttoc show2e showcharinbox
-	showdim showexpl showlabels sidecap sidenotes silence simplecd
+	pressrelease prettyref printlen probsoln program progress
+	progressbar properties prosper protex protocol psfragx pst-pdf
+	pstool pxgreeks python qcm qstest qsymbols quotchap quoting
+	quotmark ran_toks randtext rccol rcs-multi rcsinfo readarray
+	realboxes recipe recipebook recipecard rectopma refcheck
+	refenums reflectgraphics refman refstyle regcount regexpatch
+	register regstats relenc relsize repeatindex repltext
+	rjlparshap rlepsf rmpage robustcommand robustindex romanbar
+	romanbarpagenumber romanneg romannum rotfloat rotpages
+	roundbox rterface rtkinenc rulercompass rvwrite sauerj
+	savefnmark savetrees scale scalebar scalerel scanpages sdrt
+	secdot sectionbox sectsty seealso selectp semantic semioneside
+	sepfootnotes seqsplit sf298 sffms shadethm shadow shadowtext
+	shapepar shdoc shipunov shorttoc show2e showcharinbox showdim
+	showexpl showlabels sidecap sidenotes silence simplecd
 	simplecv simplewick sitem skb skdoc skeycommand skeyval
 	skrapport slantsc smalltableof smartref snapshot snotez soul
-	spanglish sparklines sphack splitindex spot spotcolor
-	spreadtab spverbatim srbook-mem srcltx sseq sslides
-	stackengine standalone statistik stdclsdv stdpage stex
-	storebox storecmd stringstrings sttools stubs subdepth subeqn
-	subeqnarray subfigmat subfigure subfiles subfloat
-	substitutefont substr supertabular svg svgcolor svn svn-multi
-	svn-prov svninfo syntax syntrace synttree tabfigures tableaux
-	tablefootnote tableof tablestyles tablists tabls
-	tabstackengine tabto-ltx tabu tabularborder tabularcalc
-	tabularew tabulary tagging talk tamefloats tasks tcldoc
-	tcolorbox tdclock technics ted templatetools termcal termlist
-	testhyphens tex-label texmate texments texpower texshade
-	textfit textgreek textmerg textpos theoremref thinsp thmtools
-	threadcol threeparttable threeparttablex thumb thumbs thumby
-	ticket titlecaps titlepic titleref titlesec titling tocbibind
-	tocloft tocvsec2 todo todonotes tokenizer toolbox topfloat
-	totcount totpages translations trfsigns trimspaces trivfloat
-	trsym truncate tucv turnthepage twoinone twoup txgreeks
-	type1cm typeface typogrid ucs uebungsblatt umoline underlin
+	sparklines sphack splitindex spot spotcolor spreadtab
+	spverbatim srbook-mem srcltx sseq sslides stackengine
+	standalone statistik stdclsdv stdpage stex storebox storecmd
+	stringstrings sttools stubs subdepth subeqn subeqnarray
+	subfigmat subfigure subfiles subfloat substitutefont substr
+	supertabular svg svgcolor svn svn-multi svn-prov svninfo
+	syntax syntrace synttree tabfigures tableaux tablefootnote
+	tableof tablestyles tablists tabls tabstackengine tabto-ltx
+	tabu tabularborder tabularcalc tabularew tabulary tagging
+	tagpair talk tamefloats tasks tcldoc tcolorbox tdclock
+	technics ted templatetools termcal termlist testhyphens
+	tex-label texmate texments texpower texshade textfit textgreek
+	textmerg textpos theoremref thinsp thmtools threadcol
+	threeparttable threeparttablex thumb thumbs thumby ticket
+	titlecaps titlepic titleref titlesec titling tocbibind tocloft
+	tocvsec2 todo todonotes tokenizer toolbox topfloat totcount
+	totpages translations trfsigns trimspaces trivfloat trsym
+	truncate tucv turnthepage twoinone twoup txgreeks type1cm
+	typeface typogrid ucs uebungsblatt umoline underlin
 	underoverlap undolabl units unravel upmethodology upquote uri
 	ushort uwmslide varindex varsfromjobname varwidth vdmlisting
 	verbasef verbatimbox verbatimcopy verbdef verbments version
@@ -158,4 +173,4 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 
 inherit texlive
 ARCH=noarch
-REQUIRES="texlive-collection-basic"
+REQUIRES="texlive-collection-basic preview-latex"
