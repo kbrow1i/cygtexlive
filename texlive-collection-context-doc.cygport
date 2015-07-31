@@ -1,5 +1,5 @@
 NAME="texlive-collection-context-doc"
-VERSION=20150318
+VERSION=20150521
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="context context-account context-animation
