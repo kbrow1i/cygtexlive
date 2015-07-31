@@ -1,5 +1,5 @@
 NAME="texlive-collection-langarabic"
-VERSION=20150318
+VERSION=20150521
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="amiri arabi arabtex bidi dad ghab imsproc
