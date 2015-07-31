@@ -1,5 +1,5 @@
 NAME="texlive-collection-mathextra"
-VERSION=20150318
+VERSION=20150521
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="12many backnaur begriff binomexp boldtensors
