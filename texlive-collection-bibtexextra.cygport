@@ -1,18 +1,19 @@
 NAME="texlive-collection-bibtexextra"
-VERSION=20150318
+VERSION=20150521
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="aichej ajl amsrefs apacite apalike2 beebe
-	besjournals bibarts bibhtml bibhtml biblatex-anonymous
-	biblatex-apa biblatex-bookinarticle biblatex-bwl
-	biblatex-caspervector biblatex-chem biblatex-chicago
-	biblatex-dw biblatex-fiwi biblatex-gost biblatex-historian
-	biblatex-ieee biblatex-juradiss biblatex-luh-ipw
-	biblatex-manuscripts-philology biblatex-mla
+	besjournals bibarts biber bibhtml bibhtml biblatex
+	biblatex-anonymous biblatex-apa biblatex-bookinarticle
+	biblatex-bwl biblatex-caspervector biblatex-chem
+	biblatex-chicago biblatex-dw biblatex-fiwi biblatex-gost
+	biblatex-historian biblatex-ieee biblatex-juradiss
+	biblatex-luh-ipw biblatex-manuscripts-philology biblatex-mla
 	biblatex-multiple-dm biblatex-musuos biblatex-nature
 	biblatex-nejm biblatex-philosophy biblatex-phys
 	biblatex-publist biblatex-realauthor biblatex-science
-	biblatex-source-division biblatex-swiss-legal biblatex-trad
+	biblatex-source-division biblatex-subseries
+	biblatex-swiss-legal biblatex-trad
 	biblatex-true-citepages-omit biblist bibtopic bibtopicprefix
 	bibunits breakcites cell chbibref chicago chicago-annote
 	chembst chscite citeall collref compactbib custom-bib din1505
@@ -25,31 +26,6 @@ TEXLIVE_TEXMF_PKGS="aichej ajl amsrefs apacite apalike2 beebe
 
 TEXLIVE_ARCH_PKGS="bibexport crossrefware multibibliography urlbst"
 
-
-# REQUIRES="texlive-collection-latex biber"
-REQUIRES="texlive-collection-basic texlive-collection-latex"
+REQUIRES="biber texlive-collection-basic texlive-collection-latex"
 
 inherit texlive
-
-# SRC_URI is now set, without biblatex and biber.
-
-TEXLIVE_TEXMF_PKGS+=" biblatex"
-
-# Until perl gets updated so that I can build the latest biber as a
-# perl script, I have to ship biblatex-2.5 on x86_64, and I'll use the
-# upstream biber on x86.
-case ${ARCH} in
-    i686)
-	TEXLIVE_ARCH_PKGS+=" biber"
-	SRC_URI+=" biblatex.tar.xz biber.tar.xz biber.i386-cygwin.tar.xz"
-	src_install() {
-	    cd ${S}
-	    texlive_install
-	    dobin bin/i386-cygwin/biber.exe
-	}
-	;;
-    x86_64)
-	REQUIRES+=" biber"
-	SRC_URI+=" biblatex-2.5.tar.xz"
-	;;
-esac
