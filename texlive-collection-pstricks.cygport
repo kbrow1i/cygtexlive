@@ -1,5 +1,5 @@
 NAME="texlive-collection-pstricks"
-VERSION=20150318
+VERSION=20150521
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="auto-pst-pdf bclogo dsptricks makeplot pdftricks
