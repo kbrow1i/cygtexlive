@@ -1,6 +1,6 @@
 NAME="texlive"
 VERSION=20150521
-RELEASE=1
+RELEASE=2
 
 HOMEPAGE="http://www.tug.org/texlive/"
 # SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
@@ -153,7 +153,7 @@ src_install() {
 	rm -fr ${D}/usr/share/texmf*
 	find ${D}/usr/bin/ -mindepth 1 ! -name '*.exe' ! -name '*.dll' ! -name '*.mem' -delete
 	newbin ${S}/texlive-enable-fontconfig.sh texlive-enable-fontconfig
-	insinto /etc/fonts/conf.avail
+	insinto /usr/share/fontconfig/conf.avail
 	doins ${S}/09-texlive.conf
 	markerdir=/var/lib/texmf/postinstall
 	insinto ${markerdir}
