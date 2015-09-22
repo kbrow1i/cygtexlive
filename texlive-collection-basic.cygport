@@ -1,6 +1,6 @@
 NAME="texlive-collection-basic"
 VERSION=20150617
-RELEASE=1
+RELEASE=2
 
 # The original release of fmtutil was buggy and not well documented.
 # We need to use the version of the tetex package from 20150616.
@@ -42,15 +42,7 @@ PATCH_URI+=" 20150505-1-texmfcnf_lua.patch"
 
 # http://tug.org/mailman/htdig/tlbuild/2015q1/003104.html
 # https://cygwin.com/ml/cygwin-apps/2015-05/msg00067.html
-case ${ARCH} in
-    x86_64)
-	PATCH_URI+=" 20140523-1-x86_64-no_luajittex.patch"
-	PATCH_URI+=" 20150521-1-mktexlsr_use_mktemp_x86_64.patch"
-	;;
-    i686)
-	PATCH_URI+=" 20150521-1-mktexlsr_use_mktemp_x86.patch"
-	;;
-esac
+PATCH_URI+=" 20150521-1-mktexlsr_use_mktemp_${ARCH}.patch"
 
 REQUIRES="coreutils cygutils dialog ed ghostscript grep sed texlive fontconfig"
 
@@ -79,4 +71,8 @@ src_install() {
 	    ${texmflocal}/tex/plain/local \
 	    ${texmflocal}/tlpkg \
 	    ${texmflocal}/web2c
+	# The following is temporary, until luatex.x86_64-cygwin gets
+	# updated.
+	dosym luajittex.exe /usr/bin/texluajit
+	dosym luajittex.exe /usr/bin/texluajitc
 }
