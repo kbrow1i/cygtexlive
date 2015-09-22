@@ -1,6 +1,6 @@
 NAME="texlive"
 VERSION=20150521
-RELEASE=1
+RELEASE=2
 
 HOMEPAGE="http://www.tug.org/texlive/"
 # SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
@@ -17,6 +17,7 @@ SRC_DIR="${P}-source"
 # PATCH_URI="20150506-1-remove_zlib_version_check.patch"
 PATCH_URI+=" 20150506-1-texmf_cnf.patch"
 PATCH_URI+=" 20140523-2-reautoconf.patch"
+PATCH_URI+=" 20150521-2-luajit_cygwin64.patch"
 
 DOCS="README.Cygwin"
 
@@ -47,7 +48,7 @@ DEPEND="
 	pkgconfig(zziplib)
 "
 
-PKG_NAMES="${PN} libkpathsea6 libkpathsea-devel libptexenc1 libptexenc-devel libsynctex1 libsynctex-devel libtexlua52_5 libtexlua52-devel"
+PKG_NAMES="${PN} libkpathsea6 libkpathsea-devel libptexenc1 libptexenc-devel libsynctex1 libsynctex-devel libtexlua52_5 libtexlua52-devel libtexluajit2 libtexluajit-devel"
 
 texlive_CONTENTS="
 	etc/
@@ -80,6 +81,9 @@ libsynctex_devel_CONTENTS="usr/include/synctex/ usr/lib/libsynctex.*
 libtexlua52_5_CONTENTS="usr/bin/cygtexlua52-5.dll"
 libtexlua52_devel_CONTENTS="usr/include/texlua52/
 	usr/lib/libtexlua52.* usr/lib/pkgconfig/texlua52.pc"
+libtexluajit2_CONTENTS="usr/bin/cygtexluajit-2.dll"
+libtexluajit_devel_CONTENTS="usr/include/texluajit/
+	usr/lib/libtexluajit* usr/lib/pkgconfig/texluajit.pc"
 
 CATEGORY="Publishing"
 
@@ -94,16 +98,8 @@ libsynctex1_SUMMARY="TeX source/output synchronization library (runtime)"
 libsynctex_devel_SUMMARY="TeX source/output synchronization library (development)"
 libtexlua52_5_SUMMARY="TeX lua scripting library (runtime)"
 libtexlua52_devel_SUMMARY="TeX lua scripting library (development)"
-
-if [ ${ARCH} = i686 ]
-then
-    PKG_NAMES+=" libtexluajit2 libtexluajit-devel"
-    libtexluajit2_CONTENTS="usr/bin/cygtexluajit-2.dll"
-    libtexluajit_devel_CONTENTS="usr/include/texluajit/
-	 usr/lib/libtexluajit* usr/lib/pkgconfig/texluajit.pc"
-    libtexluajit2_SUMMARY="TeX Just-In-Time lua compiler library (runtime)"
-    libtexluajit_devel_SUMMARY="TeX Just-In-Time lua compiler library (development)"
-fi
+libtexluajit2_SUMMARY="TeX Just-In-Time lua compiler library (runtime)"
+libtexluajit_devel_SUMMARY="TeX Just-In-Time lua compiler library (development)"
 
 DESCRIPTION="TeX Live provides a comprehensive, cross-platform TeX system. It 
 includes all the major TeX-related programs, macro packages, and fonts 
@@ -116,13 +112,10 @@ src_compile() {
 	cd ${S}
 	libtoolize --force --install
 	./reautoconf
-	# asymptote: does not build in tree, upstream is newer
-	# dialog: use standalone dialog (tcdialog has been removed from trunk)
 	cd ${B}
 	cygconf \
 		--enable-shared \
 		--disable-native-texlive-build \
-		--disable-dialog \
 		--with-banner-add=/Cygwin \
 		--with-system-cairo \
 		--with-system-freetype2 --with-freetype2-include=/usr/include \
