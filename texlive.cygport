@@ -19,6 +19,9 @@ PATCH_URI+=" 20150506-1-texmf_cnf.patch"
 PATCH_URI+=" 20140523-2-reautoconf.patch"
 PATCH_URI+=" 20150521-2-luajit_cygwin64.patch"
 
+# http://tug.org/pipermail/tex-live/2015-September/037378.html
+PATCH_URI+=" 20150521-3-euptex_missing_comma.patch"
+
 DOCS="README.Cygwin"
 
 DEPEND="
@@ -54,7 +57,8 @@ texlive_CONTENTS="
 	etc/
 	usr/bin/*.exe
 	usr/bin/texlive-enable-fontconfig
-	usr/share/doc
+	usr/share/doc/
+	usr/share/fontconfig/
 	var/
 "
 
