@@ -1,6 +1,6 @@
 NAME="texlive-collection-basic"
 VERSION=20150617
-RELEASE=2
+RELEASE=3
 
 # The original release of fmtutil was buggy and not well documented.
 # We need to use the version of the tetex package from 20150616.
@@ -44,6 +44,10 @@ PATCH_URI+=" 20150505-1-texmfcnf_lua.patch"
 # https://cygwin.com/ml/cygwin-apps/2015-05/msg00067.html
 PATCH_URI+=" 20150521-1-mktexlsr_use_mktemp_${ARCH}.patch"
 
+# http://tug.org/pipermail/tex-live/2015-September/037378.html
+# This is fixed in the latest kpathsea.tar.xz.
+PATCH_URI+=" 20150617-3-euptex_missing_comma.patch"
+
 REQUIRES="coreutils cygutils dialog ed ghostscript grep sed texlive fontconfig"
 
 src_install() {
@@ -71,8 +75,4 @@ src_install() {
 	    ${texmflocal}/tex/plain/local \
 	    ${texmflocal}/tlpkg \
 	    ${texmflocal}/web2c
-	# The following is temporary, until luatex.x86_64-cygwin gets
-	# updated.
-	dosym luajittex.exe /usr/bin/texluajit
-	dosym luajittex.exe /usr/bin/texluajitc
 }
