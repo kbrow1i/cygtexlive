@@ -64,11 +64,11 @@ texlive_CONTENTS="
 
 PKG_IGNORE="usr/share/info usr/share/man"
 
-# Building xindy docs requires the two language collections below.
+# Building xindy docs requires the collections below.
 
 case ${ARCH} in
     i686) texlive_CONTENTS+=" usr/bin/xindy.mem"
-	  DEPEND+=" clisp texlive-collection-langgreek texlive-collection-langcyrillic"
+	  DEPEND+=" clisp texlive-collection-langgreek texlive-collection-langcyrillic texlive-collection-fontsrecommended"
 	  CYGCONF_ARGS="--enable-xindy"
 	  ;;
 esac

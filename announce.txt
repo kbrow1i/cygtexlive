@@ -1,0 +1,29 @@
+The following packages have been updated in the Cygwin distribution:
+
+* texlive-20150521-3
+* libkpathsea6-20150521-3
+* libkpathsea-devel-20150521-3
+* libptexenc1-20150521-3
+* libptexenc-devel-20150521-3
+* libsync1-20150521-3
+* libsync-devel-20150521-3
+* libtexlua52_5-20150521-3
+* libtexlua52-devel-20150521-3
+* libtexluajit2-20150521-3
+* libtexluajit-devel-20150521-3
+* texlive-collection-basic-20150617-3
+
+TeX Live provides a comprehensive, cross-platform TeX system. It includes all the major TeX-related programs, macro packages, and fonts that are free software, including support for many languages around the world. For more information, see
+
+  http://www.tug.org/texlive/
+
+This update is primarily a rebuild of the TeX Live binaries and supporting libraries to remove the dependence on the obsolete libicu55.  I've also taken the opportunity to make two minor changes:
+
+1. I've applied an upstream patch to fix a bug involving euptex (http://tug.org/pipermail/tex-live/2015-September/037378.html).
+
+2. I've moved the fontconfig configuration file for the TeX Live fonts from /etc/conf.avail (now deprecated) to /usr/share/fontconfig/conf.avail.
+
+This means that users who have previously run the /usr/bin/texlive-enable-fontconfig script will have to re-run it.  See /usr/share/doc/texlive/README.Cygwin for more information about this script.
+
+Ken Brown
+Cygwin's TeX Live maintainer
