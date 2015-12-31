@@ -1,9 +1,16 @@
-The following packages have been updated in the Cygwin distribution:
+From cygwin-announce-texlive-collection-bibtexextra-20151230-1 Thu Dec 31 14:28:29 2015
+From: Ken Brown <kbrown@cornell.edu>
+To: cygwin-announce@cygwin.com
+Date: Thu, 31 Dec 2015 14:28:29 -0500
+Subject: texlive-collection-bibtexextra 20151230-1
 
-* texlive-collection-bibtexextra-20151029-1
-* texlive-collection-bibtexextra-doc-20151029-1
+The following packages have been uploaded to the Cygwin distribution:
 
-This is an update to the latest upstream release.  It includes biblatex-3.1, which is needed for biber-2.2.
+* texlive-collection-bibtexextra-20151230-1
+* texlive-collection-bibtexextra-doc-20151230-1
+
+This is an update to the latest upstream release.  It includes
+biblatex-3.2, which is needed for biber-2.3.
 
 Ken Brown
 Cygwin's TeX Live maintainer
