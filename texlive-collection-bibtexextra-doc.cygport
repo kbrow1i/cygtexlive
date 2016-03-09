@@ -1,5 +1,5 @@
 NAME="texlive-collection-bibtexextra-doc"
-VERSION=20151230
+VERSION=20160309
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="amsrefs apacite archaeologie besjournals bestpapers
@@ -17,8 +17,8 @@ TEXLIVE_DOC_PKGS="amsrefs apacite archaeologie besjournals bestpapers
 	biblatex-true-citepages-omit biblist bibtexperllibs bibtopic
 	bibtopicprefix bibunits bookdb breakcites cell chbibref
 	chembst chicago-annote chscite citeall collref crossrefware
-	custom-bib din1505 dk-bib doipubmed economic figbib footbib
-	francais-bst geschichtsfrkl harvard harvmac
+	custom-bib din1505 dk-bib doipubmed ecobiblatex economic
+	figbib footbib francais-bst geschichtsfrkl harvard harvmac
 	historische-zeitschrift ijqc inlinebib iopart-num jneurosci
 	jurabib listbib logreq margbib multibib multibibliography
 	munich nmbib notes2bib oscola perception rsc showtags
