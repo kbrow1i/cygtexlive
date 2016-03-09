@@ -1,5 +1,5 @@
 NAME="texlive-collection-bibtexextra"
-VERSION=20151230
+VERSION=20160309
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="aichej ajl amsrefs apacite apalike2 archaeologie
@@ -17,13 +17,13 @@ TEXLIVE_TEXMF_PKGS="aichej ajl amsrefs apacite apalike2 archaeologie
 	biblatex-true-citepages-omit biblist bibtexperllibs bibtopic
 	bibtopicprefix bibunits bookdb breakcites cell chbibref
 	chembst chicago chicago-annote chscite citeall collref
-	compactbib custom-bib din1505 dk-bib doipubmed economic fbs
-	figbib footbib francais-bst geschichtsfrkl harvard harvmac
-	historische-zeitschrift ijqc inlinebib iopart-num jneurosci
-	jurabib ksfh_nat listbib logreq margbib multibib munich nar
-	nmbib notes2bib oscola perception pnas2009 rsc showtags
-	sort-by-letters splitbib turabian-formatting uni-wtal-ger
-	uni-wtal-lin usebib vak xcite"
+	compactbib custom-bib din1505 dk-bib doipubmed ecobiblatex
+	economic fbs figbib footbib francais-bst geschichtsfrkl
+	harvard harvmac historische-zeitschrift ijqc inlinebib
+	iopart-num jneurosci jurabib ksfh_nat listbib logreq margbib
+	multibib munich nar nmbib notes2bib oscola perception pnas2009
+	rsc showtags sort-by-letters splitbib turabian-formatting
+	uni-wtal-ger uni-wtal-lin usebib vak xcite"
 
 TEXLIVE_ARCH_PKGS="bibexport crossrefware multibibliography urlbst"
 
