@@ -28,4 +28,3 @@ TEXLIVE_TEXMF_PKGS="aobs-tikz askmaps asyfig asypictureb autoarea
 TEXLIVE_ARCH_PKGS="cachepic epspdf fig4latex getmap mathspic mkpic"
 
 inherit texlive
-REQUIRES="fontconfig"
