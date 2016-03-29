@@ -6,4 +6,3 @@ TEXLIVE_TEXMF_PKGS="ethiop ethiop-t1 fc"
 TEXLIVE_DOC_PKGS="ethiop ethiop-t1 fc"
 inherit texlive
 ARCH=noarch
-REQUIRES="fontconfig"
