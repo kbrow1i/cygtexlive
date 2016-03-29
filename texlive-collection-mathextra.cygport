@@ -14,6 +14,6 @@ TEXLIVE_TEXMF_PKGS="12many backnaur begriff binomexp boldtensors
 
 TEXLIVE_ARCH_PKGS="amstex"
 
-REQUIRES="texlive-collection-latex texlive-collection-fontsrecommended fontconfig"
+REQUIRES="texlive-collection-latex texlive-collection-fontsrecommended"
 
 inherit texlive
