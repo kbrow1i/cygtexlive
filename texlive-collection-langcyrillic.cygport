@@ -21,7 +21,7 @@ TEXLIVE_DOC_PKGS="babel-bulgarian babel-russian babel-serbian
 	serbian-date-lat serbian-def-cyr serbian-lig t2 texlive-ru
 	texlive-sr ukrhyph"
 
-REQUIRES="texlive-collection-latex fontconfig"
+REQUIRES="texlive-collection-latex"
 
 inherit texlive
 
