@@ -10,4 +10,3 @@ TEXLIVE_TEXMF_PKGS="avantgar bookman charter cm-super cmextra courier
 
 inherit texlive
 ARCH=noarch
-REQUIRES="fontconfig"
