@@ -11,7 +11,7 @@ TEXLIVE_DOC_PKGS="mex babel-polish cc-pl gustlib
 	gustprog lshort-polish mwcls pl polski przechlewski-book
 	qpxqtx tap tex-virtual-academy-pl texlive-pl utf8mex"
 
-REQUIRES="texlive-collection-latex fontconfig"
+REQUIRES="texlive-collection-latex"
 
 inherit texlive
 
