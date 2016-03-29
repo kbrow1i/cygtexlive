@@ -8,6 +8,6 @@ TEXLIVE_ARCH_PKGS="aleph omegaware"
 
 TEXLIVE_DOC_PKGS="aleph omegaware antomega mxedruli omega otibet"
 
-REQUIRES="texlive-collection-latex fontconfig"
+REQUIRES="texlive-collection-latex"
 
 inherit texlive
