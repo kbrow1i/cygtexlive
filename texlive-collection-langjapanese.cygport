@@ -14,7 +14,7 @@ TEXLIVE_DOC_PKGS="bxbase bxcjkjatype bxjscls convbkmk ipaex japanese
 	lshort-japanese luatexja ptex ptex2pdf pxbase pxchfon pxcjkcat
 	pxjahyper pxrubrica uptex wadalab zxjafbfont zxjatype"
 
-REQUIRES="texlive-collection-langcjk fontconfig"
+REQUIRES="texlive-collection-langcjk"
 
 inherit texlive
 
