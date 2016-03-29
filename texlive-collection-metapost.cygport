@@ -12,4 +12,3 @@ TEXLIVE_TEXMF_PKGS="automata bbcard blockdraw_mp bpolynomial cmarrows
 TEXLIVE_ARCH_PKGS="metapost"
 
 inherit texlive
-REQUIRES="fontconfig"
