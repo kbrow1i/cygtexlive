@@ -16,6 +16,6 @@ TEXLIVE_DOC_PKGS="bartel-chess-fonts chess chess-problem-diagrams
 	othelloboard pas-crosswords psgo reverxii rubik schwalbe-chess
 	sgame skak skaknew sudoku sudokubundle xq xskak"
 
-REQUIRES="texlive-collection-latex fontconfig"
+REQUIRES="texlive-collection-latex"
 
 inherit texlive
