@@ -13,4 +13,3 @@ TEXLIVE_TEXMF_PKGS="arabxetex bidi-atbegshi bidicontour bidipagegrid
 TEXLIVE_ARCH_PKGS="xetex"
 
 inherit texlive
-REQUIRES="fontconfig"
