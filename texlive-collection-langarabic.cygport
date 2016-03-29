@@ -12,4 +12,3 @@ inherit texlive
 
 # doc only: lshort-persian
 ARCH=noarch
-REQUIRES="fontconfig"
