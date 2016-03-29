@@ -12,11 +12,7 @@ TEXLIVE_DOC_PKGS="a2ping adhocfilelist arara bibtex8 bibtexu bundledoc
 	pkfix-helper purifyeps pythontex seetexk sty2dtx synctex
 	texcount texdef texdiff texdirflatten texdoc texfot
 	texliveonfly texloganalyser texware tie tpic2pdftex
-	typeoutfileinfo web"
-
-case ${ARCH} in
-    i686) TEXLIVE_DOC_PKGS+=" xindy" ;;
-esac
+	typeoutfileinfo web xindy"
 
 inherit texlive
 ARCH=noarch
