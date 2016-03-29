@@ -16,6 +16,6 @@ TEXLIVE_TEXMF_PKGS="SIstyle SIunits alg algorithm2e algorithmicx
 
 TEXLIVE_ARCH_PKGS="pygmentex ulqda"
 
-REQUIRES="texlive-collection-latex fontconfig"
+REQUIRES="texlive-collection-latex"
 
 inherit texlive
