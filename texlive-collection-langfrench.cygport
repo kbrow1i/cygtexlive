@@ -17,4 +17,3 @@ inherit texlive
 
 #doc only: apprends-latex booktabs-fr epslatex-fr impatient-fr l2tabu-french lshort-french texlive-fr translation-array-fr translation-dcolumn-fr translation-natbib-fr translation-tabbing-fr
 ARCH=noarch
-REQUIRES="fontconfig"
