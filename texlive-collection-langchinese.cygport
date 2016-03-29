@@ -11,7 +11,7 @@ TEXLIVE_DOC_PKGS="arphic cns ctex ctex-faq fandol impatient-cn
 	latex-notes-zh-cn lshort-chinese texlive-zh-cn xpinyin
 	zhmetrics zhnumber zhspacing"
 
-REQUIRES="texlive-collection-langcjk fontconfig"
+REQUIRES="texlive-collection-langcjk"
 
 inherit texlive
 
