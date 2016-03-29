@@ -9,7 +9,7 @@ TEXLIVE_ARCH_PKGS="cslatex csplain"
 TEXLIVE_DOC_PKGS="babel-czech babel-slovak cnbwp csbulletin cstex
 	lshort-czech lshort-slovak texlive-cz vlna"
 
-REQUIRES="texlive-collection-latex fontconfig"
+REQUIRES="texlive-collection-latex"
 
 inherit texlive
 
