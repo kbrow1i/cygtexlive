@@ -176,6 +176,6 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 TEXLIVE_ARCH_PKGS="authorindex exceltex glossaries pax perltex
 	splitindex svn-multi vpe"
 
-REQUIRES="texlive-collection-latexrecommended texlive-collection-pictures fontconfig preview-latex"
+REQUIRES="texlive-collection-latexrecommended texlive-collection-pictures preview-latex"
 
 inherit texlive
