@@ -10,7 +10,7 @@ TEXLIVE_ARCH_PKGS="kotex-utils"
 TEXLIVE_DOC_PKGS="cjk-ko kotex-oblivoir kotex-plain kotex-utf
 	kotex-utils lshort-korean nanumtype1 uhc"
 
-REQUIRES="texlive-collection-langcjk fontconfig"
+REQUIRES="texlive-collection-langcjk"
 
 inherit texlive
 
