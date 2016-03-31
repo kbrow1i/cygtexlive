@@ -1,0 +1,59 @@
+The TeX Live Manager (tlmgr)
+============================
+
+tlmgr allows a user to manage a TeX Live installation, both
+packages[1] and configuration options.  It operates in two modes:
+"system mode" (the default) and "user mode".  Some of the actions
+operate on the system directories and are not available in user mode.
+But installing/removing/updating packages is allowed in user mode,
+with everything taking place in the user's home directory.
+
+The Cygwin distribution includes a restricted version of tlmgr;
+certain system-mode actions that would interfere with Cygwin’s package
+manager (setup-*.exe) are disabled.  The currently enabled actions are
+listed in /etc/texmf/tlmgr/config.
+
+If you want to try using tlmgr, here are a few things you can do:
+
+1. tlmgr help
+
+2. tlmgr paper
+
+[This will show you the current default paper size for the TeX Live
+programs.]
+
+3. tlmgr paper letter
+
+[This sets the default paper size to "letter" size.  It writes to
+various system directories, so you must run it as a user with write
+access to those directories, typically an administrator.]
+
+4. tlmgr init-usertree
+
+[This initializes the directory ~/.local/share/texmf so that you can
+perform various user mode actions.]
+
+5. tlmgr --usermode option showall
+
+6. tlmgr --usermode option autobackup 1
+
+7. tlmgr --usermode option backupdir ~/.local/share/texmf/tlpkg/backups
+
+[If the specified directory doesn’t exist, you’ll get a message
+telling you to create it.]
+
+8. tlmgr info | grep -v '^i '
+
+[This gives you a list of all upstream packages that are not installed
+on your system.]
+
+9. tlmgr --usermode install noto
+
+[Of course noto can be replaced by any other upstream package.]
+
+--------------------
+
+[1] "Package" is used here in the sense of upstream TeX Live.  There
+    are about 3000 packages, which are organized into "collections".
+    Cygwin only ships complete collections.  For example, the noto
+    package is part of the fontsextra collection.

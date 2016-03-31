@@ -1,0 +1,8 @@
+--- origsrc/tlpkg/tlpobj/texlive.infra.doc.tlpobj	2016-01-08 21:22:37.000000000 -0500
++++ src/tlpkg/tlpobj/texlive.infra.doc.tlpobj	2016-03-28 22:40:15.780448500 -0400
+@@ -7,4 +7,4 @@ docfiles size=54
+  texmf-dist/doc/man/man1/tlmgr.man1.pdf
+  texmf-dist/scripts/texlive/NEWS
+  tlpkg/README
+- tlpkg/installer/COPYING.MinGW-runtime.txt
++# tlpkg/installer/COPYING.MinGW-runtime.txt

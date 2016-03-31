@@ -1,19 +1,16 @@
 NAME="texlive-collection-basic"
-VERSION=20150617
-RELEASE=3
+VERSION=20160330
+RELEASE=1
 
 # The original release of fmtutil was buggy and not well documented.
 # We need to use the version of the tetex package from 20150616.
 
-# texlive.infra: Perl modules required by updmap (tetex)
 # texlive-msg-translations: used only by tlmgrgui (texlive.infra)
-# texlive-infra doc: mostly man pages for tlmgr
 # texlive-scripts: we only need rungs
 
 TEXLIVE_TEXMF_PKGS="amsfonts bibtex cm dvipdfmx-def dvips enctex etex
 	etex-pkg glyphlist gsftopk hyph-utf8 hyphen-base ifluatex
-	ifxetex lua-alt-getopt mflogo mfware plain texlive.infra
-	texlive-docindex"
+	ifxetex lua-alt-getopt mflogo mfware plain texlive-docindex"
 
 # As of TL13, the nontrivial hyphenation packages were moved to
 # language-specific collections.  This causes failures building
@@ -24,31 +21,28 @@ TEXLIVE_TEXMF_PKGS+=" dehyph-exptl hyphen-ancientgreek hyphen-german
 	hyphen-greek knuth-lib knuth-local ruhyphen ukrhyph"
 
 TEXLIVE_ARCH_PKGS="dvipdfmx kpathsea luatex makeindex metafont pdftex
-	tetex tex texconfig texlive-scripts xdvi"
+	tetex tex texconfig texlive.infra texlive-scripts xdvi"
 
-TEXLIVE_DOC_PKGS="tex texconfig"
+TEXLIVE_DOC_PKGS="tex texconfig texlive.infra"
 
-SRC_URI="texlive_generate_fmtutil.sh"
 SRC_URI+=" 20140523-1-update_fmtutil_cnf.lua"
+SRC_URI+=" update_tlpdb.pl"
 SRC_URI+=" postinstall.sh"
+SRC_URI+=" texlive_generate_fmtutil.sh"
+SRC_URI+=" tlmgr.config"
 
 inherit texlive
 
 PATCH_URI="20150505-1-texmf_cnf.patch"
 PATCH_URI+=" 20140523-1-fmtutil_cnf.patch"
-PATCH_URI+=" 20150521-1-updmap_cfg.patch"
+PATCH_URI+=" 20160330-1-updmap_cfg.patch"
 PATCH_URI+=" 20150505-1-${ARCH}-texlive_scripts_only_rungs.patch"
 PATCH_URI+=" 20150505-1-texmfcnf_lua.patch"
+PATCH_URI+=" 20150617-4-texlive_infra_doc.patch"
+PATCH_URI+=" 20160330-1-tlmgr_upstream.patch"
+PATCH_URI+=" 20160330-1-tlmgr_cygwin.patch"
 
-# http://tug.org/mailman/htdig/tlbuild/2015q1/003104.html
-# https://cygwin.com/ml/cygwin-apps/2015-05/msg00067.html
-PATCH_URI+=" 20150521-1-mktexlsr_use_mktemp_${ARCH}.patch"
-
-# http://tug.org/pipermail/tex-live/2015-September/037378.html
-# This is fixed in the latest kpathsea.tar.xz.
-PATCH_URI+=" 20150617-3-euptex_missing_comma.patch"
-
-REQUIRES="coreutils cygutils dialog ed ghostscript grep sed texlive fontconfig"
+REQUIRES="coreutils cygutils dialog ed ghostscript grep sed texlive"
 
 src_install() {
 	texlive_install
@@ -58,8 +52,12 @@ src_install() {
 	newexe 20140523-1-update_fmtutil_cnf.lua 20140523-1-update_fmtutil_cnf
 	exeinto /etc/postinstall
 	newexe postinstall.sh ${PN}.sh
+	exeinto /usr/libexec
+	newexe update_tlpdb.pl update_tlpdb
 	keepdir /var/lib/texmf /etc/texmf/web2c
-	# Imitate make_local_skeleton in TLUtils.pm
+	insinto /etc/texmf/tlmgr
+	newins tlmgr.config config
+	# Imitate make_local_skeleton in TLUtils.pm.
 	local texmflocal=/usr/share/texmf-site
 	keepdir \
 	    ${texmflocal}/bibtex/bib/local \
