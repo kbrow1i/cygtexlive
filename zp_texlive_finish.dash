@@ -21,24 +21,3 @@ then
     echo y | /usr/bin/updmap-sys --syncwithtrees
     /usr/bin/updmap-sys
 fi
-
-for f in ${markerdir}/*.fc
-do
-    if [ -f ${f} ]
-    then
-	fc_dirs=$(sort -u ${markerdir}/*.fc)
-    fi
-    break
-done
-
-if [ -n "${fc_dirs}" ]
-then
-    if [ -e /etc/fonts/conf.d/09-texlive.conf ]
-    then
-	/usr/bin/fc-cache -f ${fc_dirs}
-    fi
-    for f in ${markerdir}/*.fc
-    do
-	mv -f ${f} ${f}.done
-    done
-fi
