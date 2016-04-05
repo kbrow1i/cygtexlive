@@ -2,6 +2,24 @@
 
 markerdir=/var/lib/texmf/postinstall
 
+for f in ${markerdir}/*.tlp
+do
+    if [ -f ${f} ]
+    then
+	tlps=$(cat ${markerdir}/*.tlp)
+    fi
+    break
+done
+
+if [ -n "${tlps}" ]
+then
+    /usr/libexec/update_tlpdb add ${tlps}
+    for f in ${markerdir}/*.tlp
+    do
+	mv -f ${f} ${f}.done
+    done
+fi
+
 for f in ${markerdir}/*.lsr
 do
     if [ -f ${f} ]
