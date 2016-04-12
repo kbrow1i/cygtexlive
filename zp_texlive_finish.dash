@@ -22,4 +22,5 @@ then
     fi
     echo y | /usr/bin/updmap-sys --syncwithtrees
     /usr/bin/updmap-sys
+    perl /usr/share/tlpkg/tlpostcode/dvipdfmx.pl install /usr/share
 fi
