@@ -1,29 +1,42 @@
-The following packages have been updated in the Cygwin distribution:
+From cygwin-announce-texlive-20150521-4 Tue Apr 12 08:59:08 2016
+From: Ken Brown <kbrown@cornell.edu>
+To: cygwin-announce@cygwin.com
+Date: Tue, 12 Apr 2016 08:59:08 -0400
+Subject: texlive 20150521-4
 
-* texlive-20150521-3
-* libkpathsea6-20150521-3
-* libkpathsea-devel-20150521-3
-* libptexenc1-20150521-3
-* libptexenc-devel-20150521-3
-* libsync1-20150521-3
-* libsync-devel-20150521-3
-* libtexlua52_5-20150521-3
-* libtexlua52-devel-20150521-3
-* libtexluajit2-20150521-3
-* libtexluajit-devel-20150521-3
-* texlive-collection-basic-20150617-3
+The following packages have been uploaded to the Cygwin distribution:
 
-TeX Live provides a comprehensive, cross-platform TeX system. It includes all the major TeX-related programs, macro packages, and fonts that are free software, including support for many languages around the world. For more information, see
+* texlive-20150521-4
+* libkpathsea6-20150521-4
+* libkpathsea-devel-20150521-4
+* libptexenc1-20150521-4
+* libptexenc-devel-20150521-4
+* libsynctex1-20150521-4
+* libsynctex-devel-20150521-4
+* libtexlua52_5-20150521-4
+* libtexlua52-devel-20150521-4
+* libtexluajit2-20150521-4
+* libtexluajit-devel-20150521-4
+
+TeX Live provides a comprehensive, cross-platform TeX system. It 
+includes all the major TeX-related programs, macro packages, and fonts 
+that are free software, including support for many languages around the 
+world.  For more information, see
 
   http://www.tug.org/texlive/
 
-This update is primarily a rebuild of the TeX Live binaries and supporting libraries to remove the dependence on the obsolete libicu55.  I've also taken the opportunity to make two minor changes:
+This is a rebuild of the TeX Live 2015 binaries and supporting
+libraries, with a few small changes:
 
-1. I've applied an upstream patch to fix a bug involving euptex (http://tug.org/pipermail/tex-live/2015-September/037378.html).
+1. I am now able to build xindy on 64-bit Cygwin.
 
-2. I've moved the fontconfig configuration file for the TeX Live fonts from /etc/conf.avail (now deprecated) to /usr/share/fontconfig/conf.avail.
+2. I have removed the call to fc-cache from the zp_texlive_finish.dash
+postinstall script; this is no longer needed now that libfontconfig1
+includes zp_fontconfig_cache_1.sh.
 
-This means that users who have previously run the /usr/bin/texlive-enable-fontconfig script will have to re-run it.  See /usr/share/doc/texlive/README.Cygwin for more information about this script.
+3. I have added to 0p_texlive_prep.dash support for the tlmgr (TeX
+Live Manager) utility, which is going to be added to the upcoming test
+release of the TeX Live collections.
 
 Ken Brown
 Cygwin's TeX Live maintainer
