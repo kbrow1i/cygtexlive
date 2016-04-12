@@ -13,11 +13,13 @@ done
 
 if [ -n "${maps}" ]
 then
-    /usr/bin/updmap-sys --nohash --nomkmap ${maps}
-    for f in ${markerdir}/*.map
-    do
-	mv -f ${f} ${f}.done
-    done
+    if /usr/bin/updmap-sys --nohash --nomkmap ${maps}
+    then
+	for f in ${markerdir}/*.map
+	do
+	    mv -f ${f} ${f}.done
+	done
+    fi
     echo y | /usr/bin/updmap-sys --syncwithtrees
     /usr/bin/updmap-sys
 fi
