@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexrecommended-doc"
-VERSION=20150521
+VERSION=20160404
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="anysize beamer booktabs breqn caption cite cmap crop
@@ -12,4 +12,3 @@ TEXLIVE_DOC_PKGS="anysize beamer booktabs breqn caption cite cmap crop
 
 inherit texlive
 ARCH=noarch
-REQUIRES="texlive-collection-basic"
