@@ -12,4 +12,4 @@ else
 fi
 
 D=${NAME}-${VERSION}-${RELEASE}.${ARCH}
-sed -i -e '/^requires:/s/ python3 python3-pygments//' ${D}/dist/${NAME}/setup.hint
+sed -i -e '/^requires:/s/ python3//' ${D}/dist/${NAME}/setup.hint
