@@ -1,5 +1,5 @@
 NAME="texlive-collection-pstricks"
-VERSION=20150521
+VERSION=20160404
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="auto-pst-pdf bclogo dsptricks makeplot pdftricks
@@ -22,6 +22,6 @@ TEXLIVE_TEXMF_PKGS="auto-pst-pdf bclogo dsptricks makeplot pdftricks
 
 TEXLIVE_ARCH_PKGS="pst2pdf pedigree-perl"
 
-REQUIRES="texlive-collection-basic texlive-collection-genericrecommended"
+REQUIRES="texlive-collection-genericrecommended"
 
 inherit texlive
