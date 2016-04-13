@@ -1,5 +1,5 @@
 NAME="texlive-collection-plainextra"
-VERSION=20150521
+VERSION=20160404
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="epsf-dvipdfmx figflow fixpdfmag font-change fontch
@@ -14,4 +14,3 @@ TEXLIVE_DOC_PKGS="epsf-dvipdfmx figflow font-change fontch getoptk
 
 inherit texlive
 ARCH=noarch
-REQUIRES="texlive-collection-basic"
