@@ -1,16 +1,11 @@
 NAME="texlive-collection-basic"
-VERSION=20160330
+VERSION=20160404
 RELEASE=1
 
-# The original release of fmtutil was buggy and not well documented.
-# We need to use the version of the tetex package from 20150616.
-
-# texlive-msg-translations: used only by tlmgrgui (texlive.infra)
-# texlive-scripts: we only need rungs
-
-TEXLIVE_TEXMF_PKGS="amsfonts bibtex cm dvipdfmx-def dvips enctex etex
-	etex-pkg glyphlist gsftopk hyph-utf8 hyphen-base ifluatex
-	ifxetex lua-alt-getopt mflogo mfware plain texlive-docindex"
+TEXLIVE_TEXMF_PKGS="amsfonts cm dvipdfmx-def enctex etex etex-pkg
+	glyphlist hyph-utf8 hyphen-base ifluatex ifxetex
+	lua-alt-getopt mflogo plain texlive-common texlive-docindex
+	texlive-en texlive-msg-translations unicode-data"
 
 # As of TL13, the nontrivial hyphenation packages were moved to
 # language-specific collections.  This causes failures building
@@ -20,8 +15,9 @@ TEXLIVE_TEXMF_PKGS="amsfonts bibtex cm dvipdfmx-def dvips enctex etex
 TEXLIVE_TEXMF_PKGS+=" dehyph-exptl hyphen-ancientgreek hyphen-german
 	hyphen-greek knuth-lib knuth-local ruhyphen ukrhyph"
 
-TEXLIVE_ARCH_PKGS="dvipdfmx kpathsea luatex makeindex metafont pdftex
-	tetex tex texconfig texlive.infra texlive-scripts xdvi"
+TEXLIVE_ARCH_PKGS="bibtex dvipdfmx dvips gsftopk kpathsea luatex
+	makeindex metafont mfware pdftex tetex tex texconfig
+	texlive.infra texlive-scripts xdvi"
 
 TEXLIVE_DOC_PKGS="tex texconfig texlive.infra"
 
@@ -30,6 +26,7 @@ SRC_URI+=" update_tlpdb.pl"
 SRC_URI+=" postinstall.sh"
 SRC_URI+=" texlive_generate_fmtutil.sh"
 SRC_URI+=" tlmgr.config"
+SRC_URI+=" README.Cygwin"
 
 inherit texlive
 
@@ -42,7 +39,10 @@ PATCH_URI+=" 20150617-4-texlive_infra_doc.patch"
 PATCH_URI+=" 20160330-1-tlmgr_upstream.patch"
 PATCH_URI+=" 20160330-1-tlmgr_cygwin.patch"
 
-REQUIRES="coreutils cygutils dialog ed ghostscript grep sed texlive"
+DOCS="README.Cygwin"
+
+# tlmgr needs wget
+REQUIRES="coreutils cygutils dialog ed ghostscript grep sed texlive wget"
 
 src_install() {
 	texlive_install
