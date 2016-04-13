@@ -1,5 +1,5 @@
 NAME="texlive-collection-genericrecommended"
-VERSION=20150521
+VERSION=20160404
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="apnum epsf fontname genmisc kastrup multido path
@@ -7,4 +7,3 @@ TEXLIVE_TEXMF_PKGS="apnum epsf fontname genmisc kastrup multido path
 
 inherit texlive
 ARCH=noarch
-REQUIRES="texlive-collection-basic"
