@@ -1,15 +1,14 @@
 NAME="texlive-collection-genericextra"
-VERSION=20150521
+VERSION=20160404
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="abbr abstyles barr bitelist borceux c-pascal
 	catcodes chronosys colorsep dinat dirtree docbytex dowith
 	eijkhout encxvlna epigram fenixpar fltpoint fntproof gates
-	ifetex iftex insbox lambda-lists langcode lecturer librarian
-	mathdots metatex midnight navigator ofs pdf-trans plainpkg
-	schemata shade systeme tabto-generic tracklang texapi upca
-	xlop yax"
+	gobble gtl ifetex iftex insbox lambda-lists langcode lecturer
+	librarian mathdots metatex midnight navigator ofs pdf-trans
+	plainpkg schemata shade systeme tabto-generic termmenu
+	tracklang texapi upca xlop yax"
 
 inherit texlive
 ARCH=noarch
-REQUIRES="texlive-collection-basic"
