@@ -1,14 +1,13 @@
 NAME="texlive-collection-langarabic"
-VERSION=20150521
+VERSION=20160404
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="amiri arabi arabtex bidi dad ghab imsproc
-	 persian-bib simurgh tram"
+TEXLIVE_TEXMF_PKGS="amiri arabi arabi-add arabluatex arabtex bidi
+	 bidihl dad ghab hyphen-arabic hyphen-farsi imsproc
+	 lshort-persian persian-bib simurgh tram"
 
-TEXLIVE_DOC_PKGS="amiri arabi arabtex bidi dad ghab imsproc
-	lshort-persian persian-bib simurgh tram"
+TEXLIVE_DOC_PKGS="amiri arabi arabi-add arabluatex arabtex bidi bidihl
+	dad ghab imsproc lshort-persian persian-bib simurgh tram"
 
 inherit texlive
-
-# doc only: lshort-persian
 ARCH=noarch
