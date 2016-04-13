@@ -1,9 +1,11 @@
 NAME="texlive-collection-langspanish"
-VERSION=20150521
+VERSION=20160404
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="babel-catalan babel-galician babel-spanglish
-	babel-spanish spanish-mx"
+	babel-spanish es-tex-faq hyphen-catalan hyphen-galician
+	hyphen-spanish l2tabu-spanish latex2e-help-texinfo-spanish
+	latexcheat-esmx lshort-spanish spanish-mx"
 
 TEXLIVE_DOC_PKGS="babel-catalan babel-galician babel-spanglish
 	babel-spanish es-tex-faq l2tabu-spanish
@@ -12,6 +14,4 @@ TEXLIVE_DOC_PKGS="babel-catalan babel-galician babel-spanglish
 
 inherit texlive
 
-# doc only:  es-tex-faq l2tabu-spanish latex2e-help-texinfo-spanish latexcheat-esmx lshort-spanish
 ARCH=noarch
-REQUIRES="texlive-collection-basic"
