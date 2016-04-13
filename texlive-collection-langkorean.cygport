@@ -1,9 +1,9 @@
 NAME="texlive-collection-langkorean"
-VERSION=20150521
+VERSION=20160404
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="cjk-ko kotex-oblivoir kotex-plain kotex-utf
-	nanumtype1 uhc"
+	lshort-korean nanumtype1 uhc"
 
 TEXLIVE_ARCH_PKGS="kotex-utils"
 
@@ -13,5 +13,3 @@ TEXLIVE_DOC_PKGS="cjk-ko kotex-oblivoir kotex-plain kotex-utf
 REQUIRES="texlive-collection-langcjk"
 
 inherit texlive
-
-# doc only: lshort-korean
