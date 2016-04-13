@@ -1,10 +1,10 @@
 NAME="texlive-collection-music"
-VERSION=20150521
+VERSION=20160404
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="abc bagpipe figbas gchords gtrcrd guitar
 	guitarchordschemes harmony leadsheets musixguit musixtex-fonts
-	songbook songs"
+	piano songbook songs xpiano"
 
 TEXLIVE_ARCH_PKGS="lilyglyphs musixtex musixtnt pmx pmxchords m-tx"
 
