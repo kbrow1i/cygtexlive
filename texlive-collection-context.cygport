@@ -1,5 +1,5 @@
 NAME="texlive-collection-context"
-VERSION=20150521
+VERSION=20160404
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="jmn context-account context-algorithmic
@@ -17,6 +17,8 @@ TEXLIVE_TEXMF_PKGS="jmn context-account context-algorithmic
 TEXLIVE_ARCH_PKGS="context"
 
 inherit texlive
+
+SRC_URI+=" postinstall.sh"
 
 src_install() {
 	cd ${S}
