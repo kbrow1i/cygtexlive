@@ -1,12 +1,15 @@
 NAME="texlive-collection-langcyrillic"
-VERSION=20150521
+VERSION=20160404
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="babel-bulgarian babel-russian babel-serbian
 	babel-serbianc babel-ukraineb cmcyr cyrillic cyrplain disser
-	eskd eskdx gost lcyw lh lhcyr mongolian-babel montex russ
+	eskd eskdx gost hyphen-bulgarian hyphen-mongolian
+	hyphen-russian hyphen-serbian hyphen-ukrainian lcyw lh lhcyr
+	lshort-bulgarian lshort-mongol lshort-russian lshort-ukr
+	mongolian-babel montex mpman-ru pst-eucl-translation-bg russ
 	serbian-apostrophe serbian-date-lat serbian-def-cyr
-	serbian-lig t2"
+	serbian-lig t2 texlive-ru texlive-sr "
 
 # I'm omitting ruhyphen and ukrhyph; see the comment in
 # texlive-collection-basic.cygport.
@@ -24,5 +27,3 @@ TEXLIVE_DOC_PKGS="babel-bulgarian babel-russian babel-serbian
 REQUIRES="texlive-collection-latex"
 
 inherit texlive
-
-# doc only: lshort-bulgarian lshort-mongol lshort-russian lshort-ukr mpman-ru pst-eucl-translation-bg texlive-ru texlive-sr
