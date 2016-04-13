@@ -1,19 +1,24 @@
 NAME="texlive-collection-langfrench"
-VERSION=20150521
+VERSION=20160404
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="aeguill babel-basque babel-french basque-book
-	basque-date bib-fr bibleref-french droit-fr facture frenchle
-	frletter impnattypo mafr tabvar tdsfrmath variations"
+TEXLIVE_TEXMF_PKGS="aeguill apprends-latex babel-basque babel-french
+	basque-book basque-date bib-fr bibleref-french booktabs-fr
+	droit-fr e-french epslatex-fr facture formation-latex-ul
+	frletter hyphen-basque hyphen-french impatient-fr impnattypo
+	l2tabu-french lshort-french mafr tabvar tdsfrmath texlive-fr
+	translation-array-fr translation-dcolumn-fr
+	translation-natbib-fr translation-tabbing-fr variations
+	visualtikz"
 
 TEXLIVE_DOC_PKGS="aeguill apprends-latex babel-basque babel-french
 	basque-book basque-date bib-fr bibleref-french booktabs-fr
-	droit-fr epslatex-fr facture frenchle frletter impatient-fr
-	impnattypo l2tabu-french lshort-french mafr tabvar tdsfrmath
-	texlive-fr translation-array-fr translation-dcolumn-fr
-	translation-natbib-fr translation-tabbing-fr variations"
+	droit-fr e-french epslatex-fr facture formation-latex-ul
+	frletter impatient-fr impnattypo l2tabu-french lshort-french
+	mafr tabvar tdsfrmath texlive-fr translation-array-fr
+	translation-dcolumn-fr translation-natbib-fr
+	translation-tabbing-fr variations visualtikz"
 
 inherit texlive
 
-#doc only: apprends-latex booktabs-fr epslatex-fr impatient-fr l2tabu-french lshort-french texlive-fr translation-array-fr translation-dcolumn-fr translation-natbib-fr translation-tabbing-fr
 ARCH=noarch
