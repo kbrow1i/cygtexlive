@@ -1,5 +1,5 @@
 NAME="texlive-collection-fontsrecommended-doc"
-VERSION=20150521
+VERSION=20160404
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="charter cm-super ec euro euro-ce eurosym fpl lm
@@ -8,4 +8,3 @@ TEXLIVE_DOC_PKGS="charter cm-super ec euro euro-ce eurosym fpl lm
 
 inherit texlive
 ARCH=noarch
-REQUIRES="texlive-collection-basic"
