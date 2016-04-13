@@ -1,8 +1,8 @@
 NAME="texlive-collection-langafrican"
-VERSION=20150521
+VERSION=20160404
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="ethiop ethiop-t1 fc"
+TEXLIVE_TEXMF_PKGS="ethiop ethiop-t1 fc hyphen-ethiopic"
 TEXLIVE_DOC_PKGS="ethiop ethiop-t1 fc"
 inherit texlive
 ARCH=noarch
