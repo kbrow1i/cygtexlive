@@ -1,5 +1,5 @@
 NAME="texlive-collection-latex-doc"
-VERSION=20150521
+VERSION=20160404
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="babel-english ae amscls amsmath babel babelbib
@@ -9,4 +9,3 @@ TEXLIVE_DOC_PKGS="babel-english ae amscls amsmath babel babelbib
 
 inherit texlive
 ARCH=noarch
-REQUIRES="texlive-collection-basic"
