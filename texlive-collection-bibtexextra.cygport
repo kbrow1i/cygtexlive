@@ -1,9 +1,9 @@
 NAME="texlive-collection-bibtexextra"
-VERSION=20160309
+VERSION=20160404
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="aichej ajl amsrefs apacite apalike2 archaeologie
-	beebe besjournals bestpapers bibarts biber bibhtml biblatex
+	beebe besjournals bestpapers bibarts bibhtml biblatex
 	biblatex-anonymous biblatex-apa biblatex-bookinarticle
 	biblatex-bwl biblatex-caspervector biblatex-chem
 	biblatex-chicago biblatex-dw biblatex-fiwi biblatex-gost
@@ -20,13 +20,14 @@ TEXLIVE_TEXMF_PKGS="aichej ajl amsrefs apacite apalike2 archaeologie
 	compactbib custom-bib din1505 dk-bib doipubmed ecobiblatex
 	economic fbs figbib footbib francais-bst geschichtsfrkl
 	harvard harvmac historische-zeitschrift ijqc inlinebib
-	iopart-num jneurosci jurabib ksfh_nat listbib logreq margbib
-	multibib munich nar nmbib notes2bib oscola perception pnas2009
-	rsc showtags sort-by-letters splitbib turabian-formatting
+	iopart-num jneurosci jurabib ksfh_nat logreq margbib multibib
+	munich nar nmbib notes2bib oscola perception pnas2009 rsc
+	showtags sort-by-letters splitbib turabian-formatting
 	uni-wtal-ger uni-wtal-lin usebib vak xcite"
 
-TEXLIVE_ARCH_PKGS="bibexport crossrefware multibibliography urlbst"
+TEXLIVE_ARCH_PKGS="biber bibexport crossrefware listbib multibibliography
+	urlbst"
 
-REQUIRES="biber texlive-collection-basic texlive-collection-latex"
+REQUIRES="biber texlive-collection-latex"
 
 inherit texlive
