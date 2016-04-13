@@ -1,9 +1,11 @@
 NAME="texlive-collection-langitalian"
-VERSION=20150521
+VERSION=20160404
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="babel-italian codicefiscaleitaliano fixltxhyph
-	hyphen-italian frontespizio itnumpar layaureo"
+TEXLIVE_TEXMF_PKGS="amsldoc-it amsmath-it amsthdoc-it babel-italian
+	codicefiscaleitaliano fancyhdr-it fixltxhyph frontespizio
+	hyphen-italian itnumpar l2tabu-italian latex4wp-it layaureo
+	lshort-italian psfrag-italian texlive-it"
 
 TEXLIVE_DOC_PKGS="babel-italian amsldoc-it amsmath-it amsthdoc-it
 	codicefiscaleitaliano fancyhdr-it fixltxhyph frontespizio
@@ -12,6 +14,4 @@ TEXLIVE_DOC_PKGS="babel-italian amsldoc-it amsmath-it amsthdoc-it
 
 inherit texlive
 
-# doc only:  amsldoc-it amsmath-it amsthdoc-it fancyhdr-it l2tabu-italian latex4wp-it lshort-italian psfrag-italian texlive-it
 ARCH=noarch
-REQUIRES="texlive-collection-basic"
