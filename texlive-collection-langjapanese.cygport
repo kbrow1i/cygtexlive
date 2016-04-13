@@ -1,11 +1,11 @@
 NAME="texlive-collection-langjapanese"
-VERSION=20150521
+VERSION=20160404
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="bxbase bxcjkjatype bxjscls ipaex japanese
-	japanese-otf japanese-otf-uptex jsclasses luatexja pxbase
-	pxchfon pxcjkcat pxjahyper pxrubrica wadalab zxjafbfont
-	zxjatype"
+	japanese-otf japanese-otf-uptex jsclasses lshort-japanese
+	luatexja pxbase pxchfon pxcjkcat pxjahyper pxrubrica wadalab
+	zxjafbfont zxjatype"
 
 TEXLIVE_ARCH_PKGS="convbkmk jfontmaps ptex ptex2pdf uptex"
 
@@ -17,8 +17,6 @@ TEXLIVE_DOC_PKGS="bxbase bxcjkjatype bxjscls convbkmk ipaex japanese
 REQUIRES="texlive-collection-langcjk"
 
 inherit texlive
-
-# doc only: lshort-japanese
 
 SRC_URI+=" preremove.new.sh"
 SRC_URI+=" postinstall.sh"
