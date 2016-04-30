@@ -4,11 +4,9 @@ RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="babel-greek begingreek betababel bgreek cbfonts
 	cbfonts-fd gfsbaskerville gfsporson greek-fontenc
-	greek-inputenc greekdates greektex greektonoi ibycus-babel
-	ibygrk kerkis levy lgreek teubner xgreek yannisgr"
-
-# I'm omitting hyphen-ancientgreek and hyphen-greek; see the comment
-# in texlive-collection-basic.cygport.
+	greek-inputenc greekdates greektex greektonoi
+	hyphen-ancientgreek hyphen-greek ibycus-babel ibygrk kerkis
+	levy lgreek teubner xgreek yannisgr"
 
 TEXLIVE_ARCH_PKGS="mkgrkindex"
 
