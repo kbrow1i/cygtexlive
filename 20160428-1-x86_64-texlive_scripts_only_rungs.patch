@@ -1,9 +1,9 @@
---- origsrc/tlpkg/tlpobj/texlive-scripts.tlpobj	2015-05-03 21:21:38.000000000 -0400
-+++ src/tlpkg/tlpobj/texlive-scripts.tlpobj	2015-05-05 15:00:04.922831200 -0400
+--- origsrc/tlpkg/tlpobj/texlive-scripts.tlpobj	2016-04-24 21:14:42.000000000 -0400
++++ src/tlpkg/tlpobj/texlive-scripts.tlpobj	2016-04-28 16:39:07.956588400 -0400
 @@ -8,15 +8,15 @@ depend texlive.infra
  depend texlive-scripts.ARCH
  postaction shortcut type=menu name="TeX Live command-line"   cmd=TEXDIR/tlpkg/installer/tl-cmd.bat
- runfiles size=66
+ runfiles size=67
 - install-tl
 - texmf-dist/scripts/texlive/lua/texlive/getopt.tlu
 - texmf-dist/scripts/texlive/lua/texlive/tlpdb.tlu
@@ -27,12 +27,12 @@
 +# tlpkg/installer/install-menu-text.pl
 +# tlpkg/installer/install-menu-wizard.pl
 +# tlpkg/installer/texlive.png
---- origsrc/tlpkg/tlpobj/texlive-scripts.i386-cygwin.tlpobj	2015-04-12 20:27:47.000000000 -0400
-+++ src/tlpkg/tlpobj/texlive-scripts.i386-cygwin.tlpobj	2015-05-05 14:56:31.306449300 -0400
+--- origsrc/tlpkg/tlpobj/texlive-scripts.x86_64-cygwin.tlpobj	2016-04-14 13:50:09.000000000 -0400
++++ src/tlpkg/tlpobj/texlive-scripts.x86_64-cygwin.tlpobj	2016-04-28 16:34:06.641391300 -0400
 @@ -3,5 +3,5 @@ category TLCore
  revision 33557
- shortdesc i386-cygwin files of texlive-scripts
- binfiles arch=i386-cygwin size=2
-- bin/i386-cygwin/man
-+# bin/i386-cygwin/man
-  bin/i386-cygwin/rungs
+ shortdesc x86_64-cygwin files of texlive-scripts
+ binfiles arch=x86_64-cygwin size=2
+- bin/x86_64-cygwin/man
++# bin/x86_64-cygwin/man
+  bin/x86_64-cygwin/rungs

@@ -1,8 +1,8 @@
---- origsrc/texmf-dist/web2c/fmtutil.cnf	2014-04-24 21:23:28.000000000 -0400
-+++ src/texmf-dist/web2c/fmtutil.cnf	2014-06-15 18:17:27.344084500 -0400
-@@ -7,6 +7,10 @@
- # tlmgr generate fmtutil -localcfg /some/file to make local additions.
- # See tlmgr --help for more info.
+--- origsrc/texmf-dist/web2c/fmtutil.cnf	2016-04-18 21:16:10.000000000 -0400
++++ src/texmf-dist/web2c/fmtutil.cnf	2016-04-28 15:33:40.168904000 -0400
+@@ -9,6 +9,10 @@
+ # For guidance on how to achieve local configurations, see the man
+ # page of fmtutil, or the output of fmtutil --help.
  #
 +# Modified for the Cygwin distribution so that all formats are
 +# initially disabled.  The postinstall scripts will enable those
@@ -11,7 +11,7 @@
  # The format of the table is:
  #
  # format  engine  pattern-file  arguments
-@@ -36,80 +40,80 @@
+@@ -38,97 +42,97 @@
  
  #
  # from aleph:
@@ -78,8 +78,6 @@
 +#! lollipop pdftex - -translate-file=cp227.tcx *lollipop.ini
 +#! lualollipop luatex - lualollipop.ini
 +#! xelollipop xetex - -etex xelollipop.ini
- #! dvilollipop pdftex - -translate-file=cp227.tcx *lollipop.ini
- #! dvilualollipop luatex - -translate-file=cp227.tcx lualollipop.ini
  #
  # from luatex:
 -luatex luatex language.def,language.dat.lua luatex.ini
@@ -100,6 +98,9 @@
 +#! mex pdftex mexconf.tex -translate-file=cp227.tcx *mex.ini
 +#! pdfmex pdftex mexconf.tex -translate-file=cp227.tcx *pdfmex.ini
 +#! utf8mex pdftex mexconf.tex -enc *utf8mex.ini
+ #
+ # from mflua:
+ #! mflua mflua-nowin - mf.ini
  #
  # from mltex:
 -mllatex pdftex language.dat -translate-file=cp227.tcx -mltex *mllatex.ini
@@ -126,11 +127,6 @@
 +#! ptex ptex - ptex.ini
 +#! eptex eptex language.def *eptex.ini
 +#! platex eptex language.dat *platex.ini
- #
- # from t2:
- #! cyramstex pdftex language.dat -translate-file=cp227.tcx *cyramstx.ini
-@@ -117,20 +121,20 @@ platex eptex language.dat *platex.ini
- #! cyrtexinfo pdftex language.dat -translate-file=cp227.tcx *cyrtxinf.ini
  #
  # from tex:
 -tex tex - tex.ini

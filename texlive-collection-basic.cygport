@@ -1,64 +1,49 @@
 NAME="texlive-collection-basic"
-VERSION=20160404
+VERSION=20160428
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="amsfonts cm dvipdfmx-def enctex etex etex-pkg
-	glyphlist hyph-utf8 hyphen-base ifluatex ifxetex
-	lua-alt-getopt mflogo plain texlive-common texlive-docindex
-	texlive-en texlive-msg-translations unicode-data"
-
-# As of TL13, the nontrivial hyphenation packages were moved to
-# language-specific collections.  This causes failures building
-# formats, maybe because I don't do the equivalent of what tlmgr does
-# with respect to language setup.  So I'm keeping them here.
-
-TEXLIVE_TEXMF_PKGS+=" dehyph-exptl hyphen-ancientgreek hyphen-german
-	hyphen-greek knuth-lib knuth-local ruhyphen ukrhyph"
+	glyphlist hyph-utf8 hyphen-base ifluatex ifpdf ifxetex
+	knuth-lib knuth-local lua-alt-getopt mflogo plain
+	tex-ini-files texlive-common texlive-docindex texlive-en
+	texlive-msg-translations unicode-data"
 
 TEXLIVE_ARCH_PKGS="bibtex dvipdfmx dvips gsftopk kpathsea luatex
 	makeindex metafont mfware pdftex tetex tex texconfig
 	texlive.infra texlive-scripts xdvi"
 
-TEXLIVE_DOC_PKGS="tex texconfig texlive.infra"
+TEXLIVE_DOC_PKGS="tex ifpdf tex-ini-files texconfig texlive.infra"
 
-SRC_URI+=" 20140523-1-update_fmtutil_cnf.lua"
 SRC_URI+=" update_tlpdb.pl"
 SRC_URI+=" postinstall.sh"
-SRC_URI+=" texlive_generate_fmtutil.sh"
 SRC_URI+=" tlmgr.config"
 SRC_URI+=" README.Cygwin"
 
 inherit texlive
 
-PATCH_URI="20150505-1-texmf_cnf.patch"
-PATCH_URI+=" 20140523-1-fmtutil_cnf.patch"
-PATCH_URI+=" 20160330-1-updmap_cfg.patch"
-PATCH_URI+=" 20150505-1-${ARCH}-texlive_scripts_only_rungs.patch"
-PATCH_URI+=" 20150505-1-texmfcnf_lua.patch"
+PATCH_URI="20160428-1-texmf_cnf.patch"
+PATCH_URI+=" 20160428-1-fmtutil_cnf.patch"
+PATCH_URI+=" 20160428-1-updmap_cfg.patch"
+PATCH_URI+=" 20160428-1-texmfcnf_lua.patch"
+PATCH_URI+=" 20160428-1-${ARCH}-texlive_scripts_only_rungs.patch"
 PATCH_URI+=" 20150617-4-texlive_infra_doc.patch"
-PATCH_URI+=" 20160330-1-tlmgr_upstream.patch"
-PATCH_URI+=" 20160330-1-tlmgr_cygwin.patch"
+PATCH_URI+=" 20160428-1-tlmgr_cygwin.patch"
 
 DOCS="README.Cygwin"
 
-# tlmgr needs wget
-REQUIRES="coreutils cygutils dialog ed ghostscript grep sed texlive wget"
+# tlmgr needs wget, gnupg
+REQUIRES="coreutils cygutils dialog ed ghostscript gnupg grep sed texlive wget"
 
 src_install() {
 	texlive_install
 	cd ${S}
-	dobin texlive_generate_fmtutil.sh
-	exeinto /etc/texmf/web2c
-	newexe 20140523-1-update_fmtutil_cnf.lua 20140523-1-update_fmtutil_cnf
-	exeinto /etc/postinstall
-	newexe postinstall.sh ${PN}.sh
 	exeinto /usr/libexec
 	newexe update_tlpdb.pl update_tlpdb
-	keepdir /var/lib/texmf /etc/texmf/web2c
 	insinto /etc/texmf/tlmgr
 	newins tlmgr.config config
-	# Imitate make_local_skeleton in TLUtils.pm.
-	local texmflocal=/usr/share/texmf-site
+	keepdir /etc/texmf/web2c
+	# Based on make_local_skeleton from TLUtils.pm
+	texmflocal=/usr/share/texmf-site
 	keepdir \
 	    ${texmflocal}/bibtex/bib/local \
 	    ${texmflocal}/bibtex/bst/local \
@@ -73,4 +58,16 @@ src_install() {
 	    ${texmflocal}/tex/plain/local \
 	    ${texmflocal}/tlpkg \
 	    ${texmflocal}/web2c
+	# Based on make_var_skeleton from TLUtils.pm
+	texmfsysvar=/var/lib/texmf
+	keepdir \
+	    ${texmfsysvar}/tex/generic/config \
+	    ${texmfsysvar}/fonts/map/dvipdfmx/updmap \
+	    ${texmfsysvar}/fonts/map/dvips/updmap \
+	    ${texmfsysvar}/fonts/map/pdftex/updmap \
+	    ${texmfsysvar}/fonts/pk \
+	    ${texmfsysvar}/fonts/tfm \
+	    ${texmfsysvar}/web2c \
+	    ${texmfsysvar}/xdvi \
+	    ${texmfsysvar}/tex/context/config
 }
