@@ -1,8 +1,6 @@
-This needs to be kept in sync with a similar patch for texlive-collection-basic.
-
---- origsrc/texlive-20150506-source/texk/kpathsea/texmf.cnf	2015-04-12 11:20:30.000000000 -0400
-+++ src/texlive-20150506-source/texk/kpathsea/texmf.cnf	2015-05-06 10:59:35.200262400 -0400
-@@ -51,7 +51,12 @@
+--- origsrc/texlive-20160428-source/texk/kpathsea/texmf.cnf	2016-04-06 15:20:24.000000000 -0400
++++ src/texlive-20160428-source/texk/kpathsea/texmf.cnf	2016-04-28 11:32:39.445632700 -0400
+@@ -54,7 +54,12 @@
  % Redistributors will probably want $SELFAUTODIR/share, i.e., /usr/share.
  % Kpathsea sets SELFAUTOLOC (the directory with the binary),
  % SELFAUTODIR (its parent), and SELFAUTOPARENT (its grandparent).
@@ -16,7 +14,7 @@ This needs to be kept in sync with a similar patch for texlive-collection-basic.
  
  % The main tree of distributed packages and programs:
  TEXMFDIST = $TEXMFROOT/texmf-dist
-@@ -61,25 +66,25 @@ TEXMFDIST = $TEXMFROOT/texmf-dist
+@@ -64,25 +69,25 @@ TEXMFDIST = $TEXMFROOT/texmf-dist
  TEXMFMAIN = $TEXMFDIST
  
  % Local additions to the distribution trees.
@@ -39,16 +37,16 @@ This needs to be kept in sync with a similar patch for texlive-collection-basic.
 +TEXMFHOME = ~/.local/share/texmf
  
  % TEXMFVAR, where texconfig/updmap/fmtutil store cached runtime data.
--TEXMFVAR = ~/.texlive2015/texmf-var
+-TEXMFVAR = ~/.texlive2016/texmf-var
 +TEXMFVAR = ~/.cache/texmf
  
  % TEXMFCONFIG, where texconfig/updmap/fmtutil store configuration data.
--TEXMFCONFIG = ~/.texlive2015/texmf-config
+-TEXMFCONFIG = ~/.texlive2016/texmf-config
 +TEXMFCONFIG = ~/.config/texmf
  
  % List all the texmf trees. For an explanation of what they are, see the
  % TeX Live manual.
-@@ -486,30 +491,42 @@ RUBYINPUTS   = .;$TEXMF/scripts/{$progna
+@@ -489,30 +494,42 @@ RUBYINPUTS   = .;$TEXMF/scripts/{$progna
  % since we don't want to scatter ../'s throughout the value.  Hence we
  % explicitly list every directory.  Arguably more understandable anyway.
  %

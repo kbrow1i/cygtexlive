@@ -1,10 +1,10 @@
 NAME="texlive"
-VERSION=20150521
-RELEASE=4
+VERSION=20160428
+RELEASE=1
 
 HOMEPAGE="http://www.tug.org/texlive/"
-# SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
-SRC_URI="mirror://ctan/systems/texlive/Source/${P}-source.tar.xz"
+SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
+# SRC_URI="mirror://ctan/systems/texlive/Source/${P}-source.tar.xz"
 SRC_URI+=" 0p_texlive_prep.dash"
 SRC_URI+=" zp_texlive_finish.dash"
 SRC_URI+=" texlive-enable-fontconfig.sh"
@@ -13,14 +13,8 @@ SRC_URI+=" 09-texlive.conf"
 
 SRC_DIR="${P}-source"
 
-# The zlib check no longer checks third part of version.
-# PATCH_URI="20150506-1-remove_zlib_version_check.patch"
-PATCH_URI+=" 20150506-1-texmf_cnf.patch"
+PATCH_URI+=" 20160428-1-texmf_cnf.patch"
 PATCH_URI+=" 20140523-2-reautoconf.patch"
-PATCH_URI+=" 20150521-2-luajit_cygwin64.patch"
-
-# http://tug.org/pipermail/tex-live/2015-September/037378.html
-PATCH_URI+=" 20150521-3-euptex_missing_comma.patch"
 
 DOCS="README.Cygwin"
 
