@@ -2,25 +2,23 @@ NAME="texlive-collection-langcyrillic"
 VERSION=20160404
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="babel-bulgarian babel-russian babel-serbian
-	babel-serbianc babel-ukraineb cmcyr cyrillic cyrplain disser
-	eskd eskdx gost hyphen-bulgarian hyphen-mongolian
-	hyphen-russian hyphen-serbian hyphen-ukrainian lcyw lh lhcyr
-	lshort-bulgarian lshort-mongol lshort-russian lshort-ukr
-	mongolian-babel montex mpman-ru pst-eucl-translation-bg russ
-	serbian-apostrophe serbian-date-lat serbian-def-cyr
-	serbian-lig t2 texlive-ru texlive-sr "
-
-# I'm omitting ruhyphen and ukrhyph; see the comment in
-# texlive-collection-basic.cygport.
+TEXLIVE_TEXMF_PKGS="babel-belarusian babel-bulgarian babel-russian
+	babel-serbian babel-serbianc babel-ukraineb cmcyr cyrillic
+	cyrplain disser eskd eskdx gost hyphen-bulgarian
+	hyphen-mongolian hyphen-russian hyphen-serbian
+	hyphen-ukrainian lcyw lh lhcyr lshort-bulgarian lshort-mongol
+	lshort-russian lshort-ukr mongolian-babel montex mpman-ru
+	pst-eucl-translation-bg ruhyphen russ serbian-apostrophe
+	serbian-date-lat serbian-def-cyr serbian-lig t2 texlive-ru
+	texlive-sr ukrhyph"
 
 TEXLIVE_ARCH_PKGS="cyrillic-bin"
 
-TEXLIVE_DOC_PKGS="babel-bulgarian babel-russian babel-serbian
-	babel-serbianc babel-ukraineb cyrillic-bin cmcyr cyrillic
-	disser eskd eskdx gost lcyw lh lshort-bulgarian lshort-mongol
-	lshort-russian lshort-ukr mongolian-babel montex mpman-ru
-	pst-eucl-translation-bg russ serbian-apostrophe
+TEXLIVE_DOC_PKGS="babel-belarusian babel-bulgarian babel-russian
+	babel-serbian babel-serbianc babel-ukrainian cyrillic-bin
+	cmcyr cyrillic disser eskd eskdx gost lcyw lh lshort-bulgarian
+	lshort-mongol lshort-russian lshort-ukr mongolian-babel montex
+	mpman-ru pst-eucl-translation-bg russ serbian-apostrophe
 	serbian-date-lat serbian-def-cyr serbian-lig t2 texlive-ru
 	texlive-sr ukrhyph"
 
