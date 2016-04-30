@@ -1,23 +1,20 @@
 NAME="texlive-collection-langgerman"
-VERSION=20160404
+VERSION=20160428
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="babel-german bibleref-german booktabs-de
-	csquotes-de dhua einfuehrung einfuehrung2 etdipa etoolbox-de
-	fifinddo-info geometry-de german germbib germkorr
-	hausarbeit-jura koma-script-examples l2picfaq l2tabu
-	latex-bib-ex latex-bib2-ex latex-referenz latex-tabellen
-	latexcheat-de lshort-german lualatex-doc-de microtype-de
-	presentations pstricks-examples r_und_s templates-fenn
-	templates-sommer texlive-de tipa-de translation-arsclassica-de
-	translation-biblatex-de translation-chemsym-de
-	translation-ecv-de translation-enumitem-de
-	translation-europecv-de translation-filecontents-de
-	translation-moreverb-de udesoftec uhrzeit umlaute
-	voss-mathcol"
-
-# I'm omitting dehyph-exptl and hyphen-german; see the comment in
-# texlive-collection-basic.cygport.
+	csquotes-de dehyph-exptl dhua einfuehrung einfuehrung2 etdipa
+	etoolbox-de fifinddo-info geometry-de german germbib germkorr
+	hausarbeit-jura hyphen-german koma-script-examples l2picfaq
+	l2tabu latex-bib-ex latex-bib2-ex latex-referenz
+	latex-tabellen latexcheat-de lshort-german lualatex-doc-de
+	microtype-de presentations pstricks-examples r_und_s
+	templates-fenn templates-sommer texlive-de tipa-de
+	translation-arsclassica-de translation-biblatex-de
+	translation-chemsym-de translation-ecv-de
+	translation-enumitem-de translation-europecv-de
+	translation-filecontents-de translation-moreverb-de udesoftec
+	uhrzeit umlaute voss-mathcol"
 
 TEXLIVE_DOC_PKGS="babel-german bibleref-german booktabs-de csquotes-de
 	dehyph-exptl dhua etoolbox-de einfuehrung einfuehrung2 etdipa
