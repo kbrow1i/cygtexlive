@@ -1,5 +1,5 @@
 NAME="texlive-collection-pictures"
-VERSION=20160404
+VERSION=20160428
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="aobs-tikz askmaps asyfig asypictureb autoarea
@@ -12,10 +12,10 @@ TEXLIVE_TEXMF_PKGS="aobs-tikz askmaps asyfig asypictureb autoarea
 	gradientframe grafcet graphviz harveyballs here hf-tikz hobby
 	hvfloat knitting knittingpattern lapdf latex-make lpic
 	lroundrect makeshape mathspic miniplot modiagram neuralnetwork
-	numericplots pb-diagram pgf pgf-blur pgf-soroban pgf-umlcd
-	pgf-umlsd pgfgantt pgfkeyx pgfmolbio pgfopts pgfornament
-	pgfplots picinpar pict2e pictex pictex2 pinlabel pmgraph
-	prerex productbox pxpgfmark qcircuit qrcode randbild
+	numericplots pb-diagram pgf pgf-blur pgf-soroban pgf-spectra
+	pgf-umlcd pgf-umlsd pgfgantt pgfkeyx pgfmolbio pgfopts
+	pgfornament pgfplots picinpar pict2e pictex pictex2 pinlabel
+	pmgraph prerex productbox pxpgfmark qcircuit qrcode randbild
 	randomwalk reotex rviewport sa-tikz schemabloc setdeck
 	signchart smartdiagram spath3 swimgraf texdraw ticollege
 	tikz-cd tikz-3dplot tikz-bayesnet tikz-dependency tikz-dimline
