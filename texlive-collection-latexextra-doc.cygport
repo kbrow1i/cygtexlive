@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra-doc"
-VERSION=20160404
+VERSION=20160428
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
@@ -73,30 +73,30 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	flacards flagderiv flashcards flashmovie flipbook flippdf
 	floatflt floatrow flowfram fmp fmtcount fn2end fnbreak
 	fncychap fncylab fnpara fnpct fnumprint foilhtml fontaxes
-	fonttable footmisc footnotebackref footnoterange footnpag
-	forarray foreign forloop formlett formular fragments frame
-	framed frankenstein frege ftcap ftnxtra fullblck fullminipage
-	fullwidth fundus-calligra fundus-sueterlin fwlw g-brief gauss
-	gcard gcite gender genmpage getfiledate getitems ginpenc
-	gitinfo gitinfo2 gitlog gloss glossaries glossaries-danish
-	glossaries-dutch glossaries-english glossaries-extra
-	glossaries-french glossaries-german glossaries-irish
-	glossaries-italian glossaries-magyar glossaries-polish
-	glossaries-portuges glossaries-serbian glossaries-spanish
-	gmdoc gmdoc-enhance gmiflink gmutils gmverb graphbox
-	graphicx-psmin graphicxbox grfpaste grid grid-system gridset
-	guitlogo handout hang hanging hardwrap harnon-cv harpoon hc
-	he-she hhtensor histogr hitec hletter hpsdiss hrefhide hvindex
-	hypdvips hyper hypernat hyperref-docsrc hyperxmp hyphenat
-	idxcmds idxlayout iffont ifmslide ifmtarg ifnextok ifoddpage
-	ifplatform ifthenx iitem image-gallery imakeidx import
-	incgraph indextools inlinedef inputtrc interactiveworkbook
-	interfaces inversepath invoice iso iso10303 isodate isodoc
-	isonums isorot isotope issuulinks iwhdp jlabels
-	jslectureplanner jumplines jvlisting kantlipsum kerntest
-	keycommand keyreader keystroke keyval2e keyvaltable kix
-	koma-moderncvclassic koma-script-sfs komacv ktv-texdata
-	l3build labbook labelcas labels lastpackage lastpage latex-tds
+	fonttable footmisc footnotebackref footnotehyper footnoterange
+	footnpag forarray foreign forloop formlett formular fragments
+	frame framed frankenstein frege ftcap ftnxtra fullblck
+	fullminipage fullwidth fundus-calligra fundus-sueterlin fwlw
+	g-brief gauss gcard gcite gender genmpage getfiledate getitems
+	ginpenc gitinfo gitinfo2 gitlog gloss glossaries
+	glossaries-danish glossaries-dutch glossaries-english
+	glossaries-extra glossaries-french glossaries-german
+	glossaries-irish glossaries-italian glossaries-magyar
+	glossaries-polish glossaries-portuges glossaries-serbian
+	glossaries-spanish gmdoc gmdoc-enhance gmiflink gmutils gmverb
+	graphbox graphicx-psmin graphicxbox grfpaste grid grid-system
+	gridset guitlogo handout hang hanging hardwrap harnon-cv
+	harpoon hc he-she hhtensor histogr hitec hletter hpsdiss
+	hrefhide hvindex hypdvips hyper hypernat hyperref-docsrc
+	hyperxmp hyphenat idxcmds idxlayout iffont ifmslide ifmtarg
+	ifnextok ifoddpage ifplatform ifthenx iitem image-gallery
+	imakeidx import incgraph indextools inlinedef inputtrc
+	interactiveworkbook interfaces inversepath invoice iso
+	iso10303 isodate isodoc isonums isorot isotope issuulinks
+	iwhdp jlabels jslectureplanner jumplines jvlisting kantlipsum
+	kerntest keycommand keyreader keystroke keyval2e keyvaltable
+	kix koma-moderncvclassic koma-script-sfs komacv ktv-texdata
+	l3build labbook labels lastpackage lastpage latex-tds
 	latexdemo layouts lazylist lcd lcg leading leaflet leftidx
 	lengthconvert lettre lettrine lewis lhelp libgreek linegoal
 	lipsum lisp-on-tex listing listlbls listliketab listofsymbols
@@ -114,8 +114,8 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	modroman monofill moodle moreenum morefloats morehype moresize
 	moreverb morewrites movie15 mparhack msc msg mslapa mtgreek
 	multenum multiaudience multibbl multicap multidef multienv
-	multiexpand multirow mversion mwe mweights mycv mylatexformat
-	nag nameauth namespc ncclatex ncctools needspace newcommand
+	multiexpand multirow mversion mwe mycv mylatexformat nag
+	nameauth namespc ncclatex ncctools needspace newcommand
 	newenviron newfile newlfm newspaper newunicodechar newvbtm
 	newverbs nfssext-cfr nicefilelist niceframe nicetext nlctdoc
 	noconflict noindentafter noitcrul nolbreaks nomencl nomentbl
@@ -166,18 +166,18 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	titling tocbibind tocloft tocvsec2 todo todonotes tokenizer
 	toolbox topfloat totcount totpages translations trfsigns
 	trimspaces trivfloat trsym truncate tucv turnthepage twoinone
-	twoup txgreeks type1cm typeface typogrid uassign ucs
-	uebungsblatt umoline underlin underoverlap undolabl units
-	unravel upmethodology upquote uri ushort uwmslide varindex
-	varsfromjobname varwidth vdmlisting verbasef verbatimbox
-	verbatimcopy verbdef verbments version versions versonotes
-	vertbars vgrid vhistory vmargin volumes vpe vruler vwcol
-	wallpaper warning warpcol was widetable williams withargs
-	wordlike wrapfig xargs xassoccnt xcolor-solarized xcomment
-	xdoc xellipsis xfor xhfill xifthen xint xmpincl xnewcommand
-	xoptarg xpatch xpeek xprintlen xpunctuate xsavebox xstring
-	xtab xwatermark xytree yafoot yagusylo ycbook ydoc yplan
-	zed-csp ziffer zwgetfdate zwpagelayout"
+	twoup txgreeks type1cm typed-checklist typeface typogrid
+	uassign ucs uebungsblatt umoline underlin underoverlap
+	undolabl units unravel upmethodology upquote uri ushort
+	uwmslide varindex varsfromjobname varwidth vdmlisting verbasef
+	verbatimbox verbatimcopy verbdef verbments version versions
+	versonotes vertbars vgrid vhistory vmargin volumes vpe vruler
+	vwcol wallpaper warning warpcol was widetable williams
+	withargs wordlike wrapfig xargs xassoccnt xcolor-solarized
+	xcomment xdoc xellipsis xfor xhfill xifthen xint xmpincl
+	xnewcommand xoptarg xpatch xpeek xprintlen xpunctuate xsavebox
+	xstring xtab xwatermark xytree yafoot yagusylo ycbook ydoc
+	yplan zed-csp ziffer zwgetfdate zwpagelayout"
 
 inherit texlive
 ARCH=noarch
