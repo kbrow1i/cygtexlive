@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra"
-VERSION=20160404
+VERSION=20160428
 RELEASE=1
 
 # preview is now packaged as the preview-latex subpackage of emacs-auctex.
@@ -76,9 +76,9 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	flashmovie flipbook flippdf floatflt floatrow flowfram fmp
 	fmtcount fn2end fnbreak fncychap fncylab fnpara fnpct
 	fnumprint foilhtml fontaxes fonttable footmisc footnotebackref
-	footnoterange footnpag forarray foreign forloop formlett
-	formular fragments frame framed frankenstein frege ftcap
-	ftnxtra fullblck fullminipage fullwidth fundus-calligra
+	footnotehyper footnoterange footnpag forarray foreign forloop
+	formlett formular fragments frame framed frankenstein frege
+	ftcap ftnxtra fullblck fullminipage fullwidth fundus-calligra
 	fundus-cyr fundus-sueterlin fwlw g-brief gauss gcard gcite
 	gender genmpage getfiledate getitems ginpenc gitinfo gitinfo2
 	gitlog gloss glossaries-danish glossaries-dutch
@@ -98,7 +98,7 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	iwhdp jlabels jslectureplanner jumplines jvlisting kantlipsum
 	kerntest keycommand keyreader keystroke keyval2e keyvaltable
 	kix koma-moderncvclassic koma-script-sfs komacv ktv-texdata
-	l3build labbook labelcas labels lastpackage lastpage latex-tds
+	l3build labbook labels lastpackage lastpage latex-tds
 	latexdemo layouts lazylist lcd lcg leading leaflet leftidx
 	lengthconvert lettre lettrine lewis lhelp libgreek limap
 	linegoal lipsum lisp-on-tex listing listlbls listliketab
@@ -117,43 +117,43 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	moreenum morefloats morehype moresize moreverb morewrites
 	movie15 mparhack msc msg mslapa mtgreek multenum multiaudience
 	multibbl multicap multidef multienv multiexpand multirow
-	mversion mwe mweights mycv mylatexformat nag nameauth namespc
-	ncclatex ncctools needspace nestquot newcommand newenviron
-	newfile newlfm newspaper newunicodechar newvbtm newverbs
-	nextpage nfssext-cfr nicefilelist niceframe nicetext nlctdoc
-	noconflict noindentafter noitcrul nolbreaks nomencl nomentbl
-	nonfloat nonumonpart nopageno normalcolor notes notoccite
-	nowidow nox ntheorem numberedblock numname numprint ocg-p ocgx
-	ocgx2 ocr-latex octavo oldstyle onlyamsmath opcit optional
-	options outline outliner outlines overpic pagecolor pagecont
-	pagenote pagerange pageslts paper papercdcase papermas
-	papertex paracol parades paralist paresse parnotes parselines
-	pas-cours pas-cv pas-tableur patch patchcmd pauldoc pawpict
-	pbox pbsheet pdf14 pdfcomment pdfcprot pdfmarginpar
-	pdfpagediff pdfscreen pdfslide pdfsync pdfwin pdfx pecha
-	permute petiteannonce philex photo piff pkgloader placeins
-	plantslabels plates plweb polynom polynomial polytable
-	postcards poster-mac ppr-prv preprint pressrelease prettyref
-	printlen probsoln program progress progressbar proofread
-	properties prosper protex protocol psfragx pstool pxgreeks
-	python qcm qstest qsymbols quotchap quoting quotmark ran_toks
-	randtext rccol rcs-multi rcsinfo readarray realboxes recipe
-	recipebook recipecard rectopma refcheck refenums
-	reflectgraphics refman refstyle regcount regexpatch register
-	regstats relenc relsize repeatindex repltext rjlparshap rlepsf
-	rmpage robustcommand robustindex romanbar romanbarpagenumber
-	romanneg romannum rotfloat rotpages roundbox rterface rtkinenc
-	rulercompass rvwrite sauerj savefnmark savesym savetrees scale
-	scalebar scalerel scanpages scrlttr2copy sdrt secdot
-	sectionbox sectsty seealso selectp semantic semioneside
-	semproc sepfootnotes seqsplit sf298 sffms sfmath shadethm
-	shadow shadowtext shapepar shdoc shipunov shorttoc show2e
-	showcharinbox showdim showexpl showlabels sidecap sidenotes
-	silence simplecd simplecv sitem skb skdoc skeycommand skeyval
-	skrapport slantsc smalltableof smartunits smartref snapshot
-	snotez soul sparklines sphack spot spotcolor spreadtab
-	spverbatim srbook-mem srcltx sseq sslides stack stackengine
-	standalone statistik stdclsdv stdpage stex storebox storecmd
+	mversion mwe mycv mylatexformat nag nameauth namespc ncclatex
+	ncctools needspace nestquot newcommand newenviron newfile
+	newlfm newspaper newunicodechar newvbtm newverbs nextpage
+	nfssext-cfr nicefilelist niceframe nicetext nlctdoc noconflict
+	noindentafter noitcrul nolbreaks nomencl nomentbl nonfloat
+	nonumonpart nopageno normalcolor notes notoccite nowidow nox
+	ntheorem numberedblock numname numprint ocg-p ocgx ocgx2
+	ocr-latex octavo oldstyle onlyamsmath opcit optional options
+	outline outliner outlines overpic pagecolor pagecont pagenote
+	pagerange pageslts paper papercdcase papermas papertex paracol
+	parades paralist paresse parnotes parselines pas-cours pas-cv
+	pas-tableur patch patchcmd pauldoc pawpict pbox pbsheet pdf14
+	pdfcomment pdfcprot pdfmarginpar pdfpagediff pdfscreen
+	pdfslide pdfsync pdfwin pdfx pecha permute petiteannonce
+	philex photo piff pkgloader placeins plantslabels plates plweb
+	polynom polynomial polytable postcards poster-mac ppr-prv
+	preprint pressrelease prettyref printlen probsoln program
+	progress progressbar proofread properties prosper protex
+	protocol psfragx pstool pxgreeks python qcm qstest qsymbols
+	quotchap quoting quotmark ran_toks randtext rccol rcs-multi
+	rcsinfo readarray realboxes recipe recipebook recipecard
+	rectopma refcheck refenums reflectgraphics refman refstyle
+	regcount regexpatch register regstats relenc relsize
+	repeatindex repltext rjlparshap rlepsf rmpage robustcommand
+	robustindex romanbar romanbarpagenumber romanneg romannum
+	rotfloat rotpages roundbox rterface rtkinenc rulercompass
+	rvwrite sauerj savefnmark savesym savetrees scale scalebar
+	scalerel scanpages scrlttr2copy sdrt secdot sectionbox sectsty
+	seealso selectp semantic semioneside semproc sepfootnotes
+	seqsplit sf298 sffms sfmath shadethm shadow shadowtext
+	shapepar shdoc shipunov shorttoc show2e showcharinbox showdim
+	showexpl showlabels sidecap sidenotes silence simplecd
+	simplecv sitem skb skdoc skeycommand skeyval skrapport slantsc
+	smalltableof smartunits smartref snapshot snotez soul
+	sparklines sphack spot spotcolor spreadtab spverbatim
+	srbook-mem srcltx sseq sslides stack stackengine standalone
+	statistik stdclsdv stdpage stex storebox storecmd
 	stringstrings sttools stubs subdepth subeqn subeqnarray
 	subfigmat subfigure subfiles subfloat substitutefont substr
 	supertabular svg svgcolor svn svn-prov svninfo syntax syntrace
@@ -168,13 +168,13 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	titlepic titleref titlesec titling tocbibind tocloft tocvsec2
 	todo todonotes tokenizer toolbox topfloat totcount totpages
 	translations trfsigns trimspaces trivfloat trsym truncate tucv
-	turnthepage twoinone twoup txgreeks type1cm typeface typogrid
-	uassign ucs uebungsblatt umoline underlin underoverlap
-	undolabl units unravel upmethodology upquote uri ushort
-	uwmslide varindex varsfromjobname varwidth vdmlisting verbasef
-	verbatimbox verbatimcopy verbdef verbments version versions
-	versonotes vertbars vgrid vhistory vmargin volumes vruler
-	vwcol wallpaper warning warpcol was widetable williams
+	turnthepage twoinone twoup txgreeks type1cm typed-checklist
+	typeface typogrid uassign ucs uebungsblatt umoline underlin
+	underoverlap undolabl units unravel upmethodology upquote uri
+	ushort uwmslide varindex varsfromjobname varwidth vdmlisting
+	verbasef verbatimbox verbatimcopy verbdef verbments version
+	versions versonotes vertbars vgrid vhistory vmargin volumes
+	vruler vwcol wallpaper warning warpcol was widetable williams
 	withargs wordlike wrapfig xargs xassoccnt xcolor-solarized
 	xcomment xdoc xellipsis xfor xhfill xifthen xint xmpincl
 	xnewcommand xoptarg xpatch xpeek xprintlen xpunctuate xsavebox
