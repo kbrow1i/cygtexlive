@@ -1,5 +1,5 @@
 NAME="texlive-collection-langenglish"
-VERSION=20160404
+VERSION=20160428
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="FAQ-en MemoirChapStyles Type1fonts amslatex-primer
