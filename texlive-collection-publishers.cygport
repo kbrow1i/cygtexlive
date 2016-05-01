@@ -1,5 +1,5 @@
 NAME="texlive-collection-publishers"
-VERSION=20160404
+VERSION=20160428
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex abntex2 acmconf
@@ -12,20 +12,21 @@ TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex abntex2 acmconf
 	elbioimp elsarticle elteikthesis emisa erdc estcpmm fbithesis
 	fcavtex fcltxdoc fei gaceta gatech-thesis gradstudentresume
 	gsemthesis gzt h2020proposal har2nat hobete icsv ieeepes
-	ijmart imac imtekda jmlr jpsj kdgdocs kluwer ksp-thesis lps
-	matc3 matc3mem mcmthesis mentis mnras msu-thesis mugsthesis
-	musuos muthesis mynsfc nature nddiss ndsu-thesis nih
-	nihbiosketch nostarch nrc onrannual opteng philosophersimprint
-	pittetd pkuthss powerdot-FUBerlin pracjourn procIAGssymp
-	proposal psu-thesis ptptex resphilosophica resumecls revtex
-	revtex4 ryethesis sageep sapthesis scrjrnl schule sduthesis
-	seuthesis seuthesix soton sphdthesis spie sr-vorl stellenbosch
-	suftesi sugconf tabriz-thesis texilikechaps texilikecover
-	thesis-ekf thesis-titlepage-fhac thuthesis toptesi tudscr
-	tugboat tugboat-plain turabian tui uaclasses uafthesis
-	uantwerpendocs ucbthesis ucdavisthesis ucthesis uestcthesis
-	uiucredborder uiucthesis ulthese umich-thesis umthesis
-	unamth-template unamthesis unswcover uothesis urcls uowthesis
+	ijmart imac imtekda jacow jmlr jpsj kdgdocs kluwer ksp-thesis
+	lps matc3 matc3mem mcmthesis mentis mnras msu-thesis
+	mugsthesis musuos muthesis mynsfc nature nddiss ndsu-thesis
+	nwejm nih nihbiosketch nostarch nrc onrannual opteng
+	philosophersimprint pittetd pkuthss powerdot-FUBerlin
+	pracjourn procIAGssymp proposal psu-thesis ptptex
+	resphilosophica resumecls revtex revtex4 ryethesis sageep
+	sapthesis scrjrnl schule sduthesis seuthesis seuthesix soton
+	sphdthesis spie sr-vorl stellenbosch suftesi sugconf
+	tabriz-thesis texilikechaps texilikecover thesis-ekf
+	thesis-titlepage-fhac thuthesis toptesi tudscr tugboat
+	tugboat-plain turabian tui uaclasses uafthesis uantwerpendocs
+	ucbthesis ucdavisthesis ucthesis uestcthesis uiucredborder
+	uiucthesis ulthese umich-thesis umthesis unamth-template
+	unamthesis unswcover uothesis urcls uowthesis
 	uowthesistitlepage uspatent ut-thesis uwthesis vancouver
 	xduthesis wsemclassic xcookybooky yathesis york-thesis"
 
