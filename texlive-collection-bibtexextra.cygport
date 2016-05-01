@@ -1,14 +1,15 @@
 NAME="texlive-collection-bibtexextra"
-VERSION=20160404
+VERSION=20160428
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="aichej ajl amsrefs apacite apalike2 archaeologie
 	beebe besjournals bestpapers bibarts bibhtml biblatex
 	biblatex-anonymous biblatex-apa biblatex-bookinarticle
-	biblatex-bwl biblatex-caspervector biblatex-chem
-	biblatex-chicago biblatex-dw biblatex-fiwi biblatex-gost
-	biblatex-historian biblatex-ieee biblatex-juradiss
-	biblatex-luh-ipw biblatex-manuscripts-philology biblatex-mla
+	biblatex-bookinother biblatex-bwl biblatex-caspervector
+	biblatex-chem biblatex-chicago biblatex-dw biblatex-fiwi
+	biblatex-gost biblatex-historian biblatex-ieee
+	biblatex-juradiss biblatex-luh-ipw
+	biblatex-manuscripts-philology biblatex-mla biblatex-morenames
 	biblatex-multiple-dm biblatex-musuos biblatex-nature
 	biblatex-nejm biblatex-opcit-booktitle biblatex-philosophy
 	biblatex-phys biblatex-publist biblatex-realauthor
