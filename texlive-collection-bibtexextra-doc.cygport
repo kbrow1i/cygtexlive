@@ -1,19 +1,19 @@
 NAME="texlive-collection-bibtexextra-doc"
-VERSION=20160404
+VERSION=20160428
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="amsrefs apacite archaeologie besjournals bestpapers
 	bibarts biber bibexport bibhtml biblatex biblatex-anonymous
-	biblatex-apa biblatex-bookinarticle biblatex-bwl
-	biblatex-caspervector biblatex-chem biblatex-chicago
-	biblatex-dw biblatex-fiwi biblatex-gost biblatex-historian
-	biblatex-ieee biblatex-juradiss biblatex-luh-ipw
-	biblatex-manuscripts-philology biblatex-mla
-	biblatex-multiple-dm biblatex-musuos biblatex-nature
-	biblatex-nejm biblatex-opcit-booktitle biblatex-philosophy
-	biblatex-phys biblatex-publist biblatex-realauthor
-	biblatex-science biblatex-source-division biblatex-subseries
-	biblatex-swiss-legal biblatex-trad
+	biblatex-apa biblatex-bookinarticle biblatex-bookinother
+	biblatex-bwl biblatex-caspervector biblatex-chem
+	biblatex-chicago biblatex-dw biblatex-fiwi biblatex-gost
+	biblatex-historian biblatex-ieee biblatex-juradiss
+	biblatex-luh-ipw biblatex-manuscripts-philology biblatex-mla
+	biblatex-morenames biblatex-multiple-dm biblatex-musuos
+	biblatex-nature biblatex-nejm biblatex-opcit-booktitle
+	biblatex-philosophy biblatex-phys biblatex-publist
+	biblatex-realauthor biblatex-science biblatex-source-division
+	biblatex-subseries biblatex-swiss-legal biblatex-trad
 	biblatex-true-citepages-omit biblist bibtexperllibs bibtopic
 	bibtopicprefix bibunits bookdb breakcites cell chbibref
 	chembst chicago-annote chscite citeall collref crossrefware
