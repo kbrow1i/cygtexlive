@@ -1,5 +1,5 @@
 NAME="texlive-collection-langindic"
-VERSION=20160404
+VERSION=20160428
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="bangtex bengali burmese hyphen-indic
