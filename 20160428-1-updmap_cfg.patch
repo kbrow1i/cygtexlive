@@ -1,6 +1,6 @@
---- origsrc/texmf-dist/web2c/updmap.cfg	2016-04-09 21:17:57.000000000 -0400
-+++ src/texmf-dist/web2c/updmap.cfg	2016-04-28 16:29:46.756880200 -0400
-@@ -100,305 +100,305 @@ kanjiEmbed noEmbed
+--- origsrc/texmf-dist/web2c/updmap.cfg	2016-04-27 21:14:39.000000000 -0400
++++ src/texmf-dist/web2c/updmap.cfg	2016-05-01 09:32:35.305246200 -0400
+@@ -100,306 +100,306 @@ kanjiEmbed noEmbed
  
  
  #  (end of updmap-hdr.cfg)
@@ -71,6 +71,7 @@
 -MixedMap cm-super-ts1.map
 -MixedMap cm-super-x2.map
 -Map cmcyr.map
+-Map cmexb.map
 -MixedMap cmll.map
 -Map Cochineal.map
 -Map comfortaa.map
@@ -373,6 +374,7 @@
 +#! MixedMap cm-super-ts1.map
 +#! MixedMap cm-super-x2.map
 +#! Map cmcyr.map
++#! Map cmexb.map
 +#! MixedMap cmll.map
 +#! Map Cochineal.map
 +#! Map comfortaa.map

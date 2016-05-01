@@ -1,6 +1,6 @@
 NAME="texlive-collection-basic"
 VERSION=20160428
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="amsfonts cm dvipdfmx-def enctex etex etex-pkg
 	glyphlist hyph-utf8 hyphen-base ifluatex ifpdf ifxetex
@@ -15,9 +15,10 @@ TEXLIVE_ARCH_PKGS="bibtex dvipdfmx dvips gsftopk kpathsea luatex
 TEXLIVE_DOC_PKGS="tex ifpdf tex-ini-files texconfig texlive.infra"
 
 SRC_URI+=" update_tlpdb.pl"
-SRC_URI+=" postinstall.sh"
 SRC_URI+=" tlmgr.config"
 SRC_URI+=" README.Cygwin"
+SRC_URI+=" texlive_generate_fmtutil.sh"
+SRC_URI+=" texlive_rebuild_formats.sh"
 
 inherit texlive
 
@@ -28,6 +29,8 @@ PATCH_URI+=" 20160428-1-texmfcnf_lua.patch"
 PATCH_URI+=" 20160428-1-${ARCH}-texlive_scripts_only_rungs.patch"
 PATCH_URI+=" 20150617-4-texlive_infra_doc.patch"
 PATCH_URI+=" 20160428-1-tlmgr_cygwin.patch"
+PATCH_URI+=" 20160428-2-tlmgr_40915.patch"
+PATCH_URI+=" 20160428-2-tlutils_40911+.patch"
 
 DOCS="README.Cygwin"
 
@@ -37,6 +40,8 @@ REQUIRES="coreutils cygutils dialog ed ghostscript gnupg grep sed texlive wget"
 src_install() {
 	texlive_install
 	cd ${S}
+	newbin texlive_generate_fmtutil.sh texlive_generate_fmtutil
+	newbin texlive_rebuild_formats.sh texlive_rebuild_formats
 	exeinto /usr/libexec
 	newexe update_tlpdb.pl update_tlpdb
 	insinto /etc/texmf/tlmgr

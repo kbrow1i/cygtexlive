@@ -1,0 +1,160 @@
+--- origsrc/texmf-dist/scripts/texlive/tlmgr.pl	2016-05-06 12:18:41.048290700 -0400
++++ src/texmf-dist/scripts/texlive/tlmgr.pl	2016-05-06 12:27:53.587200900 -0400
+@@ -306,6 +306,7 @@ sub main {
+     "usermode|user-mode" => 1,
+     "usertree|user-tree" => "=s",
+     "verify-downloads" => "!",
++    "require-verification" => "!",
+     "version" => 1,
+   );
+ 
+@@ -561,31 +562,14 @@ for the full story.\n";
+   $::no_execute_actions = 1 if (defined($opts{'no-execute-actions'}));
+ 
+   # if we are asked to use persistent connections try to start it here
+-  {
+-    my $do_persistent;
+-    if (defined($opts{'persistent-downloads'})) {
+-      # a command line argument for persistent-downloads has been given,
+-      # either with --no-... or --... that overrides any other setting
+-      $do_persistent = $opts{'persistent-downloads'};
+-    } else {
+-      # check if it is set in the config file
+-      if (defined($config{'persistent-downloads'})) {
+-        $do_persistent = $config{'persistent-downloads'};
+-      }
+-    }
+-    # default method is doing persistent downloads:
+-    if (!defined($do_persistent)) {
+-      $do_persistent = 1;
+-    }
+-    ddebug("tlmgr:main: do persistent downloads = $do_persistent\n");
+-    if ($do_persistent) {
+-      TeXLive::TLUtils::setup_persistent_downloads() ;
+-    }
+-    if (!defined($::tldownload_server)) {
+-      debug("tlmgr:main: ::tldownload_server not defined\n");
+-    } else {
+-      debug("tlmgr:main: ::tldownload_server defined\n");
+-    }
++  debug("tlmgr:main: do persistent downloads = $opts{'persistent-downloads'}\n");
++  if ($opts{'persistent-downloads'}) {
++    TeXLive::TLUtils::setup_persistent_downloads() ;
++  }
++  if (!defined($::tldownload_server)) {
++    debug("tlmgr:main: ::tldownload_server not defined\n");
++  } else {
++    debug("tlmgr:main: ::tldownload_server defined\n");
+   }
+ 
+   my $ret = execute_action($action, @ARGV);
+@@ -6050,6 +6034,10 @@ END_NO_INTERNET
+   if (!defined($remotetlpdb)) {
+     return(undef, $loadmediasrcerror . $location);
+   }
++  if ($opts{"require-verification"} && !$remotetlpdb->is_verified) {
++    tldie("Remote TeX Live database ($location) is not verified, exiting.\n");
++  }
++
+   # we allow a range of years to be specified by the remote tlpdb
+   # for which it might work.
+   # the lower limit is TLPDB->config_minrelease
+@@ -6178,7 +6166,8 @@ sub load_config_file {
+   #
+   # by default we remove packages
+   $config{"auto-remove"} = 1;
+-  #
++  $config{"require-verification"} = 0;
++  $config{"persistent-downloads"} = 1;
+   # do NOT set this here, we distinguish between explicitly set in the config file
+   # or implicitly true
+   # $config{"verify-downloads"} = 1;
+@@ -6195,6 +6184,14 @@ sub load_config_file {
+   $tlmgr_config_file = TeXLive::TLConfFile->new($fn, "#", "=");
+   load_options_from_config($tlmgr_config_file) if $tlmgr_config_file;
+ 
++  # set $opts{"key"} from $config{"key"} if not passed in on cmd line
++  if (!defined($opts{"require-verification"})) {
++    $opts{"require-verification"} = $config{"require-verification"};
++  }
++  if (!defined($opts{"persistent-downloads"})) {
++    $opts{"persistent-downloads"} = $config{"persistent-downloads"};
++  }
++
+   # switched names for this one after initial release.
+   if ($tlmgr_config_file->key_present("gui_expertmode")) {
+     $tlmgr_config_file->rename_key("gui_expertmode", "gui-expertmode");
+@@ -6234,6 +6231,15 @@ sub load_options_from_config {
+         tlwarn("$prg: $fn: Unknown value for auto-remove: $val\n");
+       }
+ 
++    } elsif ($key eq "require-verification") {
++      if ($val eq "0") {
++        $config{"require-verification"} = 0;
++      } elsif ($val eq "1") {
++        $config{"require-verification"} = 1;
++      } else {
++        tlwarn("$prg: $fn: Unknown value for require-verification: $val\n");
++      }
++
+     } elsif ($key eq "verify-downloads") {
+       if ($val eq "0") {
+         $config{"verify-downloads"} = 0;
+@@ -6606,6 +6612,15 @@ Change the pinning file location from C<
+ (see L</Pinning> below).  Documented only for completeness, as this is
+ only useful in debugging.
+ 
++=item B<--require-verification>
++
++=item B<--no-require-verification>
++
++Instructs C<tlmgr> to only accept signed and verified remotes. In any
++other case C<tlmgr> will quit operation.
++See L<CRYPTOGRAPHIC VERIFICATION> below for details.
++
++
+ =item B<--usermode>
+ 
+ Activates user mode for this run of C<tlmgr>; see L<USER MODE> below.
+@@ -7746,6 +7761,9 @@ command-line option.
+ =item C<persistent-downloads>, value 0 or 1 (default 1), same as
+ command-line option.
+ 
++=item C<require-verification>, value 0 or 1 (default 1), same as
++command-line option.
++
+ =item C<verify-downloads>, value 0 or 1 (default 1), same as
+ command-line option.
+ 
+@@ -7767,7 +7785,7 @@ make sense to set this.
+ 
+ =back
+ 
+-The <no-checksums> key needs more explanation.  By default, package
++The C<no-checksums> key needs more explanation.  By default, package
+ checksums computed and stored on the server (in the TLPDB) are compared
+ to checksums computed locally after downloading.  C<no-checksums>
+ disables this.
+@@ -7788,7 +7806,10 @@ If a working GnuPG binary (C<gpg>) is fo
+ method), by default verification of downloaded files is performed. This
+ can be suppressed by specifying C<--no-verify-downloads> on the command
+ line, or adding an entry C<verify-downloads = 0> to a tlmgr config file
+-(described in L<CONFIGURATION FILE FOR TLMGR>).
++(described in L<CONFIGURATION FILE FOR TLMGR>). On the other hand,
++it is possible to B<require> verification by either specifying 
++C<--require-verification> on the command line, or adding an entry
++C<require-verification = 1> to a tlmgr config file.
+ 
+ Verification is performed as follows: For each C<texlive.tlpdb> loaded
+ for a repository, the respective checksum C<texlive.tlpdb.sha512> is
+@@ -7886,6 +7907,10 @@ collection-context> would install C<coll
+ collections, while in user mode, I<only> the packages mentioned in
+ C<collection-context> are installed.
+ 
++If a package shipping map files is installed in user mode, a backup of
++the user's C<updmap.cfg> in C<USERTREE/web2c/> is made, and then this file
++regenerated from the list of installed packages.
++
+ =head2 User mode backup, restore, remove, update
+ 
+ In user mode, these actions check that all packages to be acted on are
