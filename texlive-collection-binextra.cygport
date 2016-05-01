@@ -1,5 +1,5 @@
 NAME="texlive-collection-binextra"
-VERSION=20160404
+VERSION=20160428
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="ctan_chk hook-pre-commit-pkg hyphenex"
@@ -12,8 +12,8 @@ TEXLIVE_ARCH_PKGS="a2ping adhocfilelist arara bibtex8 bibtexu
 	dvipng dvipos dvisvgm findhyph fragmaster installfont lacheck
 	latex-git-log latex2man latexdiff latexfileversion latexindent
 	latexmk latexpand listings-ext ltxfileinfo ltximg make4ht
-	match_parens mkjobtexmf patgen pdfbook2 pdfcrop pdfjam
-	pdftools pfarrei pkfix pkfix-helper purifyeps pythontex
+	match_parens mflua mkjobtexmf patgen pdfbook2 pdfcrop pdfjam
+	pdftools pdfxup pfarrei pkfix pkfix-helper purifyeps pythontex
 	seetexk srcredact sty2dtx synctex tex4ebook texcount texdef
 	texdiff texdirflatten texdoc texfot texliveonfly
 	texloganalyser texware tie tpic2pdftex typeoutfileinfo web
