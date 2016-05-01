@@ -1,5 +1,5 @@
 NAME="texlive-collection-pictures-doc"
-VERSION=20160404
+VERSION=20160428
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="aobs-tikz askmaps asyfig asypictureb bardiag
@@ -13,19 +13,19 @@ TEXLIVE_DOC_PKGS="aobs-tikz askmaps asyfig asypictureb bardiag
 	graphviz harveyballs here hf-tikz hobby hvfloat knitting
 	knittingpattern lapdf latex-make lpic lroundrect makeshape
 	miniplot mkpic modiagram neuralnetwork numericplots pb-diagram
-	petri-nets pgf pgf-blur pgf-soroban pgf-umlcd pgf-umlsd
-	pgfgantt pgfkeyx pgfmolbio pgfopts pgfornament pgfplots
-	picinpar pict2e pictex pinlabel pmgraph prerex productbox
-	pxpgfmark qcircuit qrcode randbild randomwalk reotex rviewport
-	sa-tikz schemabloc setdeck signchart smartdiagram spath3
-	swimgraf texdraw ticollege tikz-3dplot tikz-bayesnet tikz-cd
-	tikz-dependency tikz-dimline tikz-feynman tikz-inet tikz-opm
-	tikz-palattice tikz-qtree tikz-timing tikzinclude tikzmark
-	tikzorbital tikzpagenodes tikzpfeile tikzposter tikzscale
-	tikzsymbols tipfr tkz-base tkz-berge tkz-doc tkz-euclide
-	tkz-fct tkz-graph tkz-kiviat tkz-linknodes tkz-orm tkz-tab
-	tqft timing-diagrams tufte-latex venndiagram visualpstricks
-	xpicture xypic"
+	petri-nets pgf pgf-blur pgf-soroban pgf-spectra pgf-umlcd
+	pgf-umlsd pgfgantt pgfkeyx pgfmolbio pgfopts pgfornament
+	pgfplots picinpar pict2e pictex pinlabel pmgraph prerex
+	productbox pxpgfmark qcircuit qrcode randbild randomwalk
+	reotex rviewport sa-tikz schemabloc setdeck signchart
+	smartdiagram spath3 swimgraf texdraw ticollege tikz-3dplot
+	tikz-bayesnet tikz-cd tikz-dependency tikz-dimline
+	tikz-feynman tikz-inet tikz-opm tikz-palattice tikz-qtree
+	tikz-timing tikzinclude tikzmark tikzorbital tikzpagenodes
+	tikzpfeile tikzposter tikzscale tikzsymbols tipfr tkz-base
+	tkz-berge tkz-doc tkz-euclide tkz-fct tkz-graph tkz-kiviat
+	tkz-linknodes tkz-orm tkz-tab tqft timing-diagrams tufte-latex
+	venndiagram visualpstricks xpicture xypic"
 
 inherit texlive
 ARCH=noarch
