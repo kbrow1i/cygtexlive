@@ -1,9 +1,9 @@
 NAME="texlive-collection-music-doc"
-VERSION=20160404
+VERSION=20160428
 RELEASE=1
 
-TEXLIVE_DOC_PKGS="abc bagpipe figbas gchords gtrcrd guitar
-	guitarchordschemes harmony leadsheets lilyglyphs m-tx
+TEXLIVE_DOC_PKGS="abc autosp bagpipe figbas gchords gregoriotex gtrcrd
+	guitar guitarchordschemes harmony leadsheets lilyglyphs m-tx
 	musixguit musixtex musixtex-fonts musixtnt piano pmx pmxchords
 	songbook songs xpiano"
 
