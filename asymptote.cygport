@@ -1,5 +1,5 @@
 NAME="asymptote"
-VERSION=2.35
+VERSION=2.37
 RELEASE=1
 
 inherit emacs vim
@@ -11,17 +11,20 @@ SRC_URI="mirror://sourceforge/asymptote/${P}.src.tgz"
 PATCH_URI="mirror://portage/media-gfx/${PN}/files/${PN}-2.15-info.patch"
 PATCH_URI+=" asymptote-2.16-pdfviewer.patch"
 
-# Need genericrecommended for epsf.tex; need plainextra for texinfo.
-DEPEND="pkgconfig(gsl)
+# Need the texlive packages for docs.
+DEPEND="pkgconfig(fftw3)
 	pkgconfig(gl)
 	pkgconfig(glu)
-	pkgconfig(fftw3)
-	libglut-devel
+	pkgconfig(gsl)
 	pkgconfig(ncurses)
+	libglut-devel
+	texinfo-tex
+	texlive-collection-fontsrecommended
 	texlive-collection-genericrecommended
+	texlive-collection-latexrecommended
 	texlive-collection-plainextra
 	vim
-	texinfo-tex"
+"
 
 MAKEOPTS+=" -j1"
 
