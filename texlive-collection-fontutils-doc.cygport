@@ -7,4 +7,3 @@ TEXLIVE_DOC_PKGS="accfonts afm2pl dosepsbin epstopdf fontinst fontools
 	ttfutils"
 
 inherit texlive
-ARCH=noarch
