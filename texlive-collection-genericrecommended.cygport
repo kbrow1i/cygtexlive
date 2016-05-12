@@ -6,4 +6,3 @@ TEXLIVE_TEXMF_PKGS="apnum epsf fontname genmisc kastrup multido path
 	tex-ps ulem"
 
 inherit texlive
-ARCH=noarch
