@@ -11,4 +11,3 @@ TEXLIVE_DOC_PKGS="anysize beamer booktabs breqn caption cite cmap crop
 	textcase thumbpdf typehtml underscore xcolor xkeyval"
 
 inherit texlive
-ARCH=noarch
