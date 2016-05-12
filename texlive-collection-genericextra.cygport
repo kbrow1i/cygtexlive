@@ -11,4 +11,3 @@ TEXLIVE_TEXMF_PKGS="abbr abstyles barr bitelist borceux c-pascal
 	tracklang texapi upca xlop yax"
 
 inherit texlive
-ARCH=noarch
