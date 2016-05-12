@@ -14,4 +14,3 @@ TEXLIVE_DOC_PKGS="babel-catalan babel-galician babel-spanglish
 
 inherit texlive
 
-ARCH=noarch
