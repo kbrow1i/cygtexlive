@@ -15,4 +15,3 @@ TEXLIVE_DOC_PKGS="12many amstex backnaur begriff binomexp boldtensors
 	yhmath ytableau"
 
 inherit texlive
-ARCH=noarch
