@@ -13,4 +13,3 @@ TEXLIVE_DOC_PKGS="arphic cns ctex ctex-faq fandol impatient-cn
 REQUIRES="texlive-collection-langcjk"
 
 inherit texlive
-ARCH=noarch
