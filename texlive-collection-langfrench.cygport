@@ -22,4 +22,3 @@ TEXLIVE_DOC_PKGS="aeguill apprends-latex babel-basque babel-french
 
 inherit texlive
 
-ARCH=noarch
