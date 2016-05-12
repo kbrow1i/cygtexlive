@@ -19,4 +19,3 @@ inherit texlive
 
 SUMMARY="TeX Live support for several languages"
 
-ARCH=noarch
