@@ -14,4 +14,3 @@ TEXLIVE_DOC_PKGS="babel-italian amsldoc-it amsmath-it amsthdoc-it
 
 inherit texlive
 
-ARCH=noarch
