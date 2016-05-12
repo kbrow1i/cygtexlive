@@ -9,4 +9,3 @@ TEXLIVE_DOC_PKGS="abc autosp bagpipe figbas gchords gregoriotex gtrcrd
 
 inherit texlive
 
-ARCH=noarch
