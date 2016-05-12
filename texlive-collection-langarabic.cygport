@@ -10,4 +10,3 @@ TEXLIVE_DOC_PKGS="amiri arabi arabi-add arabluatex arabtex bidi bidihl
 	dad ghab imsproc lshort-persian persian-bib simurgh tram"
 
 inherit texlive
-ARCH=noarch
