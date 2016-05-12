@@ -42,4 +42,3 @@ TEXLIVE_TEXMF_PKGS="Asana-Math academicons accanthis adforn adfsymbols
 	yinit-otf zlmtt"
 
 inherit texlive
-ARCH=noarch
