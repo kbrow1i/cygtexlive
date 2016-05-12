@@ -26,4 +26,3 @@ TEXLIVE_DOC_PKGS="amsrefs apacite archaeologie besjournals bestpapers
 	uni-wtal-lin urlbst usebib vak xcite"
 
 inherit texlive
-ARCH=noarch
