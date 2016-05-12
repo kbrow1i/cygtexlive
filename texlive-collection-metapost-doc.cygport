@@ -11,4 +11,3 @@ TEXLIVE_DOC_PKGS="automata bbcard blockdraw_mp bpolynomial cmarrows
 	threeddice"
 
 inherit texlive
-ARCH=noarch
