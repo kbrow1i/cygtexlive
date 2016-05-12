@@ -13,4 +13,3 @@ TEXLIVE_DOC_PKGS="epsf-dvipdfmx figflow font-change fontch getoptk
 	varisize xii"
 
 inherit texlive
-ARCH=noarch
