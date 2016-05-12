@@ -17,4 +17,3 @@ TEXLIVE_DOC_PKGS="SIstyle SIunits alg algorithm2e algorithmicx
 	xymtex youngtab"
 
 inherit texlive
-ARCH=noarch
