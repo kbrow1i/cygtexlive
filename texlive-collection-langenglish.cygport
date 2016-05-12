@@ -19,4 +19,3 @@ TEXLIVE_DOC_PKGS="FAQ-en MemoirChapStyles Type1fonts amslatex-primer
 TEXLIVE_TEXMF_PKGS="${TEXLIVE_DOC_PKGS} hyphen-english"
 
 inherit texlive
-ARCH=noarch
