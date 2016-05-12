@@ -30,4 +30,3 @@ TEXLIVE_DOC_PKGS="IEEEconf IEEEtran aastex abntex2 acmconf active-conf
 	york-thesis"
 
 inherit texlive
-ARCH=noarch
