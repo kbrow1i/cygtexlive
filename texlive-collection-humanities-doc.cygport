@@ -12,4 +12,3 @@ TEXLIVE_DOC_PKGS="adtrees bibleref bibleref-lds bibleref-mouth
 	tree-dvips verse xyling"
 
 inherit texlive
-ARCH=noarch
