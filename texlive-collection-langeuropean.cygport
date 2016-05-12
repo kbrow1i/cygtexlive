@@ -33,5 +33,4 @@ TEXLIVE_DOC_PKGS="armtex babel-albanian babel-bosnian babel-breton
 inherit texlive
 
 SUMMARY="TeX Live support for several European languages"
-ARCH=noarch
 
