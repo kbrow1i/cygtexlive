@@ -1,14 +1,21 @@
+--- origsrc/tlpkg/tlpobj/texlive-scripts.i386-cygwin.tlpobj	2015-04-12 20:27:47.000000000 -0400
++++ src/tlpkg/tlpobj/texlive-scripts.i386-cygwin.tlpobj	2016-05-13 08:57:26.660081200 -0400
+@@ -3,5 +3,5 @@ category TLCore
+ revision 29836
+ shortdesc i386-cygwin files of texlive-scripts
+ binfiles arch=i386-cygwin size=2
+- bin/i386-cygwin/man
++# bin/i386-cygwin/man
+  bin/i386-cygwin/rungs
 --- origsrc/tlpkg/tlpobj/texlive-scripts.tlpobj	2016-04-24 21:14:42.000000000 -0400
-+++ src/tlpkg/tlpobj/texlive-scripts.tlpobj	2016-04-28 16:39:07.956588400 -0400
-@@ -8,15 +8,15 @@ depend texlive.infra
- depend texlive-scripts.ARCH
++++ src/tlpkg/tlpobj/texlive-scripts.tlpobj	2016-05-13 09:00:52.430510100 -0400
+@@ -9,14 +9,14 @@ depend texlive-scripts.ARCH
  postaction shortcut type=menu name="TeX Live command-line"   cmd=TEXDIR/tlpkg/installer/tl-cmd.bat
  runfiles size=67
-- install-tl
+  install-tl
 - texmf-dist/scripts/texlive/lua/texlive/getopt.tlu
 - texmf-dist/scripts/texlive/lua/texlive/tlpdb.tlu
 - texmf-dist/scripts/texlive/lua/texlive/utils.tlu
-+# install-tl
 +# texmf-dist/scripts/texlive/lua/texlive/getopt.tlu
 +# texmf-dist/scripts/texlive/lua/texlive/tlpdb.tlu
 +# texmf-dist/scripts/texlive/lua/texlive/utils.tlu
@@ -27,12 +34,12 @@
 +# tlpkg/installer/install-menu-text.pl
 +# tlpkg/installer/install-menu-wizard.pl
 +# tlpkg/installer/texlive.png
---- origsrc/tlpkg/tlpobj/texlive-scripts.i386-cygwin.tlpobj	2016-04-14 13:50:09.000000000 -0400
-+++ src/tlpkg/tlpobj/texlive-scripts.i386-cygwin.tlpobj	2016-04-28 16:34:06.641391300 -0400
+--- origsrc/tlpkg/tlpobj/texlive-scripts.x86_64-cygwin.tlpobj	2016-04-14 13:50:09.000000000 -0400
++++ src/tlpkg/tlpobj/texlive-scripts.x86_64-cygwin.tlpobj	2016-05-13 09:06:48.769449000 -0400
 @@ -3,5 +3,5 @@ category TLCore
- revision 29836
- shortdesc i386-cygwin files of texlive-scripts
- binfiles arch=i386-cygwin size=2
-- bin/i386-cygwin/man
-+# bin/i386-cygwin/man
-  bin/i386-cygwin/rungs
+ revision 33557
+ shortdesc x86_64-cygwin files of texlive-scripts
+ binfiles arch=x86_64-cygwin size=2
+- bin/x86_64-cygwin/man
++# bin/x86_64-cygwin/man
+  bin/x86_64-cygwin/rungs
