@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra-doc"
-VERSION=20160428
+VERSION=20160520
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
@@ -13,7 +13,7 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	bankstatement bashful basicarith bchart beamer2thesis
 	beameraudience beamercolorthemeowl beamerdarkthemes
 	beamerposter beamersubframe beamertheme-detlevcm
-	beamertheme-metropolis beamertheme-phnompenh
+	beamertheme-epyt beamertheme-metropolis beamertheme-phnompenh
 	beamertheme-upenn-bc beamerthemenirma beton bewerbung bez123
 	bezos bhcexam bibletext bigfoot bigints bizcard blindtext
 	blkarray block bnumexpr boites bold-extra bookcover bookest
@@ -28,9 +28,9 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	chet chextras chkfloat chletter chngcntr chronology circ
 	classics clefval cleveref clipboard clock cmdstring cmdtrack
 	cmsd cnltx cntformats cntperchap codedoc codepage codesection
-	collcell collectbox colordoc colorinfo colorspace colortab
-	colorwav colorweb colourchange combelow combine comma commado
-	comment concepts concprog constants continue contour
+	collcell collectbox colordoc colorinfo coloring colorspace
+	colortab colorwav colorweb colourchange combelow combine comma
+	commado comment concepts concprog constants continue contour
 	contracard cooking cool coollist coolstr coolthms cooltooltips
 	coordsys copyedit copyrightbox coseoul counttexruns
 	courseoutline coursepaper coverpage cprotect crbox
@@ -61,12 +61,12 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	ellipsis elmath elocalloc elpres elzcards emarks embedall
 	embrac emptypage emulateapj endfloat endheads endnotes engpron
 	engrec enotez enumitem enumitem-zref envbig environ envlab
-	epigraph epiolmec epyt eqell eqlist eqparbox errata esami
-	esdiff esint esint-type1 etaremune etextools etoc etoolbox
-	eukdate europasscv europecv everyhook everypage exam exam-n
-	examdesign examplep exceltex excludeonly exercise exercises
-	exp-testopt expdlist export exsheets exsol extract facsimile
-	factura fancylabel fancynum fancypar fancyslides fancytabs
+	epigraph epiolmec eqell eqlist eqparbox errata esami esdiff
+	esint esint-type1 etaremune etextools etoc etoolbox eukdate
+	europasscv europecv everyhook everypage exam exam-n examdesign
+	examplep exceltex excludeonly exercise exercises exp-testopt
+	expdlist export exsheets exsol extract facsimile factura
+	fancylabel fancynum fancypar fancyslides fancytabs
 	fancytooltips fcolumn ffslides fibeamer fifo-stack figsize
 	filecontents filedate filehook fileinfo filemod fink finstrut
 	fithesis fixcmex fixfoot fixme fixmetodonotes fjodor flabels
@@ -104,18 +104,18 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	logpap longfbox longfigure longnamefilelist loops lsc
 	lstaddons lt3graph ltablex ltabptch ltxdockit ltxindex ltxkeys
 	ltxnew ltxtools macroswap magaz mailing mailmerge makebarcode
-	makebox makecell makecirc makecmds makedtx makeglos mandi
-	manuscript marginfix marginnote mathalfa mathastext mathexam
-	maybemath mbenotes mcaption mceinleger mcite mciteplus
-	mdframed media9 medstarbeamer meetingmins memexsupp memory
-	menu menukeys method metre mfirstuc mftinc midpage minibox
-	minifp minipage-marginpar minitoc minorrevision minted minutes
-	mla-paper mlist mmap mnotes moderncv moderntimeline modref
-	modroman monofill moodle moreenum morefloats morehype moresize
-	moreverb morewrites movie15 mparhack msc msg mslapa mtgreek
-	multenum multiaudience multibbl multicap multidef multienv
-	multiexpand multirow mversion mwe mycv mylatexformat nag
-	nameauth namespc ncclatex ncctools needspace newcommand
+	makebase makebox makecell makecirc makecmds makedtx makeglos
+	mandi manuscript marginfix marginnote mathalfa mathastext
+	mathexam maybemath mbenotes mcaption mceinleger mcite
+	mciteplus mdframed media9 medstarbeamer meetingmins memexsupp
+	memory menu menukeys method metre mfirstuc mftinc midpage
+	minibox minifp minipage-marginpar minitoc minorrevision minted
+	minutes mla-paper mlist mmap mnotes moderncv moderntimeline
+	modref modroman monofill moodle moreenum morefloats morehype
+	moresize moreverb morewrites movie15 mparhack msc msg mslapa
+	mtgreek multenum multiaudience multibbl multicap multidef
+	multienv multiexpand multirow mversion mwe mycv mylatexformat
+	nag nameauth namespc ncclatex ncctools needspace newcommand
 	newenviron newfile newlfm newspaper newunicodechar newvbtm
 	newverbs nfssext-cfr nicefilelist niceframe nicetext nlctdoc
 	noconflict noindentafter noitcrul nolbreaks nomencl nomentbl
