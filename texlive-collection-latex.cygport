@@ -1,12 +1,12 @@
 NAME="texlive-collection-latex"
-VERSION=20160428
+VERSION=20160520
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="ae amscls amsmath babel babel-english babelbib
-	carlisle colortbl fancyhdr fix2col geometry graphics
-	graphics-cfg hyperref latex latex-fonts latexconfig ltxmisc
-	mfnfss natbib oberdiek pdftex-def pslatex psnfss pspicture
-	tools url"
+	carlisle colortbl dvisvgm-def fancyhdr fix2col geometry
+	graphics graphics-cfg hyperref latex latex-fonts latexconfig
+	ltxmisc mfnfss natbib oberdiek pdftex-def pslatex psnfss
+	pspicture tools url"
 
 TEXLIVE_ARCH_PKGS="latex-bin mptopdf"
 
