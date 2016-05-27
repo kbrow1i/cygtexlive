@@ -23,19 +23,21 @@ If you want to try using tlmgr, here are a few things you can do:
 
 2. tlmgr paper
 
-[This will show you the current default paper size for the TeX Live
-programs.]
+This will show you the current default paper size for the TeX Live
+programs.
 
 3. tlmgr paper letter
 
-[This sets the default paper size to "letter" size.  It writes to
+This sets the default paper size to "letter" size.  It writes to
 various system directories, so you must run it as a user with write
-access to those directories, typically an administrator.]
+access to those directories, typically an administrator.  Warning: The
+effect of setting the default paper size is not always obvious.  See,
+for example, http://tug.org/pipermail/tex-live/2016-May/038560.html.
 
 4. tlmgr init-usertree
 
-[This initializes the directory ~/.local/share/texmf so that you can
-perform various user mode actions.]
+This initializes the directory ~/.local/share/texmf so that you can
+perform various user mode actions.
 
 5. tlmgr --usermode option showall
 
@@ -43,13 +45,13 @@ perform various user mode actions.]
 
 7. tlmgr --usermode option backupdir ~/.local/share/texmf/tlpkg/backups
 
-[If the specified directory doesn’t exist, you’ll get a message
-telling you to create it.]
+If the specified directory doesn’t exist, you’ll get a message
+telling you to create it.
 
 8. tlmgr info | grep -v '^i '
 
-[This gives you a list of all upstream packages that are not installed
-on your system.]
+This gives you a list of all upstream packages that are not installed
+on your system.
 
 9. tlmgr --usermode install noto
 

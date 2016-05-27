@@ -1,18 +1,18 @@
 NAME="texlive-collection-basic"
-VERSION=20160428
-RELEASE=2
+VERSION=20160520
+RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="amsfonts cm dvipdfmx-def enctex etex etex-pkg
-	glyphlist hyph-utf8 hyphen-base ifluatex ifpdf ifxetex
-	knuth-lib knuth-local lua-alt-getopt mflogo plain
-	tex-ini-files texlive-common texlive-docindex texlive-en
-	texlive-msg-translations unicode-data"
+	glyphlist hyph-utf8 hyphen-base ifluatex ifxetex knuth-lib
+	knuth-local lua-alt-getopt mflogo plain tex-ini-files
+	texlive-common texlive-docindex texlive-en
+	texlive-msg-translations unicode-data updmap-map"
 
 TEXLIVE_ARCH_PKGS="bibtex dvipdfmx dvips gsftopk kpathsea luatex
 	makeindex metafont mfware pdftex tetex tex texconfig
 	texlive.infra texlive-scripts xdvi"
 
-TEXLIVE_DOC_PKGS="tex ifpdf tex-ini-files texconfig texlive.infra"
+TEXLIVE_DOC_PKGS="tex tex-ini-files texconfig texlive.infra"
 
 SRC_URI+=" update_tlpdb.pl"
 SRC_URI+=" tlmgr.config"
@@ -23,14 +23,12 @@ SRC_URI+=" texlive_rebuild_formats.sh"
 inherit texlive
 
 PATCH_URI="20160428-1-texmf_cnf.patch"
-PATCH_URI+=" 20160428-1-fmtutil_cnf.patch"
-PATCH_URI+=" 20160428-1-updmap_cfg.patch"
+PATCH_URI+=" 20160520-1-fmtutil_cnf.patch"
+PATCH_URI+=" 20160520-1-updmap_cfg.patch"
 PATCH_URI+=" 20160428-1-texmfcnf_lua.patch"
 PATCH_URI+=" 20160428-2-texlive_scripts_only_rungs.patch"
 PATCH_URI+=" 20150617-4-texlive_infra_doc.patch"
 PATCH_URI+=" 20160428-1-tlmgr_cygwin.patch"
-PATCH_URI+=" 20160428-2-tlmgr_40915.patch"
-PATCH_URI+=" 20160428-2-tlutils_40911+.patch"
 
 DOCS="README.Cygwin"
 
