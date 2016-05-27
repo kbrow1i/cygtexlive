@@ -1,5 +1,5 @@
 NAME="texlive-collection-genericrecommended-doc"
-VERSION=20160428
+VERSION=20160520
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="apnum epsf fontname kastrup multido path tex-ps
