@@ -1,5 +1,5 @@
 NAME="texlive-collection-plainextra"
-VERSION=20160428
+VERSION=20160520
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="epsf-dvipdfmx figflow fixpdfmag font-change fontch
