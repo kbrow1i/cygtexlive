@@ -1,5 +1,5 @@
 NAME="texlive-collection-fontsextra"
-VERSION=20160428
+VERSION=20160520
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="Asana-Math academicons accanthis adforn adfsymbols
@@ -9,7 +9,7 @@ TEXLIVE_TEXMF_PKGS="Asana-Math academicons accanthis adforn adfsymbols
 	bbding bbm bbm-macros bbold bbold-type1 belleek bera
 	berenisadf bguq blacklettert1 boisik bookhands boondox braille
 	brushscr cabin caladea calligra calligra-type1 cantarell
-	carlito carolmin-ps ccicons cfr-initials cfr-lm cherokee
+	carlito carolmin-ps ccicons cfr-initials cfr-lm cherokee chivo
 	cinzel clearsans cm-lgc cm-unicode cmbright cmexb cmll cmpica
 	cmtiup cochineal comfortaa comicneue concmath-fonts
 	cookingsymbols countriesofeurope courier-scaled crimson cryst
@@ -18,27 +18,28 @@ TEXLIVE_TEXMF_PKGS="Asana-Math academicons accanthis adforn adfsymbols
 	ean ebgaramond ebgaramond-maths ecc eco eiad eiad-ltx electrum
 	elvish epigrafica epsdice erewhon esrelation esstix esvect
 	eulervm euxm fbb fdsymbol fetamont feyn fge fira foekfont
-	fonetika fontawesome fontmfizz fourier fouriernc frcursive
-	genealogy gentium-tug gfsartemisia gfsbodoni gfscomplutum
-	gfsdidot gfsneohellenic gfssolomos gillcm gillius gnu-freefont
-	gothic greenpoint grotesq hacm hands heuristica hfbright
-	hfoldsty ifsym imfellenglish inconsolata initials ipaex-type1
-	iwona jablantile jamtimes junicode kixfont knuthotherfonts
-	kpfonts kurier lato lfb libertine libertinegc libertinus
-	libertinust1math librebaskerville librebodoni librecaslon
-	libris linearA lobster2 lxfonts ly1 mathabx mathabx-type1
-	mathdesign mdputu mdsymbol merriweather miama mintspirit
-	mnsymbol mweights newpx newtx newtxsf newtxtt nimbus15 nkarta
-	noto obnov ocherokee ocr-b ocr-b-outline ogham oinuit
-	old-arrows oldlatin oldstandard opensans orkhun overlock
-	pacioli paratype phaistos phonetic pigpen playfair poltawski
-	prodint punk punk-latex punknova pxtxalfa quattrocento raleway
-	recycle roboto romande rsfso sansmathaccent sansmathfonts
-	sauter sauterfonts schulschriften semaphor skull sourcecodepro
-	sourcesanspro sourceserifpro starfont staves stix superiors
-	svrsymbols tapir tempora tengwarscript tfrupee tpslifonts
-	trajan txfontsb typicons umtypewriter universa universalis
-	urwchancal venturisadf wsuipa xcharter xits yfonts yfonts-t1
-	yinit-otf zlmtt"
+	fonetika fontawesome fontmfizz fonts-churchslavonic fourier
+	fouriernc frcursive genealogy gentium-tug gfsartemisia
+	gfsbodoni gfscomplutum gfsdidot gfsneohellenic gfssolomos
+	gillcm gillius gnu-freefont gothic greenpoint grotesq hacm
+	hands heuristica hfbright hfoldsty ifsym imfellenglish
+	inconsolata initials ipaex-type1 iwona jablantile jamtimes
+	junicode kixfont knuthotherfonts kpfonts kurier lato lfb
+	libertine libertinegc libertinus libertinust1math
+	librebaskerville librebodoni librecaslon libris linearA
+	lobster2 lxfonts ly1 mathabx mathabx-type1 mathdesign mdputu
+	mdsymbol merriweather miama mintspirit mnsymbol mweights newpx
+	newtx newtxsf newtxtt nimbus15 nkarta noto obnov ocherokee
+	ocr-b ocr-b-outline ogham oinuit old-arrows oldlatin
+	oldstandard opensans orkhun overlock pacioli paratype phaistos
+	phonetic pigpen playfair poltawski prodint punk punk-latex
+	punknova pxtxalfa quattrocento raleway recycle roboto romande
+	rosario rsfso sansmathaccent sansmathfonts sauter sauterfonts
+	schulschriften semaphor skull sourcecodepro sourcesanspro
+	sourceserifpro starfont staves stix superiors svrsymbols tapir
+	tempora tengwarscript tfrupee tpslifonts trajan txfontsb
+	typicons umtypewriter universa universalis urwchancal
+	venturisadf wsuipa xcharter xits yfonts yfonts-t1 yinit-otf
+	zlmtt"
 
 inherit texlive
