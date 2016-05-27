@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexrecommended-doc"
-VERSION=20160428
+VERSION=20160520
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="anysize beamer booktabs breqn caption cite cmap crop
