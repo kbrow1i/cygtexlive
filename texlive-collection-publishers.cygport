@@ -1,8 +1,8 @@
 NAME="texlive-collection-publishers"
-VERSION=20160428
+VERSION=20160520
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex abntex2 acmconf
+TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex abntex2 acmart acmconf
 	active-conf adfathesis afparticle afthesis aguplus aiaa
 	ametsoc anufinalexam aomart apa apa6 apa6e arsclassica
 	articleingud asaetr ascelike bangorcsthesis beamer-FUBerlin
@@ -13,7 +13,7 @@ TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex abntex2 acmconf
 	fcavtex fcltxdoc fei gaceta gatech-thesis gradstudentresume
 	gsemthesis gzt h2020proposal har2nat hobete icsv ieeepes
 	ijmart imac imtekda jacow jmlr jpsj kdgdocs kluwer ksp-thesis
-	lps matc3 matc3mem mcmthesis mentis mnras msu-thesis
+	langsci lps matc3 matc3mem mcmthesis mentis mnras msu-thesis
 	mugsthesis musuos muthesis mynsfc nature nddiss ndsu-thesis
 	nwejm nih nihbiosketch nostarch nrc onrannual opteng
 	philosophersimprint pittetd pkuthss powerdot-FUBerlin
