@@ -1,10 +1,10 @@
 NAME="texlive"
-VERSION=20160428
+VERSION=20160520
 RELEASE=1
 
 HOMEPAGE="http://www.tug.org/texlive/"
-SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
-# SRC_URI="mirror://ctan/systems/texlive/Source/${P}-source.tar.xz"
+# SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
+SRC_URI="mirror://ctan/systems/texlive/Source/${P}-source.tar.xz"
 SRC_URI+=" 0p_texlive_prep.dash"
 SRC_URI+=" zp_texlive_finish.dash"
 SRC_URI+=" texlive-enable-fontconfig.sh"
