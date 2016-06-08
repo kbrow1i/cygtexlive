@@ -1,14 +1,14 @@
 NAME="texlive-collection-langjapanese"
 VERSION=20160520
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="bxbase bxcjkjatype bxjscls ipaex japanese
 	japanese-otf japanese-otf-uptex jsclasses lshort-japanese
-	luatexja pbibtex-base platex ptex-base ptex-fonts pxbase
-	pxchfon pxcjkcat pxjahyper pxrubrica uplatex uptex-base
-	uptex-fonts wadalab zxjafbfont zxjatype"
+	luatexja pbibtex-base ptex-base ptex-fonts pxbase pxchfon
+	pxcjkcat pxjahyper pxrubrica uptex-base uptex-fonts wadalab
+	zxjafbfont zxjatype"
 
-TEXLIVE_ARCH_PKGS="convbkmk jfontmaps ptex ptex2pdf uptex"
+TEXLIVE_ARCH_PKGS="convbkmk jfontmaps platex ptex ptex2pdf uplatex uptex"
 
 TEXLIVE_DOC_PKGS="bxbase bxcjkjatype bxjscls convbkmk ipaex japanese
 	japanese-otf japanese-otf-uptex jfontmaps jsclasses
