@@ -61,7 +61,7 @@ then
     # Maybe all formats will be rebuilt in zp_texlive_finish.dash.
     if [ ! -f ${markerdir}/texlive.rebuild_all_fmts ]
     then
-	[ -x /usr/bin/fmtutil-sys ] && /usr/bin/fmtutil-sys
+	[ -x /usr/bin/fmtutil-sys ] && /usr/bin/fmtutil-sys --refresh
     fi
     mv -f ${markerdir}/texlive.refresh_fmts \
        ${markerdir}/texlive.refresh_fmts.done
