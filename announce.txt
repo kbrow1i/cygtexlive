@@ -1,42 +1,34 @@
-From cygwin-announce-texlive-20150521-4 Tue Apr 12 08:59:08 2016
+From cygwin-announce-texlive-20160520-3 Sun Sep 25 18:12:04 2016
 From: Ken Brown <kbrown@cornell.edu>
 To: cygwin-announce@cygwin.com
-Date: Tue, 12 Apr 2016 08:59:08 -0400
-Subject: texlive 20150521-4
+Date: Sun, 25 Sep 2016 18:12:04 -0400
+Subject: texlive 20160520-3
 
 The following packages have been uploaded to the Cygwin distribution:
 
-* texlive-20150521-4
-* libkpathsea6-20150521-4
-* libkpathsea-devel-20150521-4
-* libptexenc1-20150521-4
-* libptexenc-devel-20150521-4
-* libsynctex1-20150521-4
-* libsynctex-devel-20150521-4
-* libtexlua52_5-20150521-4
-* libtexlua52-devel-20150521-4
-* libtexluajit2-20150521-4
-* libtexluajit-devel-20150521-4
+* texlive-20160520-3
+* libkpathsea6-20160520-3
+* libkpathsea-devel-20160520-3
+* libptexenc1-20160520-3
+* libptexenc-devel-20160520-3
+* libsynctex1-20160520-3
+* libsynctex-devel-20160520-3
+* libtexlua52_5-20160520-3
+* libtexlua52-devel-20160520-3
+* libtexluajit2-20160520-3
+* libtexluajit-devel-20160520-3
 
 TeX Live provides a comprehensive, cross-platform TeX system. It 
 includes all the major TeX-related programs, macro packages, and fonts 
 that are free software, including support for many languages around the 
-world.  For more information, see
+world.
 
-  http://www.tug.org/texlive/
+This release is a rebuild of the TeX Live 2016 binaries and supporting
+libraries to incorporate an upstream bugfix:
 
-This is a rebuild of the TeX Live 2015 binaries and supporting
-libraries, with a few small changes:
+  http://tug.org/svn/texlive/trunk/Build/source/texk/tex4htk/tex4ht.c?view=log&pathrev=42110
 
-1. I am now able to build xindy on 64-bit Cygwin.
-
-2. I have removed the call to fc-cache from the zp_texlive_finish.dash
-postinstall script; this is no longer needed now that libfontconfig1
-includes zp_fontconfig_cache_1.sh.
-
-3. I have added to 0p_texlive_prep.dash support for the tlmgr (TeX
-Live Manager) utility, which is going to be added to the upcoming test
-release of the TeX Live collections.
+The bug only affected htxelatex and related programs.
 
 Ken Brown
 Cygwin's TeX Live maintainer

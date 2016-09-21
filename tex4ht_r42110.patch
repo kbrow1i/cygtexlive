@@ -1,0 +1,15 @@
+Index: source/texk/tex4htk/tex4ht.c
+===================================================================
+--- source/texk/tex4htk/tex4ht.c	(revision 42109)
++++ source/texk/tex4htk/tex4ht.c	(revision 42110)
+@@ -6809,8 +6809,8 @@
+     ||
+     ((ch != 
+ 2 
+-) && (ch != 
+-5
++) && (ch >
++10
+ 
+ ))
+   )  bad_dvi;

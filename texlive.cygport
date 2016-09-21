@@ -1,6 +1,6 @@
 NAME="texlive"
 VERSION=20160520
-RELEASE=2
+RELEASE=3
 
 HOMEPAGE="http://www.tug.org/texlive/"
 # SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
@@ -15,6 +15,7 @@ SRC_DIR="${P}-source"
 
 PATCH_URI+=" 20160428-1-texmf_cnf.patch"
 PATCH_URI+=" 20140523-2-reautoconf.patch"
+PATCH_URI+=" tex4ht_r42110.patch"
 
 DOCS="README.Cygwin"
 
