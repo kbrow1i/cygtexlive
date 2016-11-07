@@ -1,22 +1,22 @@
-From cygwin-announce-texlive-20160520-3 Sun Sep 25 18:12:04 2016
+From cygwin-announce-texlive-20160520-4 Mon Nov 07 08:32:09 2016
 From: Ken Brown <kbrown@cornell.edu>
 To: cygwin-announce@cygwin.com
-Date: Sun, 25 Sep 2016 18:12:04 -0400
-Subject: texlive 20160520-3
+Date: Mon, 07 Nov 2016 08:32:09 -0500
+Subject: texlive 20160520-4
 
 The following packages have been uploaded to the Cygwin distribution:
 
-* texlive-20160520-3
-* libkpathsea6-20160520-3
-* libkpathsea-devel-20160520-3
-* libptexenc1-20160520-3
-* libptexenc-devel-20160520-3
-* libsynctex1-20160520-3
-* libsynctex-devel-20160520-3
-* libtexlua52_5-20160520-3
-* libtexlua52-devel-20160520-3
-* libtexluajit2-20160520-3
-* libtexluajit-devel-20160520-3
+* texlive-20160520-4
+* libkpathsea6-20160520-4
+* libkpathsea-devel-20160520-4
+* libptexenc1-20160520-4
+* libptexenc-devel-20160520-4
+* libsynctex1-20160520-4
+* libsynctex-devel-20160520-4
+* libtexlua52_5-20160520-4
+* libtexlua52-devel-20160520-4
+* libtexluajit2-20160520-4
+* libtexluajit-devel-20160520-4
 
 TeX Live provides a comprehensive, cross-platform TeX system. It 
 includes all the major TeX-related programs, macro packages, and fonts 
@@ -24,11 +24,7 @@ that are free software, including support for many languages around the
 world.
 
 This release is a rebuild of the TeX Live 2016 binaries and supporting
-libraries to incorporate an upstream bugfix:
-
-  http://tug.org/svn/texlive/trunk/Build/source/texk/tex4htk/tex4ht.c?view=log&pathrev=42110
-
-The bug only affected htxelatex and related programs.
+libraries, built with icu-58.1.
 
 Ken Brown
 Cygwin's TeX Live maintainer
