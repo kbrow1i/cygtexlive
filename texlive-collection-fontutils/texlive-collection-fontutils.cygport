@@ -1,0 +1,11 @@
+NAME="texlive-collection-fontutils"
+VERSION=20160520
+RELEASE=1
+
+TEXLIVE_TEXMF_PKGS="dvipsconfig metatype1"
+
+TEXLIVE_ARCH_PKGS="afm2pl accfonts dosepsbin epstopdf fontinst
+	fontools fontware lcdftypetools mf2pt1 ps2pk pstools psutils
+	t1utils ttfutils"
+
+inherit texlive
