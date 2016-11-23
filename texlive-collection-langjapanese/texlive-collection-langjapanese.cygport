@@ -1,0 +1,34 @@
+NAME="texlive-collection-langjapanese"
+VERSION=20160520
+RELEASE=2
+
+TEXLIVE_TEXMF_PKGS="bxbase bxcjkjatype bxjscls ipaex japanese
+	japanese-otf japanese-otf-uptex jsclasses lshort-japanese
+	luatexja pbibtex-base ptex-base ptex-fonts pxbase pxchfon
+	pxcjkcat pxjahyper pxrubrica uptex-base uptex-fonts wadalab
+	zxjafbfont zxjatype"
+
+TEXLIVE_ARCH_PKGS="convbkmk jfontmaps platex ptex ptex2pdf uplatex uptex"
+
+TEXLIVE_DOC_PKGS="bxbase bxcjkjatype bxjscls convbkmk ipaex japanese
+	japanese-otf japanese-otf-uptex jfontmaps jsclasses
+	lshort-japanese luatexja pbibtex-base platex ptex ptex-base
+	ptex-fonts ptex2pdf pxbase pxchfon pxcjkcat pxjahyper
+	pxrubrica uplatex uptex uptex-base uptex-fonts wadalab
+	zxjafbfont zxjatype"
+
+REQUIRES="texlive-collection-langcjk"
+
+inherit texlive
+
+SRC_URI+=" preremove.new.sh"
+SRC_URI+=" postinstall.sh"
+
+src_install() {
+	cd ${S}
+	texlive_install
+	exeinto /etc/preremove
+	newexe preremove.new.sh ${PN}.new
+	exeinto /etc/postinstall
+	newexe postinstall.sh texlive-collection-langjapanese.sh
+}
