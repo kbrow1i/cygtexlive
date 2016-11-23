@@ -1,0 +1,16 @@
+NAME="texlive-collection-langitalian"
+VERSION=20160520
+RELEASE=1
+
+TEXLIVE_TEXMF_PKGS="amsldoc-it amsmath-it amsthdoc-it babel-italian
+	codicefiscaleitaliano fancyhdr-it fixltxhyph frontespizio
+	hyphen-italian itnumpar l2tabu-italian latex4wp-it layaureo
+	lshort-italian psfrag-italian texlive-it"
+
+TEXLIVE_DOC_PKGS="babel-italian amsldoc-it amsmath-it amsthdoc-it
+	codicefiscaleitaliano fancyhdr-it fixltxhyph frontespizio
+	itnumpar l2tabu-italian latex4wp-it lshort-italian
+	psfrag-italian texlive-it layaureo"
+
+inherit texlive
+
