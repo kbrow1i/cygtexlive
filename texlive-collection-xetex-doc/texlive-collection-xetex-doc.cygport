@@ -1,0 +1,13 @@
+NAME="texlive-collection-xetex-doc"
+VERSION=20160520
+RELEASE=1
+
+TEXLIVE_DOC_PKGS="arabxetex bidi-atbegshi bidicontour bidipagegrid
+	bidishadowtext bidipresentation fixlatvian font-change-xetex
+	fontbook fontwrap interchar mathspec philokalia polyglossia
+	ptext quran realscripts ucharclasses unisugar xebaposter xecjk
+	xecolor xecyr xeindex xepersian xesearch xespotcolor xetex
+	xetex-itrans xetex-pstricks xetexfontinfo xetex-tibetan
+	xetexko xevlna xltxtra xunicode"
+
+inherit texlive
