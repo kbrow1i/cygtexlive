@@ -1,0 +1,21 @@
+NAME="texlive-collection-mathextra"
+VERSION=20160520
+RELEASE=1
+
+TEXLIVE_TEXMF_PKGS="12many backnaur begriff binomexp boldtensors
+	bosisio bropd calculation ccfonts commath concmath concrete
+	conteq delim delimseasy drawmatrix econometrics ebproof
+	eqnarray extarrows extpfeil faktor grundgesetze interval
+	ionumbers isomath logicproof lpform lplfitch mathcomp
+	mathpartir mattens mhequ multiobjective natded nath ot-tableau
+	oubraces perfectcut prftree prooftrees proba rec-thy
+	ribbonproofs rmathbr sesamanuel shuffle skmath statex statex2
+	stmaryrd subsupscripts susy syllogism sympytexpackage synproof
+	tablor tensor tex-ewd thmbox turnstile unicode-math venn
+	yhmath ytableau"
+
+TEXLIVE_ARCH_PKGS="amstex"
+
+REQUIRES="texlive-collection-latex texlive-collection-fontsrecommended"
+
+inherit texlive
