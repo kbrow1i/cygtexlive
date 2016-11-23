@@ -1,0 +1,12 @@
+NAME="texlive-collection-luatex-doc"
+VERSION=20160520
+RELEASE=1
+
+TEXLIVE_DOC_PKGS="checkcites chickenize cloze ctablestack enigma
+	interpreter lua-check-hyphen lua-visual-debug lua2dox
+	luabibentry luabidi luacode luaindex luainputenc luaintro
+	lualatex-doc lualatex-math lualibs luamplib luaotfload luasseq
+	luatex-def luatex85 luatexbase luatexko luatextra luatodonotes
+	luaxml odsfile placeat selnolig showhyphens spelling ucharcat"
+
+inherit texlive
