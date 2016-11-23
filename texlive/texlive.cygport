@@ -1,0 +1,160 @@
+NAME="texlive"
+VERSION=20160520
+RELEASE=4
+
+HOMEPAGE="http://www.tug.org/texlive/"
+# SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
+SRC_URI="mirror://ctan/systems/texlive/Source/${P}-source.tar.xz"
+SRC_URI+=" 0p_texlive_prep.dash"
+SRC_URI+=" zp_texlive_finish.dash"
+SRC_URI+=" texlive-enable-fontconfig.sh"
+SRC_URI+=" README.Cygwin"
+SRC_URI+=" 09-texlive.conf"
+
+SRC_DIR="${P}-source"
+
+PATCH_URI+=" 20160428-1-texmf_cnf.patch"
+PATCH_URI+=" 20140523-2-reautoconf.patch"
+PATCH_URI+=" tex4ht_r42110.patch"
+
+DOCS="README.Cygwin"
+
+DEPEND="
+	libgd-devel
+	libgmp-devel
+	libgs-devel
+	libiconv
+	libicu-devel
+	libmpfr-devel
+	libpaper-devel
+	t1lib-devel
+	pkgconfig(cairo)
+	pkgconfig(fontconfig)
+	pkgconfig(freetype2)
+	pkgconfig(graphite2)
+	pkgconfig(harfbuzz)
+	pkgconfig(harfbuzz-icu)
+	pkgconfig(libpng)
+	pkgconfig(ncurses)
+	pkgconfig(pixman-1)
+	pkgconfig(poppler)
+	pkgconfig(x11)
+	pkgconfig(xaw7)
+	pkgconfig(xmu)
+	pkgconfig(xpm)
+	pkgconfig(xt)
+	pkgconfig(zlib)
+	pkgconfig(zziplib)
+"
+# The following is needed for building xindy docs.
+DEPEND+=" clisp texlive-collection-langgreek texlive-collection-langcyrillic texlive-collection-fontsrecommended"
+
+PKG_NAMES="${PN} libkpathsea6 libkpathsea-devel libptexenc1 libptexenc-devel libsynctex1 libsynctex-devel libtexlua52_5 libtexlua52-devel libtexluajit2 libtexluajit-devel"
+
+texlive_CONTENTS="
+	etc/
+	usr/bin/*.exe
+	usr/bin/texlive-enable-fontconfig
+	usr/bin/xindy.mem
+	usr/share/doc/
+	usr/share/fontconfig/
+	var/
+"
+
+PKG_IGNORE="usr/share/info usr/share/man"
+
+libkpathsea6_CONTENTS="usr/bin/cygkpathsea-6.dll"
+libkpathsea_devel_CONTENTS="usr/include/kpathsea/ usr/lib/kpathsea/
+	usr/lib/libkpathsea.* usr/lib/pkgconfig/kpathsea.pc"
+libptexenc1_CONTENTS="usr/bin/cygptexenc-1.dll"
+libptexenc_devel_CONTENTS="usr/include/ptexenc/ usr/lib/libptexenc.*
+	usr/lib/pkgconfig/ptexenc.pc"
+libsynctex1_CONTENTS="usr/bin/cygsynctex-1.dll"
+libsynctex_devel_CONTENTS="usr/include/synctex/ usr/lib/libsynctex.*
+	usr/lib/pkgconfig/synctex.pc"
+libtexlua52_5_CONTENTS="usr/bin/cygtexlua52-5.dll"
+libtexlua52_devel_CONTENTS="usr/include/texlua52/
+	usr/lib/libtexlua52.* usr/lib/pkgconfig/texlua52.pc"
+libtexluajit2_CONTENTS="usr/bin/cygtexluajit-2.dll"
+libtexluajit_devel_CONTENTS="usr/include/texluajit/
+	usr/lib/libtexluajit* usr/lib/pkgconfig/texluajit.pc"
+
+CATEGORY="Publishing"
+
+texlive_REQUIRES="texlive-collection-basic"
+
+texlive_SUMMARY="TeX Live binaries"
+libkpathsea6_SUMMARY="TeX file and path search library (runtime)"
+libkpathsea_devel_SUMMARY="TeX file and path search library (development)"
+libptexenc1_SUMMARY="TeX Unicode encoding library (runtime)"
+libptexenc_devel_SUMMARY="TeX Unicode encoding library (development)"
+libsynctex1_SUMMARY="TeX source/output synchronization library (runtime)"
+libsynctex_devel_SUMMARY="TeX source/output synchronization library (development)"
+libtexlua52_5_SUMMARY="TeX lua scripting library (runtime)"
+libtexlua52_devel_SUMMARY="TeX lua scripting library (development)"
+libtexluajit2_SUMMARY="TeX Just-In-Time lua compiler library (runtime)"
+libtexluajit_devel_SUMMARY="TeX Just-In-Time lua compiler library (development)"
+
+DESCRIPTION="TeX Live provides a comprehensive, cross-platform TeX system. It 
+includes all the major TeX-related programs, macro packages, and fonts 
+that are free software, including support for many languages around the 
+world."
+
+DIFF_EXCLUDES="*.in configure build-aux m4 aclocal.m4"
+
+src_compile() {
+	cd ${S}
+	libtoolize --force --install
+	./reautoconf
+	cd ${B}
+	cygconf \
+	    --enable-shared \
+	    --enable-xindy \
+	    --disable-native-texlive-build \
+	    --with-banner-add=/Cygwin \
+	    --with-clisp-runtime=system \
+	    --with-system-cairo \
+	    --with-system-freetype2 --with-freetype2-include=/usr/include \
+	    --with-system-gd \
+	    --with-system-gmp \
+	    --with-system-graphite2 \
+	    --with-system-harfbuzz \
+	    --with-system-icu \
+	    --with-system-libgs \
+	    --with-system-libpaper \
+	    --with-system-libpng \
+	    --with-system-mpfr \
+	    --with-system-ncurses \
+	    --with-system-pixman \
+	    --with-system-poppler \
+	    --with-system-t1lib \
+	    --with-system-xpdf \
+	    --with-system-zlib \
+	    --with-system-zziplib
+	cygmake all
+}
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	# All we want from cyginstall is the binaries.
+	rm -fr ${D}/usr/share/texmf*
+	find ${D}/usr/bin/ -mindepth 1 ! -name '*.exe' ! -name '*.dll' ! -name '*.mem' -delete
+	newbin ${S}/texlive-enable-fontconfig.sh texlive-enable-fontconfig
+	insinto /usr/share/fontconfig/conf.avail
+	doins ${S}/09-texlive.conf
+	markerdir=/var/lib/texmf/postinstall
+	insinto ${markerdir}
+	newins /dev/null ${PN}.lsr
+	newins /dev/null ${PN}.refresh_fmts
+	exeinto /etc/postinstall
+	doexe ${S}/0p_texlive_prep.dash ${S}/zp_texlive_finish.dash
+}
+
+src_test() {
+	cd ${B}
+	make -k check
+}
+
+KEEP_LA_FILES="none"
