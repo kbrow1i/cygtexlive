@@ -1,0 +1,34 @@
+NAME="texlive-collection-bibtexextra"
+VERSION=20160520
+RELEASE=1
+
+TEXLIVE_TEXMF_PKGS="aichej ajl amsrefs apacite apalike2 archaeologie
+	beebe besjournals bestpapers bibarts bibhtml biblatex
+	biblatex-abnt biblatex-anonymous biblatex-apa
+	biblatex-bookinarticle biblatex-bookinother biblatex-bwl
+	biblatex-caspervector biblatex-chem biblatex-chicago
+	biblatex-dw biblatex-fiwi biblatex-gost biblatex-historian
+	biblatex-ieee biblatex-iso690 biblatex-juradiss
+	biblatex-luh-ipw biblatex-manuscripts-philology biblatex-mla
+	biblatex-morenames biblatex-multiple-dm biblatex-musuos
+	biblatex-nature biblatex-nejm biblatex-opcit-booktitle
+	biblatex-philosophy biblatex-phys biblatex-publist
+	biblatex-realauthor biblatex-science biblatex-source-division
+	biblatex-subseries biblatex-swiss-legal biblatex-trad
+	biblatex-true-citepages-omit biblist bibtexperllibs bibtopic
+	bibtopicprefix bibunits bookdb breakcites cell chbibref
+	chembst chicago chicago-annote chscite citeall collref
+	compactbib custom-bib din1505 dk-bib doipubmed ecobiblatex
+	economic fbs figbib footbib francais-bst geschichtsfrkl
+	harvard harvmac historische-zeitschrift ijqc inlinebib
+	iopart-num jneurosci jurabib ksfh_nat logreq margbib multibib
+	munich nar nmbib notes2bib oscola perception pnas2009 rsc
+	showtags sort-by-letters splitbib turabian-formatting
+	uni-wtal-ger uni-wtal-lin usebib vak xcite"
+
+TEXLIVE_ARCH_PKGS="biber bibexport crossrefware listbib multibibliography
+	urlbst"
+
+REQUIRES="biber texlive-collection-latex"
+
+inherit texlive

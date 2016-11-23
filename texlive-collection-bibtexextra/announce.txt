@@ -1,0 +1,10 @@
+The following packages have been uploaded to the Cygwin distribution:
+
+* texlive-collection-bibtexextra-20160309-1
+* texlive-collection-bibtexextra-doc-20160309-1
+
+This is an update to the latest upstream release.  It includes
+biblatex-3.3, which is needed for biber-2.4.
+
+Ken Brown
+Cygwin's TeX Live maintainer
