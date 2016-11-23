@@ -1,0 +1,15 @@
+NAME="texlive-collection-xetex"
+VERSION=20160520
+RELEASE=1
+
+TEXLIVE_TEXMF_PKGS="arabxetex bidi-atbegshi bidicontour bidipagegrid
+	bidishadowtext bidipresentation fixlatvian font-change-xetex
+	fontbook fontwrap interchar mathspec philokalia polyglossia
+	ptext quran realscripts ucharclasses xebaposter unisugar xecjk
+	xecolor xecyr xeindex xepersian xesearch xespotcolor xetex-def
+	xetex-itrans xetex-pstricks xetex-tibetan xetexconfig
+	xetexfontinfo xetexko xevlna xltxtra xunicode"
+
+TEXLIVE_ARCH_PKGS="xetex"
+
+inherit texlive
