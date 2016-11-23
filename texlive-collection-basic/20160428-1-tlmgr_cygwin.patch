@@ -1,0 +1,64 @@
+--- origsrc/texmf-dist/scripts/texlive/tlmgr.pl	2016-04-27 06:25:08.000000000 -0400
++++ src/texmf-dist/scripts/texlive/tlmgr.pl	2016-04-28 17:21:02.455563200 -0400
+@@ -38,50 +38,13 @@ END {
+ 
+ BEGIN {
+   $^W = 1;
+-  $ismain = (__FILE__ eq $0);
++  $ismain = 1;
+   # WARNING
+   # The only use anticipated for tlmgr.pl as library for the 2009 release
+   # is the Windows w32client prototype script.
+   # Unix-specific problems with use as library will probably go undetected.
+ 
+-  # make subprograms (including kpsewhich) have the right path:
+-  my ($bindir, $kpsewhichname);
+-  if ($^O =~ /^MSWin/i) {
+-    # on w32 $0 and __FILE__ point directly to tlmgr.pl; they can be relative
+-    $Master = __FILE__;
+-    $Master =~ s!\\!/!g;
+-    $Master =~ s![^/]*$!../../..!
+-      unless ($Master =~ s!/texmf-dist/scripts/texlive/tlmgr\.pl$!!i);
+-    $bindir = "$Master/bin/win32";
+-    $kpsewhichname = "kpsewhich.exe";
+-    # path already set by wrapper batchfile
+-  } else {
+-    $Master = __FILE__;
+-    $Master =~ s,/*[^/]*$,,;
+-    if ($ismain) {
+-      $bindir = $Master;
+-      $Master = "$Master/../..";
+-    } else {
+-      # for the time being, this code will not be used or tested
+-      $Master = "$Master/../../..";
+-      # no code yet for $bindir; would have to detect platform
+-    }
+-    # make subprograms (including kpsewhich) have the right path:
+-    $ENV{"PATH"} = "$bindir:$ENV{PATH}";
+-    $kpsewhichname = "kpsewhich";
+-  }
+-  if (-r "$bindir/$kpsewhichname") {
+-    # if not in bootstrapping mode => kpsewhich exists, so use it to get $Master
+-    chomp($Master = `kpsewhich -var-value=SELFAUTOPARENT`);
+-  }
+-
+-  # if we have no directory in which to find our modules,
+-  # no point in going on.
+-  if (! $Master) {
+-    die ("Could not determine directory of tlmgr executable, "
+-         . "maybe shared library woes?\nCheck for error messages above");
+-  }
+-
++  $Master = "/usr/share";
+   $::installerdir = $Master;  # for config.guess et al., see TLUtils.pm
+ 
+   # make Perl find our packages first:
+@@ -585,7 +548,7 @@ for the full story.\n";
+   # in system mode verify that the selected action is allowed
+   if (!$opts{"usermode"} && $config{'allowed-actions'}) {
+     if (!TeXLive::TLUtils::member($action, @{$config{'allowed-actions'}})) {
+-      tlwarn("$prg: action not allowed in system mode: $action\n");
++      tlwarn("$prg: action not allowed in system mode on Cygwin: $action\n");
+       exit ($F_ERROR);
+     }
+   }
