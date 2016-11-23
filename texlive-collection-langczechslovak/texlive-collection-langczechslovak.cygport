@@ -1,0 +1,16 @@
+NAME="texlive-collection-langczechslovak"
+VERSION=20160520
+RELEASE=1
+
+TEXLIVE_TEXMF_PKGS="babel-czech babel-slovak cnbwp cs csbulletin cstex
+	hyphen-czech hyphen-slovak lshort-czech lshort-slovak
+	texlive-cz"
+
+TEXLIVE_ARCH_PKGS="cslatex csplain vlna"
+
+TEXLIVE_DOC_PKGS="babel-czech babel-slovak cnbwp csbulletin cstex
+	lshort-czech lshort-slovak texlive-cz vlna"
+
+REQUIRES="texlive-collection-latex"
+
+inherit texlive
