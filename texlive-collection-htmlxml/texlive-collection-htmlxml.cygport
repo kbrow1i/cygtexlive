@@ -1,0 +1,11 @@
+NAME="texlive-collection-htmlxml"
+VERSION=20160520
+RELEASE=1
+
+TEXLIVE_TEXMF_PKGS="classpack passivetex xmltexconfig"
+TEXLIVE_ARCH_PKGS="jadetex tex4ht xmltex"
+TEXLIVE_DOC_PKGS="classpack jadetex tex4ht xmltex"
+
+REQUIRES="texlive-collection-latex texlive-collection-fontsrecommended"
+
+inherit texlive
