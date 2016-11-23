@@ -1,0 +1,14 @@
+NAME="texlive-collection-langcjk"
+VERSION=20160520
+RELEASE=1
+
+TEXLIVE_TEXMF_PKGS="adobemapping c90 cjk cjkpunct dnp garuda-c90
+	norasi-c90 xcjk2uni zxjafont"
+
+TEXLIVE_ARCH_PKGS="cjk-gs-integrate cjkutils"
+
+TEXLIVE_DOC_PKGS="c90 cjk-gs-integrate cjk cjkpunct cjkutils xcjk2uni
+	zxjafont"
+
+inherit texlive
+
