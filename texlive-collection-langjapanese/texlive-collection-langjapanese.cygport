@@ -1,18 +1,21 @@
 NAME="texlive-collection-langjapanese"
-VERSION=20160520
-RELEASE=2
+VERSION=20170216
+RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="bxbase bxcjkjatype bxjscls ipaex japanese
-	japanese-otf japanese-otf-uptex jsclasses lshort-japanese
-	luatexja pbibtex-base ptex-base ptex-fonts pxbase pxchfon
-	pxcjkcat pxjahyper pxrubrica uptex-base uptex-fonts wadalab
-	zxjafbfont zxjatype"
+TEXLIVE_TEXMF_PKGS="babel-japanese bxbase bxcjkjatype bxjalipsum
+	bxjscls ipaex japanese-otf japanese-otf-uptex jlreq jsclasses
+	lshort-japanese luatexja mendex-doc pbibtex-base platex-tools
+	platexcheat ptex-base ptex-fonts pxbase pxchfon pxcjkcat
+	pxjahyper pxrubrica uptex-base uptex-fonts wadalab zxjafbfont
+	zxjatype"
 
-TEXLIVE_ARCH_PKGS="convbkmk jfontmaps platex ptex ptex2pdf uplatex uptex"
+TEXLIVE_ARCH_PKGS="convbkmk platex ptex ptex2pdf ptex-fontmaps uplatex
+	uptex"
 
-TEXLIVE_DOC_PKGS="bxbase bxcjkjatype bxjscls convbkmk ipaex japanese
-	japanese-otf japanese-otf-uptex jfontmaps jsclasses
-	lshort-japanese luatexja pbibtex-base platex ptex ptex-base
+TEXLIVE_DOC_PKGS="babel-japanese bxbase bxcjkjatype bxjalipsum bxjscls
+	convbkmk ipaex japanese-otf japanese-otf-uptex jlreq jsclasses
+	lshort-japanese luatexja mendex-doc pbibtex-base platex
+	platex-tools platexcheat ptex ptex-base ptex-fontmaps
 	ptex-fonts ptex2pdf pxbase pxchfon pxcjkcat pxjahyper
 	pxrubrica uplatex uptex uptex-base uptex-fonts wadalab
 	zxjafbfont zxjatype"
