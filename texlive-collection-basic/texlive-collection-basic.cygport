@@ -1,9 +1,9 @@
 NAME="texlive-collection-basic"
-VERSION=20160520
+VERSION=20170216
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="amsfonts cm dvipdfmx-def enctex etex etex-pkg
-	glyphlist hyph-utf8 hyphen-base ifluatex ifxetex knuth-lib
+TEXLIVE_TEXMF_PKGS="amsfonts cm enctex etex etex-pkg glyphlist
+	graphics-def hyph-utf8 hyphen-base ifluatex ifxetex knuth-lib
 	knuth-local lua-alt-getopt mflogo plain tex-ini-files
 	texlive-common texlive-docindex texlive-en
 	texlive-msg-translations unicode-data updmap-map"
