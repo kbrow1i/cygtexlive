@@ -1,5 +1,5 @@
 NAME="texlive-collection-binextra"
-VERSION=20160520
+VERSION=20170216
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="ctan_chk hook-pre-commit-pkg hyphenex"
