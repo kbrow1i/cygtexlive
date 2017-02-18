@@ -1,0 +1,128 @@
+#+TITLE: Building texlive for Cygwin
+
+* Creating .cygport files from scratch
+
+This assumes that the various =texlive-collection-*= directories already
+exist.
+
+#+BEGIN_EXAMPLE
+date=$(date +%Y%m%d)
+trunk=http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlpsrc
+
+for p in texlive-collection-*
+do
+  deps=$(curl -s "${trunk}/${p#texlive-}.tlpsrc?view=co" \
+         | grep ^depend | cut -d' ' -f2 | grep -v collection- \
+         | sed -e ':a;N;$!ba;s|\n| |g')
+  echo -e TEXLIVE_TEXMF_PKGS=\"${deps}\"\\ninherit texlive > $p/$p-$date-1.cygport
+done
+
+sed -i -e 's/TEXMF/DOC/' texlive-collection-documentation-*/*.cygport
+#+END_EXAMPLE
+
+If we have an =svn= checkout of =tlpsrc=, then we can obviously use a
+suitable =cat= command instead of =curl=.
+
+Note: The first part of the first =sed= script above, up to the
+substitution, simply takes the input stream, puts back all the
+newlines that =sed= removes, and concatenates the lines to form a single
+string to work on.  The final substitution then replaces all newlines
+by spaces.
+
+Now do the following manually:
+ - Scan the =.tlpkg= files in each collection (once downloaded and
+   prepped) for =.ARCH= depends, and move those from =TEXMF_PKGS= to
+   =ARCH_PKGS=.  Also add packages to =DOC_PKGS= if there's a
+   =pkg.doc.tar.xz= file in =tlnet/archive=.  Yaakov missed about 1800 of
+   these.  I found and added them while building TL2012.  I simply
+   used a suitable curl command and grepped for =\.doc\.tar\.xz=.  I
+   then used a =grep -l ^depend $p\$= on =collection-*.tlpsrc= to find
+   which package each belonged to.
+
+ - Primarily in =collection-lang*=, see which individual packages were
+   just placeholders for docs, moving them from =TEXMF_PKGS= to
+   =DOC_PKGS=.
+
+ - Drop any empty hyphenation packages from =collection-lang*=.
+
+
+* Updating
+
+Create an =svn= checkout of the TL =tlpsrc= repository if it doesn't
+already exist:
+
+#+BEGIN_EXAMPLE
+mkdir -p ~/src/texlive/trunk/Master/tlpkg
+cd ~/src/texlive/trunk/Master/tlpkg
+svn co svn://tug.org/texlive/trunk/Master/tlpkg/tlpsrc
+#+END_EXAMPLE
+
+Or update it with =svn up= (in =tlpsrc=) if it does exist.
+
+Then in =tlpsrc=:
+#+BEGIN_EXAMPLE
+svn diff -r {20120202} | less
+#+END_EXAMPLE
+
+Here =20120202= is the date of the last packages, or perhaps slightly
+earlier.  Now translate any changes to =collection-*.tlpsrc= into the
+existing =.cygport= files.  Can also use =-r {20120202}:{20120628}= for a
+range of dates.
+
+We also have to update collections that depend on TL packages that
+have changed recently.  For example, the following command in the
+=tlpsrc= checkout finds all =collection-*.tlpsrc= files that depend on
+packages dated in February or March 2012:
+
+#+BEGIN_EXAMPLE
+curl -sL http://mirror.ctan.org/systems/texlive/tlnet/archive/ \
+ | grep -E '(Feb|Mar)-2012' \
+ | sed -e 's/.* href="\([^\.]*\)\..*".*/^depend \1$/g'| sort -u \
+ | grep -v collection- | xargs -n 1 -I _ grep -l _ collection-*.tlpsrc \
+ | sort -u
+#+END_EXAMPLE
+
+Note that the input to =xargs= is a sequence of lines of the form
+=^depend foo$=, where =foo= is a TL package name.  For each of these
+lines, we =grep= the =collection-*.tlpsrc= files to find out which one
+contains it.
+
+[I'm not sure this is completely right; it misses packages like
+=texlive.infra= with a dot in their name.  I'll have to rethink this.
+Maybe I can just find what those are and treat them as special cases.]
+
+Don't forget to delete the obsolete =*.tar.xz= files so =fetch= will get
+the new ones.  Could use =fetchall= to play it safe, but it's time
+consuming.  Maybe do that once a year.  The script =prefetch.sh= (as of
+12/22/2012) just deletes those that have new versions.
+
+When a collection needs updating, I should automatically update the
+corresponding =-doc= package if there is one.
+
+And for every new TL package that's been added to a collection, I need
+to find out if there's a corresponding =doc= package.  The following
+command produces a list of packages with changed/new =doc= tarballs:
+
+#+BEGIN_EXAMPLE
+curl -sL http://mirror.ctan.org/systems/texlive/tlnet/archive/ \
+ | grep -E '(Jul|Aug|Sep|Oct|Nov|Dec)-2012' \
+ | sed -n -e 's/.* href="\(.*\)\.doc\.tar\.xz".*/\1/p'
+#+END_EXAMPLE
+
+But this isn't good enough.  It might happen that an existing (not
+new) package has a =doc= tarball that's just been added.  Or maybe I
+just missed it in the past.  So I've written a script
+=check_doc_pkgs.sh= that takes each changed/new =doc= tarball and makes
+sure that the corresponding package is listed in my
+=texlive-collection-*= or =texlive-collection-*-doc= package.
+
+I should also check whether new packages have an =ARCH= component:
+
+#+BEGIN_EXAMPLE
+curl -sL http://mirror.ctan.org/systems/texlive/tlnet/archive/ \
+ | grep -E '(Jul|Aug|Sep|Oct|Nov|Dec)-2012' \
+ | sed -n -e 's/.* href="\(.*\.i386-cygwin\.tar\.xz\)".*/\1/p'
+#+END_EXAMPLE
+
+It can also help to look at =texlive.tlpdb= to see contents of various
+packages.

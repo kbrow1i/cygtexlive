@@ -6,3 +6,4 @@ save/
 *.tar.bz2
 *.tgz
 *.tar.xz
+*.log
