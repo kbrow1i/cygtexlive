@@ -135,7 +135,7 @@ src_compile() {
 	    --with-system-pixman \
 	    --with-system-poppler \
 	    --with-system-potrace \
-	    --with-system-t1lib \
+	    --with-system-teckit \
 	    --with-system-xpdf \
 	    --with-system-zlib \
 	    --with-system-zziplib
