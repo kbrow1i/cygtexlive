@@ -1,11 +1,11 @@
 NAME="texlive"
-VERSION=20170314
+VERSION=20170316
 RELEASE=1
 
 HOMEPAGE="http://www.tug.org/texlive/"
 
 SVN_URI="svn://tug.org/texlive/trunk/Build/source"
-# SVN_REV=43495
+# SVN_REV=43514
 inherit svn
 
 # SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
@@ -22,6 +22,7 @@ SRC_URI+=" 09-texlive.conf"
 PATCH_URI+=" 20140523-2-reautoconf.patch"
 # PATCH_URI+=" tex4ht_r42110.patch"
 # PATCH_URI+=" 20170314-c_auto_h.patch"
+PATCH_URI+=" 20170316-dvisvgm_libgs.patch"
 
 DOCS="README.Cygwin"
 
