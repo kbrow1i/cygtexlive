@@ -46,6 +46,7 @@ DEPEND="
 	pkgconfig(pixman-1)
 	pkgconfig(poppler)
 	pkgconfig(x11)
+	pkgconfig(teckit)
 	pkgconfig(xaw7)
 	pkgconfig(xmu)
 	pkgconfig(xpm)
