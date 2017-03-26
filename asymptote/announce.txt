@@ -1,0 +1,18 @@
+From: Ken Brown <kbrown at cornell dot edu>
+To: cygwin-announce at cygwin dot com
+Date: Fri, 24 Mar 2017 20:13:31 -0400
+Subject: asymptote 2.38-2
+
+The following package has been uploaded to the Cygwin distribution:
+
+* asymptote-2.38-2
+
+Asymptote is a powerful descriptive vector graphics language for
+technical drawing, inspired by MetaPost but with an improved C++-like
+syntax. Asymptote provides for figures the same high-quality typesetting
+that LaTeX does for scientific text.
+
+This is a rebuild to remove the dependency on an obsolete gsl library.
+
+Ken Brown
+Cygwin's asymptote maintainer
