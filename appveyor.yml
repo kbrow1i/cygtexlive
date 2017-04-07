@@ -1,0 +1,23 @@
+version: '{build}'
+skip_tags: true
+environment:
+  CYGWIN_MIRROR: http://cygwin.mirror.constant.com
+  CACHE: C:\cache
+  matrix:
+  - BUILD: x86_64-pc-cygwin
+  - BUILD: i686-pc-cygwin
+install:
+- if "%BUILD%"=="x86_64-pc-cygwin" set SETUP=setup-x86_64.exe && set CYGWIN_ROOT=C:\cygwin64
+- if "%BUILD%"=="i686-pc-cygwin" set SETUP=setup-x86.exe && set CYGWIN_ROOT=C:\cygwin
+- if not exist %CACHE% mkdir %CACHE%
+- appveyor DownloadFile http://cygwin.com/%SETUP% -FileName %CACHE%\%SETUP%
+- echo Updating Cygwin and installing build dependencies
+- '%CACHE%\%SETUP% -gqnNdO -R "%CYGWIN_ROOT%" -s "%CYGWIN_MIRROR%" -l "%CACHE%" -P "cygport"'
+- echo Install done
+cache:
+- C:\cache
+build_script:
+- SET PATH=%CYGWIN_ROOT%/bin
+- '%CYGWIN_ROOT%\bin\bash -lc "cd $APPVEYOR_BUILD_FOLDER; ./appveyor.sh"'
+artifacts:
+- path: artifact.tar.xz
