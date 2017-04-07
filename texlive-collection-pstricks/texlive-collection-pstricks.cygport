@@ -1,5 +1,5 @@
 NAME="texlive-collection-pstricks"
-VERSION=20170216
+VERSION=20170407
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="auto-pst-pdf bclogo dsptricks makeplot pdftricks
@@ -18,7 +18,7 @@ TEXLIVE_TEXMF_PKGS="auto-pst-pdf bclogo dsptricks makeplot pdftricks
 	pst-soroban pst-spectra pst-spirograph pst-stru pst-support
 	pst-text pst-thick pst-tools pst-tree pst-tvz pst-uml
 	pst-vectorian pst-vowel pst-vue3d pstricks pstricks-add
-	pstricks_calcnotes uml vaucanson-g vocaltract"
+	pstricks_calcnotes rputover uml vaucanson-g vocaltract"
 
 TEXLIVE_ARCH_PKGS="pst2pdf pedigree-perl"
 

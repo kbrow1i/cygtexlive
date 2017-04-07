@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra"
-VERSION=20170216
+VERSION=20170407
 RELEASE=1
 
 # preview is now packaged as the preview-latex subpackage of emacs-auctex.
@@ -65,19 +65,19 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	ellipsis elmath elocalloc elpres elzcards emarks embedall
 	embrac emptypage emulateapj endfloat endheads endnotes engpron
 	engrec enotez enumitem enumitem-zref envbig environ envlab
-	epigraph epiolmec eqell eqlist eqname eqparbox errata esami
-	esdiff esint esint-type1 etaremune etextools etoc etoolbox
-	eukdate eulerpx europasscv europecv everyhook everypage exam
-	exam-n examdesign example examplep excludeonly exercise
-	exercises exp-testopt expdlist export exsheets exsol extract
-	facsimile factura fancylabel fancynum fancypar fancyslides
-	fancytabs fancytooltips fcolumn ffslides fgruler fibeamer
-	fifo-stack figsize filecontents filecontentsdef filedate
-	fileinfo filemod fink finstrut fithesis fixcmex fixfoot fixme
-	fixmetodonotes fjodor flabels flacards flagderiv flashcards
-	flashmovie flipbook flippdf floatflt floatrow flowfram fmp
-	fmtcount fn2end fnbreak fncychap fncylab fnpara fnpct
-	fnumprint foilhtml fontaxes fonttable footmisc footmisx
+	epigraph epiolmec eqell eqlist eqnalign eqname eqparbox errata
+	esami esdiff esint esint-type1 etaremune etextools etoc
+	etoolbox eukdate eulerpx europasscv europecv everyhook
+	everypage exam exam-n examdesign example examplep excludeonly
+	exercise exercises exp-testopt expdlist export exsheets exsol
+	extract facsimile factura fancylabel fancynum fancypar
+	fancyslides fancytabs fancytooltips fcolumn ffslides fgruler
+	fibeamer fifo-stack figsize filecontents filecontentsdef
+	filedate fileinfo filemod fink finstrut fithesis fixcmex
+	fixfoot fixme fixmetodonotes fjodor flabels flacards flagderiv
+	flashcards flashmovie flipbook flippdf floatflt floatrow
+	flowfram fmp fmtcount fn2end fnbreak fncychap fncylab fnpara
+	fnpct fnumprint foilhtml fontaxes fonttable footmisc footmisx
 	footnotebackref footnotehyper footnoterange footnpag forarray
 	foreign forloop formlett formular fragments frame framed
 	frankenstein frege ftcap ftnxtra fullblck fullminipage
@@ -89,10 +89,10 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	glossaries-irish glossaries-italian glossaries-magyar
 	glossaries-polish glossaries-portuges glossaries-serbian
 	glossaries-spanish gmdoc gmdoc-enhance gmiflink gmutils gmverb
-	graphbox graphicx-psmin graphicxbox grfpaste grid grid-system
-	gridset guitlogo halloweenmath handout hang hanging hardwrap
-	harnon-cv harpoon hc he-she hhtensor histogr hitec hletter
-	hpsdiss hrefhide hvindex hypdvips hyper hypernat
+	graphbox graphicx-psmin graphicxbox grayhints grfpaste grid
+	grid-system gridset guitlogo halloweenmath handout hang
+	hanging hardwrap harnon-cv harpoon hc he-she hhtensor histogr
+	hitec hletter hpsdiss hrefhide hvindex hypdvips hyper hypernat
 	hyperref-docsrc hyperxmp hyphenat idxcmds idxlayout iffont
 	ifmslide ifmtarg ifnextok ifoddpage ifplatform ifthenx iitem
 	image-gallery imakeidx import incgraph indextools inlinedef
@@ -160,34 +160,35 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	snotez soul sparklines sphack spot spotcolor spreadtab
 	spverbatim srbook-mem srcltx sseq sslides stack stackengine
 	standalone statistik stdclsdv stdpage stex storebox storecmd
-	stringstrings sttools stubs subdepth subeqn subeqnarray
-	subfigmat subfigure subfiles subfloat substitutefont substr
-	supertabular svg svgcolor svn svn-prov svninfo syntax syntrace
-	synttree tabfigures tableaux tablefootnote tableof tablestyles
-	tablists tabls tabstackengine tabto-ltx tabu tabularborder
-	tabularcalc tabularew tabulary tagging tagpair talk tamefloats
-	tasks tcldoc tcolorbox tdclock technics ted templatetools
-	termcal termlist testhyphens testidx tex-label texlogos
-	texmate texments texpower texshade texvc textfit textgreek
-	textmerg textpos theoremref thinsp thmtools threadcol
-	threeparttable threeparttablex thumb thumbs thumby ticket
-	titlecaps titlefoot titlepic titleref titlesec titling
-	tocbibind tocdata tocloft tocvsec2 todo todonotes tokenizer
-	toolbox topfloat totcount totpages translations trfsigns
-	trimspaces trivfloat trsym truncate tucv turnthepage twoinone
-	twoup txgreeks type1cm typed-checklist typeface typogrid
-	uassign ucs uebungsblatt umoline underlin underoverlap
-	undolabl units unravel upmethodology upquote uri ushort uspace
-	uwmslide variablelm varindex varsfromjobname varwidth
-	vdmlisting verbasef verbatimbox verbatimcopy verbdef verbments
-	version versions versonotes vertbars vgrid vhistory vmargin
-	volumes vruler vwcol wallpaper warning warpcol was widetable
-	williams withargs wordcount wordlike wrapfig wtref xargs
-	xassoccnt xcntperchap xcolor-material xcolor-solarized
-	xcomment xdoc xellipsis xfor xhfill xifthen xint xmpincl
-	xnewcommand xoptarg xpatch xpeek xprintlen xpunctuate xsavebox
-	xstring xtab xwatermark xytree yafoot yaletter yagusylo ycbook
-	ydoc zed-csp ziffer zwgetfdate zwpagelayout"
+	stringstrings sttools stubs studenthandouts subdepth subeqn
+	subeqnarray subfigmat subfigure subfiles subfloat
+	substitutefont substr supertabular svg svgcolor svn svn-prov
+	svninfo syntax syntrace synttree tabfigures tableaux
+	tablefootnote tableof tablestyles tablists tabls
+	tabstackengine tabto-ltx tabu tabularborder tabularcalc
+	tabularew tabulary tagging tagpair talk tamefloats tasks
+	tcldoc tcolorbox tdclock technics ted templatetools termcal
+	termlist testhyphens testidx tex-label texlogos texmate
+	texments texpower texshade texvc textfit textgreek textmerg
+	textpos theoremref thinsp thmtools threadcol threeparttable
+	threeparttablex thumb thumbs thumby ticket titlecaps titlefoot
+	titlepic titleref titlesec titling tocbibind tocdata tocloft
+	tocvsec2 todo todonotes tokenizer toolbox topfloat totcount
+	totpages translations trfsigns trimspaces trivfloat trsym
+	truncate tucv turnthepage twoinone twoup txgreeks type1cm
+	typed-checklist typeface typogrid uassign ucs uebungsblatt
+	umoline underlin underoverlap undolabl units unravel
+	upmethodology upquote uri ushort uspace uwmslide variablelm
+	varindex varsfromjobname varwidth vdmlisting verbasef
+	verbatimbox verbatimcopy verbdef verbments version versions
+	versonotes vertbars vgrid vhistory vmargin volumes vruler
+	vwcol wallpaper warning warpcol was widetable williams
+	withargs wordcount wordlike wrapfig wtref xargs xassoccnt
+	xcntperchap xcolor-material xcolor-solarized xcomment xdoc
+	xellipsis xfor xhfill xifthen xint xmpincl xnewcommand xoptarg
+	xpatch xpeek xprintlen xpunctuate xsavebox xstring xtab
+	xwatermark xytree yafoot yaletter yagusylo ycbook ydoc zed-csp
+	ziffer zwgetfdate zwpagelayout"
 
 TEXLIVE_ARCH_PKGS="authorindex exceltex glossaries makedtx pax perltex
 	pst-pdf splitindex svn-multi vpe yplan"

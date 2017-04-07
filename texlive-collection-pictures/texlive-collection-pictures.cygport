@@ -1,15 +1,16 @@
 NAME="texlive-collection-pictures"
-VERSION=20170216
+VERSION=20170407
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="aobs-tikz askmaps asyfig asypictureb autoarea
 	bardiag beamerswitch binarytree blochsphere bloques blox
-	bodegraph bondgraph bondgraphs braids bxeepic cachepic celtic
-	chemfig combinedgraphics circuitikz curve curve2e curves dcpic
-	diagmac2 doc-pictex dottex dot2texi dratex drs duotenzor
-	ecgdraw eepic ellipse epspdf epspdfconversion esk fast-diagram
-	fitbox flowchart forest genealogytree gincltex gnuplottex
-	gradientframe grafcet graphviz harveyballs here hf-tikz hobby
+	bodegraph bondgraph bondgraphs braids bxeepic cachepic
+	callouts celtic chemfig combinedgraphics circuitikz curve
+	curve2e curves dcpic diagmac2 doc-pictex dottex dot2texi
+	dratex drs duotenzor ecgdraw eepic ellipse epspdf
+	epspdfconversion esk fast-diagram fitbox flowchart forest
+	genealogytree gincltex gnuplottex gradientframe grafcet
+	graphviz gtrlib-largetrees harveyballs here hf-tikz hobby
 	hvfloat knitting knittingpattern lapdf latex-make lpic
 	lroundrect makeshape mathspic miniplot modiagram neuralnetwork
 	numericplots pb-diagram pgf pgf-blur pgf-soroban pgf-spectra

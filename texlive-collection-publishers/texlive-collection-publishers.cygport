@@ -1,5 +1,5 @@
 NAME="texlive-collection-publishers"
-VERSION=20170216
+VERSION=20170407
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex abntex2 acmart acmconf
@@ -14,22 +14,23 @@ TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex abntex2 acmart acmconf
 	gatech-thesis gradstudentresume grant gsemthesis gzt
 	h2020proposal har2nat hobete hustthesis icsv ieeepes ijmart
 	ijsra imac imtekda iscram jacow jmlr jpsj kdgdocs kluwer
-	ksp-thesis langsci lps matc3 matc3mem mcmthesis mentis mnras
-	msu-thesis mugsthesis musuos muthesis mynsfc nature navydocs
-	nddiss ndsu-thesis nwejm nih nihbiosketch nostarch nrc
-	onrannual opteng philosophersimprint pittetd pkuthss
-	powerdot-FUBerlin pracjourn procIAGssymp proposal psu-thesis
-	ptptex resphilosophica resumecls revtex revtex4 ryethesis
-	sageep sapthesis scrjrnl schule sduthesis seuthesis seuthesix
-	soton sphdthesis spie sr-vorl stellenbosch suftesi sugconf
-	tabriz-thesis texilikechaps texilikecover thesis-ekf
-	thesis-titlepage-fhac thuthesis toptesi tudscr tugboat
-	tugboat-plain turabian tui uaclasses uafthesis uantwerpendocs
-	ucbthesis ucdavisthesis ucthesis uestcthesis uiucredborder
-	uiucthesis ulthese umbclegislation umich-thesis umthesis
-	unamth-template unamthesis unswcover uothesis urcls uowthesis
-	uowthesistitlepage uspatent ut-thesis uwthesis vancouver
-	xduthesis wsemclassic xcookybooky yathesis york-thesis"
+	ksp-thesis langsci lion-msc lps matc3 matc3mem mcmthesis
+	mentis mnras msu-thesis mucproc mugsthesis musuos muthesis
+	mynsfc nature navydocs nddiss ndsu-thesis novel nwejm nih
+	nihbiosketch nostarch nrc onrannual opteng philosophersimprint
+	pittetd pkuthss powerdot-FUBerlin pracjourn procIAGssymp
+	proposal psu-thesis ptptex resphilosophica resumecls revtex
+	revtex4 ryethesis sageep sapthesis scrjrnl schule sduthesis
+	seuthesis seuthesix soton sphdthesis spie sr-vorl stellenbosch
+	suftesi sugconf tabriz-thesis texilikechaps texilikecover
+	thesis-ekf thesis-titlepage-fhac thuthesis toptesi tudscr
+	tugboat tugboat-plain turabian tui uaclasses uafthesis
+	uantwerpendocs ucbthesis ucdavisthesis ucthesis uestcthesis
+	uiucredborder uiucthesis ulthese umbclegislation umich-thesis
+	umthesis unamth-template unamthesis unswcover uothesis urcls
+	uowthesis uowthesistitlepage uspatent ut-thesis uwthesis
+	vancouver xduthesis wsemclassic xcookybooky yathesis
+	york-thesis"
 
 REQUIRES="texlive-collection-latex"
 

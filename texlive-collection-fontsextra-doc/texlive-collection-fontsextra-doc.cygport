@@ -1,5 +1,5 @@
 NAME="texlive-collection-fontsextra-doc"
-VERSION=20170216
+VERSION=20170407
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="Asana-Math academicons accanthis adforn adfsymbols
@@ -38,8 +38,8 @@ TEXLIVE_DOC_PKGS="Asana-Math academicons accanthis adforn adfsymbols
 	rsfso sansmathaccent sansmathfonts sauterfonts schulschriften
 	semaphor sourcecodepro sourcesanspro sourceserifpro starfont
 	staves stix superiors svrsymbols tapir tempora tengwarscript
-	tfrupee tinos tpslifonts trajan txfontsb typicons universa
-	universalis uppunctlm urwchancal venturisadf wsuipa xcharter
-	xits yfonts yfonts-t1 yinit-otf zlmtt"
+	tfrupee tinos tpslifonts trajan txfontsb txuprcal typicons
+	universa universalis uppunctlm urwchancal venturisadf wsuipa
+	xcharter xits yfonts yfonts-t1 yinit-otf zlmtt"
 
 inherit texlive
