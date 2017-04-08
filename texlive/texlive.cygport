@@ -35,7 +35,6 @@ DEPEND="
 	libmpfr-devel
 	libpaper-devel
 	libpotrace-devel
-	t1lib-devel
 	pkgconfig(cairo)
 	pkgconfig(fontconfig)
 	pkgconfig(freetype2)
@@ -168,5 +167,3 @@ src_test() {
 }
 
 # KEEP_LA_FILES="none"
-
-# libgd-devel,libgmp-devel,libgs-devel,libiconv,libicu-devel,libmpfr-devel,libpaper-devel,libpotrace-devel,t1lib-devel,libcairo-devel,libfontconfig-devel,libfreetype-devel,libgraphite2-devel,libharfbuzz-devel,libharfbuzz-icu-devel,libpng-devel,libncurses-devel,libpixman1-devel,libpoppler-devel,libX11-devel,libteckit-devel,libXaw-devel,libXmu-devel,libXpm-devel,libXt-devel,zlib-devel,libzzip-devel,subversion
