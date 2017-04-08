@@ -1,10 +1,11 @@
 NAME="texlive-collection-bibtexextra-doc"
-VERSION=20160520
+VERSION=20170407
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="amsrefs apacite archaeologie besjournals bestpapers
 	bibarts biber bibexport bibhtml biblatex biblatex-abnt
-	biblatex-anonymous biblatex-apa biblatex-bookinarticle
+	biblatex-anonymous biblatex-apa biblatex-archaeology
+	biblatex-arthistory-bonn biblatex-bookinarticle
 	biblatex-bookinother biblatex-bwl biblatex-caspervector
 	biblatex-chem biblatex-chicago biblatex-claves biblatex-dw
 	biblatex-fiwi biblatex-gb7714-2015 biblatex-gost
@@ -24,8 +25,9 @@ TEXLIVE_DOC_PKGS="amsrefs apacite archaeologie besjournals bestpapers
 	economic figbib footbib francais-bst geschichtsfrkl harvard
 	harvmac historische-zeitschrift ietfbibs ijqc inlinebib
 	iopart-num jneurosci jurabib listbib logreq margbib multibib
-	multibibliography munich nmbib notes2bib oscola perception rsc
-	showtags sort-by-letters splitbib turabian-formatting
-	uni-wtal-ger uni-wtal-lin urlbst usebib vak xcite"
+	multibibliography munich nmbib notes2bib notex-bst oscola
+	perception rsc showtags sort-by-letters splitbib
+	turabian-formatting uni-wtal-ger uni-wtal-lin urlbst usebib
+	vak xcite"
 
 inherit texlive

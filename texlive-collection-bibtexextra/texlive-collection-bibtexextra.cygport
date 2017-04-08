@@ -1,10 +1,11 @@
 NAME="texlive-collection-bibtexextra"
-VERSION=20160520
+VERSION=20170407
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="aichej ajl amsrefs apacite apalike2 archaeologie
 	beebe besjournals bestpapers bibarts bibhtml biblatex
 	biblatex-abnt biblatex-anonymous biblatex-apa
+	biblatex-archaeology biblatex-arthistory-bonn
 	biblatex-bookinarticle biblatex-bookinother biblatex-bwl
 	biblatex-caspervector biblatex-chem biblatex-chicago
 	biblatex-claves biblatex-dw biblatex-fiwi biblatex-gb7714-2015
