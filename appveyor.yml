@@ -12,7 +12,7 @@ install:
 - if not exist %CACHE% mkdir %CACHE%
 - appveyor DownloadFile http://cygwin.com/%SETUP% -FileName %CACHE%\%SETUP%
 - echo Updating Cygwin and installing build dependencies
-- '%CACHE%\%SETUP% -gqnNdO -R "%CYGWIN_ROOT%" -s "%CYGWIN_MIRROR%" -l "%CACHE%" -P "cygport"'
+- '%CACHE%\%SETUP% -gqnNdO -R "%CYGWIN_ROOT%" -s "%CYGWIN_MIRROR%" -l "%CACHE%" -P "cygport,libgd-devel,libgmp-devel,libgs-devel,libiconv,libicu-devel,libmpfr-devel,libpaper-devel,libpotrace-devel,t1lib-devel,libcairo-devel,libfontconfig-devel,libfreetype-devel,libgraphite2-devel,libharfbuzz-devel,libharfbuzz-icu-devel,libpng-devel,libncurses-devel,libpixman1-devel,libpoppler-devel,libX11-devel,libteckit-devel,libXaw-devel,libXmu-devel,libXpm-devel,libXt-devel,zlib-devel,libzzip-devel,subversion"'
 - echo Install done
 cache:
 - C:\cache
