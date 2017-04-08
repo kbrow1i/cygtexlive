@@ -1,0 +1,11 @@
+*~
+*.noarch/
+*.i686/
+*.x86_64/
+old/
+save/
+*.tar.gz
+*.tar.bz2
+*.tgz
+*.tar.xz
+*.log

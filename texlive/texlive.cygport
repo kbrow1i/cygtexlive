@@ -1,17 +1,18 @@
 NAME="texlive"
 VERSION=20160520
-RELEASE=4
+RELEASE=5
+NEW_PV=20160523
 
 HOMEPAGE="http://www.tug.org/texlive/"
 # SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
-SRC_URI="mirror://ctan/systems/texlive/Source/${P}-source.tar.xz"
+SRC_URI="mirror://ctan/systems/texlive/Source/${PN}-${NEW_PV}b-source.tar.xz"
 SRC_URI+=" 0p_texlive_prep.dash"
 SRC_URI+=" zp_texlive_finish.dash"
 SRC_URI+=" texlive-enable-fontconfig.sh"
 SRC_URI+=" README.Cygwin"
 SRC_URI+=" 09-texlive.conf"
 
-SRC_DIR="${P}-source"
+SRC_DIR="${PN}-${NEW_PV}-source"
 
 PATCH_URI+=" 20160428-1-texmf_cnf.patch"
 PATCH_URI+=" 20140523-2-reautoconf.patch"
@@ -27,7 +28,7 @@ DEPEND="
 	libicu-devel
 	libmpfr-devel
 	libpaper-devel
-	t1lib-devel
+	libpotrace-devel
 	pkgconfig(cairo)
 	pkgconfig(fontconfig)
 	pkgconfig(freetype2)
@@ -39,6 +40,7 @@ DEPEND="
 	pkgconfig(pixman-1)
 	pkgconfig(poppler)
 	pkgconfig(x11)
+	pkgconfig(teckit)
 	pkgconfig(xaw7)
 	pkgconfig(xmu)
 	pkgconfig(xpm)
@@ -109,6 +111,7 @@ src_compile() {
 	cd ${B}
 	cygconf \
 	    --enable-shared \
+	    --enable-silent-rules \
 	    --enable-xindy \
 	    --disable-native-texlive-build \
 	    --with-banner-add=/Cygwin \
@@ -127,7 +130,8 @@ src_compile() {
 	    --with-system-ncurses \
 	    --with-system-pixman \
 	    --with-system-poppler \
-	    --with-system-t1lib \
+	    --with-system-potrace \
+	    --with-system-teckit \
 	    --with-system-xpdf \
 	    --with-system-zlib \
 	    --with-system-zziplib
@@ -157,4 +161,4 @@ src_test() {
 	make -k check
 }
 
-KEEP_LA_FILES="none"
+# KEEP_LA_FILES="none"
