@@ -17,6 +17,7 @@ SRC_DIR="${PN}-${NEW_PV}-source"
 PATCH_URI+=" 20160428-1-texmf_cnf.patch"
 PATCH_URI+=" 20140523-2-reautoconf.patch"
 PATCH_URI+=" tex4ht_r42110.patch"
+PATCH_URI+=" c_auto_h.patch"
 
 DOCS="README.Cygwin"
 
@@ -66,7 +67,7 @@ texlive_CONTENTS="
 PKG_IGNORE="usr/share/info usr/share/man"
 
 libkpathsea6_CONTENTS="usr/bin/cygkpathsea-6.dll"
-libkpathsea_devel_CONTENTS="usr/include/kpathsea/ usr/lib/kpathsea/
+libkpathsea_devel_CONTENTS="usr/include/kpathsea/
 	usr/lib/libkpathsea.* usr/lib/pkgconfig/kpathsea.pc"
 libptexenc1_CONTENTS="usr/bin/cygptexenc-1.dll"
 libptexenc_devel_CONTENTS="usr/include/ptexenc/ usr/lib/libptexenc.*
