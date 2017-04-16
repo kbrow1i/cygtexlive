@@ -1,0 +1,14 @@
+--- origsrc/texlive-20160523-source/texk/web2c/luatexdir/image/pdftoepdf.w	2016-03-25 08:44:48.000000000 -0400
++++ src/texlive-20160523-source/texk/web2c/luatexdir/image/pdftoepdf.w	2017-04-16 11:18:03.621079700 -0400
+@@ -71,7 +71,10 @@ static char *get_file_checksum(const cha
+         ck = (char *) malloc(PDF_CHECKSUM_SIZE);
+         if (ck == NULL)
+             formatted_error("pdf inclusion","out of memory while processing '%s'", a);
+-        snprintf(ck, PDF_CHECKSUM_SIZE, "%" PRIu64 "_%" PRIu64, (uint64_t) size,(uint64_t) mtime);
++        snprintf(ck, PDF_CHECKSUM_SIZE, "%"
++	PRIu64
++	"_%"
++	PRIu64, (uint64_t) size,(uint64_t) mtime);
+    } else {
+         switch (fe) {
+             case FE_FAIL:
