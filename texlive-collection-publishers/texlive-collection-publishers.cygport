@@ -1,5 +1,5 @@
 NAME="texlive-collection-publishers"
-VERSION=20170407
+VERSION=20170417
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex abntex2 acmart acmconf
@@ -14,7 +14,7 @@ TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex abntex2 acmart acmconf
 	gatech-thesis gradstudentresume grant gsemthesis gzt
 	h2020proposal har2nat hobete hustthesis icsv ieeepes ijmart
 	ijsra imac imtekda iscram jacow jmlr jpsj kdgdocs kluwer
-	ksp-thesis langsci lion-msc lps matc3 matc3mem mcmthesis
+	ksp-thesis langsci lion-msc lni lps matc3 matc3mem mcmthesis
 	mentis mnras msu-thesis mucproc mugsthesis musuos muthesis
 	mynsfc nature navydocs nddiss ndsu-thesis novel nwejm nih
 	nihbiosketch nostarch nrc onrannual opteng philosophersimprint

@@ -1,5 +1,5 @@
 NAME="texlive-collection-pictures"
-VERSION=20170407
+VERSION=20170417
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="aobs-tikz askmaps asyfig asypictureb autoarea
@@ -12,14 +12,14 @@ TEXLIVE_TEXMF_PKGS="aobs-tikz askmaps asyfig asypictureb autoarea
 	genealogytree gincltex gnuplottex gradientframe grafcet
 	graphviz gtrlib-largetrees harveyballs here hf-tikz hobby
 	hvfloat knitting knittingpattern lapdf latex-make lpic
-	lroundrect makeshape mathspic miniplot modiagram neuralnetwork
-	numericplots pb-diagram pgf pgf-blur pgf-soroban pgf-spectra
-	pgf-umlcd pgf-umlsd pgfgantt pgfkeyx pgfmolbio pgfopts
-	pgfornament pgfplots picinpar pict2e pictex pictex2 pinlabel
-	pmgraph prerex productbox pxpgfmark qcircuit qrcode randbild
-	randomwalk reotex rviewport sa-tikz schemabloc scsnowman
-	setdeck signchart smartdiagram spath3 swimgraf table-fct
-	texdraw ticollege tikz-cd tikz-3dplot tikz-bayesnet
+	lroundrect luamesh makeshape mathspic miniplot modiagram
+	neuralnetwork numericplots pb-diagram pgf pgf-blur pgf-soroban
+	pgf-spectra pgf-umlcd pgf-umlsd pgfgantt pgfkeyx pgfmolbio
+	pgfopts pgfornament pgfplots picinpar pict2e pictex pictex2
+	pinlabel pmgraph prerex productbox pxpgfmark qcircuit qrcode
+	randbild randomwalk reotex rviewport sa-tikz schemabloc
+	scsnowman setdeck signchart smartdiagram spath3 swimgraf
+	table-fct texdraw ticollege tikz-cd tikz-3dplot tikz-bayesnet
 	tikz-dependency tikz-dimline tikz-feynman tikz-inet
 	tikz-kalender tikz-opm tikz-optics tikz-page tikz-qtree
 	tikz-timing tikzinclude tikzmark tikzorbital tikzpagenodes

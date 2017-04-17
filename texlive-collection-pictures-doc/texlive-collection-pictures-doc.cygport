@@ -1,5 +1,5 @@
 NAME="texlive-collection-pictures-doc"
-VERSION=20170407
+VERSION=20170417
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="aobs-tikz askmaps asyfig asypictureb bardiag
@@ -12,12 +12,12 @@ TEXLIVE_DOC_PKGS="aobs-tikz askmaps asyfig asypictureb bardiag
 	fitbox forest genealogytree getmap gincltex gnuplottex
 	gradientframe grafcet graphviz gtrlib-largetrees harveyballs
 	here hf-tikz hobby hvfloat knitting knittingpattern lapdf
-	latex-make lpic lroundrect makeshape miniplot mkpic modiagram
-	neuralnetwork numericplots pb-diagram petri-nets pgf pgf-blur
-	pgf-soroban pgf-spectra pgf-umlcd pgf-umlsd pgfgantt pgfkeyx
-	pgfmolbio pgfopts pgfornament pgfplots picinpar pict2e pictex
-	pinlabel pmgraph prerex productbox pxpgfmark qcircuit qrcode
-	randbild randomwalk reotex rviewport sa-tikz schemabloc
+	latex-make lpic lroundrect luamesh makeshape miniplot mkpic
+	modiagram neuralnetwork numericplots pb-diagram petri-nets pgf
+	pgf-blur pgf-soroban pgf-spectra pgf-umlcd pgf-umlsd pgfgantt
+	pgfkeyx pgfmolbio pgfopts pgfornament pgfplots picinpar pict2e
+	pictex pinlabel pmgraph prerex productbox pxpgfmark qcircuit
+	qrcode randbild randomwalk reotex rviewport sa-tikz schemabloc
 	scsnowman setdeck signchart smartdiagram spath3 swimgraf
 	table-fct texdraw ticollege tikz-3dplot tikz-bayesnet tikz-cd
 	tikz-dependency tikz-dimline tikz-feynman tikz-inet
