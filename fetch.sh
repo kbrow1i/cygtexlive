@@ -1,5 +1,7 @@
 #! /bin/bash
 
+export TEXLIVE_PRETEST=1
+
 dirs="texlive-collection-*"
 exit_status=0
 touch failures.txt
