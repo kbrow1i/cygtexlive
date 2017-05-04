@@ -1,0 +1,18 @@
+NAME="texlive-collection-humanities"
+VERSION=20170216
+RELEASE=1
+
+TEXLIVE_TEXMF_PKGS="adtrees bibleref bibleref-lds bibleref-mouth
+	bibleref-parse covington dramatist dvgloss ecltree edfnotes
+	ednotes eledform eledmac expex gb4e gmverse jura juraabbrev
+	juramisc jurarsp ledmac leipzig lexikon lexref ling-macros
+	linguex liturg metrix parallel parrun phonrule plari play
+	poemscol poetrytex qobitree qtree reledmac rrgtrees rtklage
+	screenplay screenplay-pkg sides stage textglos thalie
+	tree-dvips verse xyling"
+
+TEXLIVE_ARCH_PKGS="diadia"
+
+REQUIRES="texlive-collection-latex"
+
+inherit texlive

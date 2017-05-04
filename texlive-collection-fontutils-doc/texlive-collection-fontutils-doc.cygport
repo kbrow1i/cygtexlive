@@ -1,0 +1,9 @@
+NAME="texlive-collection-fontutils-doc"
+VERSION=20160520
+RELEASE=1
+
+TEXLIVE_DOC_PKGS="accfonts afm2pl dosepsbin epstopdf fontinst fontools
+	fontware lcdftypetools mf2pt1 ps2pk pstools psutils t1utils
+	ttfutils"
+
+inherit texlive

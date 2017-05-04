@@ -1,0 +1,27 @@
+NAME="texlive-collection-langcyrillic"
+VERSION=20160520
+RELEASE=1
+
+TEXLIVE_TEXMF_PKGS="babel-belarusian babel-bulgarian babel-russian
+	babel-serbian babel-serbianc babel-ukrainian churchslavonic
+	cmcyr cyrillic cyrplain disser eskd eskdx gost
+	hyphen-bulgarian hyphen-churchslavonic hyphen-mongolian
+	hyphen-russian hyphen-serbian hyphen-ukrainian lcyw lh lhcyr
+	lshort-bulgarian lshort-mongol lshort-russian lshort-ukr
+	mongolian-babel montex mpman-ru pst-eucl-translation-bg
+	ruhyphen russ serbian-apostrophe serbian-date-lat
+	serbian-def-cyr serbian-lig t2 texlive-ru texlive-sr ukrhyph"
+
+TEXLIVE_ARCH_PKGS="cyrillic-bin"
+
+TEXLIVE_DOC_PKGS="babel-belarusian babel-bulgarian babel-russian
+	babel-serbian babel-serbianc babel-ukrainian churchslavonic
+	cyrillic-bin cmcyr cyrillic disser eskd eskdx gost lcyw lh
+	lshort-bulgarian lshort-mongol lshort-russian lshort-ukr
+	mongolian-babel montex mpman-ru pst-eucl-translation-bg russ
+	serbian-apostrophe serbian-date-lat serbian-def-cyr
+	serbian-lig t2 texlive-ru texlive-sr ukrhyph"
+
+REQUIRES="texlive-collection-latex"
+
+inherit texlive

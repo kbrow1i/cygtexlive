@@ -1,0 +1,101 @@
+This needs to be kept in sync with a similar patch for texlive.
+
+--- origsrc/texmf-dist/web2c/texmf.cnf	2016-04-06 18:40:36.000000000 -0400
++++ src/texmf-dist/web2c/texmf.cnf	2016-04-28 15:02:13.512229100 -0400
+@@ -54,7 +54,12 @@
+ % Redistributors will probably want $SELFAUTODIR/share, i.e., /usr/share.
+ % Kpathsea sets SELFAUTOLOC (the directory with the binary),
+ % SELFAUTODIR (its parent), and SELFAUTOPARENT (its grandparent).
+-TEXMFROOT = $SELFAUTOPARENT
++%
++% On Cygwin SELFAUTODIR will be / rather than /usr if a texlive
++% executable f is invoked as /bin/f rather than /usr/bin/f; so we must
++% set TEXMFROOT explicitly.
++%
++TEXMFROOT = /usr/share
+ 
+ % The main tree of distributed packages and programs:
+ TEXMFDIST = $TEXMFROOT/texmf-dist
+@@ -64,25 +69,25 @@ TEXMFDIST = $TEXMFROOT/texmf-dist
+ TEXMFMAIN = $TEXMFDIST
+ 
+ % Local additions to the distribution trees.
+-TEXMFLOCAL = $SELFAUTOGRANDPARENT/texmf-local
++TEXMFLOCAL = $TEXMFROOT/texmf-site
+ 
+ % TEXMFSYSVAR, where *-sys store cached runtime data.
+-TEXMFSYSVAR = $TEXMFROOT/texmf-var
++TEXMFSYSVAR = /var/lib/texmf
+ 
+ % TEXMFSYSCONFIG, where *-sys store configuration data.
+-TEXMFSYSCONFIG = $TEXMFROOT/texmf-config
++TEXMFSYSCONFIG = /etc/texmf
+ 
+ % Per-user texmf tree(s) -- organized per the TDS, as usual.  To define
+ % more than one per-user tree, set this to a list of directories in
+ % braces, as described above.  (This used to be HOMETEXMF.)  ~ expands
+ % to %USERPROFILE% on Windows, $HOME otherwise.
+-TEXMFHOME = ~/texmf
++TEXMFHOME = ~/.local/share/texmf
+ 
+ % TEXMFVAR, where texconfig/updmap/fmtutil store cached runtime data.
+-TEXMFVAR = ~/.texlive2016/texmf-var
++TEXMFVAR = ~/.cache/texmf
+ 
+ % TEXMFCONFIG, where texconfig/updmap/fmtutil store configuration data.
+-TEXMFCONFIG = ~/.texlive2016/texmf-config
++TEXMFCONFIG = ~/.config/texmf
+ 
+ % List all the texmf trees. For an explanation of what they are, see the
+ % TeX Live manual.
+@@ -489,30 +494,42 @@ RUBYINPUTS   = .;$TEXMF/scripts/{$progna
+ % since we don't want to scatter ../'s throughout the value.  Hence we
+ % explicitly list every directory.  Arguably more understandable anyway.
+ %
+-TEXMFCNF = {\
++% On Cygwin we might have SELFAUTODIR = / instead of /usr, as noted
++% above (see the definition of TEXMFROOT).  So we also have to search
++% below SELFAUTODIR/usr; this is harmless if SELFAUTODIR = /usr.
++%
++TEXMFCNF = //{\
+ $SELFAUTOLOC,\
+-$SELFAUTOLOC/share/texmf-local/web2c,\
++$SELFAUTOLOC/share/texmf-site/web2c,\
+ $SELFAUTOLOC/share/texmf-dist/web2c,\
+ $SELFAUTOLOC/share/texmf/web2c,\
+-$SELFAUTOLOC/texmf-local/web2c,\
++$SELFAUTOLOC/texmf-site/web2c,\
+ $SELFAUTOLOC/texmf-dist/web2c,\
+ $SELFAUTOLOC/texmf/web2c,\
+ \
+ $SELFAUTODIR,\
+-$SELFAUTODIR/share/texmf-local/web2c,\
++$SELFAUTODIR/share/texmf-site/web2c,\
+ $SELFAUTODIR/share/texmf-dist/web2c,\
+ $SELFAUTODIR/share/texmf/web2c,\
+-$SELFAUTODIR/texmf-local/web2c,\
++$SELFAUTODIR/texmf-site/web2c,\
+ $SELFAUTODIR/texmf-dist/web2c,\
+ $SELFAUTODIR/texmf/web2c,\
+ \
+-$SELFAUTOGRANDPARENT/texmf-local/web2c,\
++$SELFAUTODIR/usr,\
++$SELFAUTODIR/usr/share/texmf-site/web2c,\
++$SELFAUTODIR/usr/share/texmf-dist/web2c,\
++$SELFAUTODIR/usr/share/texmf/web2c,\
++$SELFAUTODIR/usr/texmf-site/web2c,\
++$SELFAUTODIR/usr/texmf-dist/web2c,\
++$SELFAUTODIR/usr/texmf/web2c,\
++\
++$SELFAUTOPARENT/../texmf-site/web2c,\
+ $SELFAUTOPARENT,\
+ \
+-$SELFAUTOPARENT/share/texmf-local/web2c,\
++$SELFAUTOPARENT/share/texmf-site/web2c,\
+ $SELFAUTOPARENT/share/texmf-dist/web2c,\
+ $SELFAUTOPARENT/share/texmf/web2c,\
+-$SELFAUTOPARENT/texmf-local/web2c,\
++$SELFAUTOPARENT/texmf-site/web2c,\
+ $SELFAUTOPARENT/texmf-dist/web2c,\
+ $SELFAUTOPARENT/texmf/web2c\
+ }

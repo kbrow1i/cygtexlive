@@ -1,0 +1,13 @@
+NAME="texlive-collection-genericextra-doc"
+VERSION=20170216
+RELEASE=1
+
+TEXLIVE_DOC_PKGS="abbr abstyles autoaligne barr bitelist borceux
+	c-pascal catcodes chronosys dinat dirtree docbytex dowith
+	encxvlna fenixpar fltpoint fntproof gates gobble gtl ifetex
+	iftex insbox lambda-lists langcode lecturer librarian
+	listofitems mathdots metatex midnight navigator ofs olsak-misc
+	pdf-trans plainpkg randomlist schemata shade systeme termmenu
+	tracklang trigonometry texapi upca xlop yax"
+
+inherit texlive

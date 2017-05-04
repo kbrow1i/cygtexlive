@@ -1,0 +1,66 @@
+NAME="asymptote"
+VERSION=2.38
+RELEASE=2
+
+inherit emacs vim
+
+HOMEPAGE="http://asymptote.sourceforge.net/"
+
+SRC_URI="mirror://sourceforge/asymptote/${P}.src.tgz"
+
+PATCH_URI="mirror://portage/media-gfx/${PN}/files/${PN}-2.15-info.patch"
+PATCH_URI+=" asymptote-2.16-pdfviewer.patch"
+
+# Need the texlive packages for docs.
+DEPEND="pkgconfig(fftw3)
+	pkgconfig(gl)
+	pkgconfig(glu)
+	pkgconfig(gsl)
+	pkgconfig(ncurses)
+	libglut-devel
+	texinfo-tex
+	texlive-collection-fontsrecommended
+	texlive-collection-genericrecommended
+	texlive-collection-latexrecommended
+	texlive-collection-plainextra
+	vim
+"
+
+MAKEOPTS+=" -j1"
+
+DIFF_EXCLUDES="asy.list *.log run*.cc *.dvi"
+
+src_compile() {
+	cd ${S}
+	cygautoreconf
+	lndirs
+	cd ${B}
+	cygconf --disable-gc \
+		--with-latex=/usr/share/texmf-dist/tex/latex \
+		--with-context=/usr/share/texmf-dist/tex/context/third
+	cygmake
+	cygmake -k -C doc
+}
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	cd ${D}/usr/share/info/asymptote
+	mv -v asymptote.info ..
+
+	doemacs ${S}/base/*.el
+
+	viminto syntax
+	dovim ${S}/base/asy.vim
+}
+CATEGORY="Publishing"
+
+SUMMARY="Vector graphics language for TeX"
+
+DESCRIPTION="Asymptote is a powerful descriptive vector graphics language for
+technical drawing, inspired by MetaPost but with an improved C++-like
+syntax. Asymptote provides for figures the same high-quality typesetting
+that LaTeX does for scientific text."
+
+REQUIRES="ImageMagick texlive-collection-latexextra"

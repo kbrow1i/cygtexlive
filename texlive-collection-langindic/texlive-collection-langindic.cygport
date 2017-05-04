@@ -1,0 +1,14 @@
+NAME="texlive-collection-langindic"
+VERSION=20170216
+RELEASE=1
+
+TEXLIVE_TEXMF_PKGS="bangtex bengali burmese hyphen-indic
+	hyphen-sanskrit latexbangla sanskrit sanskrit-t1 velthuis wnri
+	wnri-latex xetex-devanagari"
+
+TEXLIVE_ARCH_PKGS="ebong"
+
+TEXLIVE_DOC_PKGS="ebong bangtex bengali burmese latexbangla sanskrit
+	sanskrit-t1 velthuis wnri wnri-latex xetex-devanagari"
+
+inherit texlive

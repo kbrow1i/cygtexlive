@@ -1,0 +1,13 @@
+NAME="texlive-collection-basic-doc"
+VERSION=20170407
+RELEASE=1
+
+TEXLIVE_DOC_PKGS="amsfonts bibtex cm dvipdfmx dvips enctex etex
+	etex-pkg graphics-def gsftopk hyph-utf8 ifluatex ifxetex
+	kpathsea lua-alt-getopt luatex makeindex metafont mflogo
+	mfware pdftex tetex tex-ini-files texlive-common
+	texlive-docindex texlive-en xdvi unicode-data"
+
+# texlive-scripts: Documentation for install-tl
+
+inherit texlive

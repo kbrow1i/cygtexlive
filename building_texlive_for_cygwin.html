@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Building texlive for Cygwin</title>
+<!-- 2015-03-19 Thu 09:05 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Ken Brown" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Building texlive for Cygwin</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Creating .cygport files from scratch</a></li>
+<li><a href="#sec-2">2. Updating</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Creating .cygport files from scratch</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This assumes that the various <code>texlive-collection-*</code> directories already
+exist.
+</p>
+
+<pre class="example">
+date=$(date +%Y%m%d)
+trunk=http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlpsrc
+
+for p in texlive-collection-*
+do
+  deps=$(curl -s "${trunk}/${p#texlive-}.tlpsrc?view=co" \
+         | grep ^depend | cut -d' ' -f2 | grep -v collection- \
+         | sed -e ':a;N;$!ba;s|\n| |g')
+  echo -e TEXLIVE_TEXMF_PKGS=\"${deps}\"\\ninherit texlive &gt; $p/$p-$date-1.cygport
+done
+
+sed -i -e 's/TEXMF/DOC/' texlive-collection-documentation-*/*.cygport
+</pre>
+
+<p>
+If we have an <code>svn</code> checkout of <code>tlpsrc</code>, then we can obviously use a
+suitable <code>cat</code> command instead of <code>curl</code>.
+</p>
+
+<p>
+Note: The first part of the first <code>sed</code> script above, up to the
+substitution, simply takes the input stream, puts back all the
+newlines that <code>sed</code> removes, and concatenates the lines to form a single
+string to work on.  The final substitution then replaces all newlines
+by spaces.
+</p>
+
+<p>
+Now do the following manually:
+</p>
+<ul class="org-ul">
+<li>Scan the <code>.tlpkg</code> files in each collection (once downloaded and
+prepped) for <code>.ARCH</code> depends, and move those from <code>TEXMF_PKGS</code> to
+<code>ARCH_PKGS</code>.  Also add packages to <code>DOC_PKGS</code> if there's a
+<code>pkg.doc.tar.xz</code> file in <code>tlnet/archive</code>.  Yaakov missed about 1800 of
+these.  I found and added them while building TL2012.  I simply
+used a suitable curl command and grepped for <code>\.doc\.tar\.xz</code>.  I
+then used a <code>grep -l ^depend $p\$</code> on <code>collection-*.tlpsrc</code> to find
+which package each belonged to.
+</li>
+
+<li>Primarily in <code>collection-lang*</code>, see which individual packages were
+just placeholders for docs, moving them from <code>TEXMF_PKGS</code> to
+<code>DOC_PKGS</code>.
+</li>
+
+<li>Drop any empty hyphenation packages from <code>collection-lang*</code>.
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Updating</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Create an <code>svn</code> checkout of the TL <code>tlpsrc</code> repository if it doesn't
+already exist:
+</p>
+
+<pre class="example">
+mkdir -p ~/src/texlive/trunk/Master/tlpkg
+cd ~/src/texlive/trunk/Master/tlpkg
+svn co svn://tug.org/texlive/trunk/Master/tlpkg/tlpsrc
+</pre>
+
+<p>
+Or update it with <code>svn up</code> (in <code>tlpsrc</code>) if it does exist.
+</p>
+
+<p>
+Then in <code>tlpsrc</code>:
+</p>
+<pre class="example">
+svn diff -r {20120202} | less
+</pre>
+
+<p>
+Here <code>20120202</code> is the date of the last packages, or perhaps slightly
+earlier.  Now translate any changes to <code>collection-*.tlpsrc</code> into the
+existing <code>.cygport</code> files.  Can also use <code>-r {20120202}:{20120628}</code> for a
+range of dates.
+</p>
+
+<p>
+We also have to update collections that depend on TL packages that
+have changed recently.  For example, the following command in the
+<code>tlpsrc</code> checkout finds all <code>collection-*.tlpsrc</code> files that depend on
+packages dated in February or March 2012:
+</p>
+
+<pre class="example">
+curl -sL http://mirror.ctan.org/systems/texlive/tlnet/archive/ \
+ | grep -E '(Feb|Mar)-2012' \
+ | sed -e 's/.* href="\([^\.]*\)\..*".*/^depend \1$/g'| sort -u \
+ | grep -v collection- | xargs -n 1 -I _ grep -l _ collection-*.tlpsrc \
+ | sort -u
+</pre>
+
+<p>
+Note that the input to <code>xargs</code> is a sequence of lines of the form
+<code>^depend foo$</code>, where <code>foo</code> is a TL package name.  For each of these
+lines, we <code>grep</code> the <code>collection-*.tlpsrc</code> files to find out which one
+contains it.
+</p>
+
+<p>
+[I'm not sure this is completely right; it misses packages like
+<code>texlive.infra</code> with a dot in their name.  I'll have to rethink this.
+Maybe I can just find what those are and treat them as special cases.]
+</p>
+
+<p>
+Don't forget to delete the obsolete <code>*.tar.xz</code> files so <code>fetch</code> will get
+the new ones.  Could use <code>fetchall</code> to play it safe, but it's time
+consuming.  Maybe do that once a year.  The script <code>prefetch.sh</code> (as of
+12/22/2012) just deletes those that have new versions.
+</p>
+
+<p>
+When a collection needs updating, I should automatically update the
+corresponding <code>-doc</code> package if there is one.
+</p>
+
+<p>
+And for every new TL package that's been added to a collection, I need
+to find out if there's a corresponding <code>doc</code> package.  The following
+command produces a list of packages with changed/new <code>doc</code> tarballs:
+</p>
+
+<pre class="example">
+curl -sL http://mirror.ctan.org/systems/texlive/tlnet/archive/ \
+ | grep -E '(Jul|Aug|Sep|Oct|Nov|Dec)-2012' \
+ | sed -n -e 's/.* href="\(.*\)\.doc\.tar\.xz".*/\1/p'
+</pre>
+
+<p>
+But this isn't good enough.  It might happen that an existing (not
+new) package has a <code>doc</code> tarball that's just been added.  Or maybe I
+just missed it in the past.  So I've written a script
+<code>check_doc_pkgs.sh</code> that takes each changed/new <code>doc</code> tarball and makes
+sure that the corresponding package is listed in my
+<code>texlive-collection-*</code> or <code>texlive-collection-*-doc</code> package.
+</p>
+
+<p>
+I should also check whether new packages have an <code>ARCH</code> component:
+</p>
+
+<pre class="example">
+curl -sL http://mirror.ctan.org/systems/texlive/tlnet/archive/ \
+ | grep -E '(Jul|Aug|Sep|Oct|Nov|Dec)-2012' \
+ | sed -n -e 's/.* href="\(.*\.i386-cygwin\.tar\.xz\)".*/\1/p'
+</pre>
+
+<p>
+It can also help to look at <code>texlive.tlpdb</code> to see contents of various
+packages.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Ken Brown</p>
+<p class="date">Created: 2015-03-19 Thu 09:05</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.4.91.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

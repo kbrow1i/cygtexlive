@@ -1,0 +1,10 @@
+NAME="texlive-collection-latex-doc"
+VERSION=20170216
+RELEASE=1
+
+TEXLIVE_DOC_PKGS="babel-english ae amscls amsmath babel babelbib
+	carlisle colortbl fancyhdr fix2col geometry graphics
+	graphics-cfg hyperref latex latex-fonts mfnfss natbib oberdiek
+	psnfss pspicture tools"
+
+inherit texlive

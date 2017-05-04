@@ -1,0 +1,76 @@
+NAME="texlive-collection-basic"
+VERSION=20170216
+RELEASE=1
+
+TEXLIVE_TEXMF_PKGS="amsfonts cm enctex etex etex-pkg glyphlist
+	graphics-def hyph-utf8 hyphen-base ifluatex ifxetex knuth-lib
+	knuth-local lua-alt-getopt mflogo plain tex-ini-files
+	texlive-common texlive-docindex texlive-en
+	texlive-msg-translations unicode-data updmap-map"
+
+TEXLIVE_ARCH_PKGS="bibtex dvipdfmx dvips gsftopk kpathsea luatex
+	makeindex metafont mfware pdftex tetex tex texconfig
+	texlive.infra texlive-scripts xdvi"
+
+TEXLIVE_DOC_PKGS="tex tex-ini-files texconfig texlive.infra"
+
+SRC_URI+=" update_tlpdb.pl"
+SRC_URI+=" tlmgr.config"
+SRC_URI+=" README.Cygwin"
+SRC_URI+=" texlive_generate_fmtutil.sh"
+SRC_URI+=" texlive_rebuild_formats.sh"
+
+inherit texlive
+
+PATCH_URI="20160428-1-texmf_cnf.patch"
+PATCH_URI+=" 20160520-1-fmtutil_cnf.patch"
+PATCH_URI+=" 20160520-1-updmap_cfg.patch"
+PATCH_URI+=" 20160428-1-texmfcnf_lua.patch"
+PATCH_URI+=" 20160428-2-texlive_scripts_only_rungs.patch"
+PATCH_URI+=" 20150617-4-texlive_infra_doc.patch"
+PATCH_URI+=" 20160428-1-tlmgr_cygwin.patch"
+
+DOCS="README.Cygwin"
+
+# tlmgr needs wget, gnupg
+REQUIRES="coreutils cygutils dialog ed ghostscript gnupg grep sed texlive wget"
+
+src_install() {
+	texlive_install
+	cd ${S}
+	newbin texlive_generate_fmtutil.sh texlive_generate_fmtutil
+	newbin texlive_rebuild_formats.sh texlive_rebuild_formats
+	exeinto /usr/libexec
+	newexe update_tlpdb.pl update_tlpdb
+	insinto /etc/texmf/tlmgr
+	newins tlmgr.config config
+	keepdir /etc/texmf/web2c
+	# Based on make_local_skeleton from TLUtils.pm
+	texmflocal=/usr/share/texmf-site
+	keepdir \
+	    ${texmflocal}/bibtex/bib/local \
+	    ${texmflocal}/bibtex/bst/local \
+	    ${texmflocal}/doc/local \
+	    ${texmflocal}/dvips/local \
+	    ${texmflocal}/fonts/source/local \
+	    ${texmflocal}/fonts/tfm/local \
+	    ${texmflocal}/fonts/type1/local \
+	    ${texmflocal}/fonts/vf/local \
+	    ${texmflocal}/metapost/local \
+	    ${texmflocal}/tex/latex/local \
+	    ${texmflocal}/tex/plain/local \
+	    ${texmflocal}/tlpkg \
+	    ${texmflocal}/web2c
+	# Based on make_var_skeleton from TLUtils.pm
+	texmfsysvar=/var/lib/texmf
+	keepdir \
+	    ${texmfsysvar}/tex/generic/config \
+	    ${texmfsysvar}/fonts/map/dvipdfmx/updmap \
+	    ${texmfsysvar}/fonts/map/dvips/updmap \
+	    ${texmfsysvar}/fonts/map/pdftex/updmap \
+	    ${texmfsysvar}/fonts/pk \
+	    ${texmfsysvar}/fonts/tfm \
+	    ${texmfsysvar}/web2c \
+	    ${texmfsysvar}/xdvi \
+	    ${texmfsysvar}/tex/context/config
+}

@@ -1,0 +1,18 @@
+NAME="texlive-collection-langother"
+VERSION=20170216
+RELEASE=1
+
+TEXLIVE_DOC_PKGS="amsldoc-vn aramaic-serto babel-esperanto
+	babel-georgian babel-hebrew babel-indonesian babel-interlingua
+	babel-malay babel-sorbian babel-thai babel-vietnamese cjhebrew
+	ctib fonts-tlwg lshort-thai lshort-vietnamese ntheorem-vn
+	padauk vntex"
+
+TEXLIVE_TEXMF_PKGS="${TEXLIVE_DOC_PKGS} hyphen-afrikaans hyphen-coptic
+	hyphen-esperanto hyphen-georgian hyphen-indonesian
+	hyphen-interlingua hyphen-thai hyphen-turkmen"
+
+inherit texlive
+
+SUMMARY="TeX Live support for several languages"
+

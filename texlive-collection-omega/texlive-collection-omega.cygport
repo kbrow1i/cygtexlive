@@ -1,0 +1,13 @@
+NAME="texlive-collection-omega"
+VERSION=20160520
+RELEASE=1
+
+TEXLIVE_TEXMF_PKGS="antomega lambda mxedruli omega otibet"
+
+TEXLIVE_ARCH_PKGS="aleph omegaware"
+
+TEXLIVE_DOC_PKGS="aleph omegaware antomega mxedruli omega otibet"
+
+REQUIRES="texlive-collection-latex"
+
+inherit texlive
