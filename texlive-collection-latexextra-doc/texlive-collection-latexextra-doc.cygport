@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra-doc"
-VERSION=20170417
+VERSION=20170412
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide

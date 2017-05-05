@@ -1,5 +1,5 @@
 NAME="texlive-collection-langjapanese"
-VERSION=20170216
+VERSION=20170412
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="babel-japanese bxbase bxcjkjatype bxjalipsum

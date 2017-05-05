@@ -1,5 +1,5 @@
 NAME="texlive-collection-basic"
-VERSION=20170216
+VERSION=20170412
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="amsfonts cm enctex etex etex-pkg glyphlist
@@ -24,7 +24,7 @@ inherit texlive
 
 PATCH_URI="20160428-1-texmf_cnf.patch"
 PATCH_URI+=" 20160520-1-fmtutil_cnf.patch"
-PATCH_URI+=" 20160520-1-updmap_cfg.patch"
+PATCH_URI+=" 20170412-1-updmap_cfg.patch"
 PATCH_URI+=" 20160428-1-texmfcnf_lua.patch"
 PATCH_URI+=" 20160428-2-texlive_scripts_only_rungs.patch"
 PATCH_URI+=" 20150617-4-texlive_infra_doc.patch"

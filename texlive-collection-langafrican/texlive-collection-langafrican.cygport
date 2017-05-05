@@ -1,5 +1,5 @@
 NAME="texlive-collection-langafrican"
-VERSION=20160520
+VERSION=20170412
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="ethiop ethiop-t1 fc hyphen-ethiopic"

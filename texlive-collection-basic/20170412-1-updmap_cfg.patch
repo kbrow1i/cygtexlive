@@ -1,6 +1,6 @@
---- origsrc/texmf-dist/web2c/updmap.cfg	2016-05-11 21:15:45.000000000 -0400
-+++ src/texmf-dist/web2c/updmap.cfg	2016-05-24 09:50:48.451991300 -0400
-@@ -100,308 +100,308 @@ kanjiEmbed ipaex
+--- origsrc/texmf-dist/web2c/updmap.cfg	2017-02-28 20:06:05.000000000 -0500
++++ src/texmf-dist/web2c/updmap.cfg	2017-05-04 16:53:47.995467200 -0400
+@@ -104,323 +104,323 @@ koEmbed baekmuk
  
  
  #  (end of updmap-hdr.cfg)
@@ -24,6 +24,7 @@
 -Map syriac.map
 -Map archaicprw.map
 -Map arev.map
+-Map arimo.map
 -MixedMap arss.map
 -MixedMap artm.map
 -Map bkaiu.map
@@ -38,10 +39,12 @@
 -Map uag.map
 -Map ybv.map
 -Map baskervaldx.map
+-Map baskervillef.map
 -MixedMap bbold.map
 -Map belleek.map
 -Map bera.map
 -Map ybd.map
+-Map beuron.map
 -Map bguq.map
 -Map sqrcaps.map
 -Map ubk.map
@@ -79,6 +82,7 @@
 -Map ComicNeue.map
 -Map ComicNeueAngular.map
 -Map original-context-symbol.map
+-Map CormorantGaramond.map
 -Map CountriesOfEurope.map
 -Map ucr.map
 -Map crimson.map
@@ -130,6 +134,7 @@
 -Map gfsporson.map
 -Map gfssolomos.map
 -Map gillius.map
+-Map go.map
 -Map ugq.map
 -Map hacm.map
 -Map uhv.map
@@ -163,9 +168,11 @@
 -Map Zallman.map
 -Map ipaex-type1.map
 -Map iwona.map
--KanjiMap otf-@kanjiEmbed@.map
--KanjiMap otf-cktx.map
--KanjiMap otf-up-@kanjiEmbed@.map
+-KanjiMap otf-@jaEmbed@.map
+-KanjiMap otf-ko-@koEmbed@.map
+-KanjiMap otf-sc-@scEmbed@.map
+-KanjiMap otf-tc-@tcEmbed@.map
+-KanjiMap otf-up-@jaEmbed@.map
 -Map kerkis.map
 -Map knitfont.map
 -Map kpfonts.map
@@ -201,6 +208,7 @@
 -Map mintspirit.map
 -Map MnSymbol.map
 -MixedMap mongolian.map
+-Map montserrat.map
 -MixedMap musix.map
 -Map mxedruli.map
 -Map nanumfonts.map
@@ -216,6 +224,7 @@
 -Map ocrb.map
 -Map oinuit.map
 -Map oasy.map
+-Map OldStandard.map
 -Map omega.map
 -Map opensans.map
 -Map overlock.map
@@ -234,7 +243,7 @@
 -Map pazo.map
 -Map utopia.map
 -KanjiMap morisawa.map
--KanjiMap ptex-@kanjiEmbed@@kanjiVariant@.map
+-KanjiMap ptex-@jaEmbed@@jaVariant@.map
 -Map pxfonts.map
 -Map pxtx.map
 -Map quattrocento.map
@@ -248,6 +257,7 @@
 -Map skt.map
 -Map sansmathaccent.map
 -Map sansmathfonts.map
+-Map scanpages.map
 -MixedMap semaf.map
 -Map SkakNew.map
 -Map SourceCodePro.map
@@ -273,13 +283,18 @@
 -Map qzc.map
 -Map tfrupee.map
 -Map utm.map
+-Map tinos.map
 -MixedMap tipa.map
 -MixedMap trajan.map
 -Map txfonts.map
 -Map gptimes.map
+-Map TXUprCal.map
 -Map umj.map
 -Map universalis.map
--KanjiMap uptex-@kanjiEmbed@@kanjiVariant@.map
+-KanjiMap uptex-@jaEmbed@@jaVariant@.map
+-KanjiMap uptex-ko-@koEmbed@.map
+-KanjiMap uptex-sc-@scEmbed@.map
+-KanjiMap uptex-tc-@tcEmbed@.map
 -MixedMap dvng.map
 -Map yv1.map
 -Map yv2.map
@@ -329,6 +344,7 @@
 +#! Map syriac.map
 +#! Map archaicprw.map
 +#! Map arev.map
++#! Map arimo.map
 +#! MixedMap arss.map
 +#! MixedMap artm.map
 +#! Map bkaiu.map
@@ -343,10 +359,12 @@
 +#! Map uag.map
 +#! Map ybv.map
 +#! Map baskervaldx.map
++#! Map baskervillef.map
 +#! MixedMap bbold.map
 +#! Map belleek.map
 +#! Map bera.map
 +#! Map ybd.map
++#! Map beuron.map
 +#! Map bguq.map
 +#! Map sqrcaps.map
 +#! Map ubk.map
@@ -384,6 +402,7 @@
 +#! Map ComicNeue.map
 +#! Map ComicNeueAngular.map
 +#! Map original-context-symbol.map
++#! Map CormorantGaramond.map
 +#! Map CountriesOfEurope.map
 +#! Map ucr.map
 +#! Map crimson.map
@@ -435,6 +454,7 @@
 +#! Map gfsporson.map
 +#! Map gfssolomos.map
 +#! Map gillius.map
++#! Map go.map
 +#! Map ugq.map
 +#! Map hacm.map
 +#! Map uhv.map
@@ -468,9 +488,11 @@
 +#! Map Zallman.map
 +#! Map ipaex-type1.map
 +#! Map iwona.map
-+#! KanjiMap otf-@kanjiEmbed@.map
-+#! KanjiMap otf-cktx.map
-+#! KanjiMap otf-up-@kanjiEmbed@.map
++#! KanjiMap otf-@jaEmbed@.map
++#! KanjiMap otf-ko-@koEmbed@.map
++#! KanjiMap otf-sc-@scEmbed@.map
++#! KanjiMap otf-tc-@tcEmbed@.map
++#! KanjiMap otf-up-@jaEmbed@.map
 +#! Map kerkis.map
 +#! Map knitfont.map
 +#! Map kpfonts.map
@@ -506,6 +528,7 @@
 +#! Map mintspirit.map
 +#! Map MnSymbol.map
 +#! MixedMap mongolian.map
++#! Map montserrat.map
 +#! MixedMap musix.map
 +#! Map mxedruli.map
 +#! Map nanumfonts.map
@@ -521,6 +544,7 @@
 +#! Map ocrb.map
 +#! Map oinuit.map
 +#! Map oasy.map
++#! Map OldStandard.map
 +#! Map omega.map
 +#! Map opensans.map
 +#! Map overlock.map
@@ -539,7 +563,7 @@
 +#! Map pazo.map
 +#! Map utopia.map
 +#! KanjiMap morisawa.map
-+#! KanjiMap ptex-@kanjiEmbed@@kanjiVariant@.map
++#! KanjiMap ptex-@jaEmbed@@jaVariant@.map
 +#! Map pxfonts.map
 +#! Map pxtx.map
 +#! Map quattrocento.map
@@ -553,6 +577,7 @@
 +#! Map skt.map
 +#! Map sansmathaccent.map
 +#! Map sansmathfonts.map
++#! Map scanpages.map
 +#! MixedMap semaf.map
 +#! Map SkakNew.map
 +#! Map SourceCodePro.map
@@ -578,13 +603,18 @@
 +#! Map qzc.map
 +#! Map tfrupee.map
 +#! Map utm.map
++#! Map tinos.map
 +#! MixedMap tipa.map
 +#! MixedMap trajan.map
 +#! Map txfonts.map
 +#! Map gptimes.map
++#! Map TXUprCal.map
 +#! Map umj.map
 +#! Map universalis.map
-+#! KanjiMap uptex-@kanjiEmbed@@kanjiVariant@.map
++#! KanjiMap uptex-@jaEmbed@@jaVariant@.map
++#! KanjiMap uptex-ko-@koEmbed@.map
++#! KanjiMap uptex-sc-@scEmbed@.map
++#! KanjiMap uptex-tc-@tcEmbed@.map
 +#! MixedMap dvng.map
 +#! Map yv1.map
 +#! Map yv2.map

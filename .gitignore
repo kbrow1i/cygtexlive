@@ -9,3 +9,4 @@ save/
 *.tgz
 *.tar.xz
 *.log
+*failures.txt
