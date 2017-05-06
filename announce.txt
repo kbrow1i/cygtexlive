@@ -1,4 +1,4 @@
-Cygwin's TeX Live collections have been updated to the latest upstream release of TeX Live 2016, which was frozen as of 2017-04-12.  (TeX Live 2017 will probably be released in about a month.)
+Cygwin's TeX Live collections have been updated to the latest upstream release of TeX Live 2016.  The latter was frozen as of 2017-04-12 in preparation for the pretest of TeX Live 2017.
 
 TeX Live provides a comprehensive, cross-platform TeX system.  It includes all the major TeX-related programs, macro packages, and fonts that are free software, including support for many languages around the world.  For more information, see
 
@@ -75,7 +75,7 @@ Upstream TeX Live provides thousands of "packages", grouped into "collections". 
 
 The mathscience collection is new; it is a combination of the old mathextra and science collections.
 
-The bibtexextra collection is marked as a test release because it includes biblatex-3.7, which is designed to work with biber-2.7.  But Cygwin currently provides only biber-2.5, and this cannot be updated easily because it requires at least perl-5.24.  On the other hand, if you are familiar with cpan, you can build and install biber-2.7 yourself[1].
+The bibtexextra collection is marked as a test release because it includes biblatex-3.7, which is designed to work with biber-2.7.  In order to use it, you will have to install the test release of perl-5.24 and then build biber-2.7 yourself.  I can provide instructions if anyone wants to do this.
 
 Recommendations
 ===============
@@ -110,31 +110,3 @@ texlive-collection-basic includes a restricted version of the tlmgr (TeX Live Ma
 
 Ken Brown
 Cygwin's TeX Live maintainer
-
-[1] Instructions for building biber-2.7:
-
- - Install perl-5.24, currently available for Cygwin as a test release.
-
- - Install Module::Build:
-
-     $ cpan Module::Build
-
- - Download the biber-2.7 source:
-
-     $ git clone git@github.com:plk/biber.git
-
-     $ cd biber
-
- - Create the build script and install the prerequisites via cpan:
-
-     $ perl Build.PL
-
-     $ ./Build installdeps  # Watch for failures and deal with them.
-                            # For example, you may need to install
-                            # some Cygwin packages, such as
-                            # libxslt-devel.
-
- - Install biber:
-
-     $ ./Build test
-     $ ./Build install
