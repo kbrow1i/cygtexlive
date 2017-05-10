@@ -22,7 +22,7 @@ then
 	echo y | /usr/bin/updmap-sys --syncwithtrees || map_status=1
 	/usr/bin/updmap-sys || map_status=1
     fi
-    if [ ${map_status} = 0} ]
+    if [ ${map_status} = 0 ]
     then
 	for f in ${markerdir}/*.map
 	do
