@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexrecommended"
-VERSION=20170412
+VERSION=20170512
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="anysize beamer booktabs breqn caption cite cmap
@@ -12,7 +12,7 @@ TEXLIVE_TEXMF_PKGS="anysize beamer booktabs breqn caption cite cmap
 	typehtml underscore unicode-math xcolor xkeyval xltxtra
 	xunicode"
 
-TEXLIVE_ARCH_PKGS="thumbpdf"
+TEXLIVE_ARCH_PKGS="lwarp thumbpdf"
 
 REQUIRES="texlive-collection-latex"
 

@@ -1,0 +1,25 @@
+NAME="texlive-collection-plaingeneric"
+VERSION=20170512
+RELEASE=1
+
+TEXLIVE_TEXMF_PKGS="abbr abstyles apnum autoaligne barr bitelist
+	borceux c-pascal catcodes chronosys colorsep dinat dirtree
+	docbytex dowith eijkhout encxvlna epigram epsf epsf-dvipdfmx
+	fenixpar figflow fixpdfmag fltpoint fntproof font-change
+	fontch fontname gates genmisc getoptk gfnotation gobble
+	graphics-pln gtl hlist hyplain ifetex iftex insbox js-misc
+	kastrup lambda-lists langcode lecturer librarian listofitems
+	mathdots metatex midnight mkpattern multido navigator newsletr
+	ofs olsak-misc path pdf-trans pitex placeins-plain plainpkg
+	plipsum plnfss plstmary present randomlist resumemac schemata
+	shade systeme tabto-generic termmenu tex-ps texapi texinfo
+	timetable tracklang treetex trigonometry ulem upca varisize
+	xii xlop yax"
+
+TEXLIVE_ARCH_PKGS="tex4ht"
+
+inherit texlive
+
+OBSOLETES="texlive-collection-plainextra
+	texlive-collection-genericextra
+	texlive-collection-genericrecommended"

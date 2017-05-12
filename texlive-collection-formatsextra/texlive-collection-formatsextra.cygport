@@ -1,9 +1,16 @@
 NAME="texlive-collection-formatsextra"
-VERSION=20170412
+VERSION=20170512
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="edmac psizzl startex"
-TEXLIVE_ARCH_PKGS="eplain lollipop mltex texsis"
-TEXLIVE_DOC_PKGS="edmac eplain lollipop mltex psizzl startex texsis"
+TEXLIVE_TEXMF_PKGS="edmac passivetex psizzl startex xmltexconfig antomega lambda mxedruli omega otibet"
+
+TEXLIVE_ARCH_PKGS="eplain jadetex lollipop mltex texsis xmltex aleph omegaware"
+
+TEXLIVE_DOC_PKGS="edmac eplain jadetex lollipop mltex psizzl startex
+	texsis xmltex aleph omegaware antomega mxedruli omega otibet"
+
+REQUIRES="texlive-collection-latex"
 
 inherit texlive
+
+OBSOLETES="texlive-collection-omega"

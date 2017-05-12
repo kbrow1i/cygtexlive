@@ -1,18 +1,30 @@
 NAME="texlive-collection-langother"
-VERSION=20170412
+VERSION=20170512
 RELEASE=1
 
-TEXLIVE_DOC_PKGS="amsldoc-vn aramaic-serto babel-esperanto
-	babel-georgian babel-hebrew babel-indonesian babel-interlingua
-	babel-malay babel-sorbian babel-thai babel-vietnamese cjhebrew
-	ctib fonts-tlwg lshort-thai lshort-vietnamese ntheorem-vn
-	padauk vntex"
+TEXLIVE_TEXMF_PKGS="amsldoc-vn aramaic-serto babel-azerbaijani
+	babel-esperanto babel-georgian babel-hebrew babel-indonesian
+	babel-interlingua babel-malay babel-sorbian babel-thai
+	babel-vietnamese bangtex bengali burmese cjhebrew ctib ethiop
+	ethiop-t1 fc fonts-tlwg hyphen-afrikaans hyphen-coptic
+	hyphen-esperanto hyphen-ethiopic hyphen-georgian hyphen-indic
+	hyphen-indonesian hyphen-interlingua hyphen-sanskrit
+	hyphen-thai hyphen-turkmen latexbangla lshort-thai
+	lshort-vietnamese ntheorem-vn padauk sanskrit sanskrit-t1
+	thaienum velthuis vntex wnri wnri-latex xetex-devanagari"
 
-TEXLIVE_TEXMF_PKGS="${TEXLIVE_DOC_PKGS} hyphen-afrikaans hyphen-coptic
-	hyphen-esperanto hyphen-georgian hyphen-indonesian
-	hyphen-interlingua hyphen-thai hyphen-turkmen"
+TEXLIVE_ARCH_PKGS="ebong"
+
+TEXLIVE_DOC_PKGS="amsldoc-vn aramaic-serto babel-azerbaijani
+	babel-esperanto babel-georgian babel-hebrew babel-indonesian
+	babel-interlingua babel-malay babel-sorbian babel-thai
+	babel-vietnamese bangtex bengali burmese cjhebrew ctib ebong
+	ethiop ethiop-t1 fc fonts-tlwg latexbangla lshort-thai
+	lshort-vietnamese ntheorem-vn padauk sanskrit sanskrit-t1
+	thaienum velthuis vntex wnri wnri-latex xetex-devanagari"
 
 inherit texlive
 
 SUMMARY="TeX Live support for several languages"
 
+OBSOLETES="texlive-collection-langafrican texlive-collection-langindic"

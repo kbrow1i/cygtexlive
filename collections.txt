@@ -1,15 +1,15 @@
 langafrican and langindic --> langother
 
-plainextra, genericrecommended, and genericextra --> new collection
-(genericplain?)
+plainextra, genericrecommended, and genericextra --> genericplain
 
-remove htmlxml
-  classpack jadetex lwarp passivetex tex4ht xmltex xmltexconfig
+genericrecommended-doc and genericextra-doc --> genericplain-doc
 
-jadetex, passivetex, and xmltex --> otherformats
+remove htmlxml, but must remain as obsolete package
+  jadetex, passivetex, xmltex, xmltexconfig --> formatsextra
+  classpack --> latexextra
+  lwarp --> latexrecommended
+  tex4ht --> genericplain
+  
+omega --> formatsextra
 
-omega --> otherformats?
 
-scheme-xml --> ?
-
-classpack, tex4ht, and lwarp --> latexrecommended/extra? genericplain?

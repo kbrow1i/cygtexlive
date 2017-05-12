@@ -1,11 +1,27 @@
 NAME="texlive-collection-htmlxml"
-VERSION=20170412
+VERSION=20170512
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="classpack passivetex xmltexconfig"
-TEXLIVE_ARCH_PKGS="jadetex lwarp tex4ht xmltex"
-TEXLIVE_DOC_PKGS="classpack jadetex lwarp tex4ht xmltex"
+CATEGORY="_obsolete"
 
-REQUIRES="texlive-collection-latex texlive-collection-fontsrecommended"
+SUMMARY="Obsoleted by several texlive-collection-* packages"
 
-inherit texlive
+DESCRIPTION="The texlive-collection-htmlxml package is obsolete.  Its previous
+contents have been distributed among texlive-collection-latexextra,
+texlive-collection-latexrecommended, texlive-collection-formatsextra,
+and texlive-collection-plaingeneric.  Selecting this package for
+installation will cause those packages to be installed instead."
+
+REQUIRES="texlive-collection-latexextra
+	texlive-collection-plaingeneric
+	texlive-collection-latexrecommended
+	texlive-collection-formatsextra"
+
+CONTENTS=
+
+SRC_URI="dummy_src"		# Empty file.
+SRC_DIR="."
+
+src_compile() { :; }
+
+src_install() { :; }
