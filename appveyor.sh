@@ -1,4 +1,7 @@
 #!/bin/sh
+
+# rm -f /usr/lib/*.la
+
 exit_status=0
 
 ./fetch.sh 2>&1 | tee myfetch.log || exit_status=1

@@ -1,5 +1,5 @@
 NAME="texlive-collection-fontsextra-doc"
-VERSION=20170407
+VERSION=20170412
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="Asana-Math academicons accanthis adforn adfsymbols

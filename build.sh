@@ -1,19 +1,17 @@
 #! /bin/bash
 
-export TEXLIVE_PRETEST=1
-
 dirs="texlive-collection-*"
 exit_status=0
-rm -f fetch_failures.txt
-touch fetch_failures.txt
+rm -f build_failures.txt
+touch build_failures.txt
 
 for d in $dirs
 do
     echo "Entering $d ..."
     cd $d
-    if ! cygport ${d}.cygport fetch
+    if ! cygport ${d}.cygport all
     then
-	echo "Fetching ${d} failed" >> ../fetch_failures.txt
+	echo "Building ${d} failed" >> ../build_failures.txt
 	exit_status=1
     fi
     echo "Leaving $d"

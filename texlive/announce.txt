@@ -1,22 +1,22 @@
-From cygwin-announce-texlive-20160520-4 Mon Nov 07 08:32:09 2016
+From cygwin-announce-texlive-20160520-5 Sun Apr 16 17:28:01 2017
 From: Ken Brown <kbrown@cornell.edu>
 To: cygwin-announce@cygwin.com
-Date: Mon, 07 Nov 2016 08:32:09 -0500
-Subject: texlive 20160520-4
+Date: Sun, 16 Apr 2017 17:28:01 -0400
+Subject: texlive 20160520-5
 
 The following packages have been uploaded to the Cygwin distribution:
 
-* texlive-20160520-4
-* libkpathsea6-20160520-4
-* libkpathsea-devel-20160520-4
-* libptexenc1-20160520-4
-* libptexenc-devel-20160520-4
-* libsynctex1-20160520-4
-* libsynctex-devel-20160520-4
-* libtexlua52_5-20160520-4
-* libtexlua52-devel-20160520-4
-* libtexluajit2-20160520-4
-* libtexluajit-devel-20160520-4
+* texlive-20160520-5
+* libkpathsea6-20160520-5
+* libkpathsea-devel-20160520-5
+* libptexenc1-20160520-5
+* libptexenc-devel-20160520-5
+* libsynctex1-20160520-5
+* libsynctex-devel-20160520-5
+* libtexlua52_5-20160520-5
+* libtexlua52-devel-20160520-5
+* libtexluajit2-20160520-5
+* libtexluajit-devel-20160520-5
 
 TeX Live provides a comprehensive, cross-platform TeX system. It 
 includes all the major TeX-related programs, macro packages, and fonts 
@@ -24,7 +24,7 @@ that are free software, including support for many languages around the
 world.
 
 This release is a rebuild of the TeX Live 2016 binaries and supporting
-libraries, built with icu-58.1.
+libraries, built with libicu59 and libpoppler66.
 
 Ken Brown
 Cygwin's TeX Live maintainer

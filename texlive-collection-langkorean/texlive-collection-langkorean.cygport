@@ -1,5 +1,5 @@
 NAME="texlive-collection-langkorean"
-VERSION=20170216
+VERSION=20170412
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="baekmuk cjk-ko kotex-oblivoir kotex-plain kotex-utf

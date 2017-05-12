@@ -1,6 +1,7 @@
 NAME="texlive"
-VERSION=20170408
-RELEASE=1
+VERSION=20160520
+RELEASE=5
+NEW_PV=20160523
 
 HOMEPAGE="http://www.tug.org/texlive/"
 
@@ -9,20 +10,20 @@ SVN_URI="svn://tug.org/texlive/trunk/Build/source"
 inherit svn
 
 # SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
-# SRC_URI="mirror://ctan/systems/texlive/Source/${P}-source.tar.xz"
+SRC_URI="mirror://ctan/systems/texlive/Source/${PN}-${NEW_PV}b-source.tar.xz"
 SRC_URI+=" 0p_texlive_prep.dash"
 SRC_URI+=" zp_texlive_finish.dash"
 SRC_URI+=" texlive-enable-fontconfig.sh"
 SRC_URI+=" README.Cygwin"
 SRC_URI+=" 09-texlive.conf"
 
-# SRC_DIR="${P}-source"
+SRC_DIR="${PN}-${NEW_PV}-source"
 
 # PATCH_URI+=" 20160428-1-texmf_cnf.patch"
 PATCH_URI+=" 20140523-2-reautoconf.patch"
-# PATCH_URI+=" tex4ht_r42110.patch"
-# PATCH_URI+=" 20170314-c_auto_h.patch"
-# PATCH_URI+=" 20170316-dvisvgm_libgs.patch"
+PATCH_URI+=" tex4ht_r42110.patch"
+PATCH_URI+=" c_auto_h.patch"
+PATCH_URI+=" literal_suffix.patch" # For C++11.
 
 DOCS="README.Cygwin"
 
@@ -110,6 +111,8 @@ world."
 
 DIFF_EXCLUDES="*.in configure build-aux m4 aclocal.m4"
 
+CXXFLAGS+=" -std=gnu++11"	# Needed for building with icu-59.1.
+
 src_compile() {
 	cd ${S}
 	libtoolize --force --install
@@ -142,6 +145,11 @@ src_compile() {
 	    --with-system-zziplib
 	cygmake all
 }
+
+# Upstream TL hasn't yet been ported to icu-59.  And can't use system
+# harfbuzz without system icu.
+#	    --with-system-harfbuzz \
+# 	    --with-system-icu \
 
 src_install() {
 	cd ${B}

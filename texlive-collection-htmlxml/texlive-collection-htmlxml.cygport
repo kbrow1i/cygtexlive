@@ -1,5 +1,5 @@
 NAME="texlive-collection-htmlxml"
-VERSION=20170407
+VERSION=20170412
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="classpack passivetex xmltexconfig"

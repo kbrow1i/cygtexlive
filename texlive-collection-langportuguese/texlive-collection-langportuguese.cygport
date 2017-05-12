@@ -1,5 +1,5 @@
 NAME="texlive-collection-langportuguese"
-VERSION=20160520
+VERSION=20170412
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="babel-portuges beamer-tut-pt cursolatex cursolatex

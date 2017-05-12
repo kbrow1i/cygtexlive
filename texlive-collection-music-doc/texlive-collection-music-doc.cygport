@@ -1,5 +1,5 @@
 NAME="texlive-collection-music-doc"
-VERSION=20160520
+VERSION=20170412
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="abc autosp bagpipe figbas gchords gregoriotex gtrcrd

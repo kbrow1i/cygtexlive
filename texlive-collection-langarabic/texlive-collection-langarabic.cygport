@@ -1,5 +1,5 @@
 NAME="texlive-collection-langarabic"
-VERSION=20170216
+VERSION=20170412
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="amiri arabi arabi-add arabluatex arabtex bidi
