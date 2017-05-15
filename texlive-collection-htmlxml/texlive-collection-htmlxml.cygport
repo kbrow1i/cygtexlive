@@ -12,16 +12,25 @@ texlive-collection-latexrecommended, texlive-collection-formatsextra,
 and texlive-collection-plaingeneric.  Selecting this package for
 installation will cause those packages to be installed instead."
 
-REQUIRES="texlive-collection-latexextra
-	texlive-collection-plaingeneric
-	texlive-collection-latexrecommended
-	texlive-collection-formatsextra"
+REQUIRES="texlive-collection-latexextra texlive-collection-plaingeneric texlive-collection-latexrecommended texlive-collection-formatsextra"
 
-CONTENTS=
+texlive_collection_htmlxml_CONTENTS=
 
-SRC_URI="dummy_src"		# Empty file.
-SRC_DIR="."
+# Empty source tarball (empty except for top-level "source" directory).
+SRC_URI="${PN}-${PV}.tar.xz"
 
 src_compile() { :; }
 
 src_install() { :; }
+
+ARCH=noarch
+
+# Formerly:
+# TEXLIVE_TEXMF_PKGS="classpack passivetex xmltexconfig"
+# TEXLIVE_ARCH_PKGS="jadetex lwarp tex4ht xmltex"
+# TEXLIVE_DOC_PKGS="classpack jadetex lwarp tex4ht xmltex"
+
+# jadetex, passivetex, xmltex, xmltexconfig --> formatsextra
+# classpack --> latexextra
+# lwarp --> latexrecommended
+# tex4ht --> genericplain
