@@ -1,8 +1,3 @@
-#! /bin/bash
-
-VR=201705xx-1
-
-cat > announce-TL2017.txt <<EOF
 Cygwin's TeX Live packages have been updated to the latest upstream release, TeX Live 2017.
 
 TeX Live provides a comprehensive, cross-platform TeX system.  It includes all the major TeX-related programs, macro packages, and fonts that are free software, including support for many languages around the world.  For more information, see
@@ -17,30 +12,30 @@ for details, as well as for a list of other (minor) changes.
   
 The TeX Live executables and supporting libraries are contained in the following Cygwin packages:
 
-* texlive-${VR}
+* texlive-201705xx-1
 
-* libkpathsea6-${VR}
-* libkpathsea-devel-${VR}
+* libkpathsea6-201705xx-1
+* libkpathsea-devel-201705xx-1
 
 libkpathsea is a TeX file and path search library.
 
-* libptexenc1-${VR}
-* libptexenc-devel-${VR}
+* libptexenc1-201705xx-1
+* libptexenc-devel-201705xx-1
 
 libptexenc is a TeX Unicode encoding library.
 
-* libsync1-${VR}
-* libsync-devel-${VR}
+* libsync1-201705xx-1
+* libsync-devel-201705xx-1
 
 libsync is a TeX source/output synchronization library.
 
-* libtexlua52_5-${VR}
-* libtexlua52-devel-${VR}
+* libtexlua52_5-201705xx-1
+* libtexlua52-devel-201705xx-1
 
 libtexlua52 is a TeX lua scripting library.
 
-* libtexluajit2-${VR} (x86 only)
-* libtexluajit-devel-${VR} (x86 only)
+* libtexluajit2-201705xx-1 (x86 only)
+* libtexluajit-devel-201705xx-1 (x86 only)
 
 libtexluajit is a TeX Just-In-Time lua compiler library.
 
@@ -50,20 +45,65 @@ Asymptote is a powerful descriptive vector graphics language for technical drawi
 
 In addition, upstream TeX Live provides thousands of "packages", grouped into "collections".  There is a Cygwin package for each upstream collection; there are also Cygwin packages containing documentation for some of the collections.
 
-EOF
-
-packages="texlive-collection-*"
-
-for d in ${packages}
-do
-    case ${d} in
-	*-htmlxml) ;;
-	*) echo "* ${d}-${VR}" >> announce-TL2017.txt ;;
-    esac
-    # echo "* ${d}-${VR}" >> announce-TL2017.txt
-done
-
-cat >> announce-TL2017.txt <<EOF
+* texlive-collection-basic-201705xx-1
+* texlive-collection-basic-doc-201705xx-1
+* texlive-collection-bibtexextra-201705xx-1
+* texlive-collection-bibtexextra-doc-201705xx-1
+* texlive-collection-binextra-201705xx-1
+* texlive-collection-binextra-doc-201705xx-1
+* texlive-collection-context-201705xx-1
+* texlive-collection-context-doc-201705xx-1
+* texlive-collection-fontsextra-201705xx-1
+* texlive-collection-fontsextra-doc-201705xx-1
+* texlive-collection-fontsrecommended-201705xx-1
+* texlive-collection-fontsrecommended-doc-201705xx-1
+* texlive-collection-fontutils-201705xx-1
+* texlive-collection-fontutils-doc-201705xx-1
+* texlive-collection-formatsextra-201705xx-1
+* texlive-collection-games-201705xx-1
+* texlive-collection-humanities-201705xx-1
+* texlive-collection-humanities-doc-201705xx-1
+* texlive-collection-langarabic-201705xx-1
+* texlive-collection-langchinese-201705xx-1
+* texlive-collection-langcjk-201705xx-1
+* texlive-collection-langcyrillic-201705xx-1
+* texlive-collection-langczechslovak-201705xx-1
+* texlive-collection-langenglish-201705xx-1
+* texlive-collection-langeuropean-201705xx-1
+* texlive-collection-langfrench-201705xx-1
+* texlive-collection-langgerman-201705xx-1
+* texlive-collection-langgreek-201705xx-1
+* texlive-collection-langitalian-201705xx-1
+* texlive-collection-langjapanese-201705xx-1
+* texlive-collection-langkorean-201705xx-1
+* texlive-collection-langother-201705xx-1
+* texlive-collection-langpolish-201705xx-1
+* texlive-collection-langportuguese-201705xx-1
+* texlive-collection-langspanish-201705xx-1
+* texlive-collection-latex-201705xx-1
+* texlive-collection-latex-doc-201705xx-1
+* texlive-collection-latexextra-201705xx-1
+* texlive-collection-latexextra-doc-201705xx-1
+* texlive-collection-latexrecommended-201705xx-1
+* texlive-collection-latexrecommended-doc-201705xx-1
+* texlive-collection-luatex-201705xx-1
+* texlive-collection-luatex-doc-201705xx-1
+* texlive-collection-mathscience-201705xx-1
+* texlive-collection-mathscience-doc-201705xx-1
+* texlive-collection-metapost-201705xx-1
+* texlive-collection-metapost-doc-201705xx-1
+* texlive-collection-music-201705xx-1
+* texlive-collection-music-doc-201705xx-1
+* texlive-collection-pictures-201705xx-1
+* texlive-collection-pictures-doc-201705xx-1
+* texlive-collection-plaingeneric-201705xx-1
+* texlive-collection-plaingeneric-doc-201705xx-1
+* texlive-collection-pstricks-201705xx-1
+* texlive-collection-pstricks-doc-201705xx-1
+* texlive-collection-publishers-201705xx-1
+* texlive-collection-publishers-doc-201705xx-1
+* texlive-collection-xetex-201705xx-1
+* texlive-collection-xetex-doc-201705xx-1
 
 There has been some (upstream) rearrangement of the collections since the previous release:
 
@@ -80,9 +120,6 @@ There has been some (upstream) rearrangement of the collections since the previo
    lwarp --> latexrecommended
    tex4ht --> genericplain
 
-EOF
-
-cat >> announce-TL2017.txt <<EOF
 
 Recommendations
 ===============
@@ -116,32 +153,3 @@ texlive-collection-basic includes a restricted version of the tlmgr (TeX Live Ma
 
 Ken Brown
 Cygwin's TeX Live maintainer
-EOF
-
-# [1] Instructions for building biber-2.7:
-
-#  - Install perl-5.24, currently available for Cygwin as a test release.
-
-#  - Install Module::Build:
-
-#      $ cpan Module::Build
-
-#  - Download the biber-2.7 source:
-
-#      $ git clone git@github.com:plk/biber.git
-
-#      $ cd biber
-
-#  - Create the build script and install the prerequisites via cpan:
-
-#      $ perl Build.PL
-
-#      $ ./Build installdeps  # Watch for failures and deal with them.
-#                             # For example, you may need to install
-#                             # some Cygwin packages, such as
-#                             # libxslt-devel.
-
-#  - Install biber:
-
-#      $ ./Build test
-#      $ ./Build install
