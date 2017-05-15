@@ -11,10 +11,14 @@ for d in $dirs
 do
     echo "Entering $d ..."
     cd $d
-    if ! cygport ${d}.cygport fetch
+    eval $(grep ^VERSION ${d}.cygport)
+    if [ ${VERSION} = 20170512 ]
     then
-	echo "Fetching ${d} failed" >> ../fetch_failures.txt
-	exit_status=1
+	if ! cygport ${d}.cygport fetch
+	then
+	    echo "Fetching ${d} failed" >> ../fetch_failures.txt
+	    exit_status=1
+	fi
     fi
     echo "Leaving $d"
     cd ..

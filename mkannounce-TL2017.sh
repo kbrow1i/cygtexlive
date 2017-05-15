@@ -1,15 +1,15 @@
 #! /bin/bash
 
-PVR=20160520-1
+VR=201705xx-1
 
-cat > announce-TL2016.txt <<EOF
-Cygwin's TeX Live packages have been updated to the latest upstream release, TeX Live 2016.
+cat > announce-TL2017.txt <<EOF
+Cygwin's TeX Live packages have been updated to the latest upstream release, TeX Live 2017.
 
 TeX Live provides a comprehensive, cross-platform TeX system.  It includes all the major TeX-related programs, macro packages, and fonts that are free software, including support for many languages around the world.  For more information, see
 
   http://www.tug.org/texlive/
 
-There have been major changes to LuaTeX since TeX Live 2015.  See
+There have been major changes to LuaTeX since TeX Live 2016????  See
 
   http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#news
 
@@ -17,34 +17,34 @@ for details, as well as for a list of other (minor) changes.
   
 The TeX Live executables and supporting libraries are contained in the following Cygwin packages:
 
-* texlive-${PVR}
+* texlive-${VR}
 
-* libkpathsea6-${PVR}
-* libkpathsea-devel-${PVR}
+* libkpathsea6-${VR}
+* libkpathsea-devel-${VR}
 
 libkpathsea is a TeX file and path search library.
 
-* libptexenc1-${PVR}
-* libptexenc-devel-${PVR}
+* libptexenc1-${VR}
+* libptexenc-devel-${VR}
 
 libptexenc is a TeX Unicode encoding library.
 
-* libsync1-${PVR}
-* libsync-devel-${PVR}
+* libsync1-${VR}
+* libsync-devel-${VR}
 
 libsync is a TeX source/output synchronization library.
 
-* libtexlua52_5-${PVR}
-* libtexlua52-devel-${PVR}
+* libtexlua52_5-${VR}
+* libtexlua52-devel-${VR}
 
 libtexlua52 is a TeX lua scripting library.
 
-* libtexluajit2-${PVR} (x86 only)
-* libtexluajit-devel-${PVR} (x86 only)
+* libtexluajit2-${VR} (x86 only)
+* libtexluajit-devel-${VR} (x86 only)
 
 libtexluajit is a TeX Just-In-Time lua compiler library.
 
-* asymptote-2.38-1
+* asymptote-2.41-1
 
 Asymptote is a powerful descriptive vector graphics language for technical drawing, inspired by MetaPost but with an improved C++-like syntax.  Asymptote provides for figures the same high-quality typesetting that LaTeX does for scientific text.
 
@@ -56,14 +56,32 @@ packages="texlive-collection-*"
 
 for d in ${packages}
 do
-    # case ${d} in
-	# *-basic) echo "* ${d}-20150617-1" >> announce-TL2016.txt ;;
-	# *) echo "* ${d}-${PVR}" >> announce-TL2016.txt ;;
-    # esac
-    echo "* ${d}-${PVR}" >> announce-TL2016.txt
+    case ${d} in
+	*-htmlxml) ;;
+	*) echo "* ${d}-${VR}" >> announce-TL2017.txt ;;
+    esac
+    echo "* ${d}-${VR}" >> announce-TL2017.txt
 done
 
-cat >> announce-TL2016.txt <<EOF
+cat >> announce-TL2017.txt <<EOF
+There has been some (upstream) rearrangement of the collections since the previous release:
+
+ - The langafrican and langindic collections have been absorbed by langother.
+
+ - The omega collection has been absorbed by formatsextra.
+
+ - The plainextra, genericrecommended, and genericextra collections have merged into a new collection, genericplain.
+
+ - The htmlxml collection has been removed.  Its constituent upstream packages have been moved into other collections, as follows:
+
+   jadetex, passivetex, xmltex, xmltexconfig --> formatsextra
+   classpack --> latexextra
+   lwarp --> latexrecommended
+   tex4ht --> genericplain
+
+EOF
+
+cat >> announce-TL2017.txt <<EOF
 
 Recommendations
 ===============
@@ -83,7 +101,7 @@ If you want or need more, consider installing some of the following:
 * texlive-collection-fontutils
 * texlive-collection-genericrecommended
 * texlive-collection-luatex
-* texlive-collection-mathextra
+* texlive-collection-mathscience
 * texlive-collection-metapost
 * texlive-collection-plainextra
 * texlive-collection-xetex
@@ -99,3 +117,31 @@ texlive-collection-basic includes a restricted version of the tlmgr (TeX Live Ma
 Ken Brown
 Cygwin's TeX Live maintainer
 EOF
+
+# [1] Instructions for building biber-2.7:
+
+#  - Install perl-5.24, currently available for Cygwin as a test release.
+
+#  - Install Module::Build:
+
+#      $ cpan Module::Build
+
+#  - Download the biber-2.7 source:
+
+#      $ git clone git@github.com:plk/biber.git
+
+#      $ cd biber
+
+#  - Create the build script and install the prerequisites via cpan:
+
+#      $ perl Build.PL
+
+#      $ ./Build installdeps  # Watch for failures and deal with them.
+#                             # For example, you may need to install
+#                             # some Cygwin packages, such as
+#                             # libxslt-devel.
+
+#  - Install biber:
+
+#      $ ./Build test
+#      $ ./Build install
