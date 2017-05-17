@@ -16,7 +16,7 @@ REQUIRES="texlive-collection-latexextra texlive-collection-plaingeneric texlive-
 
 texlive_collection_htmlxml_CONTENTS=
 
-# Empty source tarball (empty except for top-level "source" directory).
+# Empty source tarball (except for top-level directory).
 SRC_URI="${PN}-${PV}.tar.xz"
 
 src_compile() { :; }
