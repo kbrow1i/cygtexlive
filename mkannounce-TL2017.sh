@@ -71,14 +71,14 @@ There has been some (upstream) rearrangement of the collections since the previo
 
  - The omega collection has been absorbed by formatsextra.
 
- - The plainextra, genericrecommended, and genericextra collections have merged into a new collection, genericplain.
+ - The plainextra, genericrecommended, and genericextra collections have merged into a new collection, plaingeneric.
 
  - The htmlxml collection has been removed.  Its constituent upstream packages have been moved into other collections, as follows:
 
    jadetex, passivetex, xmltex, xmltexconfig --> formatsextra
    classpack --> latexextra
    lwarp --> latexrecommended
-   tex4ht --> genericplain
+   tex4ht --> plaingeneric
 
 EOF
 
@@ -90,21 +90,11 @@ Most people do not need the full TeX Live installation, which is huge and can ta
 
 Minimal: Install texlive and its dependencies.  This provides plain TeX but not LaTeX.
 
-Small: Install texlive-collection-latex and its dependencies.  This is a minimal installation with LaTeX.
+Basic: Install texlive-collection-latex and its dependencies.  This is a minimal installation with LaTeX.
 
-Standard: Install texlive-collection-latexrecommended and its dependencies.  This provides the most commonly used non-graphics LaTeX packages.  Install texlive-collection-pictures if you want the standard graphics packages too.
+Small: Install texlive-collection-latexrecommended and its dependencies.  This provides the most commonly used non-graphics LaTeX packages.  Install texlive-collection-pictures if you want the standard graphics packages too.
 
-If you want or need more, consider installing some of the following:
-
-* texlive-collection-binextra
-* texlive-collection-context
-* texlive-collection-fontsrecommended
-* texlive-collection-fontutils
-* texlive-collection-genericplain
-* texlive-collection-luatex
-* texlive-collection-mathscience
-* texlive-collection-metapost
-* texlive-collection-xetex
+Medium: Install texlive-collection-binextra, texlive-collection-context, texlive-collection-fontsrecommended, texlive-collection-fontutils, texlive-collection-latexrecommended, texlive-collection-luatex, texlive-collection-mathscience, texlive-collection-metapost, texlive-collection-plaingeneric, and texlive-collection-xetex.
 
 Fontconfig
 ==========
