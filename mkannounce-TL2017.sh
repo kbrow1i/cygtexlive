@@ -58,7 +58,10 @@ for d in ${packages}
 do
     case ${d} in
 	*-htmlxml) ;;
-	*) echo "* ${d}-${VR}" >> announce-TL2017.txt ;;
+	*-bibtexextra*)
+	    echo "* ${d}-${VR} (TEST)" >> announce-TL2017.txt ;;
+	*)
+	    echo "* ${d}-${VR}" >> announce-TL2017.txt ;;
     esac
     # echo "* ${d}-${VR}" >> announce-TL2017.txt
 done
@@ -79,6 +82,12 @@ There has been some (upstream) rearrangement of the collections since the previo
    classpack --> latexextra
    lwarp --> latexrecommended
    tex4ht --> plaingeneric
+
+The bibtexextra collection is marked as a test release because it includes biblatex-3.7; the latter is designed to work with biber-2.7, which is not yet available in the Cygwin distribution.  If you don't want to wait for it to become available, you can get a version of biber-2.7 from
+
+   https://sourceforge.net/projects/biblatex-biber/files/biblatex-biber/current/binaries/Cygwin/
+
+This will give you an executable biber.exe, which is a self-extracting Perl archive.
 
 EOF
 

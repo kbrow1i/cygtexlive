@@ -16,5 +16,4 @@ TEXLIVE_DOC_PKGS="abbr abstyles apnum autoaligne barr bitelist borceux
 
 inherit texlive
 
-OBSOLETES="texlive-collection-genericextra-doc
-	texlive-collection-genericrecommended-doc"
+OBSOLETES="texlive-collection-genericextra-doc texlive-collection-genericrecommended-doc"

@@ -20,6 +20,4 @@ TEXLIVE_ARCH_PKGS="tex4ht"
 
 inherit texlive
 
-OBSOLETES="texlive-collection-plainextra
-	texlive-collection-genericextra
-	texlive-collection-genericrecommended"
+OBSOLETES="texlive-collection-plainextra texlive-collection-genericextra texlive-collection-genericrecommended"

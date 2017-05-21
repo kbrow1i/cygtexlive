@@ -10,3 +10,4 @@ save/
 *.tar.xz
 *.log
 *failures.txt
+announce*.txt

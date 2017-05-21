@@ -1,0 +1,34 @@
+1. Create directories
+
+     texlive-collection-plaingeneric
+     texlive-collection-plaingeneric-doc
+
+   under noarch.
+
+2. Move
+
+     texlive-collection-plainextra
+     texlive-collection-genericrecommended
+     texlive-collection-genericextra
+
+   into texlive-collection-plaingeneric.
+
+3. Move
+
+     texlive-collection-genericrecommended-doc
+     texlive-collection-genericextra-doc
+
+   into texlive-collection-plaingeneric-doc.
+
+4. Move
+
+     texlive-collection-langafrican
+     texlive-collection-langindic
+
+   into texlive-collection-langother
+
+5. Move
+
+     texlive-collection-omega
+
+   into texlive-collection-formatsextra.
