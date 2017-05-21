@@ -1,5 +1,5 @@
 NAME="texlive-collection-pictures"
-VERSION=20170512
+VERSION=20170520
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="aobs-tikz askmaps asyfig asypictureb autoarea
@@ -11,7 +11,7 @@ TEXLIVE_TEXMF_PKGS="aobs-tikz askmaps asyfig asypictureb autoarea
 	epspdfconversion esk fast-diagram fitbox flowchart forest
 	genealogytree gincltex gnuplottex gradientframe grafcet
 	graphviz gtrlib-largetrees harveyballs here hf-tikz hobby
-	hvfloat knitting knittingpattern lapdf latex-make lpic
+	hvfloat knitting knittingpattern ladder lapdf latex-make lpic
 	lroundrect luamesh makeshape mathspic miniplot modiagram
 	neuralnetwork numericplots pb-diagram pgf pgf-blur pgf-soroban
 	pgf-spectra pgf-umlcd pgf-umlsd pgfgantt pgfkeyx pgfmolbio

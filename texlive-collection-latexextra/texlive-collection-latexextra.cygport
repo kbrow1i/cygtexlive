@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra"
-VERSION=20170512
+VERSION=20170520
 RELEASE=1
 
 # preview is now packaged as the preview-latex subpackage of emacs-auctex.
@@ -189,7 +189,7 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	withargs wordcount wordlike wrapfig wtref xargs xassoccnt
 	xcntperchap xcolor-material xcolor-solarized xcomment xdoc
 	xellipsis xfor xhfill xifthen xint xmpincl xnewcommand xoptarg
-	xpatch xpeek xprintlen xpunctuate xsavebox xstring xtab
+	xpatch xpeek xprintlen xpunctuate xsavebox xsim xstring xtab
 	xwatermark xytree yafoot yaletter yagusylo ycbook ydoc zed-csp
 	ziffer zwgetfdate zwpagelayout"
 

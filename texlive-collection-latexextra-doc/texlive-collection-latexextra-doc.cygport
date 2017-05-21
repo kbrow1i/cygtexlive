@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra-doc"
-VERSION=20170512
+VERSION=20170520
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
@@ -186,7 +186,7 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	xargs xassoccnt xcntperchap xcolor-material xcolor-solarized
 	xcomment xdoc xellipsis xfor xhfill xifthen xint xmpincl
 	xnewcommand xoptarg xpatch xpeek xprintlen xpunctuate xsavebox
-	xstring xtab xwatermark xytree yafoot yaletter yagusylo ycbook
-	ydoc yplan zed-csp ziffer zwgetfdate zwpagelayout"
+	xsim xstring xtab xwatermark xytree yafoot yaletter yagusylo
+	ycbook ydoc yplan zed-csp ziffer zwgetfdate zwpagelayout"
 
 inherit texlive

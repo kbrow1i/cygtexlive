@@ -1,16 +1,16 @@
 NAME="texlive-collection-langpolish"
-VERSION=20170412
+VERSION=20170520
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="babel-polish cc-pl gustlib gustprog hyphen-polish
-	lshort-polish mwcls pl polski przechlewski-book qpxqtx tap
-	tex-virtual-academy-pl texlive-pl utf8mex"
+TEXLIVE_TEXMF_PKGS="babel-polish bredzenie cc-pl gustlib gustprog
+	hyphen-polish lshort-polish mwcls pl polski przechlewski-book
+	qpxqtx tap tex-virtual-academy-pl texlive-pl utf8mex"
 
 TEXLIVE_ARCH_PKGS="mex"
 
-TEXLIVE_DOC_PKGS="mex babel-polish cc-pl gustlib
-	gustprog lshort-polish mwcls pl polski przechlewski-book
-	qpxqtx tap tex-virtual-academy-pl texlive-pl utf8mex"
+TEXLIVE_DOC_PKGS="mex babel-polish bredzenie cc-pl gustlib gustprog
+	lshort-polish mwcls pl polski przechlewski-book qpxqtx tap
+	tex-virtual-academy-pl texlive-pl utf8mex"
 
 REQUIRES="texlive-collection-latex"
 

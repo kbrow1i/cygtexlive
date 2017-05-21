@@ -1,17 +1,18 @@
 NAME="texlive-collection-langother"
-VERSION=20170512
+VERSION=20170520
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="amsldoc-vn aramaic-serto babel-azerbaijani
 	babel-esperanto babel-georgian babel-hebrew babel-indonesian
 	babel-interlingua babel-malay babel-sorbian babel-thai
 	babel-vietnamese bangtex bengali burmese cjhebrew ctib ethiop
-	ethiop-t1 fc fonts-tlwg hyphen-afrikaans hyphen-coptic
-	hyphen-esperanto hyphen-ethiopic hyphen-georgian hyphen-indic
-	hyphen-indonesian hyphen-interlingua hyphen-sanskrit
-	hyphen-thai hyphen-turkmen latexbangla lshort-thai
-	lshort-vietnamese ntheorem-vn padauk sanskrit sanskrit-t1
-	thaienum velthuis vntex wnri wnri-latex xetex-devanagari"
+	ethiop-t1 fc fonts-tlwg hyphen-afrikaans hyphen-armenian
+	hyphen-coptic hyphen-esperanto hyphen-ethiopic hyphen-georgian
+	hyphen-indic hyphen-indonesian hyphen-interlingua
+	hyphen-sanskrit hyphen-thai hyphen-turkmen latexbangla
+	lshort-thai lshort-vietnamese ntheorem-vn padauk sanskrit
+	sanskrit-t1 thaienum velthuis vntex wnri wnri-latex
+	xetex-devanagari"
 
 TEXLIVE_ARCH_PKGS="ebong"
 

@@ -1,5 +1,5 @@
 NAME="texlive-collection-bibtexextra-doc"
-VERSION=20170412
+VERSION=20170520
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="amsrefs apacite archaeologie besjournals bestpapers
@@ -14,10 +14,11 @@ TEXLIVE_DOC_PKGS="amsrefs apacite archaeologie besjournals bestpapers
 	biblatex-luh-ipw biblatex-manuscripts-philology biblatex-mla
 	biblatex-morenames biblatex-multiple-dm biblatex-musuos
 	biblatex-nature biblatex-nejm biblatex-nottsclassic
-	biblatex-opcit-booktitle biblatex-philosophy biblatex-phys
-	biblatex-publist biblatex-realauthor biblatex-sbl
-	biblatex-science biblatex-shortfields biblatex-source-division
-	biblatex-subseries biblatex-swiss-legal biblatex-trad
+	biblatex-opcit-booktitle biblatex-oxref biblatex-philosophy
+	biblatex-phys biblatex-publist biblatex-realauthor
+	biblatex-sbl biblatex-science biblatex-shortfields
+	biblatex-source-division biblatex-subseries
+	biblatex-swiss-legal biblatex-trad
 	biblatex-true-citepages-omit biblist bibtexperllibs bibtopic
 	bibtopicprefix bibunits biolett-bst bookdb breakcites cell
 	chbibref chembst chicago-annote chscite citeall collref

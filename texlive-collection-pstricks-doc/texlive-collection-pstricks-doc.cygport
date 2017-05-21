@@ -1,5 +1,5 @@
 NAME="texlive-collection-pstricks-doc"
-VERSION=20170412
+VERSION=20170520
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="auto-pst-pdf bclogo dsptricks makeplot pdftricks
@@ -15,9 +15,9 @@ TEXLIVE_DOC_PKGS="auto-pst-pdf bclogo dsptricks makeplot pdftricks
 	pst-optic pst-osci pst-ovl pst-pad pst-pdgr pst-perspective
 	pst-platon pst-plot pst-poly pst-pulley pst-qtree pst-rubans
 	pst-shell pst-sigsys pst-slpe pst-solarsystem pst-solides3d
-	pst-soroban pst-spectra pst-spirograph pst-stru pst-support
-	pst-text pst-thick pst-tools pst-tree pst-tvz pst-uml
-	pst-vectorian pst-vowel pst-vue3d pst2pdf pstricks
+	pst-soroban pst-spectra pst-spinner pst-spirograph pst-stru
+	pst-support pst-text pst-thick pst-tools pst-tree pst-tvz
+	pst-uml pst-vectorian pst-vowel pst-vue3d pst2pdf pstricks
 	pstricks-add pstricks_calcnotes rputover uml vaucanson-g
 	vocaltract"
 

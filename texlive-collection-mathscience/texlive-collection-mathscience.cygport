@@ -1,11 +1,11 @@
 NAME="texlive-collection-mathscience"
-VERSION=20170512
+VERSION=20170520
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="12many SIstyle SIunits alg algorithm2e
-	algorithmicx algorithms amstex apxproof autobreak backnaur
-	begriff binomexp biocon bitpattern bohr boldtensors bosisio
-	bpchem bropd bytefield calculation ccfonts chemarrow
+	algorithmicx algorithms amstex apxproof autobreak axodraw2
+	backnaur begriff binomexp biocon bitpattern bohr boldtensors
+	bosisio bpchem bropd bytefield calculation ccfonts chemarrow
 	chemcompounds chemcono chemexec chemformula chemgreek
 	chemmacros chemnum chemschemex chemstyle clrscode clrscode3e
 	commath complexity computational-complexity concmath concrete
