@@ -112,9 +112,11 @@ EOF
 
 #  - Install perl-5.24, currently available for Cygwin as a test release.
 
+#  - Install make, gcc-g++, libcrypt-devel, libxslt-devel, git.
+
 #  - Install Module::Build:
 
-#      $ cpan Module::Build
+#      $ cpan CPAN YAML inc::latest Module::Build
 
 #  - Download the biber-2.7 source:
 
@@ -122,14 +124,13 @@ EOF
 
 #      $ cd biber
 
+#      $ git checkout master
+
 #  - Create the build script and install the prerequisites via cpan:
 
 #      $ perl Build.PL
 
-#      $ ./Build installdeps  # Watch for failures and deal with them.
-#                             # For example, you may need to install
-#                             # some Cygwin packages, such as
-#                             # libxslt-devel.
+#      $ ./Build installdeps # If case-sensitive, have to force install Capture::Tiny
 
 #  - Install biber:
 
