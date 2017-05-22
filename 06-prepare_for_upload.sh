@@ -14,8 +14,7 @@ do
     dest1=/c/downloads/cygwin/myrepo/noarch/release
     dest2=/tmp/sourceware/noarch/release
     cp -alf ${D}/${d} ${dest1}
-    cp -alf ${D}/${d} ${dest2}
-    # cp ${D}/${d}/setup.hint ${dest}/${d}
+    # cp -alf ${D}/${d} ${dest2}
     echo "Leaving $d"
     echo
     cd ..

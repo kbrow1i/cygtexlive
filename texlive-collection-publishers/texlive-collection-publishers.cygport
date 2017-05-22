@@ -1,5 +1,5 @@
 NAME="texlive-collection-publishers"
-VERSION=20170512
+VERSION=20170520
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="IEEEconf IEEEtran aastex abntex2 acmart acmconf

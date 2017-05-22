@@ -12,13 +12,10 @@ do
     echo "Entering $d ..."
     cd $d
     eval $(grep ^VERSION ${d}.cygport)
-    if [ ${VERSION} = 20170512 ]
+    if ! cygport ${d}.cygport fetch
     then
-	if ! cygport ${d}.cygport fetch
-	then
-	    echo "Fetching ${d} failed" >> ../fetch_failures.txt
-	    exit_status=1
-	fi
+	echo "Fetching ${d} failed" >> ../fetch_failures.txt
+	exit_status=1
     fi
     echo "Leaving $d"
     cd ..

@@ -1,6 +1,6 @@
 #! /bin/bash
 
-VR=201705xx-1
+VR=20170520-1
 
 cat > announce-TL2017.txt <<EOF
 Cygwin's TeX Live packages have been updated to the latest upstream release, TeX Live 2017.
@@ -83,11 +83,7 @@ There has been some (upstream) rearrangement of the collections since the previo
    lwarp --> latexrecommended
    tex4ht --> plaingeneric
 
-The bibtexextra collection is marked as a test release because it includes biblatex-3.7; the latter is designed to work with biber-2.7, which is not yet available in the Cygwin distribution.  If you don't want to wait for it to become available, you can get a version of biber-2.7 from
-
-   https://sourceforge.net/projects/biblatex-biber/files/biblatex-biber/current/binaries/Cygwin/
-
-This will give you an executable biber.exe, which is a self-extracting Perl archive.
+The bibtexextra collection is marked as a test release because it includes biblatex-3.7; the latter is designed to work with biber-2.7, which is not yet available in the Cygwin distribution because it requires at least perl-5.24.  I will update biber to 2.7 as soon as Cygwin's perl is updated.
 
 EOF
 

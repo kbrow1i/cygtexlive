@@ -1,5 +1,5 @@
 NAME="texlive-collection-games"
-VERSION=20170412
+VERSION=20170520
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="bartel-chess-fonts chess chess-problem-diagrams
