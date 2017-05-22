@@ -1,5 +1,5 @@
---- origsrc/texmf-dist/web2c/texmfcnf.lua	2016-04-06 18:40:36.000000000 -0400
-+++ src/texmf-dist/web2c/texmfcnf.lua	2016-04-28 15:15:59.522243800 -0400
+--- origsrc/texmf-dist/web2c/texmfcnf.lua	2017-04-13 13:59:45.000000000 -0400
++++ src/texmf-dist/web2c/texmfcnf.lua	2017-05-22 15:13:42.405019000 -0400
 @@ -14,6 +14,7 @@ return {
      time    = "12:12:12",
      comment = "ConTeXt MkIV configuration file",
@@ -13,7 +13,7 @@
              -- only used for FONTCONFIG_PATH & TEXMFCACHE in TeX Live
  
 -            TEXMFSYSVAR     = "selfautoparent:texmf-var",
--            TEXMFVAR        = "home:.texlive2016/texmf-var",
+-            TEXMFVAR        = "home:.texlive2017/texmf-var",
 +            TEXMFSYSVAR     = "/var/lib/texmf",
 +            TEXMFVAR        = "home:.cache/texmf",
  
@@ -21,8 +21,8 @@
              -- will be chosen but there can be more readable paths.
  
              TEXMFCACHE      = "$TEXMFSYSVAR;$TEXMFVAR",
--            TEXMFCONFIG     = "home:.texlive2016/texmf-config",
-+            TEXMFCONFIG     = "home:.config/texmf"
+-            TEXMFCONFIG     = "home:.texlive2017/texmf-config",
++            TEXMFCONFIG     = "home:.config/texmf",
  
              -- I don't like this texmf under home and texmf-home would make more
              -- sense. One never knows what installers put under texmf anywhere and

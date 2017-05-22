@@ -1,7 +1,7 @@
 This needs to be kept in sync with a similar patch for texlive.
 
---- origsrc/texmf-dist/web2c/texmf.cnf	2016-04-06 18:40:36.000000000 -0400
-+++ src/texmf-dist/web2c/texmf.cnf	2016-04-28 15:02:13.512229100 -0400
+--- origsrc/texmf-dist/web2c/texmf.cnf	2017-05-06 12:23:44.000000000 -0400
++++ src/texmf-dist/web2c/texmf.cnf	2017-05-22 12:20:39.761412600 -0400
 @@ -54,7 +54,12 @@
  % Redistributors will probably want $SELFAUTODIR/share, i.e., /usr/share.
  % Kpathsea sets SELFAUTOLOC (the directory with the binary),
@@ -39,16 +39,16 @@ This needs to be kept in sync with a similar patch for texlive.
 +TEXMFHOME = ~/.local/share/texmf
  
  % TEXMFVAR, where texconfig/updmap/fmtutil store cached runtime data.
--TEXMFVAR = ~/.texlive2016/texmf-var
+-TEXMFVAR = ~/.texlive2017/texmf-var
 +TEXMFVAR = ~/.cache/texmf
  
  % TEXMFCONFIG, where texconfig/updmap/fmtutil store configuration data.
--TEXMFCONFIG = ~/.texlive2016/texmf-config
+-TEXMFCONFIG = ~/.texlive2017/texmf-config
 +TEXMFCONFIG = ~/.config/texmf
  
- % List all the texmf trees. For an explanation of what they are, see the
- % TeX Live manual.
-@@ -489,30 +494,42 @@ RUBYINPUTS   = .;$TEXMF/scripts/{$progna
+ % This is the value manipulated by tlmgr's auxtrees subcommand in the
+ % root texmf.cnf. Kpathsea warns about a literally empty string for a
+@@ -503,30 +508,42 @@ RUBYINPUTS   = .;$TEXMF/scripts/{$progna
  % since we don't want to scatter ../'s throughout the value.  Hence we
  % explicitly list every directory.  Arguably more understandable anyway.
  %
