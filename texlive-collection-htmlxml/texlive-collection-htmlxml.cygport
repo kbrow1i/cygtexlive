@@ -18,6 +18,7 @@ texlive_collection_htmlxml_CONTENTS=
 
 # Empty source tarball (except for top-level directory).
 SRC_URI="${PN}-${PV}.tar.xz"
+SRC_DIR="empty"
 
 src_compile() { :; }
 
