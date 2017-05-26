@@ -1,5 +1,5 @@
 NAME="texlive"
-VERSION=20170520
+VERSION=20170524
 RELEASE=1
 
 HOMEPAGE="http://www.tug.org/texlive/"

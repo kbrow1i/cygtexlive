@@ -13,6 +13,7 @@ do
     D=${PVR}.noarch/dist
     dest1=/c/downloads/cygwin/myrepo/noarch/release
     dest2=/tmp/sourceware/noarch/release
+    rm -rf ${dest1}/${d}
     cp -alf ${D}/${d} ${dest1}
     # cp -alf ${D}/${d} ${dest2}
     echo "Leaving $d"

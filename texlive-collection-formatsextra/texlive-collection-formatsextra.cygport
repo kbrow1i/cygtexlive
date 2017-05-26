@@ -1,5 +1,5 @@
 NAME="texlive-collection-formatsextra"
-VERSION=20170520
+VERSION=20170524
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="edmac passivetex psizzl startex xmltexconfig antomega lambda mxedruli omega otibet"

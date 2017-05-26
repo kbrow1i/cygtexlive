@@ -1,6 +1,6 @@
 #! /bin/bash
 
-VR=20170520-1
+VR=20170524-1
 
 cat > announce-TL2017.txt <<EOF
 Cygwin's TeX Live packages have been updated to the latest upstream release, TeX Live 2017.
