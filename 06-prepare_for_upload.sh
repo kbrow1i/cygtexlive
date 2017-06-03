@@ -11,16 +11,21 @@ do
     eval $(grep '^RELEASE=' ${d}.cygport)
     PVR=${NAME}-${VERSION}-${RELEASE}
     D=${PVR}.noarch/dist
-    case $d in
-	*-bibtexextra-*) echo "test:" >> ${D}/${PVR}.hint ;;
-	*) ;;
-    esac
     # dest1=/c/downloads/cygwin/myrepo/noarch/release
     dest2=/tmp/sourceware/noarch/release
     # rm -rf ${dest1}/${d}
     # cp -alf ${D}/${d} ${dest1}
     rm -rf ${dest2}/${d}
     cp -alf ${D}/${d} ${dest2}
+    case $d in
+	*-bibtexextra-*)
+	    echo "test:" >> ${dest2}/${d}/${d}-20170524-1.hint
+	    touch ${dest2}/${d}/-${d}-20170412-1.hint
+	    touch ${dest2}/${d}/-${d}-20170412-1.tar.xz
+	    touch ${dest2}/${d}/-${d}-20170412-1-src.tar.xz
+	    ;;
+	*) ;;
+    esac
     echo "Leaving $d"
     echo
     cd ..
