@@ -9,7 +9,7 @@ TeX Live provides a comprehensive, cross-platform TeX system.  It includes all t
 
   http://www.tug.org/texlive/
 
-See
+And see
 
   http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#news
 
@@ -39,8 +39,8 @@ libsync is a TeX source/output synchronization library.
 
 libtexlua52 is a TeX lua scripting library.
 
-* libtexluajit2-${VR} (x86 only)
-* libtexluajit-devel-${VR} (x86 only)
+* libtexluajit2-${VR}
+* libtexluajit-devel-${VR}
 
 libtexluajit is a TeX Just-In-Time lua compiler library.
 
@@ -83,7 +83,7 @@ There has been some (upstream) rearrangement of the collections since the previo
    lwarp --> latexrecommended
    tex4ht --> plaingeneric
 
-The bibtexextra collection is marked as a test release because it includes biblatex-3.7; the latter is designed to work with biber-2.7, which is not yet available in the Cygwin distribution because it requires at least perl-5.24.  I will update biber to 2.7 as soon as Cygwin's perl is updated.
+The bibtexextra collection is marked as a test release because it includes biblatex-3.7; the latter is designed to work with biber-2.7, which is not yet available in the Cygwin distribution because it requires at least perl-5.24.  I will update biber to 2.7 as soon as Cygwin's perl is updated, probably in about a month.
 
 EOF
 
