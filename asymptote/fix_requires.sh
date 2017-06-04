@@ -3,13 +3,9 @@
 eval $(grep '^NAME=' *.cygport)
 eval $(grep '^VERSION=' *.cygport)
 eval $(grep '^RELEASE=' *.cygport)
+PVR=${NAME}-${VERSION}-${RELEASE}
 
-if grep -q '^ARCH=noarch$' *.cygport
-then
-    ARCH=noarch
-else
-    ARCH=$(uname -m)
-fi
+ARCH=$(uname -m)
 
-D=${NAME}-${VERSION}-${RELEASE}.${ARCH}
-sed -i -e '/^requires:/s/ python3//' ${D}/dist/${NAME}/setup.hint
+D=${PVR}.${ARCH}
+sed -i -e '/^requires:/s/ python3//' ${D}/dist/${NAME}/${PVR}.hint

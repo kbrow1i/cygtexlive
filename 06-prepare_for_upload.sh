@@ -18,7 +18,7 @@ do
     rm -rf ${dest2}/${d}
     cp -alf ${D}/${d} ${dest2}
     case $d in
-	*-bibtexextra-*)
+	*-bibtexextra*)
 	    echo "test:" >> ${dest2}/${d}/${d}-20170520-1.hint
 	    touch ${dest2}/${d}/-${d}-20170412-1.hint
 	    touch ${dest2}/${d}/-${d}-20170412-1.tar.xz
