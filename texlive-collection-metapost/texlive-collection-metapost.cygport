@@ -1,5 +1,5 @@
 NAME="texlive-collection-metapost"
-VERSION=20170524
+VERSION=20170520
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="automata bbcard blockdraw_mp bpolynomial cmarrows

@@ -1,5 +1,5 @@
 NAME="texlive-collection-mathscience-doc"
-VERSION=20170524
+VERSION=20170520
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="12many SIstyle SIunits alg algorithm2e algorithmicx

@@ -1,6 +1,6 @@
 #! /bin/bash
 
-VR=20170524-1
+VR=20170520-1
 
 cat > announce-TL2017.txt <<EOF
 Cygwin's TeX Live packages have been updated to the latest upstream release, TeX Live 2017.
@@ -9,11 +9,11 @@ TeX Live provides a comprehensive, cross-platform TeX system.  It includes all t
 
   http://www.tug.org/texlive/
 
-There have been major changes to LuaTeX since TeX Live 2016????  See
+See
 
   http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#news
 
-for details, as well as for a list of other (minor) changes.
+for a list of changes since TeX Live 2016.
   
 The TeX Live executables and supporting libraries are contained in the following Cygwin packages:
 

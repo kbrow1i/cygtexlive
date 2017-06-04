@@ -1,5 +1,5 @@
 NAME="texlive-collection-fontutils-doc"
-VERSION=20170524
+VERSION=20170520
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="accfonts afm2pl dosepsbin epstopdf fontinst fontools

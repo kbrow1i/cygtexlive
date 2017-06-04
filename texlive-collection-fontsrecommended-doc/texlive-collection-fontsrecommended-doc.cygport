@@ -1,5 +1,5 @@
 NAME="texlive-collection-fontsrecommended-doc"
-VERSION=20170524
+VERSION=20170520
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="charter cm-super ec euro euro-ce eurosym fpl lm

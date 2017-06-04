@@ -1,5 +1,5 @@
 NAME="texlive-collection-langgreek"
-VERSION=20170524
+VERSION=20170520
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="babel-greek begingreek betababel bgreek cbfonts
