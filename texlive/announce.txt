@@ -1,7 +1,7 @@
-From cygwin-announce-texlive-20170520-2 Sun Apr 16 17:28:01 2017
+From cygwin-announce-texlive-20170520-2 Fri Jun 09 15:03:59 2017
 From: Ken Brown <kbrown@cornell.edu>
 To: cygwin-announce@cygwin.com
-Date: Sun, 16 Apr 2017 17:28:01 -0400
+Date: Fri, 09 Jun 2017 15:03:59 -0400
 Subject: texlive 20170520-2
 
 The following packages have been uploaded to the Cygwin distribution:
