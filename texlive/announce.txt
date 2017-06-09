@@ -1,30 +1,34 @@
-From cygwin-announce-texlive-20160520-5 Sun Apr 16 17:28:01 2017
+From cygwin-announce-texlive-20170520-2 Sun Apr 16 17:28:01 2017
 From: Ken Brown <kbrown@cornell.edu>
 To: cygwin-announce@cygwin.com
 Date: Sun, 16 Apr 2017 17:28:01 -0400
-Subject: texlive 20160520-5
+Subject: texlive 20170520-2
 
 The following packages have been uploaded to the Cygwin distribution:
 
-* texlive-20160520-5
-* libkpathsea6-20160520-5
-* libkpathsea-devel-20160520-5
-* libptexenc1-20160520-5
-* libptexenc-devel-20160520-5
-* libsynctex1-20160520-5
-* libsynctex-devel-20160520-5
-* libtexlua52_5-20160520-5
-* libtexlua52-devel-20160520-5
-* libtexluajit2-20160520-5
-* libtexluajit-devel-20160520-5
+* texlive-20170520-2
+* libkpathsea6-20170520-2
+* libkpathsea-devel-20170520-2
+* libptexenc1-20170520-2
+* libptexenc-devel-20170520-2
+* libsynctex1-20170520-2
+* libsynctex-devel-20170520-2
+* libtexlua52_5-20170520-2
+* libtexlua52-devel-20170520-2
+* libtexluajit2-20170520-2
+* libtexluajit-devel-20170520-2
 
 TeX Live provides a comprehensive, cross-platform TeX system. It 
 includes all the major TeX-related programs, macro packages, and fonts 
 that are free software, including support for many languages around the 
 world.
 
-This release is a rebuild of the TeX Live 2016 binaries and supporting
-libraries, built with libicu59 and libpoppler66.
+This release is a rebuild of the TeX Live 2017 binaries and supporting
+libraries, patched to fix an upstream luatex bug.  See
+
+  http://tug.org/pipermail/tlbuild/2017q2/003843.html
+
+for details.
 
 Ken Brown
 Cygwin's TeX Live maintainer
