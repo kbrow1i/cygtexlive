@@ -1,0 +1,22 @@
+From cygwin-announce-texlive-collection-latex-20170520-2 Sat Jun 10 09:06:20 2017
+From: Ken Brown <kbrown@cornell.edu>
+To: cygwin-announce@cygwin.com
+Date: Sat, 10 Jun 2017 09:06:20 -0400
+Subject: texlive-collection-latex 20170520-2
+
+The following package has been uploaded to the Cygwin distribution:
+
+* texlive-collection-latex-20170520-2
+
+TeX Live is an easy way to get up and running with the TeX
+document production system.  It includes all the major TeX-related
+programs, macro packages, and fonts that are free software, including
+support for many languages around the world.
+
+This release is a rebuild of the latex collection, with an updated
+upstream babel-english package.  This fixes the problem reported here:
+
+  https://cygwin.com/ml/cygwin/2017-06/msg00096.html
+
+Ken Brown
+Cygwin's TeX Live maintainer
