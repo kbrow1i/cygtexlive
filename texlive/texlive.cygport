@@ -22,6 +22,8 @@ PATCH_URI+=" literal_suffix.patch" # For C++11.
 PATCH_URI+=" r44518.patch"
 PATCH_URI+=" r44530.patch"
 
+# Also need 44533, 44535, 44572.
+
 DOCS="README.Cygwin"
 
 DEPEND="
