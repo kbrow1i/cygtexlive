@@ -1,6 +1,6 @@
 NAME="texlive"
 VERSION=20170520
-RELEASE=2
+RELEASE=3
 
 HOMEPAGE="http://www.tug.org/texlive/"
 
@@ -19,10 +19,7 @@ SRC_DIR="${PN}-${PV}-source"
 PATCH_URI+=" 20170520-1-texmf_cnf.patch"
 PATCH_URI+=" 20140523-2-reautoconf.patch"
 PATCH_URI+=" literal_suffix.patch" # For C++11.
-PATCH_URI+=" r44518.patch"
-PATCH_URI+=" r44530.patch"
-
-# Also need 44533, 44535, 44572.
+PATCH_URI+=" 20170520-3-luatex_r44586_cumulative.patch"
 
 DOCS="README.Cygwin"
 
