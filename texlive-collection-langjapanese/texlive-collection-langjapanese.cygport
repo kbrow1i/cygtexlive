@@ -33,5 +33,5 @@ src_install() {
 	exeinto /etc/preremove
 	newexe preremove.new.sh ${PN}.new
 	exeinto /etc/postinstall
-	newexe postinstall.sh texlive-collection-langjapanese.sh
+	newexe postinstall.dash texlive-collection-langjapanese.dash
 }
