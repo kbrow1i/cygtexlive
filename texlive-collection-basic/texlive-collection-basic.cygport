@@ -1,6 +1,6 @@
 NAME="texlive-collection-basic"
 VERSION=20170520
-RELEASE=1
+RELEASE=2
 
 TEXLIVE_TEXMF_PKGS="amsfonts cm enctex etex etex-pkg glyphlist
 	graphics-def hyph-utf8 hyphen-base ifluatex ifxetex knuth-lib
@@ -32,8 +32,8 @@ PATCH_URI+=" 20160428-1-tlmgr_cygwin.patch"
 
 DOCS="README.Cygwin"
 
-# tlmgr needs wget, gnupg
-REQUIRES="coreutils cygutils dialog ed ghostscript gnupg grep sed texlive wget"
+# tlmgr needs wget
+REQUIRES="coreutils cygutils dialog ed ghostscript grep sed texlive wget"
 
 src_install() {
 	texlive_install
