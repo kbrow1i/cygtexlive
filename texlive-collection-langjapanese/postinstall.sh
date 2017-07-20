@@ -4,5 +4,5 @@
 
 PN="texlive-collection-langjapanese"
 
-/usr/bin/mv /etc/preremove/${PN}.sh /etc/preremove/${PN}.in
-/usr/bin/cp /etc/preremove/${PN}.new /etc/preremove/${PN}.sh
+mv /etc/preremove/${PN}.sh /etc/preremove/${PN}.in
+cp /etc/preremove/${PN}.new /etc/preremove/${PN}.sh
