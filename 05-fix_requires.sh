@@ -1,10 +1,8 @@
 #! /bin/bash
 
 dirs="
-texlive-collection-binextra
 texlive-collection-fontsextra-doc
 texlive-collection-langarabic
-texlive-collection-latexextra-doc
 texlive-collection-mathscience
 texlive-collection-music
 texlive-collection-pictures
