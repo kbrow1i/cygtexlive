@@ -1,13 +1,13 @@
 NAME="texlive-collection-luatex"
-VERSION=20170520
+VERSION=20171113
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="chickenize cloze cstypo ctablestack enigma
-	interpreter lua-check-hyphen lua-visual-debug luabibentry
-	luabidi luacode luahyphenrules luaindex luainputenc luaintro
-	lualatex-doc lualatex-math lualibs luamplib luasseq luatex85
-	luatexbase luatexko luatextra luatodonotes luaxml nodetree
-	odsfile placeat selnolig showhyphens spelling ucharcat"
+TEXLIVE_TEXMF_PKGS="chickenize combofont cstypo ctablestack enigma
+	fontloader-luaotfload interpreter lua-visual-debug luacode
+	luahyphenrules luaindex luainputenc luaintro lualatex-doc
+	lualatex-math lualibs luamplib luapackageloader luatex85
+	luatexbase luatexko luatextra luaxml nodetree odsfile placeat
+	selnolig spelling"
 
 TEXLIVE_ARCH_PKGS="checkcites luaotfload lua2dox"
 

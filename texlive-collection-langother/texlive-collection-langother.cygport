@@ -1,5 +1,5 @@
 NAME="texlive-collection-langother"
-VERSION=20170520
+VERSION=20171113
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="amsldoc-vn aramaic-serto babel-azerbaijani
@@ -9,9 +9,9 @@ TEXLIVE_TEXMF_PKGS="amsldoc-vn aramaic-serto babel-azerbaijani
 	ethiop-t1 fc fonts-tlwg hyphen-afrikaans hyphen-armenian
 	hyphen-coptic hyphen-esperanto hyphen-ethiopic hyphen-georgian
 	hyphen-indic hyphen-indonesian hyphen-interlingua
-	hyphen-sanskrit hyphen-thai hyphen-turkmen latexbangla
-	lshort-thai lshort-vietnamese ntheorem-vn padauk sanskrit
-	sanskrit-t1 thaienum velthuis vntex wnri wnri-latex
+	hyphen-sanskrit hyphen-thai hyphen-turkmen latex-mr
+	latexbangla lshort-thai lshort-vietnamese ntheorem-vn padauk
+	sanskrit sanskrit-t1 thaienum velthuis vntex wnri wnri-latex
 	xetex-devanagari"
 
 TEXLIVE_ARCH_PKGS="ebong"
@@ -20,9 +20,10 @@ TEXLIVE_DOC_PKGS="amsldoc-vn aramaic-serto babel-azerbaijani
 	babel-esperanto babel-georgian babel-hebrew babel-indonesian
 	babel-interlingua babel-malay babel-sorbian babel-thai
 	babel-vietnamese bangtex bengali burmese cjhebrew ctib ebong
-	ethiop ethiop-t1 fc fonts-tlwg latexbangla lshort-thai
-	lshort-vietnamese ntheorem-vn padauk sanskrit sanskrit-t1
-	thaienum velthuis vntex wnri wnri-latex xetex-devanagari"
+	ethiop ethiop-t1 fc fonts-tlwg latex-mr latexbangla
+	lshort-thai lshort-vietnamese ntheorem-vn padauk sanskrit
+	sanskrit-t1 thaienum velthuis vntex wnri wnri-latex
+	xetex-devanagari"
 
 inherit texlive
 

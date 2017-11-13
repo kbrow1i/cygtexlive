@@ -1,16 +1,16 @@
 NAME="texlive-collection-langchinese"
-VERSION=20170520
+VERSION=20171113
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="arphic arphic-ttf cns ctex ctex-faq fandol
 	hyphen-chinese impatient-cn latex-notes-zh-cn lshort-chinese
-	texlive-zh-cn texproposal xpinyin zhmetrics zhmetrics-uptex
-	zhnumber zhspacing"
+	texlive-zh-cn texproposal upzhkinsoku xpinyin zhlipsum
+	zhmetrics zhmetrics-uptex zhnumber zhspacing"
 
 TEXLIVE_DOC_PKGS="arphic arphic-ttf cns ctex ctex-faq fandol
 	impatient-cn latex-notes-zh-cn lshort-chinese texlive-zh-cn
-	texproposal xpinyin zhmetrics zhmetrics-uptex zhnumber
-	zhspacing"
+	texproposal upzhkinsoku xpinyin zhlipsum zhmetrics
+	zhmetrics-uptex zhnumber zhspacing"
 
 REQUIRES="texlive-collection-langcjk"
 

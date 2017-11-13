@@ -1,24 +1,26 @@
 NAME="texlive-collection-langjapanese"
-VERSION=20170520
+VERSION=20171113
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="babel-japanese bxbase bxcjkjatype bxjalipsum
-	bxjscls bxorigcapt ifptex ipaex japanese-otf
-	japanese-otf-uptex jlreq jsclasses lshort-japanese luatexja
-	mendex-doc pbibtex-base platex-tools platexcheat ptex-base
-	ptex-fonts pxbase pxchfon pxcjkcat pxjahyper pxrubrica
-	uptex-base uptex-fonts wadalab zxjafbfont zxjatype"
+	bxjaprnind bxjscls bxorigcapt ifptex ifxptex ipaex
+	japanese-otf japanese-otf-uptex jlreq jsclasses
+	lshort-japanese luatexja mendex-doc pbibtex-base platex-tools
+	platexcheat ptex-base ptex-fonts pxbase pxchfon pxcjkcat
+	pxjahyper pxrubrica pxufont uptex-base uptex-fonts wadalab
+	zxjafbfont zxjatype"
 
 TEXLIVE_ARCH_PKGS="convbkmk platex ptex ptex2pdf ptex-fontmaps uplatex
 	uptex"
 
-TEXLIVE_DOC_PKGS="babel-japanese bxbase bxcjkjatype bxjalipsum bxjscls
-	bxorigcapt convbkmk ifptex ipaex japanese-otf
-	japanese-otf-uptex jlreq jsclasses lshort-japanese luatexja
-	mendex-doc pbibtex-base platex platex-tools platexcheat ptex
-	ptex-base ptex-fontmaps ptex-fonts ptex2pdf pxbase pxchfon
-	pxcjkcat pxjahyper pxrubrica uplatex uptex uptex-base
-	uptex-fonts wadalab zxjafbfont zxjatype"
+TEXLIVE_DOC_PKGS="babel-japanese bxbase bxcjkjatype bxjalipsum
+	bxjaprnind bxjscls bxorigcapt convbkmk ifptex ifxptex ipaex
+	japanese-otf japanese-otf-uptex jlreq jsclasses
+	lshort-japanese luatexja mendex-doc pbibtex-base platex
+	platex-tools platexcheat ptex ptex-base ptex-fontmaps
+	ptex-fonts ptex2pdf pxbase pxchfon pxcjkcat pxjahyper
+	pxrubrica pxufont uplatex uptex uptex-base uptex-fonts wadalab
+	zxjafbfont zxjatype"
 
 REQUIRES="texlive-collection-langcjk"
 

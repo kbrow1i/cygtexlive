@@ -1,14 +1,15 @@
 NAME="texlive-collection-xetex"
-VERSION=20170520
+VERSION=20171113
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="arabxetex awesomebox bidi-atbegshi bidicontour
 	bidipagegrid bidishadowtext bidipresentation fixlatvian
-	font-change-xetex fontbook fontwrap interchar philokalia ptext
-	quran realscripts simple-resume-cv simple-thesis-dissertation
-	ucharclasses unicode-bidi xebaposter unisugar xecjk xecolor
-	xecyr xeindex xesearch xespotcolor xetex-itrans xetex-pstricks
-	xetex-tibetan xetexconfig xetexfontinfo xetexko xevlna"
+	font-change-xetex fontbook fontwrap interchar na-position
+	philokalia ptext quran realscripts simple-resume-cv
+	simple-thesis-dissertation ucharclasses unicode-bidi unisugar
+	xebaposter xechangebar xecjk xecolor xecyr xeindex xesearch
+	xespotcolor xetex-itrans xetex-pstricks xetex-tibetan
+	xetexconfig xetexfontinfo xetexko xevlna"
 
 TEXLIVE_ARCH_PKGS="xetex"
 

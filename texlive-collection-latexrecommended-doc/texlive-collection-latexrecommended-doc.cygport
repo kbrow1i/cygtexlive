@@ -1,15 +1,15 @@
 NAME="texlive-collection-latexrecommended-doc"
-VERSION=20170520
+VERSION=20171113
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="anysize beamer booktabs breqn caption cite cmap crop
-	ctable eso-pic euenc euler extsizes fancybox fancyref fancyvrb
-	filehook float fontspec fp index jknapltx latexbug
+	ctable eso-pic euenc euler etoolbox extsizes fancybox fancyref
+	fancyvrb filehook float fontspec fp index jknapltx latexbug
 	l3experimental l3kernel l3packages lineno listings lwarp
 	mathspec mathtools mdwtools memoir metalogo microtype ms
 	ntgclass parskip pdfpages polyglossia powerdot psfrag rcs
 	sansmath section seminar sepnum setspace subfig textcase
-	thumbpdf typehtml underscore unicode-math xcolor xkeyval
-	xltxtra xunicode"
+	thumbpdf typehtml ucharcat underscore unicode-math xcolor
+	xkeyval xltxtra xunicode"
 
 inherit texlive
