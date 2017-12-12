@@ -1,5 +1,7 @@
 #! /bin/bash
 
+# Recheck which ones should actually require python3.
+
 dirs="
 texlive-collection-fontsextra-doc
 texlive-collection-langarabic
