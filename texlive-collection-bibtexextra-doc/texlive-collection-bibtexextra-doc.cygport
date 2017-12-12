@@ -1,5 +1,5 @@
 NAME="texlive-collection-bibtexextra-doc"
-VERSION=20171113
+VERSION=20171212
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="amsrefs apacite archaeologie besjournals bestpapers

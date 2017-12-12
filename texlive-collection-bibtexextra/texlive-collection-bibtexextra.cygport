@@ -1,5 +1,5 @@
 NAME="texlive-collection-bibtexextra"
-VERSION=20171113
+VERSION=20171212
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="aichej ajl amsrefs apacite apalike2 archaeologie
