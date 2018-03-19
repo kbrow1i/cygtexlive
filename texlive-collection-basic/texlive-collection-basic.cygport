@@ -1,6 +1,6 @@
 NAME="texlive-collection-basic"
-VERSION=20170520
-RELEASE=2
+VERSION=20180319
+RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="amsfonts cm enctex etex etex-pkg glyphlist
 	graphics-def hyph-utf8 hyphen-base ifluatex ifxetex knuth-lib
@@ -9,10 +9,10 @@ TEXLIVE_TEXMF_PKGS="amsfonts cm enctex etex etex-pkg glyphlist
 	texlive-msg-translations unicode-data updmap-map"
 
 TEXLIVE_ARCH_PKGS="bibtex dvipdfmx dvips gsftopk kpathsea luatex
-	makeindex metafont mfware pdftex tetex tex texconfig
+	makeindex metafont mfware pdftex tetex tex
 	texlive.infra texlive-scripts xdvi"
 
-TEXLIVE_DOC_PKGS="tex tex-ini-files texconfig texlive.infra"
+TEXLIVE_DOC_PKGS="tex tex-ini-files texlive.infra"
 
 SRC_URI+=" update_tlpdb.pl"
 SRC_URI+=" tlmgr.config"

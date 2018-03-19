@@ -1,5 +1,5 @@
 NAME="texlive-collection-plaingeneric"
-VERSION=20171113
+VERSION=20180319
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="abbr abstyles apnum autoaligne barr bitelist
@@ -14,7 +14,7 @@ TEXLIVE_TEXMF_PKGS="abbr abstyles apnum autoaligne barr bitelist
 	plipsum plnfss plstmary present randomlist resumemac schemata
 	shade simplekv systeme tabto-generic termmenu tex-ps texapi
 	texinfo timetable tracklang treetex trigonometry ulem upca
-	varisize xii xlop yax"
+	varisize xii xii-lat xlop yax"
 
 TEXLIVE_ARCH_PKGS="tex4ht"
 

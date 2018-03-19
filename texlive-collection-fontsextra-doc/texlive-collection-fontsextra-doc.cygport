@@ -1,46 +1,48 @@
 NAME="texlive-collection-fontsextra-doc"
-VERSION=20171113
+VERSION=20180319
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="Asana-Math academicons accanthis adforn adfsymbols
 	aecc alegreya algolrevived allrunes almfixed anonymouspro
-	antiqua antt archaic arev arimo asapsym ascii-font aspectratio
+	antiqua antt archaic arev arimo asapsym ascii-font ascmac aspectratio
 	astro augie auncial-new aurical b1encoding barcodes baskervald
 	baskervaldx baskervillef bbding bbm bbm-macros bbold
 	bbold-type1 belleek bera berenisadf beuron bguq blacklettert1
 	boisik bookhands boondox braille brushscr cabin caladea
 	calligra calligra-type1 cantarell carlito carolmin-ps ccicons
 	cfr-initials cfr-lm cherokee chivo cinzel clearsans cm-lgc
-	cm-unicode cmbright cmexb cmll cmpica cmtiup cochineal
-	coelacanth comfortaa comicneue concmath-fonts cookingsymbols
-	cormorantgaramond countriesofeurope courier-scaled crimson
-	cryst cyklop dantelogo dejavu dejavu-otf dice dictsym dingbat
-	doublestroke dozenal drm droid duerer duerer-latex dutchcal
-	ean ebgaramond ebgaramond-maths ecc eco eiad eiad-ltx electrum
-	elvish epigrafica epsdice erewhon esrelation esstix esvect
-	eulervm fbb fdsymbol fetamont feyn fge fira foekfont fonetika
-	fontawesome fontmfizz fonts-churchslavonic fourier fouriernc
-	frcursive frederika2016 genealogy gentium-tug gfsartemisia
-	gfsbodoni gfscomplutum gfsdidot gfsneohellenic gfssolomos
-	gillcm gillius gnu-freefont gofonts gothic greenpoint grotesq
-	hacm heuristica hfbright hfoldsty ifsym imfellenglish
-	inconsolata initials ipaex-type1 iwona jablantile jamtimes
-	junicode kixfont kpfonts kurier lato lfb libertine libertinegc
-	libertinus libertinust1math librebaskerville librebodoni
-	librecaslon libris linearA lobster2 lxfonts ly1 mathabx
-	mathabx-type1 mathdesign mdputu mdsymbol merriweather miama
-	mintspirit missaali mnsymbol montserrat mweights newpx newtx
-	newtxsf newtxtt niceframe-type1 nimbus15 nkarta noto obnov
-	ocherokee ocr-b ocr-b-outline ogham oinuit old-arrows oldlatin
-	oldstandard opensans orkhun overlock pacioli paratype phaistos
-	phonetic pigpen playfair poltawski prodint punk punk-latex
-	punknova pxtxalfa quattrocento raleway recycle roboto romande
-	rosario rsfso sansmathaccent sansmathfonts sauterfonts
-	schulschriften semaphor shobhika sourcecodepro sourcesanspro
-	sourceserifpro starfont staves stix superiors svrsymbols tapir
-	tempora tengwarscript tfrupee tinos tpslifonts trajan txfontsb
-	txuprcal typicons universa universalis uppunctlm urwchancal
-	venturisadf wsuipa xcharter xits yfonts yfonts-t1 yinit-otf
-	zlmtt"
+	cm-mf-extra-bold cm-unicode cmbright cmexb cmll cmpica cmsrb
+	cmtiup cochineal coelacanth comfortaa comicneue concmath-fonts
+	cookingsymbols cormorantgaramond countriesofeurope
+	courier-scaled crimson cryst cyklop dantelogo dejavu
+	dejavu-otf dice dictsym dingbat doublestroke dozenal drm droid
+	duerer duerer-latex dutchcal ean ebgaramond ebgaramond-maths
+	ecc eco eiad eiad-ltx electrum elvish epigrafica epsdice
+	erewhon esrelation esstix esvect eulervm fbb fdsymbol fetamont
+	feyn fge fira foekfont fonetika fontawesome fontawesome5
+	fontmfizz fonts-churchslavonic fourier fouriernc frcursive
+	frederika2016 genealogy gentium-tug gfsartemisia gfsbodoni
+	gfscomplutum gfsdidot gfsneohellenic gfsneohellenicmath
+	gfssolomos gillcm gillius gnu-freefont gofonts gothic
+	greenpoint grotesq hacm heuristica hfbright hfoldsty ifsym
+	imfellenglish inconsolata initials ipaex-type1 iwona
+	jablantile jamtimes junicode kixfont kpfonts kurier lato lfb
+	libertine libertinegc libertinus libertinust1math
+	librebaskerville librebodoni librecaslon libris linearA
+	lobster2 lxfonts ly1 mathabx mathabx-type1 mathdesign mdputu
+	mdsymbol merriweather miama mintspirit missaali mnsymbol
+	montserrat mweights newpx newtx newtxsf newtxtt
+	niceframe-type1 nimbus15 nkarta noto obnov ocherokee ocr-b
+	ocr-b-outline ogham oinuit old-arrows oldlatin oldstandard
+	opensans orkhun overlock pacioli paratype phaistos phonetic
+	pigpen playfair plex plex-otf poltawski prodint punk
+	punk-latex punknova pxtxalfa quattrocento raleway recycle
+	roboto romande rosario rsfso sansmathaccent sansmathfonts
+	sauterfonts schulschriften semaphor shobhika sourcecodepro
+	sourcesanspro sourceserifpro starfont staves stix superiors
+	svrsymbols tapir tempora tengwarscript tfrupee tinos
+	tpslifonts trajan txfontsb txuprcal typicons universa
+	universalis uppunctlm urwchancal venturisadf wsuipa xcharter
+	xits yfonts yfonts-t1 yinit-otf zlmtt"
 
 inherit texlive

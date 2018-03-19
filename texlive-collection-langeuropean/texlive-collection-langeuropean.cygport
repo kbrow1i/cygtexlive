@@ -1,5 +1,5 @@
 NAME="texlive-collection-langeuropean"
-VERSION=20170520
+VERSION=20180319
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="armtex babel-albanian babel-bosnian babel-breton
@@ -9,7 +9,7 @@ TEXLIVE_TEXMF_PKGS="armtex babel-albanian babel-bosnian babel-breton
 	babel-macedonian babel-norsk babel-occitan babel-piedmontese
 	babel-romanian babel-romansh babel-samin babel-scottish
 	babel-slovenian babel-swedish babel-turkish babel-welsh finbib
-	gloss-occitan hrlatex hyphen-croatian hyphen-danish
+	gloss-occitan hrlatex hulipsum hyphen-croatian hyphen-danish
 	hyphen-dutch hyphen-estonian hyphen-finnish hyphen-friulan
 	hyphen-hungarian hyphen-icelandic hyphen-irish hyphen-kurmanji
 	hyphen-latin hyphen-latvian hyphen-lithuanian hyphen-norwegian
@@ -26,9 +26,9 @@ TEXLIVE_DOC_PKGS="armtex babel-albanian babel-bosnian babel-breton
 	babel-norsk babel-occitan babel-piedmontese babel-romanian
 	babel-romansh babel-samin babel-scottish babel-slovenian
 	babel-swedish babel-turkish babel-welsh gloss-occitan hrlatex
-	hyphen-hungarian lithuanian lshort-dutch lshort-estonian
-	lshort-finnish lshort-slovenian lshort-turkish nevelok swebib
-	turkmen"
+	hulipsum hyphen-hungarian lithuanian lshort-dutch
+	lshort-estonian lshort-finnish lshort-slovenian lshort-turkish
+	nevelok swebib turkmen"
 
 inherit texlive
 

@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexrecommended-doc"
-VERSION=20171113
+VERSION=20180319
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="anysize beamer booktabs breqn caption cite cmap crop
@@ -9,7 +9,7 @@ TEXLIVE_DOC_PKGS="anysize beamer booktabs breqn caption cite cmap crop
 	mathspec mathtools mdwtools memoir metalogo microtype ms
 	ntgclass parskip pdfpages polyglossia powerdot psfrag rcs
 	sansmath section seminar sepnum setspace subfig textcase
-	thumbpdf typehtml ucharcat underscore unicode-math xcolor
-	xkeyval xltxtra xunicode"
+	thumbpdf translator typehtml ucharcat underscore unicode-math
+	xcolor xkeyval xltxtra xunicode"
 
 inherit texlive

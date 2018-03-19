@@ -1,15 +1,16 @@
 NAME="texlive-collection-mathscience-doc"
-VERSION=20171113
+VERSION=20180319
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="12many SIstyle SIunits alg algobox algorithm2e
-	algorithmicx algorithms amstex apxproof autobreak axodraw2
-	backnaur begriff binomexp biocon bitpattern bohr boldtensors
-	bosisio bpchem bropd bytefield calculation ccfonts chemarrow
-	chemcompounds chemcono chemexec chemformula chemgreek
-	chemmacros chemnum chemschemex chemstyle clrscode clrscode3e
-	commath complexity computational-complexity concmath concrete
-	conteq correctmathalign cryptocode delim delimseasy delimset
+	algorithmicx algorithms aligned-overset amstex apxproof
+	autobreak axodraw2 backnaur begriff binomexp biocon bitpattern
+	bohr boldtensors bosisio bpchem bropd bytefield calculation
+	ccfonts chemarrow chemcompounds chemcono chemexec chemformula
+	chemgreek chemmacros chemnum chemschemex chemsec chemstyle
+	clrscode clrscode3e commath complexity
+	computational-complexity concmath concrete conteq
+	correctmathalign cryptocode delim delimseasy delimset
 	diffcoeff digiconfigs dijkstra drawmatrix drawstack dyntree
 	ebproof econometrics eltex emf endiagram engtlc eqnarray
 	eqnnumwarn extarrows extpfeil faktor fnspe fouridx functan
@@ -17,13 +18,14 @@ TEXLIVE_DOC_PKGS="12many SIstyle SIunits alg algobox algorithm2e
 	hepnames hepparticles hepthesis hepunits interval ionumbers
 	isomath karnaugh karnaugh-map karnaughmap logicproof
 	longdivision lpform lplfitch lstbayes mathcomp mathpartir
-	mathpunctspace matlab-prettifier mattens mgltex mhchem mhequ
-	miller multiobjective mychemistry natded nath nuc nucleardata
-	objectz oplotsymbl ot-tableau oubraces perfectcut physics
-	prftree proba prooftrees pseudocode pygmentex pythonhighlight
-	rec-thy revquantum ribbonproofs rmathbr sasnrdisplay sciposter
-	sclang-prettifier scratchx sesamanuel sfg shuffle simpler-wick
-	simplewick siunitx skmath spalign stanli statex statex2
+	mathpunctspace mathfixs matlab-prettifier mattens mgltex
+	mhchem mhequ miller multiobjective mychemistry natded nath
+	nicematrix nuc nucleardata objectz oplotsymbl ot-tableau
+	oubraces perfectcut physics pm-isomath polexpr prftree proba
+	prooftrees pseudocode pythonhighlight rec-thy revquantum
+	ribbonproofs rmathbr sasnrdisplay sciposter sclang-prettifier
+	scratchx sesamanuel sfg shuffle simpler-wick simplewick
+	siunitx skmath spalign stanli statex statex2 statmath
 	steinmetz stmaryrd struktex substances subsupscripts susy
 	syllogism sympytexpackage synproof t-angles tablor tensor
 	tex-ewd textgreek textopo thmbox turnstile ulqda unitsdef venn

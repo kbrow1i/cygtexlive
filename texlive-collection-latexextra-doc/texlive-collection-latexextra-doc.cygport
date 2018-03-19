@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra-doc"
-VERSION=20171113
+VERSION=20180319
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
@@ -9,38 +9,40 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	alnumsec alterqcm altfont amsaddr animate anonchap answers
 	anyfontsize appendix appendixnumberbeamer apptools arcs
 	arrayjobx arraysort arydshln asciilist assignment assoccnt
-	attachfile aurl authoraftertitle authorindex autonum autopdf
-	avremu background bankstatement bashful basicarith bchart
-	beamer2thesis beameraudience beamercolorthemeowl
-	beamerdarkthemes beamerposter beamersubframe
-	beamertheme-cuerna beamertheme-detlevcm beamertheme-epyt
-	beamertheme-metropolis beamertheme-phnompenh
-	beamertheme-upenn-bc beamerthemenirma beton bewerbung bez123
-	bezos bhcexam bibletext bigfoot bigints biochemistry-colors
-	bizcard blindtext blkarray block bnumexpr boites bold-extra
+	attachfile aurl authoraftertitle authorarchive authorindex
+	autonum autopdf avremu background bankstatement bashful
+	basicarith bchart beamer2thesis beameraudience
+	beamercolorthemeowl beamerdarkthemes beamerposter
+	beamersubframe beamertheme-cuerna beamertheme-detlevcm
+	beamertheme-epyt beamertheme-metropolis beamertheme-phnompenh
+	beamertheme-saintpetersburg beamertheme-upenn-bc
+	beamerthemenirma beton bewerbung bez123 bezos bhcexam
+	bibletext bigfoot bigints biochemistry-colors bizcard
+	blindtext blkarray block blowup bnumexpr boites bold-extra
 	bookcover bookest booklet boolexpr bophook boxedminipage
 	boxedminipage2e boxhandler bracketkey braket breakurl bullcntr
 	bussproofs bxcalc bxdpx-beamer bxdvidriver bxenclose bxnewfont
-	bxpapersize bxpdfver calcage calctab calculator calrsfs cals
-	calxxxx-yyyy cancel canoniclayout capt-of captcont captdef
-	carbohydrates cases casyl catchfilebetweentags catechis
-	catoptions cbcoptic ccaption cclicenses cd cd-cover cdpbundl
-	cellspace censor changebar changelayout changepage changes
-	chappg chapterfolder cheatsheet chet chextras childdoc
-	chkfloat chletter chngcntr chronology circ classics classpack
-	clefval cleveref clipboard clock cloze cmdstring cmdtrack cmsd
-	cnltx cntformats cntperchap codedoc codepage codesection
-	collcell collectbox colordoc colorinfo coloring colorspace
-	colortab colorwav colorweb colourchange combelow combine comma
-	commado comment concepts concprog constants continue contour
-	contracard conv-xkv cooking cooking-units cool coollist
-	coolstr coolthms cooltooltips coordsys copyedit copyrightbox
-	coseoul counttexruns courseoutline coursepaper coverpage
-	cprotect crbox crossreference crossreftools csquotes
-	css-colors csvsimple cuisine currency currfile currvita cutwin
-	cv cv4tw cweb-latex cyber cybercic dashbox dashrule
-	dashundergaps dataref datatool dateiliste datenumber datetime
-	datetime2 datetime2-bahasai datetime2-basque datetime2-breton
+	bxpapersize bxpdfver bxtexlogo calcage calctab calculator
+	calrsfs cals calxxxx-yyyy cancel canoniclayout capt-of
+	captcont captdef carbohydrates cases casyl
+	catchfilebetweentags catechis catoptions cbcoptic ccaption
+	cclicenses cd cd-cover cdpbundl cellspace censor changebar
+	changelayout changepage changes chappg chapterfolder
+	cheatsheet chet chextras childdoc chkfloat chletter chngcntr
+	chronology circ classics classpack clefval cleveref clipboard
+	clock cloze cmdstring cmdtrack cmsd cnltx cntformats
+	cntperchap codedoc codepage codesection collcell collectbox
+	colordoc colorinfo coloring colorspace colortab colorwav
+	colorweb colourchange combelow combine comma commado comment
+	concepts concprog constants continue contour contracard
+	conv-xkv cooking cooking-units cool coollist coolstr coolthms
+	cooltooltips coordsys copyedit copyrightbox coseoul
+	counttexruns courseoutline coursepaper coverpage cprotect
+	crbox crossreference crossreftools csquotes css-colors
+	csvsimple cuisine currency currfile currvita cutwin cv cv4tw
+	cweb-latex cyber cybercic dashbox dashrule dashundergaps
+	dataref datatool dateiliste datenumber datetime datetime2
+	datetime2-bahasai datetime2-basque datetime2-breton
 	datetime2-bulgarian datetime2-catalan datetime2-croatian
 	datetime2-czech datetime2-danish datetime2-dutch
 	datetime2-en-fulltext datetime2-english datetime2-esperanto
@@ -70,14 +72,14 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	europasscv europecv everyhook everypage exam exam-n examdesign
 	examplep exceltex excludeonly exercise exercises exp-testopt
 	expdlist export exsheets exsol extract facsimile factura
-	fancylabel fancynum fancypar fancyslides fancytabs
-	fancytooltips fcolumn fetchcls ffslides fgruler fibeamer
-	fifo-stack figsize filecontents filecontentsdef filedate
-	fileinfo filemod fink finstrut fithesis fixcmex fixfoot fixme
-	fixmetodonotes fjodor flabels flacards flagderiv flashcards
-	flashmovie flipbook flippdf floatflt floatrow flowfram fmp
-	fmtcount fn2end fnbreak fncychap fncylab fnpara fnpct
-	fnumprint foilhtml fontaxes fonttable footmisc footmisx
+	fancyhandout fancylabel fancynum fancypar fancyslides
+	fancytabs fancytooltips fcolumn fetchcls ffslides fgruler
+	fibeamer fifo-stack figsize filecontents filecontentsdef
+	filedate fileinfo filemod fink finstrut fithesis fixcmex
+	fixfoot fixme fixmetodonotes fjodor flabels flacards flagderiv
+	flashcards flashmovie flipbook flippdf floatflt floatrow
+	flowfram fmp fmtcount fn2end fnbreak fncychap fncylab fnpara
+	fnpct fnumprint foilhtml fontaxes fonttable footmisc footmisx
 	footnotebackref footnotehyper footnoterange footnpag forarray
 	foreign forloop formlett forms16be formular fragments frame
 	framed frankenstein frege ftcap ftnxtra fullblck fullminipage
@@ -91,61 +93,62 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	glossaries-serbian glossaries-spanish gmdoc gmdoc-enhance
 	gmiflink gmutils gmverb graphbox graphicx-psmin graphicxbox
 	grayhints grfpaste grid grid-system gridset gridslides
-	guitlogo halloweenmath hackthefootline handout hang hanging
-	hardwrap harnon-cv harpoon hc he-she hhtensor histogr hitec
-	hletter hpsdiss hrefhide hvindex hypdvips hyper hypernat
-	hyperref-docsrc hyperxmp hyphenat idxcmds idxlayout iffont
-	ifmslide ifmtarg ifnextok ifoddpage ifplatform ifthenx iitem
-	image-gallery imakeidx import incgraph indextools inlinedef
-	inputtrc interactiveworkbook interfaces inversepath invoice
+	gridslides guitlogo halloweenmath hackthefootline handout hang
+	hanging hardwrap harnon-cv harpoon hc he-she hhtensor histogr
+	hitec hletter hpsdiss hrefhide hvindex hypdvips hyper hypernat
+	hyperxmp hyphenat idxcmds idxlayout iffont ifmslide ifmtarg
+	ifnextok ifoddpage ifplatform ifthenx iitem image-gallery
+	imakeidx import incgraph indextools inlinedef inputtrc
+	interactiveworkbook interfaces intopdf inversepath invoice
 	invoice2 iso iso10303 isodate isodoc isonums isopt isorot
 	isotope issuulinks iwhdp jlabels jslectureplanner jumplines
 	jvlisting kantlipsum kerntest keycommand keyfloat keyreader
 	keystroke keyval2e keyvaltable kix knowledge
 	koma-moderncvclassic koma-script-sfs komacv komacv-rg
-	ktv-texdata l3build labbook labels lastpackage lastpage
-	latex-tds latexdemo latexgit layouts lazylist lcd lcg leading
-	leaflet leftidx leipzig lengthconvert lettre lettrine lewis
-	lhelp libgreek limap linegoal linop lipsum lisp-on-tex listing
-	listlbls listliketab listofsymbols lkproof lmake locality
-	localloc logbox logical-markup-utils logpap longfbox
-	longfigure longnamefilelist loops lsc lstaddons lt3graph
-	ltablex ltabptch ltxdockit ltxindex ltxkeys ltxnew ltxtools
-	lua-check-hyphen luatodonotes macroswap magaz mailing
+	ktv-texdata l3build labbook labels labelschanged lastpackage
+	lastpage latex-tds latexdemo latexgit layouts lazylist lccaps
+	lcd lcg leading leaflet leftidx leipzig lengthconvert lettre
+	lettrine lewis lhelp libgreek limap linegoal linop lipsum
+	lisp-on-tex listing listlbls listliketab listofsymbols lkproof
+	lmake locality localloc logbox logical-markup-utils logpap
+	longfbox longfigure longnamefilelist loops lsc lstaddons
+	lt3graph ltablex ltabptch ltxdockit ltxindex ltxkeys ltxnew
+	ltxtools lua-check-hyphen luatodonotes macroswap magaz mailing
 	mailmerge makebarcode makebase makebox makecell makecirc
 	makecmds makedtx makeglos mandi manuscript marginfit marginfix
-	marginnote markdown mathalfa mathastext mathexam maybemath
-	mbenotes mcaption mceinleger mcexam mcite mciteplus mdframed
-	media9 medstarbeamer meetingmins memexsupp memory mensa-tex
-	menu menukeys method metre mfirstuc mftinc midpage minibox
-	minidocument minifp minipage-marginpar minitoc minorrevision
-	minted minutes mla-paper mlist mmap mnotes moderncv
-	moderntimeline modref modroman modular monofill moodle
-	moreenum morefloats morehype moresize moreverb morewrites
-	movie15 mparhack mpostinl msc msg mslapa mtgreek multenum
-	multiaudience multibbl multicap multidef multienv multiexpand
-	multilang multirow mversion mwe mycv mylatexformat nag
-	nameauth namespc ncclatex ncctools needspace newcommand
+	marginnote markdown mathalfa mathastext mathexam mathfam256
+	maybemath mbenotes mcaption mceinleger mcexam mcite mciteplus
+	mdframed media9 medstarbeamer meetingmins memexsupp memory
+	mensa-tex menu menukeys method metre mfirstuc mftinc midpage
+	minibox minidocument minifp minipage-marginpar minitoc
+	minorrevision minted minutes mla-paper mlist mmap mnotes
+	moderncv modernposter moderntimeline modref modroman modular
+	monofill moodle moreenum morefloats morehype moresize moreverb
+	morewrites movie15 mparhack mpostinl msc msg mslapa mtgreek
+	multenum multiaudience multibbl multicap multidef multienv
+	multiexpand multilang multirow mversion mwe mycv mylatexformat
+	nag nameauth namespc ncclatex ncctools needspace newcommand
 	newenviron newfile newlfm newspaper newunicodechar newvbtm
-	newverbs nfssext-cfr nicefilelist niceframe nicetext nlctdoc
-	noconflict noindentafter noitcrul nolbreaks nomencl nomentbl
-	nonfloat nonumonpart nopageno normalcolor notes notespages
-	notestex notoccite nowidow nox ntheorem numberedblock numname
-	numprint numspell ocg-p ocgx ocgx2 ocr-latex octavo oldstyle
-	onlyamsmath opcit optidef optional options outline outliner
-	outlines outlining overlays overpic pagecolor pagecont
-	pagenote pagerange pageslts paper papercdcase papermas
-	papertex paracol parades paralist paresse parnotes parselines
-	pas-cours pas-cv pas-tableur patchcmd pauldoc pawpict pax pbox
-	pbsheet pdf14 pdfcomment pdfcprot pdfmarginpar pdfpagediff
-	pdfreview pdfscreen pdfslide pdfsync pdfwin pdfx pecha perltex
-	permute petiteannonce phffullpagefigure phfnote phfparen
-	phfqit phfquotetext phfsvnwatermark phfthm philex phonenumbers
-	photo piff pkgloader placeins plantslabels plates plweb
-	polynom polynomial polytable postcards poster-mac ppr-prv
-	preprint pressrelease prettyref printlen probsoln program
-	progress progressbar proofread properties prosper protex
-	protocol psfragx pstool pstring pxgreeks python qcm qstest
+	newverbs nfssext-cfr nicefilelist niceframe nicetext
+	nidanfloat nlctdoc noconflict noindentafter noitcrul nolbreaks
+	nomencl nomentbl nonfloat nonumonpart nopageno normalcolor
+	notes notespages notestex notoccite nowidow nox ntheorem
+	numberedblock numname numprint numspell ocg-p ocgx ocgx2
+	ocr-latex octavo oldstyle onlyamsmath opcit optidef optional
+	options outline outliner outlines outlining overlays overpic
+	pagecolor pagecont pagenote pagerange pageslts paper
+	papercdcase papermas papertex paracol parades paralist paresse
+	parnotes parselines pas-cours pas-cv pas-tableur patchcmd
+	pauldoc pawpict pax pbox pbsheet pdf14 pdfcomment pdfcprot
+	pdfmarginpar pdfpagediff pdfprivacy pdfreview pdfscreen
+	pdfslide pdfsync pdfwin pdfx pecha perltex permute
+	petiteannonce phffullpagefigure phfnote phfparen phfqit
+	phfquotetext phfsvnwatermark phfthm philex phonenumbers photo
+	piff pkgloader placeins plantslabels plates plweb polynom
+	polynomial polytable postcards poster-mac ppr-prv preprint
+	pressrelease prettyref printlen probsoln program progress
+	progressbar proofread properties prosper protex protocol
+	psfragx pstool pstring pxgreeks pygmentex python qcm qstest
 	qsymbols quicktype quotchap quoting quotmark ran_toks randtext
 	rccol rcs-multi rcsinfo readarray realboxes recipe recipebook
 	recipecard rectopma refcheck refenums reflectgraphics refman
@@ -154,17 +157,17 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	robustindex romanbar romanbarpagenumber romanneg romannum
 	rotfloat rotpages roundbox rterface rtkinenc rulercompass
 	rvwrite sauerj savefnmark savetrees scale scalebar scalerel
-	scanpages scrlttr2copy sdrt secdot sectionbox sectsty seealso
-	selectp semantic semantic-markup semioneside semproc
-	sepfootnotes seqsplit sesstime sf298 sffms shadethm shadow
-	shadowtext shapepar shdoc shipunov shorttoc show2e
+	scanpages scrlttr2copy sdrt secdot sectionbox sectionbreak
+	sectsty seealso selectp semantic semantic-markup semioneside
+	semproc sepfootnotes seqsplit sesstime sf298 sffms shadethm
+	shadow shadowtext shapepar shdoc shipunov shorttoc show2e
 	showcharinbox showdim showexpl showhyphens showlabels sidecap
 	sidenotes silence simplecd simplecv simpleinvoice sitem skb
 	skdoc skeycommand skeyval skrapport slantsc smalltableof
 	smartunits smartref snapshot snotez soul spark-otf sparklines
 	sphack splitindex spot spotcolor spreadtab spverbatim
 	srbook-mem srcltx sseq sslides stackengine standalone
-	statistik stdclsdv stdpage stex storebox storecmd
+	statistik stdclsdv stealcaps stdpage stex storebox storecmd
 	stringstrings sttools stubs studenthandouts subdepth subeqn
 	subeqnarray subfigmat subfigure subfiles subfloat
 	substitutefont substr supertabular svg svgcolor svn svn-multi
@@ -174,25 +177,26 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	tabularew tabulary tagging tagpair talk tamefloats tasks
 	tcldoc tcolorbox tdclock technics ted templatetools termcal
 	termlist testhyphens testidx tex-label texmate texments
-	texpower texshade texvc textfit textmerg textpos theoremref
-	thinsp thmtools threadcol threeparttable threeparttablex thumb
-	thumbs thumby ticket titlecaps titlepic titleref titlesec
-	titling tocbibind tocdata tocloft tocvsec2 todo todonotes
-	tokenizer toolbox topfloat totcount totpages translations
-	trfsigns trimspaces trivfloat trsym truncate tucv turnthepage
-	twoinone twoup txgreeks type1cm typed-checklist typeface
-	typoaid typogrid uassign ucs uebungsblatt umoline underlin
-	underoverlap undolabl units unravel upmethodology upquote uri
-	ushort uspace uwmslide variablelm varindex varsfromjobname
-	varwidth vdmlisting verbasef verbatimbox verbatimcopy verbdef
-	verbments version versions versonotes vertbars vgrid vhistory
-	vmargin volumes vpe vruler vwcol wallcalendar wallpaper
-	warning warpcol was widetable williams withargs wordcount
-	wordlike wrapfig wtref xargs xassoccnt xcntperchap
-	xcolor-material xcolor-solarized xcomment xdoc xellipsis xfor
-	xhfill xifthen xint xltabular xmpincl xnewcommand xoptarg
-	xpatch xpeek xprintlen xpunctuate xsavebox xsim xstring xtab
-	xwatermark xytree yafoot yaletter yagusylo ycbook ydoc yplan
-	zebra-goodies zed-csp ziffer zwgetfdate zwpagelayout"
+	texpower texshade texvc textfit textmerg textpos textualicomma
+	theoremref thinsp thmtools threadcol threeparttable
+	threeparttablex thumb thumbs thumby ticket titlecaps titlepic
+	titleref titlesec titling tocbibind tocdata tocloft tocvsec2
+	todo todonotes tokenizer toolbox topfloat totcount totpages
+	translations trfsigns trimspaces trivfloat trsym truncate tucv
+	turnthepage twoinone twoup txgreeks type1cm typed-checklist
+	typeface typoaid typogrid uassign ucs uebungsblatt umoline
+	underlin underoverlap undolabl units unravel upmethodology
+	upquote uri ushort uspace uwmslide variablelm varindex
+	varsfromjobname varwidth vdmlisting verbasef verbatimbox
+	verbatimcopy verbdef verbments version versions versonotes
+	vertbars vgrid vhistory vmargin volumes vpe vruler vwcol
+	wallcalendar wallpaper warning warpcol was widetable williams
+	withargs wordcount wordlike wrapfig wtref xargs xassoccnt
+	xcntperchap xcolor-material xcolor-solarized xcomment xdoc
+	xellipsis xfor xhfill xifthen xint xltabular xmpincl
+	xnewcommand xoptarg xpatch xpeek xprintlen xpunctuate xsavebox
+	xsim xstring xtab xurl xwatermark xytree yafoot yaletter
+	yagusylo ycbook ydoc yplan zebra-goodies zed-csp ziffer
+	zwgetfdate zwpagelayout"
 
 inherit texlive

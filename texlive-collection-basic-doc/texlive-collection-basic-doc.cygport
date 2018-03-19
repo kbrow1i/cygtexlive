@@ -1,5 +1,5 @@
 NAME="texlive-collection-basic-doc"
-VERSION=20170520
+VERSION=20180319
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="amsfonts bibtex cm dvipdfmx dvips enctex etex

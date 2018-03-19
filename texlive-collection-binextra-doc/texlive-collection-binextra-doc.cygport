@@ -1,13 +1,13 @@
 NAME="texlive-collection-binextra-doc"
-VERSION=20171113
+VERSION=20180319
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="a2ping adhocfilelist arara bibtex8 bibtexu bundledoc
-	checklistings ctan_chk chktex ctanify ctanupload ctie cweb
-	de-macro detex dtl dtxgen dvi2tty dviasm dvicopy dvidvi
-	dviinfox dviljk dvipng dvipos dvisvgm findhyph fragmaster
-	hook-pre-commit-pkg installfont lacheck latex-git-log
-	latex-papersize latex2man latex2nemeth latexdiff
+	checklistings ctan_chk chktex ctan-o-mat ctanify ctanupload
+	ctie cweb de-macro detex dtl dtxgen dvi2tty dviasm dvicopy
+	dvidvi dviinfox dviljk dvipng dvipos dvisvgm findhyph
+	fragmaster hook-pre-commit-pkg installfont lacheck
+	latex-git-log latex-papersize latex2man latex2nemeth latexdiff
 	latexfileversion latexindent latexmk latexpand listings-ext
 	ltxfileinfo ltximg make4ht match_parens mkjobtexmf patgen
 	pdfbook2 pdfcrop pdfjam pdflatexpicscale pdftools pdfxup

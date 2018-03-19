@@ -1,5 +1,5 @@
 NAME="texlive-collection-context"
-VERSION=20170520
+VERSION=20180319
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="jmn context-account context-algorithmic
@@ -8,11 +8,11 @@ TEXLIVE_TEXMF_PKGS="jmn context-account context-algorithmic
 	context-construction-plan context-cyrillicnumbers
 	context-degrade context-fancybreak context-filter
 	context-french context-fullpage context-gantt context-gnuplot
-	context-inifile context-layout context-letter context-lettrine
-	context-mathsets context-rst context-ruby context-simplefonts
-	context-simpleslides context-title context-transliterator
-	context-typearea context-typescripts context-vim
-	context-visualcounter"
+	context-handlecsv context-inifile context-layout
+	context-letter context-lettrine context-mathsets context-rst
+	context-ruby context-simplefonts context-simpleslides
+	context-title context-transliterator context-typearea
+	context-typescripts context-vim context-visualcounter"
 
 TEXLIVE_ARCH_PKGS="context"
 

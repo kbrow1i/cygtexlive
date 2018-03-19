@@ -1,5 +1,5 @@
 NAME="texlive-collection-langenglish"
-VERSION=20171113
+VERSION=20180319
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="FAQ-en MemoirChapStyles Type1fonts amscls-doc
@@ -13,8 +13,8 @@ TEXLIVE_DOC_PKGS="FAQ-en MemoirChapStyles Type1fonts amscls-doc
 	latexcourse-rug latexfileinfo-pkgs lshort-english macros2e
 	math-e math-into-latex-4 maths-symbols memdesign
 	metafont-beginners metapost-examples patgen2-tutorial
-	pictexsum plain-doc presentations-en simplified-latex
-	svg-inkscape tabulars-e tamethebeast tds
+	pictexsum plain-doc presentations-en short-math-guide
+	simplified-latex svg-inkscape tabulars-e tamethebeast tds
 	tex-font-errors-cheatsheet tex-overview tex-refs texbytopic
 	titlepages tlc2 undergradmath visualfaq webguide xetexref"
 

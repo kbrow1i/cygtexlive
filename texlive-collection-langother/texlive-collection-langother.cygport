@@ -1,5 +1,5 @@
 NAME="texlive-collection-langother"
-VERSION=20171113
+VERSION=20180319
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="amsldoc-vn aramaic-serto babel-azerbaijani
@@ -11,8 +11,8 @@ TEXLIVE_TEXMF_PKGS="amsldoc-vn aramaic-serto babel-azerbaijani
 	hyphen-indic hyphen-indonesian hyphen-interlingua
 	hyphen-sanskrit hyphen-thai hyphen-turkmen latex-mr
 	latexbangla lshort-thai lshort-vietnamese ntheorem-vn padauk
-	sanskrit sanskrit-t1 thaienum velthuis vntex wnri wnri-latex
-	xetex-devanagari"
+	sanskrit sanskrit-t1 thaienum thaispec velthuis vntex wnri
+	wnri-latex xetex-devanagari"
 
 TEXLIVE_ARCH_PKGS="ebong"
 
@@ -22,7 +22,7 @@ TEXLIVE_DOC_PKGS="amsldoc-vn aramaic-serto babel-azerbaijani
 	babel-vietnamese bangtex bengali burmese cjhebrew ctib ebong
 	ethiop ethiop-t1 fc fonts-tlwg latex-mr latexbangla
 	lshort-thai lshort-vietnamese ntheorem-vn padauk sanskrit
-	sanskrit-t1 thaienum velthuis vntex wnri wnri-latex
+	sanskrit-t1 thaienum thaispec velthuis vntex wnri wnri-latex
 	xetex-devanagari"
 
 inherit texlive

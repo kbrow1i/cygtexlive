@@ -1,5 +1,5 @@
 NAME="texlive-collection-publishers-doc"
-VERSION=20171113
+VERSION=20180319
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="IEEEconf IEEEtran aastex abnt abntex2 acmart acmconf
@@ -15,22 +15,23 @@ TEXLIVE_DOC_PKGS="IEEEconf IEEEtran aastex abnt abntex2 acmart acmconf
 	h2020proposal hagenberg-thesis har2nat hecthese hithesis
 	hobete hustthesis icsv ieeepes ijmart ijsra imac imtekda
 	iscram jacow jmlr jpsj kdgdocs kluwer ksp-thesis ku-template
-	langsci limecv lion-msc lni lps matc3 matc3mem mcmthesis
-	mentis mnras msu-thesis mucproc mugsthesis musuos muthesis
-	mynsfc nature navydocs nddiss ndsu-thesis novel nwejm nih
-	nihbiosketch nostarch nrc onrannual opteng philosophersimprint
-	pittetd pkuthss powerdot-FUBerlin pracjourn procIAGssymp
-	proposal psu-thesis ptptex resumecls resphilosophica revtex
-	revtex4 rutitlepage ryethesis sageep sapthesis scrjrnl schule
-	sduthesis seuthesis seuthesix sphdthesis soton spie sr-vorl
-	stellenbosch suftesi sugconf tabriz-thesis thesis-ekf
-	thesis-titlepage-fhac thuthesis toptesi tudscr tugboat
-	tugboat-plain turabian tui uaclasses uafthesis uantwerpendocs
-	ucbthesis ucdavisthesis ucthesis uestcthesis uhhassignment
-	uiucredborder uiucthesis ulthese umbclegislation umich-thesis
-	umthesis unamthesis unitn-bimrep unamth-template unswcover
-	uothesis urcls uowthesis uowthesistitlepage uspatent ut-thesis
-	uwthesis vancouver xduthesis wsemclassic xcookybooky yathesis
-	york-thesis"
+	langsci limecv lion-msc llncsconf lni lps matc3 matc3mem
+	mcmthesis mentis mnras msu-thesis mucproc mugsthesis musuos
+	muthesis mynsfc nature navydocs nddiss ndsu-thesis novel nwejm
+	nih nihbiosketch nostarch nrc onrannual opteng
+	philosophersimprint pittetd pkuthss powerdot-FUBerlin
+	pracjourn procIAGssymp proposal psu-thesis ptptex resumecls
+	resphilosophica revtex revtex4 rutitlepage ryethesis sageep
+	sapthesis scrjrnl schule scientific-thesis-cover sduthesis
+	seuthesis seuthesix sphdthesis soton spie sr-vorl stellenbosch
+	suftesi sugconf tabriz-thesis thesis-ekf thesis-gwu
+	thesis-titlepage-fhac thuthesis timbreicmc toptesi tudscr
+	tugboat tugboat-plain turabian tui uaclasses uafthesis
+	uantwerpendocs ucbthesis ucdavisthesis ucthesis uestcthesis
+	uhhassignment uiucredborder uiucthesis ulthese umbclegislation
+	umich-thesis umthesis unamthesis unitn-bimrep univie-ling
+	unamth-template unswcover uothesis urcls uowthesis
+	uowthesistitlepage uspatent ut-thesis uwthesis vancouver
+	xduthesis wsemclassic xcookybooky yathesis york-thesis"
 
 inherit texlive
