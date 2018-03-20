@@ -11,7 +11,7 @@ TEXLIVE_DOC_PKGS="Asana-Math academicons accanthis adforn adfsymbols
 	boisik bookhands boondox braille brushscr cabin caladea
 	calligra calligra-type1 cantarell carlito carolmin-ps ccicons
 	cfr-initials cfr-lm cherokee chivo cinzel clearsans cm-lgc
-	cm-mf-extra-bold cm-unicode cmbright cmexb cmll cmpica cmsrb
+	 cm-unicode cmbright cmexb cmll cmpica cmsrb
 	cmtiup cochineal coelacanth comfortaa comicneue concmath-fonts
 	cookingsymbols cormorantgaramond countriesofeurope
 	courier-scaled crimson cryst cyklop dantelogo dejavu
