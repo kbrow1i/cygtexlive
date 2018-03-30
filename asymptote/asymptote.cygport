@@ -22,7 +22,7 @@ DEPEND="pkgconfig(fftw3)
 	texlive-collection-fontsrecommended
 	texlive-collection-genericrecommended
 	texlive-collection-latexrecommended
-	texlive-collection-plainextra
+	texlive-collection-plaingeneric
 	vim
 "
 
