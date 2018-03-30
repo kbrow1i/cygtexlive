@@ -20,7 +20,6 @@ DEPEND="pkgconfig(fftw3)
 	libglut-devel
 	texinfo-tex
 	texlive-collection-fontsrecommended
-	texlive-collection-genericrecommended
 	texlive-collection-latexrecommended
 	texlive-collection-plaingeneric
 	vim
