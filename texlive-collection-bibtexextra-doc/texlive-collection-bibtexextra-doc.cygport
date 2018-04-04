@@ -1,5 +1,5 @@
 NAME="texlive-collection-bibtexextra-doc"
-VERSION=20180319
+VERSION=20180404
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="amsrefs apacite archaeologie besjournals bestpapers
@@ -8,8 +8,8 @@ TEXLIVE_DOC_PKGS="amsrefs apacite archaeologie besjournals bestpapers
 	biblatex-arthistory-bonn biblatex-bookinarticle
 	biblatex-bookinother biblatex-bwl biblatex-caspervector
 	biblatex-chem biblatex-chicago biblatex-claves biblatex-dw
-	biblatex-enc biblatex-fiwi biblatex-gb7714-2015 biblatex-gost
-	biblatex-historian biblatex-ieee biblatex-ijsra
+	biblatex-enc biblatex-ext biblatex-fiwi biblatex-gb7714-2015
+	biblatex-gost biblatex-historian biblatex-ieee biblatex-ijsra
 	biblatex-iso690 biblatex-juradiss biblatex-lni
 	biblatex-luh-ipw biblatex-manuscripts-philology biblatex-mla
 	biblatex-morenames biblatex-multiple-dm biblatex-musuos
@@ -23,9 +23,9 @@ TEXLIVE_DOC_PKGS="amsrefs apacite archaeologie besjournals bestpapers
 	bibtopicprefix bibunits biolett-bst bookdb breakcites cell
 	chbibref chembst chicago-annote chscite citeall collref
 	crossrefware custom-bib din1505 dk-bib doipubmed ecobiblatex
-	economic figbib footbib francais-bst geschichtsfrkl harvard
-	harvmac historische-zeitschrift ietfbibs ijqc inlinebib
-	iopart-num jneurosci jurabib ltb2bib listbib logreq
+	economic figbib footbib francais-bst gbt7714 geschichtsfrkl
+	harvard harvmac historische-zeitschrift ietfbibs ijqc
+	inlinebib iopart-num jneurosci jurabib ltb2bib listbib logreq
 	luabibentry margbib multibib multibibliography munich nmbib
 	notes2bib oscola perception rsc showtags sort-by-letters
 	splitbib turabian-formatting uni-wtal-ger uni-wtal-lin urlbst

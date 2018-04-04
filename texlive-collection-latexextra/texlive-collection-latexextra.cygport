@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra"
-VERSION=20180319
+VERSION=20180404
 RELEASE=1
 
 # preview is now packaged as the preview-latex subpackage of emacs-auctex.
@@ -72,9 +72,9 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	eqell eqlist eqnalign eqname eqparbox errata esami esdiff
 	esint esint-type1 etaremune etextools etoc eukdate eulerpx
 	europasscv europecv everyhook everypage exam exam-n examdesign
-	example examplep excludeonly exercise exercises exp-testopt
-	expdlist export exsheets exsol extract facsimile factura
-	fancyhandout fancylabel fancynum fancypar fancyslides
+	example examplep excludeonly exercise exercisebank exercises
+	exp-testopt expdlist export exsheets exsol extract facsimile
+	factura fancyhandout fancylabel fancynum fancypar fancyslides
 	fancytabs fancytooltips fcolumn fetchcls ffslides fgruler
 	fibeamer fifo-stack figsize filecontents filecontentsdef
 	filedate fileinfo filemod fink finstrut fithesis fixcmex
@@ -95,37 +95,38 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	glossaries-serbian glossaries-spanish gmdoc gmdoc-enhance
 	gmiflink gmutils gmverb graphbox graphicx-psmin graphicxbox
 	grayhints grfpaste grid grid-system gridset gridslides
-	gridslides guitlogo halloweenmath hackthefootline handout hang
-	hanging hardwrap harnon-cv harpoon hc he-she hhtensor histogr
-	hitec hletter hpsdiss hrefhide hvindex hypdvips hyper hypernat
-	hyperxmp hyphenat idxcmds idxlayout iffont ifmslide ifmtarg
-	ifnextok ifoddpage ifplatform ifthenx iitem image-gallery
-	imakeidx import incgraph indextools inlinedef inputtrc
-	interactiveworkbook interfaces intopdf inversepath invoice
-	invoice2 iso iso10303 isodate isodoc isonums isopt isorot
-	isotope issuulinks iwhdp jlabels jslectureplanner jumplines
-	jvlisting kantlipsum kerntest keycommand keyfloat keyreader
-	keystroke keyval2e keyvaltable kix knowledge
-	koma-moderncvclassic koma-script-sfs komacv komacv-rg
-	ktv-texdata l3build labbook labels labelschanged lastpackage
-	lastpage latex-tds latexdemo latexgit layouts lazylist lccaps
-	lcd lcg leading leaflet leftidx leipzig lengthconvert lettre
-	lettrine lewis lhelp libgreek limap linegoal linop lipsum
-	lisp-on-tex listing listlbls listliketab listofsymbols lkproof
-	lmake locality localloc logbox logical-markup-utils logpap
-	longfbox longfigure longnamefilelist loops lsc lstaddons
-	lt3graph ltablex ltabptch ltxdockit ltxindex ltxkeys ltxnew
-	ltxtools lua-check-hyphen luatodonotes macroswap magaz mailing
-	mailmerge makebarcode makebase makebox makecell makecirc
-	makecmds makeglos mandi manfnt manuscript marginfit marginfix
-	marginnote markdown mathalfa mathastext mathexam mathfam256
-	maybemath mbenotes mcaption mceinleger mcexam mcite mciteplus
-	mdframed media9 medstarbeamer meetingmins memexsupp memory
-	mensa-tex menu menukeys method metre mfirstuc mftinc midpage
-	minibox minidocument minifp minipage-marginpar minitoc
-	minorrevision minted minutes mla-paper mlist mmap mnotes
-	moderncv modernposter moderntimeline modref modroman modular
-	monofill moodle moreenum morefloats morehype moresize moreverb
+	gridslides guitlogo halloweenmath hackthefootline handin
+	handout hang hanging hardwrap harnon-cv harpoon hc he-she
+	hhtensor histogr hitec hletter hpsdiss hrefhide hvindex
+	hypdvips hyper hypernat hyperxmp hyphenat idxcmds idxlayout
+	iffont ifmslide ifmtarg ifnextok ifoddpage ifplatform ifthenx
+	iitem image-gallery imakeidx import incgraph indextools
+	inlinedef inputtrc interactiveworkbook interfaces intopdf
+	inversepath invoice invoice2 iso iso10303 isodate isodoc
+	isonums isopt isorot isotope issuulinks iwhdp jlabels
+	jslectureplanner jumplines jvlisting kantlipsum kerntest
+	keycommand keyfloat keyreader keystroke keyval2e keyvaltable
+	kix knowledge koma-moderncvclassic koma-script-sfs komacv
+	komacv-rg ktv-texdata l3build labbook labels labelschanged
+	lastpackage lastpage latex-tds latexdemo latexgit layouts
+	lazylist lccaps lcd lcg leading leaflet leftidx leipzig
+	lengthconvert lettre lettrine lewis lhelp libgreek limap
+	linegoal linop lipsum lisp-on-tex listing listlbls listliketab
+	listofsymbols lkproof lmake locality localloc logbox
+	logical-markup-utils logpap longfbox longfigure
+	longnamefilelist loops lsc lstaddons lt3graph ltablex ltabptch
+	ltxdockit ltxindex ltxkeys ltxnew ltxtools lua-check-hyphen
+	luatodonotes macroswap magaz mailing mailmerge makebarcode
+	makebase makebox makecell makecirc makecmds makeglos mandi
+	manfnt manuscript marginfit marginfix marginnote markdown
+	mathalfa mathastext mathexam mathfam256 maybemath mbenotes
+	mcaption mceinleger mcexam mcite mciteplus mdframed media9
+	medstarbeamer meetingmins memexsupp memory mensa-tex menu
+	menukeys method metre mfirstuc mftinc midpage minibox
+	minidocument minifp minipage-marginpar minitoc minorrevision
+	minted minutes mla-paper mlist mmap mnotes moderncv
+	modernposter moderntimeline modref modroman modular monofill
+	moodle moreenum morefloats morehype moresize moreverb
 	morewrites movie15 mparhack mpostinl msc msg mslapa mtgreek
 	multenum multiaudience multibbl multicap multidef multienv
 	multiexpand multilang multirow mversion mwe mycv mylatexformat

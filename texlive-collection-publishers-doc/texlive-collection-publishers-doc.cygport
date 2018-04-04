@@ -1,5 +1,5 @@
 NAME="texlive-collection-publishers-doc"
-VERSION=20180319
+VERSION=20180404
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="IEEEconf IEEEtran aastex abnt abntex2 acmart acmconf
@@ -25,12 +25,12 @@ TEXLIVE_DOC_PKGS="IEEEconf IEEEtran aastex abnt abntex2 acmart acmconf
 	sapthesis scrjrnl schule scientific-thesis-cover sduthesis
 	seuthesis seuthesix sphdthesis soton spie sr-vorl stellenbosch
 	suftesi sugconf tabriz-thesis thesis-ekf thesis-gwu
-	thesis-titlepage-fhac thuthesis timbreicmc toptesi tudscr
-	tugboat tugboat-plain turabian tui uaclasses uafthesis
-	uantwerpendocs ucbthesis ucdavisthesis ucthesis uestcthesis
-	uhhassignment uiucredborder uiucthesis ulthese umbclegislation
-	umich-thesis umthesis unamthesis unitn-bimrep univie-ling
-	unamth-template unswcover uothesis urcls uowthesis
+	thesis-titlepage-fhac thucoursework thuthesis timbreicmc
+	toptesi tudscr tugboat tugboat-plain turabian tui uaclasses
+	uafthesis uantwerpendocs ucbthesis ucdavisthesis ucthesis
+	uestcthesis uhhassignment uiucredborder uiucthesis ulthese
+	umbclegislation umich-thesis umthesis unamthesis unitn-bimrep
+	univie-ling unamth-template unswcover uothesis urcls uowthesis
 	uowthesistitlepage uspatent ut-thesis uwthesis vancouver
 	xduthesis wsemclassic xcookybooky yathesis york-thesis"
 

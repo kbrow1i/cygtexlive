@@ -1,17 +1,17 @@
 NAME="texlive-collection-context-doc"
-VERSION=20180319
+VERSION=20180404
 RELEASE=1
 
-TEXLIVE_DOC_PKGS="context context-account context-animation
-	context-annotation context-bnf context-chromato context-cmscbf
-	context-cmttbf context-construction-plan
-	context-cyrillicnumbers context-degrade context-fancybreak
-	context-filter context-french context-fullpage context-gantt
-	context-gnuplot context-handlecsv context-inifile
-	context-layout context-letter context-lettrine
-	context-mathsets context-rst context-ruby context-simplefonts
-	context-simpleslides context-title context-transliterator
-	context-typearea context-typescripts context-vim
-	context-visualcounter"
+TEXLIVE_DOC_PKGS="context context-notes-zh-cn npp-for-context
+	context-account context-animation context-annotation
+	context-bnf context-chromato context-cmscbf context-cmttbf
+	context-construction-plan context-cyrillicnumbers
+	context-degrade context-fancybreak context-filter
+	context-french context-fullpage context-gantt context-gnuplot
+	context-handlecsv context-inifile context-layout
+	context-letter context-lettrine context-mathsets context-rst
+	context-ruby context-simplefonts context-simpleslides
+	context-title context-transliterator context-typearea
+	context-typescripts context-vim context-visualcounter"
 
 inherit texlive

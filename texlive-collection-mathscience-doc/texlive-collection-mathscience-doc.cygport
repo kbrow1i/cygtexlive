@@ -1,5 +1,5 @@
 NAME="texlive-collection-mathscience-doc"
-VERSION=20180319
+VERSION=20180404
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="12many SIstyle SIunits alg algobox algorithm2e
@@ -16,7 +16,7 @@ TEXLIVE_DOC_PKGS="12many SIstyle SIunits alg algobox algorithm2e
 	eqnnumwarn extarrows extpfeil faktor fnspe fouridx functan
 	galois gastex gene-logic ghsystem gotoh grundgesetze gu hep
 	hepnames hepparticles hepthesis hepunits interval ionumbers
-	isomath karnaugh karnaugh-map karnaughmap logicproof
+	isomath jkmath karnaugh karnaugh-map karnaughmap logicproof
 	longdivision lpform lplfitch lstbayes mathcomp mathpartir
 	mathpunctspace mathfixs matlab-prettifier mattens mgltex
 	mhchem mhequ miller multiobjective mychemistry natded nath
