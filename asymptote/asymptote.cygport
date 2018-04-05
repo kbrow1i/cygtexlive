@@ -10,6 +10,7 @@ SRC_URI="mirror://sourceforge/asymptote/${P}.src.tgz"
 
 PATCH_URI="mirror://portage/media-gfx/${PN}/files/${PN}-2.15-info.patch"
 PATCH_URI+=" asymptote-2.16-pdfviewer.patch"
+PATCH_URI+=" asymptote-2.42-usleep.patch"
 
 # Need the texlive packages for docs.
 DEPEND="pkgconfig(fftw3)
