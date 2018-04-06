@@ -31,8 +31,6 @@ MAKEOPTS+=" -j1"
 
 DIFF_EXCLUDES="asy.list *.log run*.cc *.dvi"
 
-# --disable-gc \
-
 src_compile() {
 	cd ${S}
 	cygautoreconf
