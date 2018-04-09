@@ -18,6 +18,7 @@ DEPEND="pkgconfig(fftw3)
 	pkgconfig(glu)
 	pkgconfig(gsl)
 	pkgconfig(ncurses)
+	pkgconfig(osmesa)
 	libgc-devel
 	libglut-devel
 	texinfo-tex
