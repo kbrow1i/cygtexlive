@@ -1,5 +1,5 @@
 NAME="texlive-collection-bibtexextra"
-VERSION=20180404
+VERSION=20180412
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="aichej ajl amsrefs apacite apalike2 archaeologie
@@ -8,21 +8,22 @@ TEXLIVE_TEXMF_PKGS="aichej ajl amsrefs apacite apalike2 archaeologie
 	biblatex-archaeology biblatex-arthistory-bonn
 	biblatex-bookinarticle biblatex-bookinother biblatex-bwl
 	biblatex-caspervector biblatex-chem biblatex-chicago
-	biblatex-claves biblatex-dw biblatex-enc biblatex-ext biblatex-fiwi
-	biblatex-gb7714-2015 biblatex-gost biblatex-historian
-	biblatex-ieee biblatex-ijsra biblatex-iso690 biblatex-juradiss
-	biblatex-lni biblatex-luh-ipw biblatex-manuscripts-philology
-	biblatex-mla biblatex-morenames biblatex-multiple-dm
-	biblatex-musuos biblatex-nature biblatex-nejm
-	biblatex-nottsclassic biblatex-opcit-booktitle biblatex-oxref
-	biblatex-philosophy biblatex-phys biblatex-publist
-	biblatex-realauthor biblatex-sbl biblatex-science
-	biblatex-shortfields biblatex-source-division
-	biblatex-subseries biblatex-swiss-legal biblatex-trad
+	biblatex-claves biblatex-dw biblatex-enc biblatex-ext
+	biblatex-fiwi biblatex-gb7714-2015 biblatex-gost
+	biblatex-historian biblatex-ieee biblatex-ijsra
+	biblatex-iso690 biblatex-juradiss biblatex-lni
+	biblatex-luh-ipw biblatex-manuscripts-philology biblatex-mla
+	biblatex-morenames biblatex-multiple-dm biblatex-musuos
+	biblatex-nature biblatex-nejm biblatex-nottsclassic
+	biblatex-opcit-booktitle biblatex-oxref biblatex-philosophy
+	biblatex-phys biblatex-publist biblatex-realauthor
+	biblatex-sbl biblatex-science biblatex-shortfields
+	biblatex-source-division biblatex-subseries
+	biblatex-swiss-legal biblatex-trad
 	biblatex-true-citepages-omit biblist bibtexperllibs bibtopic
 	bibtopicprefix bibunits biolett-bst bookdb breakcites cell
 	chbibref chembst chicago chicago-annote chscite citeall
-	collref compactbib custom-bib din1505 dk-bib doipubmed
+	citeref collref compactbib custom-bib din1505 dk-bib doipubmed
 	ecobiblatex economic fbs figbib footbib francais-bst gbt7714
 	geschichtsfrkl harvard harvmac historische-zeitschrift
 	ietfbibs ijqc inlinebib iopart-num jneurosci jurabib ksfh_nat

@@ -1,5 +1,5 @@
 NAME="texlive-collection-mathscience"
-VERSION=20180404
+VERSION=20180412
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="12many SIstyle SIunits alg algobox algorithm2e
@@ -26,10 +26,10 @@ TEXLIVE_TEXMF_PKGS="12many SIstyle SIunits alg algobox algorithm2e
 	ribbonproofs rmathbr sasnrdisplay sciposter sclang-prettifier
 	scratchx sesamanuel sfg shuffle simpler-wick simplewick
 	siunitx skmath spalign stanli statex statex2 statmath
-	steinmetz stmaryrd struktex substances subsupscripts susy
-	syllogism sympytexpackage synproof t-angles tablor tensor
-	tex-ewd textgreek textopo thmbox turnstile ulqda unitsdef venn
-	witharrows xymtex yhmath youngtab ytableau"
+	steinmetz stmaryrd structmech struktex substances
+	subsupscripts susy syllogism sympytexpackage synproof t-angles
+	tablor tensor tex-ewd textgreek textopo thmbox turnstile ulqda
+	unitsdef venn witharrows xymtex yhmath youngtab ytableau"
 
 TEXLIVE_ARCH_PKGS="amstex pygmentex ulqda"
 
