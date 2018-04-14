@@ -1,5 +1,5 @@
 NAME="texlive-collection-plaingeneric-doc"
-VERSION=20180319
+VERSION=20180414
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="abbr abstyles apnum autoaligne barr bitelist borceux

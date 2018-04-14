@@ -1,5 +1,5 @@
 NAME="texlive-collection-langitalian"
-VERSION=20180319
+VERSION=20180414
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="amsldoc-it amsmath-it amsthdoc-it babel-italian

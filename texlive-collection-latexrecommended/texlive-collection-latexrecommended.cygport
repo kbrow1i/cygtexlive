@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexrecommended"
-VERSION=20180319
+VERSION=20180414
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="anysize beamer booktabs breqn caption cite cmap

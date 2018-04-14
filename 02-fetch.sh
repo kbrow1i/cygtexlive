@@ -11,7 +11,7 @@ for d in $dirs
 do
     echo "Entering $d ..."
     cd $d
-    eval $(grep ^VERSION ${d}.cygport)
+    # eval $(grep ^VERSION ${d}.cygport)
     if ! cygport ${d}.cygport fetch
     then
 	echo "Fetching ${d} failed" >> ../fetch_failures.txt

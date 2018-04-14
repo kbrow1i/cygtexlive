@@ -1,5 +1,5 @@
 NAME="texlive-collection-langcjk"
-VERSION=20180319
+VERSION=20180414
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="adobemapping c90 cjk cjkpunct dnp garuda-c90

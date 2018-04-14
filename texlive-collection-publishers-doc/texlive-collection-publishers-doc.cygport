@@ -1,5 +1,5 @@
 NAME="texlive-collection-publishers-doc"
-VERSION=20180404
+VERSION=20180414
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="IEEEconf IEEEtran aastex abnt abntex2 acmart acmconf

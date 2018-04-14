@@ -1,5 +1,5 @@
 NAME="texlive-collection-langchinese"
-VERSION=20180412
+VERSION=20180414
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="arphic arphic-ttf cns ctex ctex-faq fandol
