@@ -52,13 +52,14 @@ DEPEND="
 # The following is needed for building xindy docs.
 DEPEND+=" clisp texlive-collection-langgreek texlive-collection-langcyrillic texlive-collection-fontsrecommended"
 
-PKG_NAMES="${PN} libkpathsea6 libkpathsea-devel libptexenc1 libptexenc-devel libsynctex1 libsynctex-devel libtexlua52_5 libtexlua52-devel libtexluajit2 libtexluajit-devel"
+PKG_NAMES="${PN} libkpathsea6 libkpathsea-devel libptexenc1 libptexenc-devel libsynctex1 libsynctex-devel libtexlua52_5 libtexlua52-devel libtexlua53_5 libtexlua53-devel libtexluajit2 libtexluajit-devel"
 
 texlive_CONTENTS="
 	etc/
 	usr/bin/*.exe
 	usr/bin/texlive-enable-fontconfig
 	usr/bin/xindy.mem
+	usr/share/applications/
 	usr/share/doc/
 	usr/share/fontconfig/
 	var/
@@ -78,6 +79,9 @@ libsynctex_devel_CONTENTS="usr/include/synctex/ usr/lib/libsynctex.*
 libtexlua52_5_CONTENTS="usr/bin/cygtexlua52-5.dll"
 libtexlua52_devel_CONTENTS="usr/include/texlua52/
 	usr/lib/libtexlua52.* usr/lib/pkgconfig/texlua52.pc"
+libtexlua53_5_CONTENTS="usr/bin/cygtexlua53-5.dll"
+libtexlua53_devel_CONTENTS="usr/include/texlua53/
+	usr/lib/libtexlua53.* usr/lib/pkgconfig/texlua53.pc"
 libtexluajit2_CONTENTS="usr/bin/cygtexluajit-2.dll"
 libtexluajit_devel_CONTENTS="usr/include/texluajit/
 	usr/lib/libtexluajit* usr/lib/pkgconfig/texluajit.pc"
@@ -95,6 +99,8 @@ libsynctex1_SUMMARY="TeX source/output synchronization library (runtime)"
 libsynctex_devel_SUMMARY="TeX source/output synchronization library (development)"
 libtexlua52_5_SUMMARY="TeX lua scripting library (runtime)"
 libtexlua52_devel_SUMMARY="TeX lua scripting library (development)"
+libtexlua53_5_SUMMARY="TeX lua scripting library (runtime)"
+libtexlua53_devel_SUMMARY="TeX lua scripting library (development)"
 libtexluajit2_SUMMARY="TeX Just-In-Time lua compiler library (runtime)"
 libtexluajit_devel_SUMMARY="TeX Just-In-Time lua compiler library (development)"
 
