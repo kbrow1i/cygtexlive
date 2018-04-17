@@ -1,6 +1,6 @@
 NAME="texlive"
-VERSION=20170520
-RELEASE=4
+VERSION=20180414
+RELEASE=1
 
 HOMEPAGE="http://www.tug.org/texlive/"
 
@@ -16,10 +16,8 @@ SRC_URI+=" 09-texlive.conf"
 
 SRC_DIR="${PN}-${PV}-source"
 
-PATCH_URI+=" 20170520-1-texmf_cnf.patch"
+PATCH_URI+=" 20180414-1-texmf_cnf.patch"
 PATCH_URI+=" 20140523-2-reautoconf.patch"
-PATCH_URI+=" literal_suffix.patch" # For C++11.
-PATCH_URI+=" 20170520-3-luatex_r44586_cumulative.patch"
 
 DOCS="README.Cygwin"
 
@@ -107,7 +105,12 @@ world."
 
 DIFF_EXCLUDES="*.in configure build-aux m4 aclocal.m4"
 
-CXXFLAGS+=" -std=gnu++11"	# Needed for building with icu-59.1.
+CYGPORT_USE_UNSTABLE_API=1
+src_unpack_hook() {
+    cd texk/web2c/pdftexdir
+    cp pdftoepdf-newpoppler.cc pdftoepdf.cc
+    cp pdftosrc-newpoppler.cc pdftosrc.cc
+}
 
 src_compile() {
 	cd ${S}

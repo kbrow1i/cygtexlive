@@ -1,11 +1,11 @@
 This needs to be kept in sync with a similar patch for texlive.
 
---- origsrc/texmf-dist/web2c/texmf.cnf	2017-05-06 12:23:44.000000000 -0400
-+++ src/texmf-dist/web2c/texmf.cnf	2017-05-22 12:20:39.761412600 -0400
-@@ -54,7 +54,12 @@
- % Redistributors will probably want $SELFAUTODIR/share, i.e., /usr/share.
- % Kpathsea sets SELFAUTOLOC (the directory with the binary),
- % SELFAUTODIR (its parent), and SELFAUTOPARENT (its grandparent).
+--- origsrc/texmf-dist/web2c/texmf.cnf	2018-03-26 08:22:29.000000000 -0400
++++ src/texmf-dist/web2c/texmf.cnf	2018-04-17 11:51:21.242647600 -0400
+@@ -58,7 +58,12 @@
+ % SELFAUTOPARENT (its grandparent = /usr/local/texlive/YYYY), and
+ % SELFAUTOGRANDPARENT (its great-grandparent = /usr/local/texlive).
+ % Sorry for the off-by-one-generation names.
 -TEXMFROOT = $SELFAUTOPARENT
 +%
 +% On Cygwin SELFAUTODIR will be / rather than /usr if a texlive
@@ -16,7 +16,7 @@ This needs to be kept in sync with a similar patch for texlive.
  
  % The main tree of distributed packages and programs:
  TEXMFDIST = $TEXMFROOT/texmf-dist
-@@ -64,25 +69,25 @@ TEXMFDIST = $TEXMFROOT/texmf-dist
+@@ -68,25 +73,25 @@ TEXMFDIST = $TEXMFROOT/texmf-dist
  TEXMFMAIN = $TEXMFDIST
  
  % Local additions to the distribution trees.
@@ -39,16 +39,16 @@ This needs to be kept in sync with a similar patch for texlive.
 +TEXMFHOME = ~/.local/share/texmf
  
  % TEXMFVAR, where texconfig/updmap/fmtutil store cached runtime data.
--TEXMFVAR = ~/.texlive2017/texmf-var
+-TEXMFVAR = ~/.texlive2018/texmf-var
 +TEXMFVAR = ~/.cache/texmf
  
  % TEXMFCONFIG, where texconfig/updmap/fmtutil store configuration data.
--TEXMFCONFIG = ~/.texlive2017/texmf-config
+-TEXMFCONFIG = ~/.texlive2018/texmf-config
 +TEXMFCONFIG = ~/.config/texmf
  
  % This is the value manipulated by tlmgr's auxtrees subcommand in the
  % root texmf.cnf. Kpathsea warns about a literally empty string for a
-@@ -503,30 +508,42 @@ RUBYINPUTS   = .;$TEXMF/scripts/{$progna
+@@ -511,30 +516,42 @@ RUBYINPUTS   = .;$TEXMF/scripts/{$progna
  % since we don't want to scatter ../'s throughout the value.  Hence we
  % explicitly list every directory.  Arguably more understandable anyway.
  %

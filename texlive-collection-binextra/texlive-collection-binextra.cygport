@@ -20,5 +20,7 @@ TEXLIVE_ARCH_PKGS="a2ping adhocfilelist arara bibtex8 bibtexu
 	texliveonfly texloganalyser texosquery texware tie tlcockpit
 	tlshell tpic2pdftex typeoutfileinfo web xindy"
 
+PATCH_URI="20180414-1-dvihp.patch"
+
 inherit texlive
 REQUIRES="clisp"
