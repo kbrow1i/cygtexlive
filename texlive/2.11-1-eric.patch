@@ -1,0 +1,80 @@
+--- origsrc/libsigsegv-2.11/configure.ac	2017-02-18 17:19:40.000000000 -0500
++++ src/libsigsegv-2.11/configure.ac	2017-03-20 14:00:27.340075700 -0400
+@@ -427,6 +427,9 @@ if test -z "$CFG_FAULT" && test "$sv_cv_
+               ;;
+           esac
+           ;;
++        cygwin*)
++          CFG_FAULT=fault-cygwin.h
++          ;;
+         *)
+           CFG_FAULT=fault-posix-ucontext.h
+           ;;
+@@ -530,19 +533,6 @@ case "$host_os" in
+     FAULT_CONTEXT_INCLUDE='#include <windows.h>'
+     CFG_FAULT=fault-win32.h # nonexistent, just a dummy
+     ;;
+-  cygwin*)
+-    FAULT_CONTEXT='struct _CONTEXT'
+-    # CONTEXT is defined in <windows.h>, but cygwin programs should not
+-    # normally inspect the contents of CONTEXT, and the outright inclusion
+-    # of <windows.h> pollutes the namespace.
+-    FAULT_CONTEXT_INCLUDE='struct _CONTEXT;'
+-    # Cygwin 1.7 uses fault-posix.h. Cygwin 1.5.x needs a hacky workaround.
+-    if test -z "$CFG_FAULT"; then
+-      CFG_FAULT=fault-cygwin-old.h
+-      AC_DEFINE([OLD_CYGWIN_WORKAROUND], [1],
+-        [Define to 1 on Cygwin versions older than 1.7.])
+-    fi
+-    ;;
+ esac
+ if test -n "$CFG_FAULT"; then
+   sv_cv_have_sigsegv_recovery=yes
+@@ -869,7 +859,7 @@ AC_CACHE_CHECK([if the system supports c
+     sv_cv_have_stack_overflow_recovery=yes
+   else
+     case "$host_os" in
+-      mingw* | cygwin*) sv_cv_have_stack_overflow_recovery=yes ;;
++      mingw*) sv_cv_have_stack_overflow_recovery=yes ;;
+       *)
+         if test "$CFG_LEAVE" != 'leave-none.c'; then
+           if test "$sv_cv_sigaltstack" != no; then
+@@ -938,7 +928,7 @@ dnl Requires AC_CANONICAL_HOST, CFG_HAND
+ dnl HAVE_SIGSEGV_RECOVERY, HAVE_STACK_OVERFLOW_RECOVERY.
+ 
+ case "$host_os" in
+-  mingw* | cygwin*) CFG_HANDLER=handler-win32.c ;;
++  mingw*) CFG_HANDLER=handler-win32.c ;;
+   *)
+     if test -z "$CFG_HANDLER"; then
+       if test $sv_cv_have_sigsegv_recovery = no \
+--- origsrc/libsigsegv-2.11/src/fault-cygwin.h	1969-12-31 19:00:00.000000000 -0500
++++ src/libsigsegv-2.11/src/fault-cygwin.h	2017-03-20 13:57:27.004160800 -0400
+@@ -0,0 +1,27 @@
++/* Fault handler information.  Cygwin version.
++   Copyright (C) 2015  Eric Blake <eblake@redhat.com>
++   Based on code by Corinna Vinschen
++
++   This program is free software; you can redistribute it and/or modify
++   it under the terms of the GNU General Public License as published by
++   the Free Software Foundation; either version 2, or (at your option)
++   any later version.
++
++   This program is distributed in the hope that it will be useful,
++   but WITHOUT ANY WARRANTY; without even the implied warranty of
++   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++   GNU General Public License for more details.
++
++   You should have received a copy of the GNU General Public License
++   along with this program; if not, write to the Free Software Foundation,
++   Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.  */
++
++#include "fault-posix-ucontext.h"
++
++/* See cygwin's winsup/cygwin/include/cygwin/signal.h */
++
++#ifdef __x86_64__ /* 64-bit registers */
++# define SIGSEGV_FAULT_STACKPOINTER ((ucontext_t *) ucp)->uc_mcontext.rsp
++#else /* 32-bit registers */
++# define SIGSEGV_FAULT_STACKPOINTER ((ucontext_t *) ucp)->uc_mcontext.esp
++#endif

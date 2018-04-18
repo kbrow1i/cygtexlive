@@ -1,0 +1,11 @@
+--- origsrc/clisp/modules/syscalls/configure	2017-03-03 11:11:57.000000000 -0500
++++ src/clisp/modules/syscalls/configure	2017-03-03 14:01:01.057971500 -0500
+@@ -4983,7 +4983,7 @@ fi
+ done
+ 
+ if test "$ac_cv_header_shlobj_h" = yes ; then
+-   LIBS=${LIBS}' -luser32 -lole32 -loleaut32 -luuid -lversion';
++   LIBS=${LIBS}' -luser32 -lole32 -loleaut32 -L/usr/lib/w32api -luuid -lversion';
+ fi
+ # Check whether --enable-largefile was given.
+ if test "${enable_largefile+set}" = set; then :

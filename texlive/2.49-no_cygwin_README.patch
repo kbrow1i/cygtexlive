@@ -1,0 +1,21 @@
+--- origsrc/clisp-2.49/src/makemake.in	2010-07-07 11:15:35.000000000 -0400
++++ src/clisp-2.49/src/makemake.in	2015-02-20 11:45:56.385319200 -0500
+@@ -3374,7 +3374,6 @@ for f in ${MANPAGES}; do
+ done
+ READMES="ANNOUNCE COPYRIGHT GNU-GPL SUMMARY NEWS README README.de README.es"
+ test $TOS = unix && READMES=${READMES}' MAGIC.add'
+-test ${HSYSOS} = cygwin && READMES=${READMES}' cygwin.README'
+ echol "READMES = ${READMES}"
+ IMPNOTES_FILES="impnotes.html impnotes.css clisp.png"
+ test ${HOS} = win32 && IMPNOTES_FILES=${IMPNOTES_FILES}" clisp.ico"
+@@ -3670,10 +3669,6 @@ if [ $CROSS = false ] ; then
+         echotab "\$(INSTALL_DATA) \$(MANUALS) ${manual_print} \$(DESTDIR)\$(docdir)/doc/"
+         ;;
+     esac
+-    if [ ${HSYSOS} = cygwin ]; then
+-      echotab "mkdir -p \$(DESTDIR)\$(docdir)/../Cygwin"
+-      echotab "\$(INSTALL_DATA) cygwin.README \$(DESTDIR)\$(docdir)/../Cygwin/clisp-\$(VERSION).README"
+-    fi
+     echol
+     echol
+     echol "installcheck : ${TESTSDIR} force"

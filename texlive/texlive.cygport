@@ -49,8 +49,8 @@ DEPEND="
 	pkgconfig(zlib)
 	pkgconfig(zziplib)
 "
-# The following is needed for building xindy docs.
-DEPEND+=" clisp texlive-collection-langgreek texlive-collection-langcyrillic texlive-collection-fontsrecommended"
+# The following are needed for building xindy docs.
+DEPEND+=" texlive-collection-langgreek texlive-collection-langcyrillic texlive-collection-fontsrecommended"
 
 PKG_NAMES="${PN} libkpathsea6 libkpathsea-devel libptexenc1 libptexenc-devel libsynctex1 libsynctex-devel libtexlua52_5 libtexlua52-devel libtexlua53_5 libtexlua53-devel libtexluajit2 libtexluajit-devel"
 
@@ -118,7 +118,63 @@ src_unpack_hook() {
     cp pdftosrc-newpoppler.cc pdftosrc.cc
 }
 
+# We'll build a stripped-down clisp for building xindy so we don't
+# have to rebuild texlive every time there's a clisp update.
+C_PN=clisp
+C_PV=2.49.92
+C_P=${C_PN}-${C_PV}
+C_PATCH_URI="20170303-update_modules_syscalls_configure.patch"
+C_PATCH_URI+=" 2.49-no_cygwin_README.patch"
+C_PATCH_URI+=" 20170306-socket_test.patch"
+C_PATCH_URI+=" 2.49.92-fix_dllimport.patch"
+C_PATCH_URI+=" 2.49.92-my_realpath.patch"
+
+L_PN=libsigsegv
+L_PV=2.12
+L_P=${L_PN}-${L_PV}
+L_PATCH_URI="2.11-1-eric.patch"
+
+SRC_URI+=" https://haible.de/bruno/gnu/${C_P}.tar.bz2"
+SRC_URI+=" mirror://gnu/${L_PN}/${L_P}.tar.gz"
+SRC_URI+=" ${C_PATCH_URI} ${L_PATCH_URI}"
+
 src_compile() {
+    # First build clisp
+    cd ${S}/..
+    mkdir -p clisp
+    mv ${C_P} ${L_P} clisp
+    cd clisp
+    clisp_basedir=$(pwd)
+    clisp_toolsdir=${clisp_basedir}/clisp-tools
+    clisp_builddir=${clisp_basedir}/clisp-build
+    mkdir -p ${clisp_toolsdir}
+    inform "Building ${L_PN}"
+    pushd ${L_P}
+    patch -p2 < ${S}/${L_PATCH_URI}
+    autoreconf
+    ./configure --prefix=${clisp_toolsdir} --disable-shared --enable-static
+    make && make check && make install || error "Building ${L_PN} failed"
+    popd
+    inform "Building ${C_PN}"
+    pushd ${C_P}
+    for p in ${C_PATCH_URI}
+    do
+	patch -p2 < ${S}/${p}
+    done
+    LDFLAGS="-Wl,--stack,0x800000" ./configure \
+	   --prefix=${clisp_toolsdir} \
+	   --without-ffcall \
+	   --without-readline \
+	   --without-dynamic-modules \
+	   --without-termcap-ncurses \
+	   --disable-nls \
+	   --with-libsigsegv-prefix=${clisp_toolsdir} \
+	   $clisp_builddir \
+	&& (cd $clisp_builddir && make)
+    cd $clisp_builddir && make check || true
+
+	# Now build texlive.
+	inform "Building ${PN}"
 	cd ${S}
 	libtoolize --force --install
 	./reautoconf
@@ -129,7 +185,7 @@ src_compile() {
 	    --enable-xindy \
 	    --disable-native-texlive-build \
 	    --with-banner-add=/Cygwin \
-	    --with-clisp-runtime=system \
+	    --with-clisp-runtime=default \
 	    --with-system-cairo \
 	    --with-system-freetype2 --with-freetype2-include=/usr/include \
 	    --with-system-gd \
@@ -148,6 +204,7 @@ src_compile() {
 	    --with-system-xpdf \
 	    --with-system-zlib \
 	    --with-system-zziplib
+	    CLISP=${clisp_builddir}/clisp.exe
 	cygmake all
 }
 

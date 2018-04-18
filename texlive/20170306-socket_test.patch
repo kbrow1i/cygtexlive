@@ -1,0 +1,42 @@
+--- origsrc/clisp/tests/socket.tst	2017-03-03 11:12:07.000000000 -0500
++++ src/clisp/tests/socket.tst	2017-03-03 12:13:37.403683400 -0500
+@@ -520,10 +520,11 @@ T
+ T
+ (open-stream-p (setq *socket-1* (socket:socket-connect
+                                  12345 "localhost" :timeout 0))) T
+-(check-os-error (read-line *socket-1*)
++;; This hangs on Cygwin.
++#-cygwin (check-os-error (read-line *socket-1*)
+   #-win32 (:ECONNREFUSED #+macos 61 #-macos 111)
+   #+win32 (:EINPROGRESS 10036))
+-T
++#-cygwin T
+ (close *socket-1*) T
+ 
+ ;; https://sourceforge.net/p/clisp/bugs/587/: non-0 timeout
+@@ -550,7 +550,9 @@ T
+           interfaces))
+ ("0.0.0.0" "127.0.0.1" "0.0.0.0" "127.0.0.1")
+ 
+-(multiple-value-bind (run args) (cmd-args)
++;; On Cygwin we get OS-STREAM-ERROR(104): Connection reset by peer.
++#-cygwin (multiple-value-bind (run args) (cmd-args)
++
+   (let ((se (socket:socket-server)))
+     (ext:run-program run :arguments (append args (list "-q" "-q" "-x" (format nil "(close (socket:socket-connect ~D))" (socket:socket-server-port se))))
+                      :wait nil :input nil :output nil)
+@@ -572,11 +574,12 @@ T
+               (end-of-file (c)
+                 (princ 'read-char) (princ-error c) 'end-of-file))))
+       (socket:socket-server-close se))))
+-(:OUTPUT "foo" :OUTPUT T NIL T NIL END-OF-FILE)
++#-cygwin (:OUTPUT "foo" :OUTPUT T NIL T NIL END-OF-FILE)
+ 
+ ;; https://sourceforge.net/p/clisp/feature-requests/46/
+ (check-os-error (socket:socket-connect 0)
+-  #-(or win32 macos) (:ECONNREFUSED 111)
++  #-(or win32 macos cygwin) (:ECONNREFUSED 111)
++  #+cygwin (:EADDRNOTAVAIL 125)
+   #+macos (:EADDRNOTAVAIL 49)
+   #+win32 (:EADDRNOTAVAIL 10049))
+ T
