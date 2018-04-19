@@ -173,39 +173,39 @@ src_compile() {
 	&& (cd $clisp_builddir && make)
     cd $clisp_builddir && make check || true
 
-	# Now build texlive.
-	inform "Building ${PN}"
-	cd ${S}
-	libtoolize --force --install
-	./reautoconf
-	cd ${B}
-	cygconf \
-	    --enable-shared \
-	    --enable-silent-rules \
-	    --enable-xindy \
-	    --disable-native-texlive-build \
-	    --with-banner-add=/Cygwin \
-	    --with-clisp-runtime=default \
-	    --with-system-cairo \
-	    --with-system-freetype2 --with-freetype2-include=/usr/include \
-	    --with-system-gd \
-	    --with-system-gmp \
-	    --with-system-graphite2 \
-	    --with-system-harfbuzz \
-	    --with-system-icu \
-	    --with-system-libpaper \
-	    --with-system-libpng \
-	    --with-system-mpfr \
-	    --with-system-ncurses \
-	    --with-system-pixman \
-	    --with-system-poppler \
-	    --with-system-potrace \
-	    --with-system-teckit \
-	    --with-system-xpdf \
-	    --with-system-zlib \
-	    --with-system-zziplib
-	    CLISP=${clisp_builddir}/clisp.exe
-	cygmake all
+    # Now build texlive.
+    inform "Building ${PN}"
+    cd ${S}
+    libtoolize --force --install
+    ./reautoconf
+    cd ${B}
+    cygconf \
+	--enable-shared \
+	--enable-silent-rules \
+	--enable-xindy \
+	--disable-native-texlive-build \
+	--with-banner-add=/Cygwin \
+	--with-clisp-runtime=default \
+	--with-system-cairo \
+	--with-system-freetype2 --with-freetype2-include=/usr/include \
+	--with-system-gd \
+	--with-system-gmp \
+	--with-system-graphite2 \
+	--with-system-harfbuzz \
+	--with-system-icu \
+	--with-system-libpaper \
+	--with-system-libpng \
+	--with-system-mpfr \
+	--with-system-ncurses \
+	--with-system-pixman \
+	--with-system-poppler \
+	--with-system-potrace \
+	--with-system-teckit \
+	--with-system-xpdf \
+	--with-system-zlib \
+	--with-system-zziplib
+    CLISP=${clisp_builddir}/clisp.exe
+    cygmake all
 }
 
 src_install() {
