@@ -118,11 +118,19 @@ src_unpack_hook() {
     cp pdftosrc-newpoppler.cc pdftosrc.cc
 }
 
-# We'll build a stripped-down clisp for building xindy so we don't
-# have to rebuild texlive every time there's a clisp update.
+# I'll build a stripped-down clisp for building xindy, if necessary,
+# so I don't have to rebuild texlive every time there's a clisp
+# update.  This is here for the sake of anyone other than me (Ken
+# Brown) who wants to reproduce the build.  I'll just use the clisp I
+# build anyway for upstream TeX Live.
+
+# BUILD_CLISP=1
+
 C_PN=clisp
 C_PV=2.49.92
 C_P=${C_PN}-${C_PV}
+if defined BUILD_CLISP
+then
 C_PATCH_URI="20170303-update_modules_syscalls_configure.patch"
 C_PATCH_URI+=" 2.49-no_cygwin_README.patch"
 C_PATCH_URI+=" 20170306-socket_test.patch"
@@ -137,9 +145,12 @@ L_PATCH_URI="2.11-1-eric.patch"
 SRC_URI+=" https://haible.de/bruno/gnu/${C_P}.tar.bz2"
 SRC_URI+=" mirror://gnu/${L_PN}/${L_P}.tar.gz"
 SRC_URI+=" ${C_PATCH_URI} ${L_PATCH_URI}"
+fi
 
 src_compile() {
-    # First build clisp
+    # First build clisp if necessary
+    if defined BUILD_CLISP
+    then
     cd ${S}/..
     mkdir -p clisp
     mv ${C_P} ${L_P} clisp
@@ -175,6 +186,9 @@ src_compile() {
 
     # Now build texlive.
     inform "Building ${PN}"
+    else
+    clisp_builddir=/home/kbrown/src/clisp-texlive/${C_P}-1.${ARCH}/build
+    fi
     cd ${S}
     libtoolize --force --install
     ./reautoconf
@@ -203,7 +217,7 @@ src_compile() {
 	--with-system-teckit \
 	--with-system-xpdf \
 	--with-system-zlib \
-	--with-system-zziplib
+	--with-system-zziplib \
     CLISP=${clisp_builddir}/clisp.exe
     cygmake all
 }
