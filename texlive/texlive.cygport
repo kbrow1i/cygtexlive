@@ -120,9 +120,8 @@ src_unpack_hook() {
 
 # I'll build a stripped-down clisp for building xindy, if necessary,
 # so I don't have to rebuild texlive every time there's a clisp
-# update.  This is here for the sake of anyone other than me (Ken
-# Brown) who wants to reproduce the build.  I'll just use the clisp I
-# build anyway for upstream TeX Live.
+# update.  When possible, however, I'll just use the clisp I build
+# anyway for upstream TeX Live.
 
 # BUILD_CLISP=1
 

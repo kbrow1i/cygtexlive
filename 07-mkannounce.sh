@@ -1,9 +1,9 @@
 #! /bin/bash
 
-VR=20170520-1
+VR=20180414-1
 
-cat > announce-TL2017.txt <<EOF
-Cygwin's TeX Live packages have been updated to the latest upstream release, TeX Live 2017.
+cat > announce-TL2018.txt <<EOF
+Cygwin's TeX Live packages have been updated to the latest upstream release, TeX Live 2018.
 
 TeX Live provides a comprehensive, cross-platform TeX system.  It includes all the major TeX-related programs, macro packages, and fonts that are free software, including support for many languages around the world.  For more information, see
 
@@ -13,7 +13,7 @@ And see
 
   http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#news
 
-for a list of changes since TeX Live 2016.
+for a list of changes since TeX Live 2017.
   
 The TeX Live executables and supporting libraries are contained in the following Cygwin packages:
 
@@ -36,15 +36,17 @@ libsync is a TeX source/output synchronization library.
 
 * libtexlua52_5-${VR}
 * libtexlua52-devel-${VR}
+* libtexlua53_5-${VR}
+* libtexlua53-devel-${VR}
 
-libtexlua52 is a TeX lua scripting library.
+libtexlua52 and libtexlua53 are TeX lua scripting libraries.
 
 * libtexluajit2-${VR}
 * libtexluajit-devel-${VR}
 
 libtexluajit is a TeX Just-In-Time lua compiler library.
 
-* asymptote-2.41-1
+* asymptote-2.44-1
 
 Asymptote is a powerful descriptive vector graphics language for technical drawing, inspired by MetaPost but with an improved C++-like syntax.  Asymptote provides for figures the same high-quality typesetting that LaTeX does for scientific text.
 
@@ -56,38 +58,10 @@ packages="texlive-collection-*"
 
 for d in ${packages}
 do
-    case ${d} in
-	*-htmlxml) ;;
-	*-bibtexextra*)
-	    echo "* ${d}-${VR} (TEST)" >> announce-TL2017.txt ;;
-	*)
-	    echo "* ${d}-${VR}" >> announce-TL2017.txt ;;
-    esac
-    # echo "* ${d}-${VR}" >> announce-TL2017.txt
+    echo "* ${d}-${VR}" >> announce-TL2018.txt
 done
 
-cat >> announce-TL2017.txt <<EOF
-
-There has been some (upstream) rearrangement of the collections since the previous release:
-
- - The langafrican and langindic collections have been absorbed by langother.
-
- - The omega collection has been absorbed by formatsextra.
-
- - The plainextra, genericrecommended, and genericextra collections have merged into a new collection, plaingeneric.
-
- - The htmlxml collection has been removed.  Its constituent upstream packages have been moved into other collections, as follows:
-
-   jadetex, passivetex, xmltex, xmltexconfig --> formatsextra
-   classpack --> latexextra
-   lwarp --> latexrecommended
-   tex4ht --> plaingeneric
-
-The bibtexextra collection is marked as a test release because it includes biblatex-3.7; the latter is designed to work with biber-2.7, which is not yet available in the Cygwin distribution because it requires at least perl-5.24.  I will update biber to 2.7 as soon as Cygwin's perl is updated, probably in about a month.
-
-EOF
-
-cat >> announce-TL2017.txt <<EOF
+cat >> announce-TL2018.txt <<EOF
 
 Recommendations
 ===============
@@ -112,32 +86,3 @@ texlive-collection-basic includes a restricted version of the tlmgr (TeX Live Ma
 Ken Brown
 Cygwin's TeX Live maintainer
 EOF
-
-# [1] Instructions for building biber-2.7:
-
-#  - Install perl-5.24, currently available for Cygwin as a test release.
-
-#  - Install make, gcc-g++, libcrypt-devel, libxslt-devel, git.
-
-#  - Install Module::Build:
-
-#      $ cpan CPAN YAML inc::latest Module::Build
-
-#  - Download the biber-2.7 source:
-
-#      $ git clone git@github.com:plk/biber.git
-
-#      $ cd biber
-
-#      $ git checkout master
-
-#  - Create the build script and install the prerequisites via cpan:
-
-#      $ perl Build.PL
-
-#      $ ./Build installdeps # If case-sensitive, have to force install Capture::Tiny
-
-#  - Install biber:
-
-#      $ ./Build test
-#      $ ./Build install
