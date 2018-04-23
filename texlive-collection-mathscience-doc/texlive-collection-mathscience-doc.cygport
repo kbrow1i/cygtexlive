@@ -31,6 +31,4 @@ TEXLIVE_DOC_PKGS="12many SIstyle SIunits alg algobox algorithm2e
 	tablor tensor tex-ewd textgreek textopo thmbox turnstile ulqda
 	unitsdef venn witharrows xymtex yhmath youngtab ytableau"
 
-OBSOLETES="texlive-collection-mathextra-doc texlive-collection-science-doc"
-
 inherit texlive

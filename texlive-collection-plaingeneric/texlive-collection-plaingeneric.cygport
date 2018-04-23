@@ -19,5 +19,3 @@ TEXLIVE_TEXMF_PKGS="abbr abstyles apnum autoaligne barr bitelist
 TEXLIVE_ARCH_PKGS="tex4ht"
 
 inherit texlive
-
-OBSOLETES="texlive-collection-plainextra texlive-collection-genericextra texlive-collection-genericrecommended"
