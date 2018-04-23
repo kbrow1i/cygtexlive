@@ -35,4 +35,6 @@ TEXLIVE_ARCH_PKGS="amstex pygmentex ulqda"
 
 REQUIRES="texlive-collection-latex texlive-collection-fontsrecommended"
 
+OBSOLETES="texlive-collection-mathextra texlive-collection-science"
+
 inherit texlive

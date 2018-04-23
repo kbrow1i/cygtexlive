@@ -15,3 +15,5 @@ TEXLIVE_DOC_PKGS="abbr abstyles apnum autoaligne barr bitelist borceux
 	trigonometry ulem upca varisize xii xii-lat xlop yax"
 
 inherit texlive
+
+OBSOLETES="texlive-collection-genericextra-doc texlive-collection-genericrecommended-doc"

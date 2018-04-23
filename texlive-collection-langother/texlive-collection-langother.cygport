@@ -28,3 +28,5 @@ TEXLIVE_DOC_PKGS="amsldoc-vn aramaic-serto babel-azerbaijani
 inherit texlive
 
 SUMMARY="TeX Live support for several languages"
+
+OBSOLETES="texlive-collection-langafrican texlive-collection-langindic"
