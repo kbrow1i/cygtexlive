@@ -21,6 +21,8 @@ SRC_DIR="${PN}-${PV}-source"
 PATCH_URI+=" 20180414-1-texmf_cnf.patch"
 PATCH_URI+=" 20140523-2-reautoconf.patch"
 PATCH_URI+=" 20180414-1-dvidvi.patch"
+PATCH_URI+=" 20180414-1-dvipdfmx.patch"
+PATCH_URI+=" 20180414-1-poppler.patch"
 
 DOCS="README.Cygwin"
 
