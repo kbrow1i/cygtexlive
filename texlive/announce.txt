@@ -1,30 +1,33 @@
-From cygwin-announce-texlive-20170520-3 Tue Jun 13 12:50:09 2017
+From cygwin-announce-texlive-20180506-1 Wed May 09 11:12:37 2018
 From: Ken Brown <kbrown@cornell.edu>
 To: cygwin-announce@cygwin.com
-Date: Tue, 13 Jun 2017 12:50:09 -0400
-Subject: texlive 20170520-3
+Date: Wed, 09 May 2018 11:12:37 -0400
+Message-Id: <20180509111237.4652-1-kbrown@cornell.edu>
+Subject: texlive 20180506-1
 
 The following packages have been uploaded to the Cygwin distribution:
 
-* texlive-20170520-3
-* libkpathsea6-20170520-3
-* libkpathsea-devel-20170520-3
-* libptexenc1-20170520-3
-* libptexenc-devel-20170520-3
-* libsynctex1-20170520-3
-* libsynctex-devel-20170520-3
-* libtexlua52_5-20170520-3
-* libtexlua52-devel-20170520-3
-* libtexluajit2-20170520-3
-* libtexluajit-devel-20170520-3
+* texlive-20180506-1
+* libkpathsea6-20180506-1
+* libkpathsea-devel-20180506-1
+* libptexenc1-20180506-1
+* libptexenc-devel-20180506-1
+* libsynctex1-20180506-1
+* libsynctex-devel-20180506-1
+* libtexlua52_5-20180506-1
+* libtexlua52-devel-20180506-1
+* libtexlua53_5-20180506-1
+* libtexlua53-devel-20180506-1
+* libtexluajit2-20180506-1
+* libtexluajit-devel-20180506-1
 
 TeX Live provides a comprehensive, cross-platform TeX system. It 
 includes all the major TeX-related programs, macro packages, and fonts 
 that are free software, including support for many languages around the 
 world.
 
-This release is a rebuild of the TeX Live 2017 binaries and supporting
-libraries, patched to fix another upstream luatex bug.
+This release is a rebuild of the TeX Live 2018 binaries and supporting
+libraries with some upstream bug fixes.
 
 Ken Brown
 Cygwin's TeX Live maintainer

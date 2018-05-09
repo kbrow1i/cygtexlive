@@ -1,5 +1,5 @@
 NAME="texlive"
-VERSION=20180414
+VERSION=20180506
 RELEASE=1
 YEAR=2018
 
@@ -9,19 +9,23 @@ HOMEPAGE="http://www.tug.org/texlive/"
 # SRC_URI="ftp://tug.org/texlive/Images/test/${P}-source.tar.xz"
 # SRC_URI="mirror://ctan/systems/texlive/Source/${PN}-${PV}-source.tar.xz"
 
-SRC_URI="ftp://tug.org/historic/systems/texlive/${YEAR}/${PN}-${PV}-source.tar.xz"
+# SRC_URI="ftp://tug.org/historic/systems/texlive/${YEAR}/${PN}-${PV}-source.tar.xz"
+
+SVN_URI="svn://tug.org/texlive"
+SVN_BRANCH="branches/branch2018/Build/source"
+inherit svn
+
 SRC_URI+=" 0p_texlive_prep.dash"
 SRC_URI+=" zp_texlive_finish.dash"
 SRC_URI+=" texlive-enable-fontconfig.sh"
 SRC_URI+=" README.Cygwin"
 SRC_URI+=" 09-texlive.conf"
 
-SRC_DIR="${PN}-${PV}-source"
+# SRC_DIR="${PN}-${PV}-source"
 
 PATCH_URI+=" 20180414-1-texmf_cnf.patch"
 PATCH_URI+=" 20140523-2-reautoconf.patch"
 PATCH_URI+=" 20180414-1-dvidvi.patch"
-PATCH_URI+=" 20180414-1-dvipdfmx.patch"
 PATCH_URI+=" 20180414-1-poppler.patch"
 
 DOCS="README.Cygwin"
