@@ -1,6 +1,6 @@
 NAME="asymptote"
 VERSION=2.44
-RELEASE=1
+RELEASE=2
 
 inherit emacs vim
 
@@ -11,6 +11,7 @@ SRC_URI="mirror://sourceforge/asymptote/${P}.src.tgz"
 PATCH_URI="mirror://portage/media-gfx/${PN}/files/${PN}-2.15-info.patch"
 PATCH_URI+=" asymptote-2.16-pdfviewer.patch"
 PATCH_URI+=" 0001-Revert-Disable-trapping-of-floating-point-exceptions.patch"
+PATCH_URI+=" 2.44-2-libtirpc.patch"
 
 # Need the texlive packages for docs.
 DEPEND="pkgconfig(fftw3)
@@ -21,6 +22,7 @@ DEPEND="pkgconfig(fftw3)
 	pkgconfig(osmesa)
 	libgc-devel
 	libglut-devel
+	libtirpc-devel
 	texinfo-tex
 	texlive-collection-fontsrecommended
 	texlive-collection-latexrecommended

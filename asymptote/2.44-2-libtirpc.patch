@@ -1,0 +1,37 @@
+--- origsrc/asymptote-2.44/configure.ac	2018-04-07 23:43:53.000000000 -0400
++++ src/asymptote-2.44/configure.ac	2018-05-15 10:56:38.261362200 -0400
+@@ -281,7 +281,7 @@ AC_CHECK_FUNCS([feenableexcept])
+ 
+ 
+ AC_COMPILE_IFELSE([AC_LANG_PROGRAM([#include "xstream.h"])],
+-                   [AC_SEARCH_LIBS([xdrstdio_create],[nsl rpc])
++                   [AC_SEARCH_LIBS([xdrstdio_create],[nsl rpc tirpc])
+ 		    AC_DEFINE(HAVE_RPC_RPC_H, 1,
+ 		   [Define if you have a working <rpc/rpc.h> header file])],
+    AC_MSG_WARN([*** Broken rpc headers; XDR support disabled ***]))
+--- origsrc/asymptote-2.44/glrender.cc	2018-04-07 23:43:53.000000000 -0400
++++ src/asymptote-2.44/glrender.cc	2018-05-15 11:04:44.305337200 -0400
+@@ -4,10 +4,6 @@
+  * Render 3D Bezier paths and surfaces.
+  *****/
+ 
+-#ifdef __CYGWIN__
+-#define _POSIX_C_SOURCE 200809L
+-#endif
+-
+ #include <stdlib.h>
+ #include <fstream>
+ #include <cstring>
+--- origsrc/asymptote-2.44/main.cc	2018-04-07 23:43:53.000000000 -0400
++++ src/asymptote-2.44/main.cc	2018-05-15 11:05:24.931123600 -0400
+@@ -19,10 +19,6 @@
+ *
+ *************/
+ 
+-#ifdef __CYGWIN__
+-#define _POSIX_C_SOURCE 200809L
+-#endif
+-
+ #include <iostream>
+ #include <cstdlib>
+ #include <cerrno>
