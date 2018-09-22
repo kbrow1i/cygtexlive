@@ -53,7 +53,11 @@ telling you to create it.
 This gives you a list of all upstream packages that are not installed
 on your system.
 
-9. tlmgr --usermode install noto
+9. tlmgr psutils | grep collection
+
+This shows which collection contains the upstream package psutils.
+
+10. tlmgr --usermode install noto
 
 Of course, noto can be replaced by any other upstream package.  As
 explained in footnote 2 below, user-mode installs like this should
