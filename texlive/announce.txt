@@ -1,30 +1,25 @@
-From cygwin-announce-texlive-20180506-1 Wed May 09 11:12:37 2018
-From: Ken Brown <kbrown@cornell.edu>
-To: cygwin-announce@cygwin.com
-Date: Wed, 09 May 2018 11:12:37 -0400
-Message-Id: <20180509111237.4652-1-kbrown@cornell.edu>
-Subject: texlive 20180506-1
+Subject: texlive 20180918-1
 
 The following packages have been uploaded to the Cygwin distribution:
 
-* texlive-20180506-1
-* libkpathsea6-20180506-1
-* libkpathsea-devel-20180506-1
-* libptexenc1-20180506-1
-* libptexenc-devel-20180506-1
-* libsynctex1-20180506-1
-* libsynctex-devel-20180506-1
-* libtexlua52_5-20180506-1
-* libtexlua52-devel-20180506-1
-* libtexlua53_5-20180506-1
-* libtexlua53-devel-20180506-1
-* libtexluajit2-20180506-1
-* libtexluajit-devel-20180506-1
+* texlive-20180918-1
+* libkpathsea6-20180918-1
+* libkpathsea-devel-20180918-1
+* libptexenc1-20180918-1
+* libptexenc-devel-20180918-1
+* libsynctex1-20180918-1
+* libsynctex-devel-20180918-1
+* libtexlua52_5-20180918-1
+* libtexlua52-devel-20180918-1
+* libtexlua53_5-20180918-1
+* libtexlua53-devel-20180918-1
+* libtexluajit2-20180918-1
+* libtexluajit-devel-20180918-1
 
-TeX Live provides a comprehensive, cross-platform TeX system. It 
-includes all the major TeX-related programs, macro packages, and fonts 
-that are free software, including support for many languages around the 
-world.
+TeX Live provides a comprehensive, cross-platform TeX system.  It
+includes all the major TeX-related programs, macro packages, and fonts
+that are free software, including support for many languages around
+the world.
 
 This release is a rebuild of the TeX Live 2018 binaries and supporting
 libraries with some upstream bug fixes.
