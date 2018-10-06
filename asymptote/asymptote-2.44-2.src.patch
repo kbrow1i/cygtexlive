@@ -1,0 +1,11 @@
+--- origsrc/asymptote-2.44/configure.ac	2018-09-30 13:08:16.140424000 -0400
++++ src/asymptote-2.44/configure.ac	2018-10-06 09:33:31.386294200 -0400
+@@ -171,7 +171,7 @@ if test "x$ac_cv_use_gc" != "xno" ; then
+       CPPFLAGS=$CPPFLAGS" $INCL"
+       AC_CHECK_HEADER(gc.h,
+ 	AC_CHECK_LIB([gc],[GC_malloc],[
+-	  LIBS=$LIBS"-lgc "
++	  LIBS=$LIBS"-lgc -lgccpp "
+ 	  AC_MSG_NOTICE([enabling system $GCNAME])],[
+         GCDIR=$GCFILE
+         INCL="-I\$(GC)/include"
