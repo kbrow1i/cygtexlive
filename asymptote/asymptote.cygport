@@ -1,12 +1,14 @@
 NAME="asymptote"
-VERSION=2.44
-RELEASE=2
+VERSION=2.48
+RELEASE=0.1
 
-inherit emacs vim
+GIT_URI="https://github.com/vectorgraphics/asymptote.git"
+
+inherit emacs vim git
 
 HOMEPAGE="http://asymptote.sourceforge.net/"
 
-SRC_URI="mirror://sourceforge/asymptote/${P}.src.tgz"
+# SRC_URI="mirror://sourceforge/asymptote/${P}.src.tgz"
 
 PATCH_URI="mirror://portage/media-gfx/${PN}/files/${PN}-2.15-info.patch"
 PATCH_URI+=" asymptote-2.16-pdfviewer.patch"
