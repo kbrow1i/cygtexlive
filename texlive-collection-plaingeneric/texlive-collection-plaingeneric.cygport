@@ -1,5 +1,5 @@
 NAME="texlive-collection-plaingeneric"
-VERSION=20180414
+VERSION=20181022
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="abbr abstyles apnum autoaligne barr bitelist
@@ -9,12 +9,12 @@ TEXLIVE_TEXMF_PKGS="abbr abstyles apnum autoaligne barr bitelist
 	fontch fontname gates genmisc getoptk gfnotation gobble
 	graphics-pln gtl hlist hyplain ifetex iftex insbox js-misc
 	kastrup lambda-lists langcode lecturer librarian listofitems
-	mathdots metatex midnight mkpattern multido navigator newsletr
-	ofs olsak-misc path pdf-trans pitex placeins-plain plainpkg
-	plipsum plnfss plstmary present randomlist resumemac schemata
-	shade simplekv systeme tabto-generic termmenu tex-ps texapi
-	texinfo timetable tracklang treetex trigonometry ulem upca
-	varisize xii xii-lat xlop yax"
+	mathdots metatex midnight mkpattern modulus multido navigator
+	newsletr ofs olsak-misc path pdf-trans pitex placeins-plain
+	plainpkg plipsum plnfss plstmary present randomlist resumemac
+	schemata shade simplekv systeme tabto-generic termmenu tex-ps
+	texapi texdate texinfo timetable tracklang treetex
+	trigonometry ulem upca varisize xii xii-lat xlop yax"
 
 TEXLIVE_ARCH_PKGS="tex4ht"
 

@@ -1,18 +1,18 @@
 NAME="texlive-collection-basic"
-VERSION=20180414
+VERSION=20181022
 RELEASE=1
 
-TEXLIVE_TEXMF_PKGS="amsfonts cm enctex etex etex-pkg glyphlist
-	graphics-def hyph-utf8 hyphen-base ifluatex ifxetex knuth-lib
-	knuth-local lua-alt-getopt mflogo plain tex-ini-files
-	texlive-common texlive-docindex texlive-en
+TEXLIVE_TEXMF_PKGS="amsfonts cm colorprofiles enctex etex etex-pkg
+	glyphlist graphics-def hyph-utf8 hyphen-base ifluatex ifxetex
+	knuth-lib knuth-local lua-alt-getopt mflogo plain
+	tex-ini-files texlive-common texlive-docindex texlive-en
 	texlive-msg-translations unicode-data updmap-map"
 
 TEXLIVE_ARCH_PKGS="bibtex dvipdfmx dvips gsftopk kpathsea luatex
 	makeindex metafont mfware pdftex tetex tex
 	texlive.infra texlive-scripts xdvi"
 
-TEXLIVE_DOC_PKGS="tex tex-ini-files texlive.infra"
+TEXLIVE_DOC_PKGS="colorprofiles tex tex-ini-files texlive.infra"
 
 SRC_URI+=" update_tlpdb.pl"
 SRC_URI+=" tlmgr.config"

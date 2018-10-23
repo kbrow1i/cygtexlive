@@ -1,5 +1,5 @@
 NAME="texlive-collection-binextra"
-VERSION=20180414
+VERSION=20181022
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="ctan_chk hook-pre-commit-pkg hyphenex"
@@ -7,18 +7,19 @@ TEXLIVE_TEXMF_PKGS="ctan_chk hook-pre-commit-pkg hyphenex"
 # asymptote has its own package
 
 TEXLIVE_ARCH_PKGS="a2ping adhocfilelist arara bibtex8 bibtexu
-	bundledoc checklistings chktex ctan-o-mat ctanify ctanupload
-	ctie cweb de-macro detex dtl dtxgen dvi2tty dviasm dvicopy
-	dvidvi dviinfox dviljk dvipng dvipos dvisvgm findhyph
-	fragmaster installfont ketcindy lacheck latex-git-log latex-papersize
-	latex2man latex2nemeth latexdiff latexfileversion latexindent
-	latexmk latexpand listings-ext ltxfileinfo ltximg make4ht
-	match_parens mflua mkjobtexmf patgen pdfbook2 pdfcrop pdfjam
-	pdflatexpicscale pdftools pdfxup pfarrei pkfix pkfix-helper
-	purifyeps pythontex seetexk srcredact sty2dtx synctex
-	tex4ebook texcount texdef texdiff texdirflatten texdoc texfot
-	texliveonfly texloganalyser texosquery texware tie tlcockpit
-	tlshell tpic2pdftex typeoutfileinfo web xindy"
+	bundledoc checklistings chktex cluttex ctan-o-mat ctanify
+	ctanupload ctie cweb de-macro detex dtl dtxgen dvi2tty dviasm
+	dvicopy dvidvi dviinfox dviljk dvipng dvipos dvisvgm findhyph
+	fragmaster installfont ketcindy lacheck latex-git-log
+	latex-papersize latex2man latex2nemeth latexdiff
+	latexfileversion latexindent latexmk latexpand listings-ext
+	ltxfileinfo ltximg make4ht match_parens mflua mkjobtexmf
+	patgen pdfbook2 pdfcrop pdfjam pdflatexpicscale pdftools
+	pdfxup pfarrei pkfix pkfix-helper purifyeps pythontex seetexk
+	srcredact sty2dtx synctex tex4ebook texcount texdef texdiff
+	texdirflatten texdoc texdoctk texfot texliveonfly
+	texloganalyser texosquery texware tie tlcockpit tlshell
+	tpic2pdftex typeoutfileinfo web xindy"
 
 PATCH_URI="20180414-1-dvihp.patch"
 

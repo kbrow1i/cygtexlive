@@ -1,5 +1,5 @@
 NAME="texlive-collection-langgerman"
-VERSION=20180414
+VERSION=20181022
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="apalike-german babel-german bibleref-german
@@ -16,7 +16,7 @@ TEXLIVE_DOC_PKGS="apalike-german babel-german bibleref-german
 	translation-filecontents-de translation-moreverb-de udesoftec
 	uhrzeit voss-mathcol umlaute"
 
-TEXLIVE_TEXMF_PKGS="${TEXLIVE_DOC_PKGS} hyphen-german"
+TEXLIVE_TEXMF_PKGS="${TEXLIVE_DOC_PKGS} dehyph hyphen-german"
 
 inherit texlive
 

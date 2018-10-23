@@ -1,13 +1,13 @@
 NAME="texlive-collection-langportuguese"
-VERSION=20180414
+VERSION=20181022
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="babel-portuges beamer-tut-pt cursolatex cursolatex
-	feupphdteses hyphen-portuguese latexcheat-ptbr
-	lshort-portuguese ordinalpt xypic-tut-pt"
-
-TEXLIVE_DOC_PKGS="babel-portuges beamer-tut-pt cursolatex feupphdteses
+	feupphdteses hyphen-portuguese latex-via-exemplos
 	latexcheat-ptbr lshort-portuguese ordinalpt xypic-tut-pt"
 
-inherit texlive
+TEXLIVE_DOC_PKGS="babel-portuges beamer-tut-pt cursolatex feupphdteses
+	latex-via-exemplos latexcheat-ptbr lshort-portuguese ordinalpt
+	xypic-tut-pt"
 
+inherit texlive

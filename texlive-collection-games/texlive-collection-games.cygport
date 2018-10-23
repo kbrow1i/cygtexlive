@@ -1,20 +1,22 @@
 NAME="texlive-collection-games"
-VERSION=20180414
+VERSION=20181022
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="bartel-chess-fonts chess chess-problem-diagrams
 	chessboard chessfss crossword crosswrd egameps gamebook go
-	hanoi havannah hexgame horoscop labyrinth logicpuzzle othello
-	othelloboard pas-crosswords psgo reverxii schwalbe-chess sgame
-	skak skaknew soup sudoku sudokubundle xq xskak"
+	hanoi havannah hexgame horoscop jigsaw labyrinth logicpuzzle
+	musikui onedown othello othelloboard pas-crosswords psgo
+	reverxii schwalbe-chess sgame skak skaknew soup sudoku
+	sudokubundle xq xskak"
 
 TEXLIVE_ARCH_PKGS="rubik"
 
 TEXLIVE_DOC_PKGS="bartel-chess-fonts chess chess-problem-diagrams
 	chessboard chessfss crossword crosswrd egameps gamebook go
-	havannah hexgame horoscop labyrinth logicpuzzle othello
-	othelloboard pas-crosswords psgo reverxii rubik schwalbe-chess
-	sgame skak skaknew soup sudoku sudokubundle xq xskak"
+	havannah hexgame horoscop jigsaw labyrinth logicpuzzle musikui
+	onedown othello othelloboard pas-crosswords psgo reverxii
+	schwalbe-chess sgame skak skaknew soup sudoku sudokubundle xq
+	xskak"
 
 REQUIRES="texlive-collection-latex"
 

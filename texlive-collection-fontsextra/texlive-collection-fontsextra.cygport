@@ -1,5 +1,5 @@
 NAME="texlive-collection-fontsextra"
-VERSION=20180414
+VERSION=20181022
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="Asana-Math academicons accanthis adforn adfsymbols
@@ -16,18 +16,19 @@ TEXLIVE_TEXMF_PKGS="Asana-Math academicons accanthis adforn adfsymbols
 	cookingsymbols cormorantgaramond countriesofeurope
 	courier-scaled crimson cryst cyklop dancers dantelogo dejavu
 	dejavu-otf dice dictsym dingbat doublestroke dozenal drm droid
-	duerer duerer-latex dutchcal ean ebgaramond ebgaramond-maths
-	ecc eco eiad eiad-ltx electrum elvish epigrafica epsdice
-	erewhon esrelation esstix esvect eulervm euxm fbb fdsymbol
-	fetamont feyn fge fira foekfont fonetika fontawesome
-	fontawesome5 fontmfizz fonts-churchslavonic fourier fouriernc
-	frcursive frederika2016 genealogy gentium-tug gfsartemisia
-	gfsbodoni gfscomplutum gfsdidot gfsneohellenic
-	gfsneohellenicmath gfssolomos gillcm gillius gnu-freefont
-	gofonts gothic greenpoint grotesq hacm hands heuristica
-	hfbright hfoldsty ifsym imfellenglish inconsolata initials
-	ipaex-type1 iwona jablantile jamtimes junicode kixfont kpfonts
-	kurier lato lfb libertine libertinegc libertinus
+	dsserif duerer duerer-latex dutchcal ean ebgaramond
+	ebgaramond-maths ecc eco eiad eiad-ltx electrum elvish
+	epigrafica epsdice erewhon esrelation esstix esvect eulervm
+	euxm fbb fdsymbol fetamont feyn fge fira firamath firamath-otf
+	foekfont fonetika fontawesome fontawesome5 fontmfizz
+	fonts-churchslavonic fourier fouriernc frcursive frederika2016
+	genealogy gentium-tug gfsartemisia gfsbodoni gfscomplutum
+	gfsdidot gfsneohellenic gfsneohellenicmath gfssolomos gillcm
+	gillius gnu-freefont gofonts gothic greenpoint grotesq hacm
+	hands heuristica hfbright hfoldsty ifsym imfellenglish
+	inconsolata initials ipaex-type1 iwona jablantile jamtimes
+	junicode kixfont kpfonts kurier lato lfb libertine libertinegc
+	libertinus libertinus-fonts libertinus-otf libertinus-type1
 	libertinust1math librebaskerville librebodoni librecaslon
 	libris linearA lobster2 lxfonts ly1 mathabx mathabx-type1
 	mathdesign mdputu mdsymbol merriweather miama mintspirit
@@ -40,10 +41,10 @@ TEXLIVE_TEXMF_PKGS="Asana-Math academicons accanthis adforn adfsymbols
 	roboto romande rosario rsfso sansmathaccent sansmathfonts
 	sauter sauterfonts schulschriften semaphor shobhika skull
 	sourcecodepro sourcesanspro sourceserifpro starfont staves
-	stix superiors svrsymbols tapir tempora tengwarscript tfrupee
-	tinos tpslifonts trajan txfontsb txuprcal typicons
-	umtypewriter universa universalis uppunctlm urwchancal
-	venturisadf wsuipa xcharter xits yfonts yfonts-t1 yinit-otf
-	zlmtt"
+	stickstoo stix stix2-otf stix2-type1 superiors svrsymbols
+	tapir tempora tengwarscript tfrupee tinos tpslifonts trajan
+	txfontsb txuprcal typicons umtypewriter universa universalis
+	uppunctlm urwchancal venturisadf wsuipa xcharter xits yfonts
+	yfonts-t1 yinit-otf zlmtt"
 
 inherit texlive

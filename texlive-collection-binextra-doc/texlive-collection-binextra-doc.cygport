@@ -1,11 +1,11 @@
 NAME="texlive-collection-binextra-doc"
-VERSION=20180414
+VERSION=20181022
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="a2ping adhocfilelist arara bibtex8 bibtexu bundledoc
-	checklistings ctan_chk chktex ctan-o-mat ctanify ctanupload
-	ctie cweb de-macro detex dtl dtxgen dvi2tty dviasm dvicopy
-	dvidvi dviinfox dviljk dvipng dvipos dvisvgm findhyph
+	checklistings ctan_chk chktex cluttex ctan-o-mat ctanify
+	ctanupload ctie cweb de-macro detex dtl dtxgen dvi2tty dviasm
+	dvicopy dvidvi dviinfox dviljk dvipng dvipos dvisvgm findhyph
 	fragmaster hook-pre-commit-pkg installfont ketcindy lacheck
 	latex-git-log latex-papersize latex2man latex2nemeth latexdiff
 	latexfileversion latexindent latexmk latexpand listings-ext
@@ -13,8 +13,8 @@ TEXLIVE_DOC_PKGS="a2ping adhocfilelist arara bibtex8 bibtexu bundledoc
 	pdfbook2 pdfcrop pdfjam pdflatexpicscale pdftools pdfxup
 	pfarrei pkfix pkfix-helper purifyeps pythontex seetexk
 	srcredact sty2dtx synctex tex4ebook texcount texdef texdiff
-	texdirflatten texdoc texfot texliveonfly texloganalyser
-	texosquery texware tie tlcockpit tlshell tpic2pdftex
-	typeoutfileinfo web xindy"
+	texdirflatten texdoc texdoctk texfot texliveonfly
+	texloganalyser texosquery texware tie tlcockpit tlshell
+	tpic2pdftex typeoutfileinfo web xindy"
 
 inherit texlive

@@ -1,11 +1,14 @@
 NAME="texlive-collection-bibtexextra-doc"
-VERSION=20180414
+VERSION=20181022
 RELEASE=1
+
+# Check for package changes.  Might as well update all collections
+# while I'm at it.
 
 TEXLIVE_DOC_PKGS="amsrefs apacite archaeologie besjournals bestpapers
 	bib2gls bibarts biber bibexport bibhtml biblatex biblatex-abnt
 	biblatex-anonymous biblatex-apa biblatex-archaeology
-	biblatex-arthistory-bonn biblatex-bookinarticle
+	biblatex-arthistory-bonn biblatex-bath biblatex-bookinarticle
 	biblatex-bookinother biblatex-bwl biblatex-caspervector
 	biblatex-chem biblatex-chicago biblatex-claves biblatex-dw
 	biblatex-enc biblatex-ext biblatex-fiwi biblatex-gb7714-2015
@@ -17,8 +20,8 @@ TEXLIVE_DOC_PKGS="amsrefs apacite archaeologie besjournals bestpapers
 	biblatex-opcit-booktitle biblatex-oxref biblatex-philosophy
 	biblatex-phys biblatex-publist biblatex-realauthor
 	biblatex-sbl biblatex-science biblatex-shortfields
-	biblatex-source-division biblatex-subseries
-	biblatex-swiss-legal biblatex-trad
+	biblatex-socialscienceshuberlin biblatex-source-division
+	biblatex-subseries biblatex-swiss-legal biblatex-trad
 	biblatex-true-citepages-omit biblist bibtexperllibs bibtopic
 	bibtopicprefix bibunits biolett-bst bookdb breakcites cell
 	chbibref chembst chicago-annote chscite citeall citeref
