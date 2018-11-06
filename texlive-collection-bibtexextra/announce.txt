@@ -1,16 +1,12 @@
-From cygwin-announce-texlive-collection-bibtexextra-20180105-1 Fri Jan 05 17:38:47 2018
-From: Ken Brown <kbrown@cornell.edu>
-To: cygwin-announce@cygwin.com
-Date: Fri, 05 Jan 2018 17:38:47 -0500
-Subject: texlive-collection-bibtexextra 20180105-1
+Subject: texlive-collection-bibtexextra 20181106-1
 
 The following packages have been uploaded to the Cygwin distribution:
 
-* texlive-collection-bibtexextra-20180105-1
-* texlive-collection-bibtexextra-doc-20180105-1
+* texlive-collection-bibtexextra-20181106-1
+* texlive-collection-bibtexextra-doc-20181106-1
 
 This is an update to the latest upstream release.  It includes
-biblatex-3.10, which is needed for biber-2.10.
+biblatex-3.12, which is needed for biber-2.12.
 
 Ken Brown
 Cygwin's TeX Live maintainer
