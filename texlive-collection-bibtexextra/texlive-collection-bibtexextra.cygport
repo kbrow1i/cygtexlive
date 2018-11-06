@@ -1,9 +1,6 @@
 NAME="texlive-collection-bibtexextra"
-VERSION=20181022
+VERSION=20181106
 RELEASE=1
-
-# Check for package changes.  Might as well update all collections
-# while I'm at it.
 
 TEXLIVE_TEXMF_PKGS="aichej ajl amsrefs apacite apalike2 archaeologie
 	beebe besjournals bestpapers bibarts bibhtml biblatex

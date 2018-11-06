@@ -1,9 +1,6 @@
 NAME="texlive-collection-bibtexextra-doc"
-VERSION=20181022
+VERSION=20181106
 RELEASE=1
-
-# Check for package changes.  Might as well update all collections
-# while I'm at it.
 
 TEXLIVE_DOC_PKGS="amsrefs apacite archaeologie besjournals bestpapers
 	bib2gls bibarts biber bibexport bibhtml biblatex biblatex-abnt

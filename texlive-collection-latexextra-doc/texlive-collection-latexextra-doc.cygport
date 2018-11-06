@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra-doc"
-VERSION=20181022
+VERSION=20181106
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
@@ -28,22 +28,23 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	captcont captdef carbohydrates cases casyl
 	catchfilebetweentags catechis catoptions cbcoptic ccaption
 	cclicenses cd cd-cover cdpbundl cellprops cellspace censor
-	changebar changelayout changepage changes chappg chapterfolder
-	cheatsheet chet chextras childdoc chkfloat chletter chngcntr
-	chronology circ classics classpack clefval cleveref clipboard
-	clock cloze clrdblpg clrstrip cmdstring cmdtrack cmsd cnltx
-	cntformats cntperchap codedoc codepage codesection collcell
-	collectbox colophon colordoc colorinfo coloring colorspace
-	colortab colorwav colorweb colourchange combelow combine comma
-	commado comment competences concepts concprog constants
-	continue contour contracard conv-xkv cooking cooking-units
-	cool coollist coolstr coolthms cooltooltips coordsys copyedit
-	copyrightbox coseoul counttexruns courseoutline coursepaper
-	coverpage cprotect crbox crossreference crossreftools csquotes
-	css-colors csvsimple cuisine currency currfile currvita cutwin
-	cv cv4tw cweb-latex cyber cybercic dashbox dashrule
-	dashundergaps dataref datatool dateiliste datenumber datetime
-	datetime2 datetime2-bahasai datetime2-basque datetime2-breton
+	changebar changelayout changelog changepage changes chappg
+	chapterfolder cheatsheet chet chextras childdoc chkfloat
+	chletter chngcntr chronology circ classics classpack clefval
+	cleveref clipboard clock cloze clrdblpg clrstrip cmdstring
+	cmdtrack cmsd cnltx cntformats cntperchap codedoc codepage
+	codesection collcell collectbox colophon colordoc colorinfo
+	coloring colorspace colortab colorwav colorweb colourchange
+	combelow combine comma commado comment competences concepts
+	concprog constants continue contour contracard conv-xkv
+	cooking cooking-units cool coollist coolstr coolthms
+	cooltooltips coordsys copyedit copyrightbox coseoul
+	counttexruns courseoutline coursepaper coverpage cprotect
+	crbox crossreference crossreftools csquotes css-colors
+	csvsimple cuisine currency currfile currvita cutwin cv cv4tw
+	cweb-latex cyber cybercic dashbox dashrule dashundergaps
+	dataref datatool dateiliste datenumber datetime datetime2
+	datetime2-bahasai datetime2-basque datetime2-breton
 	datetime2-bulgarian datetime2-catalan datetime2-croatian
 	datetime2-czech datetime2-danish datetime2-dutch
 	datetime2-en-fulltext datetime2-english datetime2-esperanto
@@ -98,39 +99,39 @@ TEXLIVE_DOC_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	hackthefootline handin handout hang hanging hardwrap harnon-cv
 	harpoon hc he-she hhtensor histogr hitec hletter hpsdiss
 	hrefhide hvindex hypdvips hyper hyperbar hypernat hyperxmp
-	hyphenat idxcmds idxlayout iffont ifmslide ifmtarg ifnextok
-	ifoddpage ifplatform ifthenx iitem image-gallery imakeidx
-	import incgraph indextools inline-images inlinedef inputtrc
-	interactiveworkbook interfaces intopdf inversepath invoice
-	invoice2 iso iso10303 isodate isodoc isonums isopt isorot
-	isotope issuulinks iwhdp jlabels jslectureplanner jumplines
-	jvlisting kalendarium kantlipsum kerntest keycommand keyfloat
-	keyreader keystroke keyval2e keyvaltable kix knowledge
-	koma-moderncvclassic koma-script-sfs komacv komacv-rg
-	ktv-texdata l3build labbook labels labelschanged lastpackage
-	lastpage latex-tds latexdemo latexgit layouts lazylist lccaps
-	lcd lcg leading leaflet leftidx leipzig lengthconvert lettre
-	lettrine lewis lhelp libgreek limap linegoal linop lipsum
-	lisp-on-tex listing listlbls listliketab listofsymbols lkproof
-	lmake locality localloc logbox logical-markup-utils logpap
-	longfbox longfigure longnamefilelist loops lsc lstaddons
-	lt3graph ltablex ltabptch ltxdockit ltxindex ltxkeys ltxnew
-	ltxtools lua-check-hyphen luatodonotes macroswap magaz mailing
-	mailmerge makebarcode makebase makebox makecell makecirc
-	makecmds makedtx makeglos mandi manuscript manyind marginfit
-	marginfix marginnote markdown mathalfa mathastext mathexam
-	mathfam256 mathfont maybemath mbenotes mcaption mceinleger
-	mcexam mcite mciteplus mdframed media9 medstarbeamer
-	meetingmins memexsupp memory mensa-tex menu menukeys method
-	metre mfirstuc mftinc midpage minibox minidocument minifp
-	minipage-marginpar minitoc minorrevision minted minutes
-	mla-paper mlist mmap mnotes moderncv modernposter
-	moderntimeline modref modroman modular monofill moodle
-	moreenum morefloats morehype moresize moreverb morewrites
-	movie15 mparhack mpostinl msc msg mslapa mtgreek multenum
-	multiaudience multibbl multicap multidef multienv multiexpand
-	multilang multirow mversion mwe mycv mylatexformat nag
-	nameauth namespc ncclatex ncctools needspace newcommand
+	hyphenat identkey idxcmds idxlayout iffont ifmslide ifmtarg
+	ifnextok ifoddpage ifplatform ifthenx iitem image-gallery
+	imakeidx import incgraph indextools inline-images inlinedef
+	inputtrc interactiveworkbook interfaces intopdf inversepath
+	invoice invoice2 iso iso10303 isodate isodoc isonums isopt
+	isorot isotope issuulinks iwhdp jlabels jslectureplanner
+	jumplines jvlisting kalendarium kantlipsum kerntest keycommand
+	keyfloat keyreader keystroke keyval2e keyvaltable kix
+	knowledge koma-moderncvclassic koma-script-sfs komacv
+	komacv-rg ktv-texdata l3build labbook labels labelschanged
+	lastpackage lastpage latex-tds latexdemo latexgit layouts
+	lazylist lccaps lcd lcg leading leaflet leftidx leipzig
+	lengthconvert lettre lettrine lewis lhelp libgreek limap
+	linegoal linop lipsum lisp-on-tex listing listlbls listliketab
+	listofsymbols lkproof lmake locality localloc logbox
+	logical-markup-utils logpap longfbox longfigure
+	longnamefilelist loops lsc lstaddons lt3graph ltablex ltabptch
+	ltxdockit ltxindex ltxkeys ltxnew ltxtools lua-check-hyphen
+	luatodonotes macroswap magaz mailing mailmerge makebarcode
+	makebase makebox makecell makecirc makecmds makedtx makeglos
+	mandi manuscript manyind marginfit marginfix marginnote
+	markdown mathalfa mathastext mathexam mathfam256 mathfont
+	maybemath mbenotes mcaption mceinleger mcexam mcite mciteplus
+	mdframed media9 medstarbeamer meetingmins memexsupp memory
+	mensa-tex menu menukeys method metre mfirstuc mftinc midpage
+	minibox minidocument minifp minipage-marginpar minitoc
+	minorrevision minted minutes mla-paper mlist mmap mnotes
+	moderncv modernposter moderntimeline modref modroman modular
+	monofill moodle moreenum morefloats morehype moresize moreverb
+	morewrites movie15 mparhack mpostinl msc msg mslapa mtgreek
+	multenum multiaudience multibbl multicap multidef multienv
+	multiexpand multilang multirow mversion mwe mycv mylatexformat
+	nag nameauth namespc ncclatex ncctools needspace newcommand
 	newenviron newfile newlfm newspaper newunicodechar newvbtm
 	newverbs nfssext-cfr nicefilelist niceframe nicetext
 	nidanfloat nlctdoc noconflict noindentafter noitcrul nolbreaks

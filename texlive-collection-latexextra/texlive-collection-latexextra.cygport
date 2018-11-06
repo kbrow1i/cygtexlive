@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra"
-VERSION=20181022
+VERSION=20181106
 RELEASE=1
 
 # preview is now packaged as the preview-latex subpackage of emacs-auctex.
@@ -30,23 +30,23 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	canoniclayout capt-of captcont captdef carbohydrates cases
 	casyl catchfilebetweentags catechis catoptions cbcoptic
 	ccaption cclicenses cd cd-cover cdpbundl cellprops cellspace
-	censor changebar changelayout changepage changes chappg
-	chapterfolder cheatsheet chet chextras childdoc chkfloat
-	chletter chngcntr chronology circ classics classpack clefval
-	cleveref clipboard clock cloze clrdblpg clrstrip cmdstring
-	cmdtrack cmsd cnltx cntformats cntperchap codedoc codepage
-	codesection collcell collectbox colophon colordoc colorinfo
-	coloring colorspace colortab colorwav colorweb colourchange
-	combelow combine comma commado comment competences concepts
-	concprog constants continue contour contracard conv-xkv
-	cooking cooking-units cool coollist coolstr coolthms
-	cooltooltips coordsys copyedit copyrightbox coseoul
-	counttexruns courseoutline coursepaper coverpage cprotect
-	crbox crossreference crossreftools csquotes css-colors
-	csvsimple cuisine currency currfile currvita cutwin cv cv4tw
-	cweb-latex cyber cybercic dashbox dashrule dashundergaps
-	dataref datatool dateiliste datenumber datetime datetime2
-	datetime2-bahasai datetime2-basque datetime2-breton
+	censor changebar changelayout changelog changepage changes
+	chappg chapterfolder cheatsheet chet chextras childdoc
+	chkfloat chletter chngcntr chronology circ classics classpack
+	clefval cleveref clipboard clock cloze clrdblpg clrstrip
+	cmdstring cmdtrack cmsd cnltx cntformats cntperchap codedoc
+	codepage codesection collcell collectbox colophon colordoc
+	colorinfo coloring colorspace colortab colorwav colorweb
+	colourchange combelow combine comma commado comment
+	competences concepts concprog constants continue contour
+	contracard conv-xkv cooking cooking-units cool coollist
+	coolstr coolthms cooltooltips coordsys copyedit copyrightbox
+	coseoul counttexruns courseoutline coursepaper coverpage
+	cprotect crbox crossreference crossreftools csquotes
+	css-colors csvsimple cuisine currency currfile currvita cutwin
+	cv cv4tw cweb-latex cyber cybercic dashbox dashrule
+	dashundergaps dataref datatool dateiliste datenumber datetime
+	datetime2 datetime2-bahasai datetime2-basque datetime2-breton
 	datetime2-bulgarian datetime2-catalan datetime2-croatian
 	datetime2-czech datetime2-danish datetime2-dutch
 	datetime2-en-fulltext datetime2-english datetime2-esperanto
@@ -101,8 +101,8 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	halloweenmath hackthefootline handin handout hang hanging
 	hardwrap harnon-cv harpoon hc he-she hhtensor histogr hitec
 	hletter hpsdiss hrefhide hvindex hypdvips hyper hyperbar
-	hypernat hyperxmp hyphenat idxcmds idxlayout iffont ifmslide
-	ifmtarg ifnextok ifoddpage ifplatform ifthenx iitem
+	hypernat hyperxmp hyphenat identkey idxcmds idxlayout iffont
+	ifmslide ifmtarg ifnextok ifoddpage ifplatform ifthenx iitem
 	image-gallery imakeidx import incgraph indextools
 	inline-images inlinedef inputtrc interactiveworkbook
 	interfaces intopdf inversepath invoice invoice2 iso iso10303
