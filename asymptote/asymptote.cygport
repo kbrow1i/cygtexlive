@@ -1,18 +1,18 @@
 NAME="asymptote"
 VERSION=2.48
-RELEASE=0.1
+RELEASE=1
 
-GIT_URI="https://github.com/vectorgraphics/asymptote.git"
+# GIT_URI="https://github.com/vectorgraphics/asymptote.git"
 
-inherit emacs vim git
+# inherit emacs vim git
+inherit emacs vim
 
 HOMEPAGE="http://asymptote.sourceforge.net/"
 
-# SRC_URI="mirror://sourceforge/asymptote/${P}.src.tgz"
+SRC_URI="mirror://sourceforge/asymptote/${P}.src.tgz"
 
 PATCH_URI="mirror://portage/media-gfx/${PN}/files/${PN}-2.15-info.patch"
 PATCH_URI+=" asymptote-2.16-pdfviewer.patch"
-PATCH_URI+=" 0001-Revert-Disable-trapping-of-floating-point-exceptions.patch"
 PATCH_URI+=" 2.44-2-libtirpc.patch"
 
 # Need the texlive packages for docs.
@@ -22,7 +22,9 @@ DEPEND="pkgconfig(fftw3)
 	pkgconfig(gsl)
 	pkgconfig(ncurses)
 	pkgconfig(osmesa)
+	glm-devel
 	libgc-devel
+	libGLEW-devel
 	libglut-devel
 	libtirpc-devel
 	texinfo-tex
