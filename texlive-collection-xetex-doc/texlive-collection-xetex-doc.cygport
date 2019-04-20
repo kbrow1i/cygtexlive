@@ -1,15 +1,15 @@
 NAME="texlive-collection-xetex-doc"
-VERSION=20181022
+VERSION=20190420
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="arabxetex awesomebox bidi-atbegshi bidicontour
 	bidipagegrid bidishadowtext bidipresentation
 	businesscard-qrcode cqubeamer fixlatvian font-change-xetex
 	fontbook fontwrap interchar na-position philokalia ptext quran
-	realscripts simple-resume-cv simple-thesis-dissertation
-	ucharclasses unicode-bidi unisugar xebaposter xechangebar
-	xecjk xecolor xecyr xeindex xesearch xespotcolor xetex
-	xetex-itrans xetex-pstricks xetexfontinfo xetex-tibetan
-	xetexko xevlna"
+	quran-de realscripts simple-resume-cv
+	simple-thesis-dissertation tetragonos ucharclasses
+	unicode-bidi unisugar xebaposter xechangebar xecjk xecolor
+	xecyr xeindex xesearch xespotcolor xetex xetex-itrans
+	xetex-pstricks xetexfontinfo xetex-tibetan xetexko xevlna"
 
 inherit texlive

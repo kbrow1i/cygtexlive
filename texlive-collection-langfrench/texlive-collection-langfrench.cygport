@@ -1,24 +1,25 @@
 NAME="texlive-collection-langfrench"
-VERSION=20180414
+VERSION=20190420
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="aeguill apprends-latex babel-basque babel-french
 	basque-book basque-date bib-fr bibleref-french booktabs-fr
 	droit-fr e-french epslatex-fr facture formation-latex-ul
-	frletter hyphen-basque hyphen-french impatient-fr impnattypo
-	l2tabu-french latex2e-help-texinfo-fr lshort-french mafr
-	tabvar tdsfrmath texlive-fr translation-array-fr
-	translation-dcolumn-fr translation-natbib-fr
-	translation-tabbing-fr variations visualtikz"
+	frenchmath frletter guide-latex-fr hyphen-basque hyphen-french
+	impatient-fr impnattypo l2tabu-french latex2e-help-texinfo-fr
+	lshort-french mafr tabvar tdsfrmath texlive-fr
+	translation-array-fr translation-dcolumn-fr
+	translation-natbib-fr translation-tabbing-fr variations
+	visualtikz"
 
 TEXLIVE_DOC_PKGS="aeguill apprends-latex babel-basque babel-french
 	basque-book basque-date bib-fr bibleref-french booktabs-fr
 	droit-fr e-french epslatex-fr facture formation-latex-ul
-	frletter impatient-fr impnattypo l2tabu-french
-	latex2e-help-texinfo-fr lshort-french mafr tabvar tdsfrmath
-	texlive-fr translation-array-fr translation-dcolumn-fr
-	translation-natbib-fr translation-tabbing-fr variations
-	visualtikz"
+	frenchmath frletter guide-latex-fr impatient-fr impnattypo
+	l2tabu-french latex2e-help-texinfo-fr lshort-french mafr
+	tabvar tdsfrmath texlive-fr translation-array-fr
+	translation-dcolumn-fr translation-natbib-fr
+	translation-tabbing-fr variations visualtikz"
 
 inherit texlive
 

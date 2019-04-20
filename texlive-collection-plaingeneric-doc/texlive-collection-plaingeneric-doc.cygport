@@ -1,5 +1,5 @@
 NAME="texlive-collection-plaingeneric-doc"
-VERSION=20181022
+VERSION=20190420
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="abbr abstyles apnum autoaligne barr bitelist borceux
@@ -10,10 +10,10 @@ TEXLIVE_DOC_PKGS="abbr abstyles apnum autoaligne barr bitelist borceux
 	kastrup lambda-lists langcode lecturer librarian listofitems
 	mathdots metatex midnight mkpattern modulus multido navigator
 	newsletr ofs olsak-misc path pdf-trans pitex plainpkg plipsum
-	plnfss plstmary present randomlist resumemac schemata shade
-	simplekv systeme termmenu tex-ps tex4ht texapi texdate
-	tracklang treetex trigonometry ulem upca varisize xii xii-lat
-	xlop yax"
+	plnfss plstmary poormanlog present randomlist resumemac
+	schemata shade simplekv systeme termmenu tex-ps tex4ht texapi
+	texdate tracklang treetex trigonometry ulem upca varisize xii
+	xii-lat xlop yax"
 
 inherit texlive
 

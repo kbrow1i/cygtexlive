@@ -1,5 +1,5 @@
 NAME="texlive-collection-bibtexextra-doc"
-VERSION=20181106
+VERSION=20190420
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="amsrefs apacite archaeologie besjournals bestpapers
@@ -23,12 +23,13 @@ TEXLIVE_DOC_PKGS="amsrefs apacite archaeologie besjournals bestpapers
 	bibtopicprefix bibunits biolett-bst bookdb breakcites cell
 	chbibref chembst chicago-annote chscite citeall citeref
 	collref crossrefware custom-bib din1505 dk-bib doipubmed
-	ecobiblatex economic figbib footbib francais-bst gbt7714
-	geschichtsfrkl harvard harvmac historische-zeitschrift
-	ietfbibs ijqc inlinebib iopart-num jneurosci jurabib ltb2bib
-	listbib logreq luabibentry margbib multibib multibibliography
-	munich nmbib notes2bib oscola perception rsc showtags
-	sort-by-letters splitbib turabian-formatting uni-wtal-ger
-	uni-wtal-lin urlbst usebib vak xcite"
+	ecobiblatex econ-bst economic figbib footbib francais-bst
+	gbt7714 geschichtsfrkl harvard harvmac historische-zeitschrift
+	icite ietfbibs ijqc inlinebib iopart-num jneurosci jurabib
+	ltb2bib listbib logreq luabibentry margbib multibib
+	multibibliography munich nmbib notes2bib oscola perception rsc
+	showtags sort-by-letters splitbib turabian-formatting
+	uni-wtal-ger uni-wtal-lin urlbst usebib vak windycity xcite
+	zootaxa-bst"
 
 inherit texlive

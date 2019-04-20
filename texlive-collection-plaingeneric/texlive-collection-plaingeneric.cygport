@@ -1,20 +1,21 @@
 NAME="texlive-collection-plaingeneric"
-VERSION=20181022
+VERSION=20190420
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="abbr abstyles apnum autoaligne barr bitelist
-	borceux c-pascal catcodes chronosys colorsep dinat dirtree
-	docbytex dowith eijkhout encxvlna epigram epsf epsf-dvipdfmx
-	fenixpar figflow fixpdfmag fltpoint fntproof font-change
-	fontch fontname gates genmisc getoptk gfnotation gobble
-	graphics-pln gtl hlist hyplain ifetex iftex insbox js-misc
-	kastrup lambda-lists langcode lecturer librarian listofitems
-	mathdots metatex midnight mkpattern modulus multido navigator
-	newsletr ofs olsak-misc path pdf-trans pitex placeins-plain
-	plainpkg plipsum plnfss plstmary present randomlist resumemac
-	schemata shade simplekv systeme tabto-generic termmenu tex-ps
-	texapi texdate texinfo timetable tracklang treetex
-	trigonometry ulem upca varisize xii xii-lat xlop yax"
+	borceux c-pascal catcodes chronosys colorsep cweb-old dinat
+	dirtree docbytex dowith eijkhout encxvlna epigram epsf
+	epsf-dvipdfmx fenixpar figflow fixpdfmag fltpoint fntproof
+	font-change fontch fontname gates genmisc getoptk gfnotation
+	gobble graphics-pln gtl hlist hyplain ifetex iftex insbox
+	js-misc kastrup lambda-lists langcode lecturer librarian
+	listofitems mathdots metatex midnight mkpattern modulus
+	multido navigator newsletr ofs olsak-misc path pdf-trans pitex
+	placeins-plain plainpkg plipsum plnfss plstmary poormanlog
+	present randomlist resumemac schemata shade simplekv systeme
+	tabto-generic termmenu tex-ps texapi texdate texinfo timetable
+	tracklang treetex trigonometry ulem upca varisize xii xii-lat
+	xlop yax"
 
 TEXLIVE_ARCH_PKGS="tex4ht"
 

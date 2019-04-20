@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra"
-VERSION=20181106
+VERSION=20190420
 RELEASE=1
 
 # preview is now packaged as the preview-latex subpackage of emacs-auctex.
@@ -13,40 +13,40 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	arrayjobx arraysort arydshln asciilist assignment assoccnt
 	attachfile aurl authoraftertitle authorarchive autonum autopdf
 	avremu axessibility background bankstatement bashful
-	basicarith bchart beamer2thesis beameraudience
+	basicarith bchart beamer2thesis beamer-rl beameraudience
 	beamercolorthemeowl beamerdarkthemes beamerposter
 	beamersubframe beamertheme-cuerna beamertheme-detlevcm
-	beamertheme-epyt beamertheme-focus beamertheme-metropolis
-	beamertheme-npbt beamertheme-phnompenh
+	beamertheme-epyt beamertheme-focus beamertheme-light
+	beamertheme-metropolis beamertheme-npbt beamertheme-phnompenh
 	beamertheme-saintpetersburg beamertheme-upenn-bc
 	beamerthemejltree beamerthemenirma beton bewerbung bez123
 	bezos bhcexam bibletext bigfoot bigints biochemistry-colors
 	bizcard blindtext blkarray block blowup bnumexpr boites
 	bold-extra bookcover bookest booklet boolexpr bophook
 	boxedminipage boxedminipage2e boxhandler bracketkey braket
-	breakurl bullcntr bussproofs bxcalc bxdpx-beamer bxdvidriver
-	bxenclose bxnewfont bxpapersize bxpdfver bxtexlogo calcage
-	calctab calculator calrsfs cals calxxxx-yyyy cancel
-	canoniclayout capt-of captcont captdef carbohydrates cases
-	casyl catchfilebetweentags catechis catoptions cbcoptic
-	ccaption cclicenses cd cd-cover cdpbundl cellprops cellspace
-	censor changebar changelayout changelog changepage changes
-	chappg chapterfolder cheatsheet chet chextras childdoc
-	chkfloat chletter chngcntr chronology circ classics classpack
-	clefval cleveref clipboard clock cloze clrdblpg clrstrip
-	cmdstring cmdtrack cmsd cnltx cntformats cntperchap codedoc
-	codepage codesection collcell collectbox colophon colordoc
-	colorinfo coloring colorspace colortab colorwav colorweb
-	colourchange combelow combine comma commado comment
-	competences concepts concprog constants continue contour
-	contracard conv-xkv cooking cooking-units cool coollist
-	coolstr coolthms cooltooltips coordsys copyedit copyrightbox
-	coseoul counttexruns courseoutline coursepaper coverpage
-	cprotect crbox crossreference crossreftools csquotes
-	css-colors csvsimple cuisine currency currfile currvita cutwin
-	cv cv4tw cweb-latex cyber cybercic dashbox dashrule
-	dashundergaps dataref datatool dateiliste datenumber datetime
-	datetime2 datetime2-bahasai datetime2-basque datetime2-breton
+	breakurl bullcntr bxcalc bxdpx-beamer bxdvidriver bxenclose
+	bxnewfont bxpapersize bxpdfver bxtexlogo calcage calctab
+	calculator calrsfs cals calxxxx-yyyy cancel canoniclayout
+	capt-of captcont captdef carbohydrates cases casyl
+	catchfilebetweentags catechis catoptions cbcoptic ccaption
+	cclicenses cd cd-cover cdpbundl cellprops cellspace censor
+	changebar changelayout changelog changepage changes chappg
+	chapterfolder cheatsheet chet chextras childdoc chkfloat
+	chletter chngcntr chronology circ classics classpack clefval
+	cleveref clipboard clock cloze clrdblpg clrstrip cmdstring
+	cmdtrack cmsd cnltx cntformats cntperchap codedoc codepage
+	codesection collcell collectbox colophon colordoc colorinfo
+	coloring colorspace colortab colorwav colorweb colourchange
+	combelow combine comma commado commedit comment competences
+	concepts concprog constants continue contour contracard
+	conv-xkv cooking cooking-units cool coollist coolstr coolthms
+	cooltooltips coordsys copyedit copyrightbox coseoul
+	counttexruns courseoutline coursepaper coverpage cprotect
+	crbox crossreference crossreftools csquotes css-colors
+	csvsimple cuisine currency currfile currvita cutwin cv cv4tw
+	cweb-latex cyber cybercic dashbox dashrule dashundergaps
+	dataref datatool dateiliste datenumber datetime datetime2
+	datetime2-bahasai datetime2-basque datetime2-breton
 	datetime2-bulgarian datetime2-catalan datetime2-croatian
 	datetime2-czech datetime2-danish datetime2-dutch
 	datetime2-en-fulltext datetime2-english datetime2-esperanto
@@ -67,120 +67,124 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	draftfigure draftwatermark dtk dtxdescribe dtxgallery ducksay
 	dvdcoll dynamicnumber dynblocks easy easy-todo easyfig
 	easyformat easylist easyreview ean13isbn ebezier ecclesiastic
-	ecv ed edmargin eemeir efbox egplot elements ellipsis elmath
-	elocalloc elpres elzcards emarks embedall embrac emptypage
-	emulateapj endfloat endheads endnotes engpron engrec enotez
-	enumitem enumitem-zref envbig environ envlab epigraph epiolmec
-	eqell eqlist eqnalign eqname eqparbox errata erw-l3 esami
-	esdiff esint esint-type1 etaremune etextools etoc eukdate
-	eulerpx europasscv europecv everyhook everypage exam exam-n
-	examdesign example examplep excludeonly exercise exercisebank
-	exercises exp-testopt expdlist export exsheets exsol extract
-	facsimile factura fancyhandout fancylabel fancynum fancypar
-	fancyslides fancytabs fancytooltips fcolumn fetchcls ffslides
-	fgruler fibeamer fifo-stack figsize filecontents
-	filecontentsdef filedate fileinfo filemod fink finstrut
-	fithesis fixcmex fixfoot fixme fixmetodonotes fjodor flabels
-	flacards flagderiv flashcards flashmovie flipbook flippdf
-	floatflt floatrow flowfram fmp fmtcount fn2end fnbreak
-	fncychap fncylab fnpara fnpct fnumprint foilhtml fontaxes
-	fonttable footmisc footmisx footnotebackref footnotehyper
-	footnoterange footnpag forarray foreign forloop formlett
-	forms16be formular fragments frame framed frankenstein frege
-	ftcap ftnxtra fullblck fullminipage fullwidth fundus-calligra
-	fundus-cyr fundus-sueterlin fvextra fwlw g-brief gatherenum
-	gauss gcard gcite gender genmpage getfiledate getitems ginpenc
-	gitfile-info gitinfo gitinfo2 gitlog gloss glossaries-danish
-	glossaries-dutch glossaries-english glossaries-extra
-	glossaries-finnish glossaries-french glossaries-german
-	glossaries-irish glossaries-italian glossaries-magyar
-	glossaries-polish glossaries-portuges glossaries-serbian
-	glossaries-spanish gmdoc gmdoc-enhance gmiflink gmutils gmverb
-	grabbox graphbox graphicx-psmin graphicxbox grayhints grfpaste
-	grid grid-system gridset gridslides gridslides guitlogo
-	halloweenmath hackthefootline handin handout hang hanging
-	hardwrap harnon-cv harpoon hc he-she hhtensor histogr hitec
-	hletter hpsdiss hrefhide hvindex hypdvips hyper hyperbar
-	hypernat hyperxmp hyphenat identkey idxcmds idxlayout iffont
-	ifmslide ifmtarg ifnextok ifoddpage ifplatform ifthenx iitem
-	image-gallery imakeidx import incgraph indextools
-	inline-images inlinedef inputtrc interactiveworkbook
-	interfaces intopdf inversepath invoice invoice2 iso iso10303
-	isodate isodoc isonums isopt isorot isotope issuulinks iwhdp
-	jlabels jslectureplanner jumplines jvlisting kalendarium
-	kantlipsum kerntest keycommand keyfloat keyreader keystroke
-	keyval2e keyvaltable kix knowledge koma-moderncvclassic
-	koma-script-sfs komacv komacv-rg ktv-texdata l3build labbook
-	labels labelschanged lastpackage lastpage latex-tds latexdemo
-	latexgit layouts lazylist lccaps lcd lcg leading leaflet
-	leftidx leipzig lengthconvert lettre lettrine lewis lhelp
-	libgreek limap linegoal linop lipsum lisp-on-tex listing
-	listlbls listliketab listofsymbols lkproof lmake locality
-	localloc logbox logical-markup-utils logpap longfbox
-	longfigure longnamefilelist loops lsc lstaddons lt3graph
-	ltablex ltabptch ltxdockit ltxindex ltxkeys ltxnew ltxtools
-	lua-check-hyphen luatodonotes macroswap magaz mailing
-	mailmerge makebarcode makebase makebox makecell makecirc
-	makecmds makeglos mandi manfnt manuscript manyind marginfit
-	marginfix marginnote markdown mathalfa mathastext mathexam
-	mathfam256 mathfont maybemath mbenotes mcaption mceinleger
-	mcexam mcite mciteplus mdframed media9 medstarbeamer
-	meetingmins memexsupp memory mensa-tex menu menukeys method
-	metre mfirstuc mftinc midpage minibox minidocument minifp
-	minipage-marginpar minitoc minorrevision minted minutes
-	mla-paper mlist mmap mnotes moderncv modernposter
-	moderntimeline modref modroman modular monofill moodle
-	moreenum morefloats morehype moresize moreverb morewrites
-	movie15 mparhack mpostinl msc msg mslapa mtgreek multenum
-	multiaudience multibbl multicap multidef multienv multiexpand
-	multilang multirow mversion mwe mycv mylatexformat nag
-	nameauth namespc ncclatex ncctools needspace nestquot
-	newcommand newenviron newfile newlfm newspaper newunicodechar
-	newvbtm newverbs nextpage nfssext-cfr nicefilelist niceframe
-	nicetext nidanfloat nlctdoc noconflict noindentafter noitcrul
-	nolbreaks nomencl nomentbl nonfloat nonumonpart nopageno
-	normalcolor notes notespages notestex notoccite nowidow nox
-	ntheorem numberedblock numname numprint numspell ocg-p ocgx
-	ocgx2 ocr-latex octavo oldstyle onlyamsmath opcit optidef
-	optional options outline outliner outlines outlining overlays
-	overpic padcount pagecolor pagecont pagenote pagerange
-	pageslts paper papercdcase papermas papertex paracol parades
-	paralist paresse parnotes parselines pas-cours pas-cv
-	pas-tableur patch patchcmd pauldoc pawpict pbox pbsheet pdf14
-	pdfcomment pdfcprot pdfmarginpar pdfoverlay pdfpagediff
-	pdfpc-movie pdfprivacy pdfreview pdfscreen pdfslide pdfsync
-	pdfwin pdfx pecha permute petiteannonce phffullpagefigure
-	phfnote phfparen phfqit phfquotetext phfsvnwatermark phfthm
-	philex phonenumbers photo piff pkgloader placeins plantslabels
-	plates plweb polynom polynomial polytable postcards poster-mac
-	ppr-prv preprint pressrelease prettyref printlen probsoln
-	program progress progressbar proofread properties prosper
-	protex protocol psfragx pstool pstring pxgreeks python qcm
-	qstest qsymbols quicktype quotchap quoting quotmark ran_toks
-	randtext rccol rcs-multi rcsinfo readarray realboxes recipe
-	recipebook recipecard rectopma refcheck refenums
-	reflectgraphics refman refstyle regcount regexpatch register
-	regstats relenc relsize repeatindex repltext returntogrid
-	rjlparshap rlepsf rmpage robustcommand robustindex romanbar
-	romanbarpagenumber romanneg romannum rotfloat rotpages
-	roundbox rterface rtkinenc rulercompass rvwrite sauerj
-	savefnmark savesym savetrees scale scalebar scalerel scanpages
-	scrlttr2copy sdrt secdot sectionbox sectionbreak sectsty
-	seealso selectp semantic semantic-markup semioneside semproc
-	sepfootnotes seqsplit sesstime sf298 sffms sfmath shadethm
-	shadow shadowtext shapepar shdoc shipunov shorttoc show2e
-	showcharinbox showdim showexpl showhyphens showlabels sidecap
-	sidenotes silence simplecd simplecv simpleinvoice sitem skb
-	skdoc skeycommand skeyval skrapport slantsc smalltableof
-	smartunits smartref snapshot snotez soul spark-otf sparklines
-	sphack spot spotcolor spreadtab spverbatim srbook-mem srcltx
-	sseq sslides stack stackengine standalone stdclsdv stealcaps
-	stdpage stex storebox storecmd stringstrings sttools stubs
-	studenthandouts subdepth subeqn subeqnarray subfigmat
-	subfigure subfiles subfloat substitutefont substr supertabular
-	svg svgcolor svn svn-prov svninfo syntax syntrace synttree
-	tabfigures tableaux tablefootnote tableof tablestyles tablists
-	tabls tabstackengine tabto-ltx tabu tabularborder tabularcalc
+	ecv ed edmargin eemeir efbox egplot elegantbook elegantnote
+	elegantpaper elements ellipsis elmath elocalloc elpres
+	elzcards emarks embedall embrac emptypage emulateapj endfloat
+	endheads endnotes engpron engrec enotez enumitem enumitem-zref
+	envbig environ envlab epigraph epiolmec eqell eqlist eqnalign
+	eqname eqparbox errata erw-l3 esami esdiff esint esint-type1
+	etaremune etextools etoc eukdate eulerpx europasscv europecv
+	everyhook everypage exam exam-n exam-randomizechoices
+	examdesign exframe example examplep excludeonly exercise
+	exercisebank exercisepoints exercises exp-testopt expdlist
+	export exsheets exsol extract facsimile factura fancyhandout
+	fancylabel fancynum fancypar fancyslides fancytabs
+	fancytooltips fbox fcolumn fetchcls ffslides fgruler fibeamer
+	fifo-stack figsize filecontents filecontentsdef filedate
+	fileinfo filemod fink finstrut fithesis fixcmex fixfoot fixme
+	fixmetodonotes fjodor flabels flacards flagderiv flashcards
+	flashmovie flipbook flippdf floatflt floatrow flowfram fmp
+	fmtcount fn2end fnbreak fncychap fncylab fnpara fnpct
+	fnumprint foilhtml fontaxes fonttable footmisc footmisx
+	footnotebackref footnoterange footnpag forarray foreign
+	forloop formlett forms16be formular fragments frame framed
+	frankenstein frege ftcap ftnxtra fullblck fullminipage
+	fullwidth fundus-calligra fundus-cyr fundus-sueterlin fvextra
+	fwlw g-brief gatherenum gauss gcard gcite gender genmpage
+	getfiledate getitems ginpenc gitfile-info gitinfo gitinfo2
+	gitlog gitver globalvals gloss glossaries-danish
+	glossaries-dutch glossaries-english glossaries-estonian
+	glossaries-extra glossaries-finnish glossaries-french
+	glossaries-german glossaries-irish glossaries-italian
+	glossaries-magyar glossaries-polish glossaries-portuges
+	glossaries-serbian glossaries-spanish gmdoc gmdoc-enhance
+	gmiflink gmutils gmverb grabbox graphbox graphicx-psmin
+	graphicxbox grayhints grfpaste grid grid-system gridset
+	gridslides gridslides guitlogo halloweenmath hackthefootline
+	handin handout hang hanging hardwrap harnon-cv harpoon hc
+	he-she hhtensor histogr hitec hletter hpsdiss hrefhide hvindex
+	hypdvips hyper hyperbar hypernat hyperxmp hyphenat identkey
+	idxcmds idxlayout iffont ifmslide ifmtarg ifnextok ifoddpage
+	ifplatform ifthenx iitem image-gallery imakeidx import
+	incgraph indextools inline-images inlinedef inputtrc
+	interactiveworkbook interfaces intopdf inversepath invoice
+	invoice-class invoice2 iso iso10303 isodate isodoc isonums
+	isopt isorot isotope issuulinks iwhdp jlabels jslectureplanner
+	jumplines jvlisting kalendarium kantlipsum kerntest keycommand
+	keyfloat keyreader keyindex keystroke keyval2e keyvaltable kix
+	knowledge koma-moderncvclassic koma-script-sfs komacv
+	komacv-rg ktv-texdata l3build labbook labels labelschanged
+	lastpackage lastpage latex-tds latex-uni8 latexcolors
+	latexdemo latexgit layouts lazylist lccaps lcd lcg leading
+	leaflet lectures leftidx leipzig lengthconvert lettre lettrine
+	lewis lhelp libgreek limap linegoal linop lipsum lisp-on-tex
+	listing listlbls listliketab listofsymbols lkproof lmake
+	locality localloc logbox logical-markup-utils logpap longfbox
+	longfigure longnamefilelist loops lsc lstaddons lstfiracode
+	lt3graph ltablex ltabptch ltxdockit ltxguidex ltxindex ltxkeys
+	ltxnew ltxtools lua-check-hyphen luatodonotes macroswap magaz
+	makecookbook mailing mailmerge makebarcode makebase makebox
+	makecell makecirc makecmds makeglos mandi manfnt manuscript
+	manyind marginfit marginfix marginnote markdown mathalfa
+	mathastext mathexam mathfam256 mathfont maybemath mcaption
+	mceinleger mcexam mcite mciteplus mdframed media9
+	medstarbeamer meetingmins memexsupp memory mensa-tex menu
+	menukeys metalogox method metre mfirstuc mftinc mi-solns
+	midpage minibox minidocument minifp minipage-marginpar minitoc
+	minorrevision minted minutes mla-paper mlist mmap mnotes
+	moderncv modernposter moderntimeline modref modroman modular
+	monofill moodle moreenum morefloats morehype moresize moreverb
+	morewrites movie15 mparhack mpostinl msc msg mslapa mtgreek
+	multenum multiaudience multibbl multicap multicolrule multidef
+	multienv multiexpand multilang multirow mversion mwe mycv
+	mylatexformat nag nameauth namespc ncclatex ncctools needspace
+	nestquot newcommand newenviron newfile newlfm newspaper
+	newunicodechar newvbtm newverbs nextpage nfssext-cfr
+	nicefilelist niceframe nicetext nidanfloat nlctdoc noconflict
+	noindentafter noitcrul nolbreaks nomencl nomentbl nonfloat
+	nonumonpart nopageno normalcolor notes notespages notestex
+	notoccite nowidow nox ntheorem numberedblock numname numprint
+	numspell ocg-p ocgx ocgx2 ocr-latex octavo oldstyle
+	onlyamsmath opcit optidef optional options outline outliner
+	outlines outlining overlays overpic padcount pagecolor
+	pagecont pagenote pagerange pageslts paper papercdcase
+	papermas papertex paracol parades paralist paresse parnotes
+	parselines pas-cours pas-cv pas-tableur patch patchcmd pauldoc
+	pawpict pbox pbsheet pdf14 pdfcomment pdfcprot pdfmarginpar
+	pdfoverlay pdfpagediff pdfpc-movie pdfprivacy pdfreview
+	pdfscreen pdfslide pdfsync pdfwin pdfx pecha permute
+	petiteannonce phffullpagefigure phfnote phfparen phfqit
+	phfquotetext phfsvnwatermark phfthm philex phonenumbers photo
+	piff pkgloader placeins plantslabels plates plweb polynom
+	polynomial polytable postcards poster-mac ppr-prv preprint
+	pressrelease prettyref printlen probsoln program progress
+	progressbar proofread properties prosper protex protocol
+	psfragx pstool pstring pxgreeks python qcm qstest qsymbols
+	quicktype quotchap quoting quotmark ran_toks randtext rccol
+	rcs-multi rcsinfo readarray realboxes recipe recipebook
+	recipecard rectopma refcheck refenums reflectgraphics refman
+	refstyle regcount regexpatch register regstats relenc relsize
+	repeatindex repltext returntogrid rgltxdoc rjlparshap rlepsf
+	rmpage robustcommand robustindex romanbar romanbarpagenumber
+	romanneg romannum rotfloat rotpages roundbox rterface rtkinenc
+	rulercompass rvwrite sauerj savefnmark savesym savetrees scale
+	scalebar scalerel scanpages scrlttr2copy sdrt secdot
+	sectionbox sectionbreak sectsty seealso selectp semantic
+	semantic-markup semioneside semproc sepfootnotes seqsplit
+	sesstime sf298 sffms sfmath shadethm shadow shadowtext
+	shapepar shdoc shipunov shorttoc show2e showcharinbox showdim
+	showexpl showhyphens showlabels sidecap sidenotes silence
+	simplecd simplecv simpleinvoice sitem skb skdoc skeycommand
+	skeyval skrapport slantsc smalltableof smartunits smartref
+	snapshot snotez soul spark-otf sparklines sphack spot
+	spotcolor spreadtab spverbatim srbook-mem srcltx sseq sslides
+	stack stackengine standalone stdclsdv stealcaps stdpage stex
+	storebox storecmd stringstrings sttools stubs studenthandouts
+	subdepth subeqn subeqnarray subfigmat subfigure subfiles
+	subfloat substitutefont substr supertabular svg svgcolor svn
+	svn-prov svninfo syntax syntrace synttree tabfigures tableaux
+	tablefootnote tableof tablestyles tablists tabls tablvar
+	tabstackengine tabto-ltx tabu tabularborder tabularcalc
 	tabularew tabulary tagging tagpair tagpdf talk tamefloats
 	tasks tcldoc tcolorbox tdclock technics ted templatetools
 	termcal termlist testhyphens testidx tex-label tex-locale
@@ -189,10 +193,10 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	threadcol threeparttable threeparttablex thumb thumbs thumby
 	ticket titlecaps titlefoot titlepic titleref titlesec titling
 	tocbibind tocdata tocloft tocvsec2 todo todonotes tokenizer
-	toolbox topfloat totcount totpages translations trfsigns
-	trimspaces trivfloat trsym truncate tucv turnthepage twoinone
-	twoup txgreeks type1cm typed-checklist typeface typoaid
-	typogrid uassign ucs uebungsblatt umoline underlin
+	toolbox topfloat topiclongtable totcount totpages translations
+	trfsigns trimspaces trivfloat trsym truncate tucv turnthepage
+	twoinone twoup txgreeks type1cm typed-checklist typeface
+	typoaid typogrid uassign ucs uebungsblatt umoline underlin
 	underoverlap undolabl units unravel upmethodology upquote uri
 	ushort uspace uwmslide variablelm varindex varsfromjobname
 	varwidth vdmlisting verbasef verbatimbox verbatimcopy verbdef
@@ -201,14 +205,14 @@ TEXLIVE_TEXMF_PKGS="2up ESIEEcv GS1 HA-prosper Tabbing a0poster a4wide
 	warpcol was widetable widows-and-orphans williams withargs
 	wordcount wordlike worksheet wrapfig wtref xargs xassoccnt
 	xbmks xcntperchap xcolor-material xcolor-solarized xcomment
-	xdoc xellipsis xfakebold xfor xhfill xifthen xint xltabular
-	xmpincl xnewcommand xoptarg xpatch xpeek xprintlen xpunctuate
-	xsavebox xsim xstring xtab xurl xwatermark xytree yafoot
-	yaletter yagusylo ycbook ydoc zebra-goodies zed-csp ziffer
-	zwgetfdate zwpagelayout"
+	xcookybooky xcpdftips xdoc xellipsis xfakebold xfor xhfill
+	xifthen xint xltabular xmpincl xnewcommand xoptarg xpatch
+	xpeek xprintlen xpunctuate xsavebox xsim xstring xtab xurl
+	xwatermark xytree yafoot yaletter yagusylo ycbook ydoc
+	zebra-goodies zed-csp ziffer zwgetfdate zwpagelayout"
 
 TEXLIVE_ARCH_PKGS="authorindex exceltex glossaries makedtx pax perltex
-	pygmentex splitindex svn-multi vpe yplan"
+	pygmentex splitindex svn-multi vpe yplan webquiz"
 
 REQUIRES="texlive-collection-latexrecommended texlive-collection-pictures preview-latex"
 

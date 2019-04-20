@@ -1,5 +1,5 @@
 NAME="texlive-collection-basic"
-VERSION=20181022
+VERSION=20190420
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="amsfonts cm colorprofiles enctex etex etex-pkg
@@ -10,9 +10,9 @@ TEXLIVE_TEXMF_PKGS="amsfonts cm colorprofiles enctex etex etex-pkg
 
 TEXLIVE_ARCH_PKGS="bibtex dvipdfmx dvips gsftopk kpathsea luatex
 	makeindex metafont mfware pdftex tetex tex
-	texlive.infra texlive-scripts xdvi"
+	texlive.infra texlive-scripts tlshell xdvi"
 
-TEXLIVE_DOC_PKGS="colorprofiles tex tex-ini-files texlive.infra"
+TEXLIVE_DOC_PKGS="colorprofiles tex tex-ini-files texlive.infra tlshell"
 
 SRC_URI+=" update_tlpdb.pl"
 SRC_URI+=" tlmgr.config"

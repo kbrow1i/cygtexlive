@@ -1,5 +1,5 @@
 NAME="texlive-collection-fontsextra-doc"
-VERSION=20181022
+VERSION=20190420
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="Asana-Math academicons accanthis adforn adfsymbols
@@ -14,21 +14,22 @@ TEXLIVE_DOC_PKGS="Asana-Math academicons accanthis adforn adfsymbols
 	clearsans cm-lgc cm-unicode cmbright cmexb cmll cmpica cmsrb
 	cmtiup cochineal coelacanth comfortaa comicneue concmath-fonts
 	cookingsymbols cormorantgaramond countriesofeurope
-	courier-scaled crimson cryst cyklop dantelogo dejavu
-	dejavu-otf dice dictsym dingbat doublestroke dozenal drm droid
-	dsserif duerer duerer-latex dutchcal ean ebgaramond
-	ebgaramond-maths ecc eco eiad eiad-ltx electrum elvish
-	epigrafica epsdice erewhon esrelation esstix esvect eulervm
-	fbb fdsymbol fetamont feyn fge fira firamath firamath-otf
-	foekfont fonetika fontawesome fontawesome5 fontmfizz
-	fonts-churchslavonic fourier fouriernc frcursive frederika2016
-	genealogy gentium-tug gfsartemisia gfsbodoni gfscomplutum
-	gfsdidot gfsneohellenic gfsneohellenicmath gfssolomos gillcm
-	gillius gnu-freefont gofonts gothic greenpoint grotesq hacm
-	heuristica hfbright hfoldsty ifsym imfellenglish inconsolata
-	initials ipaex-type1 iwona jablantile jamtimes junicode
-	kixfont kpfonts kurier lato lfb libertine libertinegc
-	libertinus libertinus-fonts libertinus-otf libertinus-type1
+	courier-scaled crimson crimsonpro cryst cuprum cyklop
+	dantelogo dejavu dejavu-otf dice dictsym dingbat doublestroke
+	dozenal drm droid dsserif duerer duerer-latex dutchcal ean
+	ebgaramond ebgaramond-maths ecc eco eiad eiad-ltx electrum
+	elvish epigrafica epsdice erewhon esrelation esstix esvect
+	eulervm fbb fdsymbol fetamont feyn fge fira firamath
+	firamath-otf foekfont fonetika fontawesome fontawesome5
+	fontmfizz fonts-churchslavonic fourier fouriernc frcursive
+	frederika2016 garamond-math genealogy gentium-tug gfsartemisia
+	gfsbodoni gfscomplutum gfsdidot gfsneohellenic
+	gfsneohellenicmath gfssolomos gillcm gillius gnu-freefont
+	gofonts gothic greenpoint grotesq hacm heuristica hfbright
+	hfoldsty ifsym imfellenglish inconsolata initials inriafonts
+	ipaex-type1 iwona jablantile jamtimes junicode kixfont kpfonts
+	kurier lato lfb libertine libertinegc libertinus
+	libertinus-fonts libertinus-otf libertinus-type1
 	libertinust1math librebaskerville librebodoni librecaslon
 	libris linearA lobster2 lxfonts ly1 mathabx mathabx-type1
 	mathdesign mdputu mdsymbol merriweather miama mintspirit

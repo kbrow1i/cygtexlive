@@ -1,13 +1,14 @@
 NAME="texlive-collection-luatex-doc"
-VERSION=20181022
+VERSION=20190420
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="auto-pst-pdf-lua bezierplot checkcites chickenize
 	combofont cstypo ctablestack enigma interpreter kanaparser
-	lua-visual-debug lua2dox luacode luahyphenrules luaindex
-	luainputenc luaintro lualatex-doc lualatex-math
+	lua-visual-debug lua2dox luacode luahyphenrules luaimageembed
+	luaindex luainputenc luaintro lualatex-doc lualatex-math
 	lualatex-truncate lualibs luamplib luaotfload luapackageloader
-	luatex85 luatexbase luatexko luatextra luavlna luaxml nodetree
-	odsfile placeat plantuml selnolig spelling typewriter"
+	luarandom luatex85 luatexbase luatexko luatextra luavlna
+	luaxml nodetree odsfile placeat plantuml selnolig spelling
+	typewriter"
 
 inherit texlive
