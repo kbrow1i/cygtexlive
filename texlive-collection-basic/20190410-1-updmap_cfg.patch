@@ -1,6 +1,6 @@
---- origsrc/texmf-dist/web2c/updmap.cfg	2018-03-13 21:25:13.000000000 -0400
-+++ src/texmf-dist/web2c/updmap.cfg	2018-04-17 12:31:06.362459700 -0400
-@@ -104,328 +104,328 @@ koEmbed baekmuk
+--- origsrc/texmf-dist/web2c/updmap.cfg	2019-02-02 20:23:51.000000000 -0500
++++ src/texmf-dist/web2c/updmap.cfg	2019-04-21 13:33:14.024003300 -0400
+@@ -104,337 +104,337 @@ koEmbed baekmuk
  
  
  #  (end of updmap-hdr.cfg)
@@ -86,11 +86,13 @@
 -Map ComicNeueAngular.map
 -Map original-context-symbol.map
 -Map CormorantGaramond.map
--Map CountriesOfEurope.map
+-Map CountriesofEurope.map
 -Map ucr.map
 -Map crimson.map
+-Map CrimsonPro.map
 -Map cs-charter.map
 -Map csfonts.map
+-Map cuprum.map
 -Map cyklop.map
 -Map dad.map
 -Map dante.map
@@ -98,6 +100,7 @@
 -Map dictsym.map
 -Map dstroke.map
 -Map droid.map
+-Map DSSerif.map
 -Map dutchcal.map
 -Map EBGaramond.map
 -Map EBGaramond-Maths.map
@@ -119,6 +122,7 @@
 -Map foekfont.map
 -Map fonetika.map
 -Map fontawesome.map
+-Map fontawesome5.map
 -Map nectec.map
 -Map nf.map
 -Map sipa.map
@@ -169,6 +173,8 @@
 -Map Starburst.map
 -Map Typocaps.map
 -Map Zallman.map
+-Map InriaSans.map
+-Map InriaSerif.map
 -Map ipaex-type1.map
 -Map iwona.map
 -KanjiMap otf-@jaEmbed@.map
@@ -183,6 +189,7 @@
 -Map lato.map
 -Map libertine.map
 -Map libertinegc.map
+-Map libertinus.map
 -Map libertinust1math.map
 -Map LibreBaskerville.map
 -Map LibreBodoni.map
@@ -270,7 +277,9 @@
 -Map SourceSerifPro.map
 -Map starfont.map
 -Map icelandic.map
+-Map SticksTooText.map
 -Map stix.map
+-Map stix2.map
 -MixedMap stmaryrd.map
 -Map superiors.map
 -Map svrsymbols.map
@@ -411,11 +420,13 @@
 +#! Map ComicNeueAngular.map
 +#! Map original-context-symbol.map
 +#! Map CormorantGaramond.map
-+#! Map CountriesOfEurope.map
++#! Map CountriesofEurope.map
 +#! Map ucr.map
 +#! Map crimson.map
++#! Map CrimsonPro.map
 +#! Map cs-charter.map
 +#! Map csfonts.map
++#! Map cuprum.map
 +#! Map cyklop.map
 +#! Map dad.map
 +#! Map dante.map
@@ -423,6 +434,7 @@
 +#! Map dictsym.map
 +#! Map dstroke.map
 +#! Map droid.map
++#! Map DSSerif.map
 +#! Map dutchcal.map
 +#! Map EBGaramond.map
 +#! Map EBGaramond-Maths.map
@@ -444,6 +456,7 @@
 +#! Map foekfont.map
 +#! Map fonetika.map
 +#! Map fontawesome.map
++#! Map fontawesome5.map
 +#! Map nectec.map
 +#! Map nf.map
 +#! Map sipa.map
@@ -494,6 +507,8 @@
 +#! Map Starburst.map
 +#! Map Typocaps.map
 +#! Map Zallman.map
++#! Map InriaSans.map
++#! Map InriaSerif.map
 +#! Map ipaex-type1.map
 +#! Map iwona.map
 +#! KanjiMap otf-@jaEmbed@.map
@@ -508,6 +523,7 @@
 +#! Map lato.map
 +#! Map libertine.map
 +#! Map libertinegc.map
++#! Map libertinus.map
 +#! Map libertinust1math.map
 +#! Map LibreBaskerville.map
 +#! Map LibreBodoni.map
@@ -595,7 +611,9 @@
 +#! Map SourceSerifPro.map
 +#! Map starfont.map
 +#! Map icelandic.map
++#! Map SticksTooText.map
 +#! Map stix.map
++#! Map stix2.map
 +#! MixedMap stmaryrd.map
 +#! Map superiors.map
 +#! Map svrsymbols.map

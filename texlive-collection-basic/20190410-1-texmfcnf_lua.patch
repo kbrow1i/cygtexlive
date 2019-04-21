@@ -1,5 +1,5 @@
---- origsrc/texmf-dist/web2c/texmfcnf.lua	2018-03-03 13:29:03.000000000 -0500
-+++ src/texmf-dist/web2c/texmfcnf.lua	2018-04-17 12:17:00.188246500 -0400
+--- origsrc/texmf-dist/web2c/texmfcnf.lua	2019-02-27 18:33:00.000000000 -0500
++++ src/texmf-dist/web2c/texmfcnf.lua	2019-04-21 13:41:15.161397700 -0400
 @@ -14,6 +14,7 @@ return {
      time    = "12:12:12",
      comment = "ConTeXt MkIV configuration file",
@@ -13,7 +13,7 @@
              -- only used for FONTCONFIG_PATH & TEXMFCACHE in TeX Live
  
 -            TEXMFSYSVAR     = "selfautoparent:texmf-var",
--            TEXMFVAR        = "home:.texlive2018/texmf-var",
+-            TEXMFVAR        = "home:.texlive2019/texmf-var",
 +            TEXMFSYSVAR     = "/var/lib/texmf",
 +            TEXMFVAR        = "home:.cache/texmf",
  
@@ -21,7 +21,7 @@
              -- will be chosen but there can be more readable paths.
  
              TEXMFCACHE      = "$TEXMFSYSVAR;$TEXMFVAR",
--            TEXMFCONFIG     = "home:.texlive2018/texmf-config",
+-            TEXMFCONFIG     = "home:.texlive2019/texmf-config",
 +            TEXMFCONFIG     = "home:.config/texmf",
  
              -- I don't like this texmf under home and texmf-home would make more

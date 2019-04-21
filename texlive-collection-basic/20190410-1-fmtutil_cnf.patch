@@ -1,6 +1,6 @@
---- origsrc/texmf-dist/web2c/fmtutil.cnf	2016-05-14 21:17:09.000000000 -0400
-+++ src/texmf-dist/web2c/fmtutil.cnf	2016-05-24 09:43:14.970492500 -0400
-@@ -38,99 +38,99 @@
+--- origsrc/texmf-dist/web2c/fmtutil.cnf	2019-03-22 21:25:33.000000000 -0400
++++ src/texmf-dist/web2c/fmtutil.cnf	2019-04-21 13:27:21.105215500 -0400
+@@ -38,100 +38,100 @@
  
  #
  # from aleph:
@@ -32,10 +32,12 @@
  # from csplain:
 -csplain pdftex - -etex -enc csplain-utf8.ini
 -pdfcsplain pdftex - -etex -enc csplain-utf8.ini
+-luacsplain luatex - -etex csplain.ini
 -pdfcsplain xetex - -etex csplain.ini
 -pdfcsplain luatex - -etex csplain.ini
 +#! csplain pdftex - -etex -enc csplain-utf8.ini
 +#! pdfcsplain pdftex - -etex -enc csplain-utf8.ini
++#! luacsplain luatex - -etex csplain.ini
 +#! pdfcsplain xetex - -etex csplain.ini
 +#! pdfcsplain luatex - -etex csplain.ini
  #

@@ -1,6 +1,6 @@
---- origsrc/texmf-dist/scripts/texlive/tlmgr.pl	2016-04-27 06:25:08.000000000 -0400
-+++ src/texmf-dist/scripts/texlive/tlmgr.pl	2016-04-28 17:21:02.455563200 -0400
-@@ -38,50 +38,13 @@ END {
+--- origsrc/texmf-dist/scripts/texlive/tlmgr.pl	2019-04-05 18:43:08.000000000 -0400
++++ src/texmf-dist/scripts/texlive/tlmgr.pl	2019-04-21 14:05:29.064671500 -0400
+@@ -40,50 +40,13 @@ END {
  
  BEGIN {
    $^W = 1;
@@ -12,7 +12,7 @@
    # Unix-specific problems with use as library will probably go undetected.
  
 -  # make subprograms (including kpsewhich) have the right path:
--  my ($bindir, $kpsewhichname);
+-  my $kpsewhichname;
 -  if ($^O =~ /^MSWin/i) {
 -    # on w32 $0 and __FILE__ point directly to tlmgr.pl; they can be relative
 -    $Master = __FILE__;
@@ -53,7 +53,7 @@
    $::installerdir = $Master;  # for config.guess et al., see TLUtils.pm
  
    # make Perl find our packages first:
-@@ -585,7 +548,7 @@ for the full story.\n";
+@@ -660,7 +623,7 @@ for the full story.\n";
    # in system mode verify that the selected action is allowed
    if (!$opts{"usermode"} && $config{'allowed-actions'}) {
      if (!TeXLive::TLUtils::member($action, @{$config{'allowed-actions'}})) {
