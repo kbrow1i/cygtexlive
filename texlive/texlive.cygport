@@ -25,10 +25,9 @@ SRC_URI+=" 09-texlive.conf"
 
 SRC_DIR="${PN}-${PV}-source"
 
+PATCH_URI+=" 20190410-1-dvisvgm.patch"
 PATCH_URI+=" 20190410-1-texmf_cnf.patch"
 PATCH_URI+=" 20140523-2-reautoconf.patch"
-# PATCH_URI+=" 20180414-1-dvidvi.patch"
-# PATCH_URI+=" 20180414-1-poppler.patch"
 
 DOCS="README.Cygwin"
 
@@ -63,7 +62,7 @@ DEPEND="
 # The following are needed for building xindy docs.
 DEPEND+=" texlive-collection-langgreek texlive-collection-langcyrillic texlive-collection-fontsrecommended"
 
-PKG_NAMES="${PN} libkpathsea6 libkpathsea-devel libptexenc1 libptexenc-devel libsynctex1 libsynctex-devel libtexlua52_5 libtexlua52-devel libtexlua53_5 libtexlua53-devel libtexluajit2 libtexluajit-devel"
+PKG_NAMES="${PN} libkpathsea6 libkpathsea-devel libptexenc1 libptexenc-devel libsynctex2 libsynctex-devel libtexlua53_5 libtexlua53-devel libtexluajit2 libtexluajit-devel"
 
 texlive_CONTENTS="
 	etc/
@@ -84,12 +83,9 @@ libkpathsea_devel_CONTENTS="usr/include/kpathsea/
 libptexenc1_CONTENTS="usr/bin/cygptexenc-1.dll"
 libptexenc_devel_CONTENTS="usr/include/ptexenc/ usr/lib/libptexenc.*
 	usr/lib/pkgconfig/ptexenc.pc"
-libsynctex1_CONTENTS="usr/bin/cygsynctex-1.dll"
+libsynctex2_CONTENTS="usr/bin/cygsynctex-2.dll"
 libsynctex_devel_CONTENTS="usr/include/synctex/ usr/lib/libsynctex.*
 	usr/lib/pkgconfig/synctex.pc"
-libtexlua52_5_CONTENTS="usr/bin/cygtexlua52-5.dll"
-libtexlua52_devel_CONTENTS="usr/include/texlua52/
-	usr/lib/libtexlua52.* usr/lib/pkgconfig/texlua52.pc"
 libtexlua53_5_CONTENTS="usr/bin/cygtexlua53-5.dll"
 libtexlua53_devel_CONTENTS="usr/include/texlua53/
 	usr/lib/libtexlua53.* usr/lib/pkgconfig/texlua53.pc"
@@ -106,7 +102,7 @@ libkpathsea6_SUMMARY="TeX file and path search library (runtime)"
 libkpathsea_devel_SUMMARY="TeX file and path search library (development)"
 libptexenc1_SUMMARY="TeX Unicode encoding library (runtime)"
 libptexenc_devel_SUMMARY="TeX Unicode encoding library (development)"
-libsynctex1_SUMMARY="TeX source/output synchronization library (runtime)"
+libsynctex2_SUMMARY="TeX source/output synchronization library (runtime)"
 libsynctex_devel_SUMMARY="TeX source/output synchronization library (development)"
 libtexlua52_5_SUMMARY="TeX lua scripting library (runtime)"
 libtexlua52_devel_SUMMARY="TeX lua scripting library (development)"
