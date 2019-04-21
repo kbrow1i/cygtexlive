@@ -1,9 +1,9 @@
 #! /bin/bash
 
-VR=20180414-1
+VR=20190410-1
 
-cat > announce-TL2018.txt <<EOF
-Cygwin's TeX Live packages have been updated to the latest upstream release, TeX Live 2018.
+cat > announce-TL2019.txt <<EOF
+Cygwin's TeX Live packages have been updated to the latest upstream release, TeX Live 2019.
 
 TeX Live provides a comprehensive, cross-platform TeX system.  It includes all the major TeX-related programs, macro packages, and fonts that are free software, including support for many languages around the world.  For more information, see
 
@@ -13,7 +13,7 @@ And see
 
   http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#news
 
-for a list of changes since TeX Live 2017.
+for a list of changes since TeX Live 2018.
   
 The TeX Live executables and supporting libraries are contained in the following Cygwin packages:
 
@@ -29,24 +29,22 @@ libkpathsea is a TeX file and path search library.
 
 libptexenc is a TeX Unicode encoding library.
 
-* libsync1-${VR}
+* libsync2-${VR}
 * libsync-devel-${VR}
 
 libsync is a TeX source/output synchronization library.
 
-* libtexlua52_5-${VR}
-* libtexlua52-devel-${VR}
 * libtexlua53_5-${VR}
 * libtexlua53-devel-${VR}
 
-libtexlua52 and libtexlua53 are TeX lua scripting libraries.
+libtexlua53 is a TeX lua scripting library.
 
 * libtexluajit2-${VR}
 * libtexluajit-devel-${VR}
 
 libtexluajit is a TeX Just-In-Time lua compiler library.
 
-* asymptote-2.44-1
+* asymptote-2.49-1
 
 Asymptote is a powerful descriptive vector graphics language for technical drawing, inspired by MetaPost but with an improved C++-like syntax.  Asymptote provides for figures the same high-quality typesetting that LaTeX does for scientific text.
 
@@ -58,10 +56,10 @@ packages="texlive-collection-*"
 
 for d in ${packages}
 do
-    echo "* ${d}-${VR}" >> announce-TL2018.txt
+    echo "* ${d}-${VR}" >> announce-TL2019.txt
 done
 
-cat >> announce-TL2018.txt <<EOF
+cat >> announce-TL2019.txt <<EOF
 
 Recommendations
 ===============

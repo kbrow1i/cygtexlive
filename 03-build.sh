@@ -9,7 +9,7 @@ for d in $dirs
 do
     echo "Entering $d ..."
     cd $d
-    if ! cygport ${d}.cygport all
+    if ! cygport ${d}.cygport finish all
     then
 	echo "Building ${d} failed" >> ../build_failures.txt
 	exit_status=1
