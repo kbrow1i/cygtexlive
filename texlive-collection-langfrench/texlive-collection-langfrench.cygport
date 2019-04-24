@@ -1,5 +1,5 @@
 NAME="texlive-collection-langfrench"
-VERSION=20190420
+VERSION=20190410
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="aeguill apprends-latex babel-basque babel-french

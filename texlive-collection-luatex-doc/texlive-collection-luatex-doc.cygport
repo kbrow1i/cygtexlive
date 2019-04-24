@@ -1,5 +1,5 @@
 NAME="texlive-collection-luatex-doc"
-VERSION=20190420
+VERSION=20190410
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="auto-pst-pdf-lua bezierplot checkcites chickenize

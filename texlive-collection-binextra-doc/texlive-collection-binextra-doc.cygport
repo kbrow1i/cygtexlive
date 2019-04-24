@@ -1,5 +1,5 @@
 NAME="texlive-collection-binextra-doc"
-VERSION=20190420
+VERSION=20190410
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="a2ping adhocfilelist arara bibtex8 bibtexu bundledoc

@@ -1,5 +1,5 @@
 NAME="texlive-collection-context-doc"
-VERSION=20180414
+VERSION=20190410
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="context context-notes-zh-cn npp-for-context

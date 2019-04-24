@@ -1,5 +1,5 @@
 NAME="texlive-collection-latexextra"
-VERSION=20190420
+VERSION=20190410
 RELEASE=1
 
 # preview is now packaged as the preview-latex subpackage of emacs-auctex.

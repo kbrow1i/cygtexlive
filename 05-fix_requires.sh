@@ -1,6 +1,9 @@
 #! /bin/bash
 
-# Recheck which ones should actually require python3.
+# Should I switch from python2 to python3?
+
+# Make sure collection-basic doesn't require collection-bin [artifact
+# of tlshell moving from binextra to basic].
 
 dirs="
 texlive-collection-binextra

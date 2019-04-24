@@ -1,5 +1,5 @@
 NAME="texlive-collection-langeuropean"
-VERSION=20180414
+VERSION=20190410
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="armtex babel-albanian babel-bosnian babel-breton

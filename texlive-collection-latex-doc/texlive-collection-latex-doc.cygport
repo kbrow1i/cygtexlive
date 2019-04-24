@@ -1,5 +1,5 @@
 NAME="texlive-collection-latex-doc"
-VERSION=20180414
+VERSION=20190410
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="babel-english ae amscls amsmath babel babelbib
