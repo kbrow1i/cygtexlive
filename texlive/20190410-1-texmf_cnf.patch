@@ -1,5 +1,5 @@
 --- origsrc/texlive-20190410-source/texk/kpathsea/texmf.cnf	2019-03-25 18:13:22.000000000 -0400
-+++ src/texlive-20190410-source/texk/kpathsea/texmf.cnf	2019-04-20 18:12:02.340054400 -0400
++++ src/texlive-20190410-source/texk/kpathsea/texmf.cnf	2019-04-23 21:51:32.958866900 -0400
 @@ -58,7 +58,12 @@
  % SELFAUTOPARENT (its grandparent = /usr/local/texlive/YYYY), and
  % SELFAUTOGRANDPARENT (its great-grandparent = /usr/local/texlive).
@@ -46,15 +46,6 @@
  
  % This is the value manipulated by tlmgr's auxtrees subcommand in the
  % root texmf.cnf. Kpathsea warns about a literally empty string for a
-@@ -160,7 +165,7 @@ WEB2C = $TEXMF/web2c
- % On the other hand, if you never want the current directory to be
- % searched at all, setting TEXMFDOTDIR=/nonesuch should come close.
- %
--TEXMFDOTDIR = .
-+TEXMFDOTDIR = .//
- 
- % TEXINPUTS is for TeX input files -- i.e., anything to be found by \input
- % or \openin, including .sty, .eps, etc.  We specify paths for all known
 @@ -525,30 +530,42 @@ RUBYINPUTS   = $TEXMFDOTDIR;$TEXMF/scrip
  % since we don't want to scatter ../'s throughout the value.  Hence we
  % explicitly list every directory.  Arguably more understandable anyway.
