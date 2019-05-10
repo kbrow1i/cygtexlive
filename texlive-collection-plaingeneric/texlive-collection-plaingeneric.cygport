@@ -1,5 +1,5 @@
 NAME="texlive-collection-plaingeneric"
-VERSION=20190410
+VERSION=20190509
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="abbr abstyles apnum autoaligne barr bitelist

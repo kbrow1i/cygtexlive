@@ -1,5 +1,5 @@
 NAME="texlive-collection-langarabic"
-VERSION=20190410
+VERSION=20190509
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="alkalami alpha-persian amiri arabi arabi-add

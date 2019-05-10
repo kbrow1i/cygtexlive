@@ -1,5 +1,5 @@
 NAME="texlive-collection-basic"
-VERSION=20190410
+VERSION=20190509
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="amsfonts cm colorprofiles enctex etex etex-pkg

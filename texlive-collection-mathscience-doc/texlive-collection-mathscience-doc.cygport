@@ -1,5 +1,5 @@
 NAME="texlive-collection-mathscience-doc"
-VERSION=20190410
+VERSION=20190509
 RELEASE=1
 
 TEXLIVE_DOC_PKGS="12many SIstyle SIunits alg algobox algorithm2e

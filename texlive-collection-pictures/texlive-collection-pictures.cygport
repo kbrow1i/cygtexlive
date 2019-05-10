@@ -1,5 +1,5 @@
 NAME="texlive-collection-pictures"
-VERSION=20190410
+VERSION=20190509
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="adigraph aobs-tikz askmaps asyfig asypictureb

@@ -1,6 +1,6 @@
 #! /bin/bash
 
-VR=20190410-1
+VR=20190509-1
 
 cat > announce-TL2019.txt <<EOF
 Cygwin's TeX Live packages have been updated to the latest upstream release, TeX Live 2019.

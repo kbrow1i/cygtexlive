@@ -1,5 +1,5 @@
 NAME="texlive-collection-luatex"
-VERSION=20190410
+VERSION=20190509
 RELEASE=1
 
 TEXLIVE_TEXMF_PKGS="auto-pst-pdf-lua bezierplot chickenize combofont
